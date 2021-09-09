@@ -7,14 +7,24 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконав(-ла):** 
+**Виконав(-ла):**
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студенти 2-го курсу, групи ІП-05*<span padding-right:5em></span>
 
+
+**Євген ЯКОВЛЄВ [Telegram](https://t.me/asdfasdf)**
+
+**Євген ЯКОВЛЄВ [Telegram](https://t.me/asdfasdf)**
+
+**Євген ЯКОВЛЄВ [Telegram](https://t.me/asdfasdf)**
+
+**Євген ЯКОВЛЄВ [Telegram](https://t.me/asdfasdf)**
+
+**Євген ЯКОВЛЄВ [Telegram](https://t.me/asdfasdf)**
 
 **Керівник**
 
-*доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> **Андрій БОЛДАК** 
+*доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> **Андрій БОЛДАК**
 
 [НТУУ "КИЇВСЬКИЙ ПОЛІТЕХНІЧНИЙ ІНСТИТУТ імені ІГОРЯ СІКОРСЬКОГО](https://kpi.ua/)
 
