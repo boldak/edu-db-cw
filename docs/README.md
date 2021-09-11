@@ -15,9 +15,6 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 Ярослав ТЕРЕЩЕНКО [tg](https://t.me/yaroslav_els) 
 
 
-qwe
-
-
 **Керівник**
 
 *доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> **Андрій БОЛДАК** 
