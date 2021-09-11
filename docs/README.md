@@ -7,9 +7,15 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали:** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студенти 2-го курсу, групи ІП-04*<span padding-right:5em></span> **
+
+
+Ярослав ТЕРЕЩЕНКО [tg](https://t.me/yaroslav_els) 
+
+
+qwe
 
 
 **Керівник**
