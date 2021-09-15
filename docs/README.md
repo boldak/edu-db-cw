@@ -14,6 +14,16 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 **Ервін ОСМАНОВ [telegram](https://t.me/BeOkker)**
 
+**Денис ГАПІЙ [telegram](https://t.me/gapiyka)**
+
+**Максим КОВАЛЬ [telegram](https://t.me/maksolo27)**
+
+**Андрій КУРЗАНЦЕВ [telegram](https://t.me/very_wide_rambo)**
+
+**Павло Білолипецький [telegram](https://t.me/pashhhaaa)**
+
+**Ібрагім АМЕЛІН [telegram](https://t.me/I_Bro228)**
+
 
 **Керівник**
 
