@@ -15,7 +15,7 @@ footer: "ECL 2.0 Licensed | Copyright © [2021] [Shchaslyvyi]"
 
 **[Віктор МАКОВІЙ] [Telegram](http://t.me/MakovVik )**
 
-**[Іван КОВАЛЬОВ] [Telegram](http://t.me/kovalev18 )**
+**[Іван КОВАЛЬОВ] [Telegram](http://t.me/kovalev18 ) [GitHUb](https://github.com/IvanKovalov)**
 
 **[Вeроніка ШУХМАН] [Telegram](http://t.me/nikelyandjelo )**
 
