@@ -23,7 +23,7 @@ footer: "ECL 2.0 Licensed | Copyright © [2021] [Shchaslyvyi]"
 
 **[Кірілл КОМІСАР] [Telegram](http://t.me/chokoladniiareshek )**
 
-**[Вадим КОНОНЕНКО] [Telegram](http://t.me/weast )**
+**[Вадим КОНОНЕНКО] [Telegram](http://t.me/weast ) [Github](https://github.com/vadimkononenko )**
 
 
 **Керівник**
