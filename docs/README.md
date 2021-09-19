@@ -9,14 +9,21 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 **Виконали:** 
 
-*студенти 2-го курсу, групи ІП-04*<span padding-right:5em></span> **
+*студенти 2-го курсу, групи ІП-04*<span padding-right:5em></span>
 
+**Даніл БЯЛИЙ [GitHub](https://github.com/DanilByaliy)[tg](https://t.me/Danil_Byaliy)**
 
-Василь ХРАПКО [tg](https://t.me/vazzz7zzzok)
+**Олександр ГАКАВИЙ [GitHub](https://github.com/sanixto)**
 
+**Богдан ЗІНОВИЙ [GitHub](https://github.com/Bogdan-Zinovij)[tg](https://t.me/bzinovoy)**
 
-Артем МАТЮШЕНКО
+**Артем КОПИЛ [GitHub](https://github.com/stormy131)[tg](https://t.me/stormy_13)**
 
+**Артем МАТЮШЕНКО [GitHub](https://github.com/artemmatiushenko1)[tg](https://t.me/artemko_m)**
+
+**Михайло СЕДУШ [GitHub](https://github.com/water-korra)[tg](https://t.me/qasau)**
+
+**Василь ХРАПКО [GitHub](https://github.com/KhrapkoVasyl)[tg](https://t.me/vazzz7zzzok)**
 
 **Керівник**
 
