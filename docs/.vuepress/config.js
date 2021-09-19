@@ -15,7 +15,7 @@ module.exports = {
     }]
   ],
   port: 3030,
-  base: '/docs/',
+  base: '/open-data-manage-system/',
   theme: 'cool',
   // dest: 'dist',
   head: [
