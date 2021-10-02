@@ -19,6 +19,7 @@
 -  [Google Public Data Explorer](https://www.google.com/publicdata/directory)
 -  [Statistics Poland](https://stat.gov.pl/en/)
 -  [Eurostat](https://ec.europa.eu/eurostat/data/database)
+-  [Dataverse](https://dataverse.org/)
 
 ## 3. Система аналізу медіа-контенту
 
