@@ -172,7 +172,7 @@ Cтатистичне управління Європейського Союзу
 - країни EFTA
 
 ### [Google Public Data Explorer](https://www.google.com/publicdata/directory) ###
-опис
+Google Public Data Explorer – служба, що полегшує дослідження великих баз даних щодо інтересів людей, а також надає можливість візуалізувати дані й обмінюватися ними. Цим інструментом можуть скористатися студенти, журналісти, політичні діячі та будь-хто інший для створення візуалізацій загальнодоступних даних, на які можна посилатися або які можна вставляти на власні веб-сторінки. В цьому полягає основна властивість цього сервісу, він підвищує доступність знайденої інформації. Щоб змінювати режими перегляду, здійснювати порівняння та ділитись отриманими результатами, не потрібно бути експертом з аналізу даних.
 
 **Порівняльна таблиця:**
 
@@ -204,4 +204,17 @@ Cтатистичне управління Європейського Союзу
 
 ## Посилання
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+[https://docs.google.com/document/d/1Cd2kEH5w3SRJYaDcu-M4dU5SY8No84T3g-QlNSW6pIE/edit#heading=h.w37ji581nnqj](https://docs.google.com/document/d/1Cd2kEH5w3SRJYaDcu-M4dU5SY8No84T3g-QlNSW6pIE/edit#heading=h.w37ji581nnqj)
+
+[https://www.google.com/publicdata/directory](https://www.google.com/publicdata/directory)
+
+[https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B5%D0%B4%D0%BC%D0%B5%D1%82%D0%BD%D0%B0_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C](https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B5%D0%B4%D0%BC%D0%B5%D1%82%D0%BD%D0%B0_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C)
+
+
+[https://uk.wikipedia.org/wiki/%D0%91%D0%B0%D0%B7%D0%B0_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85](https://uk.wikipedia.org/wiki/%D0%91%D0%B0%D0%B7%D0%B0_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
+
+
+[http://www.kievoit.ippo.kubg.edu.ua/kievoit/2013/118/118.html](http://www.kievoit.ippo.kubg.edu.ua/kievoit/2013/118/118.html)
+
+
+[http://bookwu.net/book_organizaciya-baz-danih-i-znan_997/13_1.2.4-proces-proektuvannya-bd](http://bookwu.net/book_organizaciya-baz-danih-i-znan_997/13_1.2.4-proces-proektuvannya-bd)
