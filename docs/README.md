@@ -3,14 +3,16 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © 2021 Illia Senchukov"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали:** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
-
+- студент 2-го курсу, групи ІП-03 Сенчуков Ілля (Email: [senchukov02@gmail.com](mailto:senchukov02@gmail.com), Telegram: @beaxhem)
+- студент 2-го курсу, групи ІП-03 Баран Павло (Email: [pashabaran1207@gmail.com](mailto:pashabaran1207@gmail.com), Telegram: @samurai_of_honor)
+- студентка 2-го курсу, групи ІП-03 Мошенська Олеся (Email: [lekh0t0er@gmail.com](mailto:lekh0t0er@gmail.com), Telegram: @shiwusa)
+- студент 2-го курсу, групи ІП-03 Негруб Артем (Email: [negrubartem@gmail.com](mailto:negrubartem@gmail.com), Telegram: @artem_negrub)
 
 **Керівник**
 
