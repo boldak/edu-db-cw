@@ -3,28 +3,28 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: 'ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]'
 ---
-
 
 **Виконав(-ла):**
 
-*студенти 2-го курсу, групи ІП-05*<span padding-right:5em></span>
+_студенти 2-го курсу, групи ІП-05_<span padding-right:5em></span>
 
+**Євген ЯКОВЛЄВ [Telegram](https://t.me/yyakovliev)**
 
-**Євген ЯКОВЛЄВ [Telegram](https://t.me/asdfasdf)**
+**Артем БОНДАРЧУК [Telegram](https://t.me/artemkaxdxd)**
 
-**Євген ЯКОВЛЄВ [Telegram](https://t.me/asdfasdf)**
+**Микола ЧУБ [Telegram](https://t.me/nikolaichub)**
 
-**Євген ЯКОВЛЄВ [Telegram](https://t.me/asdfasdf)**
+**В`ячеслав АМЕЛІН [Telegram](https://t.me/berlin1776)**
 
-**Євген ЯКОВЛЄВ [Telegram](https://t.me/asdfasdf)**
+**Аліна Д`ЯЧЕНКО [Telegram](https://t.me/dyachaliin)**
 
-**Євген ЯКОВЛЄВ [Telegram](https://t.me/asdfasdf)**
+**Артем КРУТІКОВ [Telegram](https://t.me/cmertenok)**
 
 **Керівник**
 
-*доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> **Андрій БОЛДАК**
+_доцент кафедри ОТ ФІОТ, к.т.н., доцент_<span padding-right:5em></span> **Андрій БОЛДАК**
 
 [НТУУ "КИЇВСЬКИЙ ПОЛІТЕХНІЧНИЙ ІНСТИТУТ імені ІГОРЯ СІКОРСЬКОГО](https://kpi.ua/)
 
