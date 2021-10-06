@@ -76,10 +76,10 @@ module.exports = {
 
     lastUpdated: 'Останнє оновлення', // string | boolean
       // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'https://github.com/KhrapkoVasyl/open-data-manage-system',
+    repo: 'https://github.com/boldak/edu-db-cw',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
-    repoLabel: 'GitHub',
+    repoLabel: 'Github',
 
     // Optional options for generating "Edit this page" link
 
@@ -95,7 +95,7 @@ module.exports = {
     // editLinkText: 'Ви можете покращити цю сторінку'
 
   },
-  title: 'Система управління відкритими даними',
+  title: 'Назва проєкту',
   description: 'Курсова робота з дисципліни "Бази даних"',
   configureWebpack: {
     resolve: {
