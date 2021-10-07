@@ -19,7 +19,7 @@ footer: "ECL 2.0 Licensed | Copyright © [2021] [Shchaslyvyi]"
 
 **[Вeроніка ШУХМАН] [Telegram](http://t.me/nikelyandjelo )**
 
-**[Олександра МІЩЕНКО] [Telegram](http://t.me/olegknyazlove )**
+**[Олександра МІЩЕНКО] [Telegram](http://t.me/olegknyazlove ) [GitHub](https://github.com/Morikachan )**
 
 **[Кірілл КОМІСАР] [Telegram](http://t.me/chokoladniiareshek )**
 
