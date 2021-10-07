@@ -35,4 +35,10 @@ _[Робляться висновки щодо доцільності розро
 
 ## Посилання
 
-_[Розділ містить повний список всіх документів, про які згадується.]_
+1. https://gde-saas.ru/top/rejting-luchshih-servisov-dlya-sozdaniya-onlajn-oprosov/
+2. https://www.testograf.ru/ru/pro/
+3. https://developers.google.com/forms
+4. https://developer.typeform.com/
+5. https://www.surveymonkey.ru/
+6. https://simpoll.ru/plans
+7. https://typeform.com/
