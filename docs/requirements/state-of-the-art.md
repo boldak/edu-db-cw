@@ -52,4 +52,7 @@
 
 ## Посилання
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+https://www.affde.com/ru/meltwater-alternatives.html
+https://work-info.org/otzyvy-o-kompaniyakh/60103-medialogiya
+https://br-analytics.ru/blog/media-monitoring/
+https://gde-saas.ru/applications/youscan-smm/tariffs/
