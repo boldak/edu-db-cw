@@ -211,7 +211,7 @@ Google Public Data Explorer – служба, що полегшує дослід
 - ⚪️ - функція не реалізована
 
 
-| Категорія | Критерій| Open Data Manage System |Dataverse| Gapminder| The World Bank DataBank| Statistics Poland| Eurostat | Google Public Data Explorer|
+| Категорія | Критерій| Open Data Management System |Dataverse| Gapminder| The World Bank DataBank| Statistics Poland| Eurostat | Google Public Data Explorer|
 |:----:| :-----------: |:-:| :-:| :--:| :--:| :--:| :--:| :--: | 
 | **Functionality (функциональні вимоги)** | Створення, публікація, редагування датасетів | 🟢 | 🟢 | ⚪️ | ⚪️ |  ⚪️ | ⚪️ |  🟢 |
 |  | Data visualisations tools  | 🟢 |🔴  (доступно лише через сторонні сервіси) | 🟢 | 🟢 | 🟢 | 🟢 | 🟢 |  🟢 |

@@ -3,7 +3,7 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © [2021] [Даніл БЯЛИЙ Олександр ГАКАВИЙ Богдан ЗІНОВИЙ Артем КОПИЛ Артем МАТЮШЕНКО Михайло СЕДУШ Василь ХРАПКО]"
 ---
 
 
