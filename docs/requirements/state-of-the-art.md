@@ -24,7 +24,7 @@
 - *Supportability (вимоги до підтримки)*
 
  *(у вигляді таблиці).]
-|                               | github projects | trello | basecamp | nifty | backlog | asana |
+| Критерії                      | github projects | trello | basecamp | nifty | backlog | asana |
 |-------------------------------|-----------------|--------|----------|-------|---------|-------|
 | Взаємодія з іншими  сервісами |                 |        |          |       |         |       |
 | Онлайн кабінет                |                 |        |          |       |         |       |
