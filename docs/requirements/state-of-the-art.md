@@ -31,4 +31,11 @@
 
 ## Посилання
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+<a name="link1">[1]https://library.if.ua/book/66/4898.html</a>
+<a name="link2">[2https://www.pmservices.ru/project-management-news/top-7-metodov-upravleniya-proektami-agile-scrum-kanban-prince2-i-drugie/</a>
+<a name="link3">[3]https://pidru4niki.com/74262/informatika/sistemi_upravlinnya_proektami</a>
+
+
+
+
+
