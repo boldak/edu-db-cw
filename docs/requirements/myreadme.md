@@ -21,6 +21,8 @@
 
 **Use case** -  описує сценарій взаємодії учасників (як правило - користувача і системи). Учасників може бути 2 і більше. Користувачем може виступати як людина, так і інша система.
 
+**[Всi визначення](https://github.com/KhrapkoVasyl/open-data-manage-system/blob/master/docs/requirements/state-of-the-art.md)**
+
 ### Посилання
 
 https://dou.ua/lenta/articles/use-cases/
