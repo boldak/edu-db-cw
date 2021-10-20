@@ -1,15 +1,15 @@
 {
-  "name": "dis-edu",
+  "name": "proj-control",
   "version": "2.1.0",
   "main": "index.js",
   "description": "Databases course work template",
-  "repository": "https://github.com/boldak/dis-edu",
-  "author": "Andrey Boldak <boldak.andrey@gmail.com>",
+  "repository": "git@github.com:gurug-prog/proj-control",
+  "author": "Ivan Baturkin <ivanmysterys@gmail.com>",
   "license": "ECL 2.0",
   "scripts": {
     "docs:dev": "npx vuepress dev docs",
     "docs:build": "npx vuepress build docs",
-    "publish": "publish.sh"
+    "publish": "sh publish.sh"
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.7.1",
