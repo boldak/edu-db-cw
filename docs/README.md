@@ -9,10 +9,12 @@ footer: "ECL 2.0 Licensed | Copyright © 2021 Illia Senchukov"
 
 **Виконали:** 
 
-- студент 2-го курсу, групи ІП-03 Сенчуков Ілля (Email: [senchukov02@gmail.com](mailto:senchukov02@gmail.com), Telegram: @beaxhem)
-- студент 2-го курсу, групи ІП-03 Баран Павло (Email: [pashabaran1207@gmail.com](mailto:pashabaran1207@gmail.com), Telegram: @samurai_of_honor)
-- студентка 2-го курсу, групи ІП-03 Мошенська Олеся (Email: [lekh0t0er@gmail.com](mailto:lekh0t0er@gmail.com), Telegram: @shiwusa)
-- студент 2-го курсу, групи ІП-03 Негруб Артем (Email: [negrubartem@gmail.com](mailto:negrubartem@gmail.com), Telegram: @artem_negrub)
+*студенти 2-го курсу, групи ІП-03<span padding-right:5em></span>*
+
+-  Ілля СЕНЧУКОВ  (Email: [senchukov02@gmail.com](mailto:senchukov02@gmail.com), tg: [@beaxhem](https://t.me/beaxhem))
+-  Павло БАРАН  (Email: [pashabaran1207@gmail.com](mailto:pashabaran1207@gmail.com), tg: [@samurai_of_honor](https://t.me/samurai_of_honor))
+-  Олеся МОШЕНСЬКА  (Email: [lekh0t0er@gmail.com](mailto:lekh0t0er@gmail.com), tg: [@shiwusa](https://t.me/shiwusa))
+-  Артем НЕГРУБ  (Email: [negrubartem@gmail.com](mailto:negrubartem@gmail.com), tg: [@artem_negrub](https://t.me/artem_negrub))
 
 **Керівник**
 
