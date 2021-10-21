@@ -18,7 +18,7 @@ module.exports = {
     ],
   ],
   port: 3030,
-  base: '/expert-management-system/',
+  base: '/foxpoll/',
   theme: 'cool',
   // dest: 'dist',
   head: [
@@ -27,7 +27,8 @@ module.exports = {
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css',
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css',
       },
     ],
     [
@@ -85,7 +86,7 @@ module.exports = {
 
     lastUpdated: 'Останнє оновлення', // string | boolean
     // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'https://github.com/JenyaFTW/expert-management-system',
+    repo: 'https://github.com/JenyaFTW/foxpoll',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     repoLabel: 'Github',
