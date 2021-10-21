@@ -23,11 +23,11 @@
 
 ### Посилання
 
-https://dou.ua/lenta/articles/use-cases/
+[https://dou.ua/lenta/articles/use-cases/](https://dou.ua/lenta/articles/use-cases/)
 
-https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96
+[https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96](https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96)
 
-https://github.com/KhrapkoVasyl/open-data-manage-system/blob/master/docs/requirements/state-of-the-art.md
+[https://github.com/KhrapkoVasyl/open-data-manage-system/blob/master/docs/requirements/state-of-the-art.md](https://github.com/KhrapkoVasyl/open-data-manage-system/blob/master/docs/requirements/state-of-the-art.md)
 
 ## Короткий зміст
 
