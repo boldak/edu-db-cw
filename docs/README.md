@@ -3,7 +3,7 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: 'ECL 2.0 Licensed | Copyright © 2021 [JenyaFTW](https://github.com/JenyaFTW/expert-management-system)'
+footer: 'ECL 2.0 Licensed | Copyright © 2021 [JenyaFTW](https://github.com/JenyaFTW/foxpoll)'
 ---
 
 **Виконав(-ла):**
