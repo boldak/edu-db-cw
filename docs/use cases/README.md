@@ -16,7 +16,7 @@
    1.3 сервіс обробляє цей запит  
    1.4 сервіс створює аккаунт користувача
 
-![alt text](![image](https://user-images.githubusercontent.com/71588076/138243301-a1274520-4561-466d-94ac-592f5acf03e6.png))
+![alt text](http://www.plantuml.com/plantuml/pmg/RP4xJiD068Hxds8bMkG3a2QSWXe9IqI2yCYcS-67H9eeQQmKTDGqTeWLivQDb1FCt8XP9qM4A5py_yxZs_LuPczVxVpn8OZnZfOR5kYOnS6m3wxEbmOTIcpHOuU66PU6gH-vCgZHwdFQ9Zhlc1j9Tnfgfiml3NwuaQsICK79mc3FX3aNocpmRMJlyILDPvYXb5ug7zLo6OQZVq0aQzJlZcbEgrucf-R39_Q3ksQXzimNYVFauFhGAZ2-k9xQoSiykhcVs2Z6XzG9jgf8OxMTZKR1rS1I2M6jDhxfhc9MYohr5A4P_V7utk5j4guyNob2ZveV-Pq_6MYo4zi2fK-PsQVdO1nDx_ml-GK0)
 
 ***ID:*** SС.02
     
