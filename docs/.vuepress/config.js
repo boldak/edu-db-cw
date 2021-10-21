@@ -18,7 +18,7 @@ module.exports = {
     ],
   ],
   port: 3030,
-  base: '/foxpoll/',
+  base: '/foxpoll',
   theme: 'cool',
   // dest: 'dist',
   head: [
