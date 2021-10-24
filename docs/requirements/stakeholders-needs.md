@@ -42,10 +42,15 @@ _Big Data_ - це технологія обробки великих масив�
 ### Посилання <a id="links"></a>
 
 [[1] Wikipedia - Інтернет-ЗМІ](https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%97%D0%9C%D0%86)
+
 [[2] Wikipedia - Мас-медіа](https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D1%81%D0%BE%D0%B1%D0%B8_%D0%BC%D0%B0%D1%81%D0%BE%D0%B2%D0%BE%D1%97_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97)
+
 [[3] Wikipedia - Соціальні медіа](https://uk.wikipedia.org/wiki/%D0%A1%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D1%96_%D0%BC%D0%B5%D0%B4%D1%96%D0%B0)
+
 [[4] Wikipedia - Цифрові медіа](https://uk.wikipedia.org/wiki/%D0%A6%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D1%96_%D0%BC%D0%B5%D0%B4%D1%96%D0%B0)
+
 [[5] Wikipedia - NLP](https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%BC%D0%BE%D0%B2%D0%B8)
+
 [[6] Wikipedia - Big Data](https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D1%96_%D0%B4%D0%B0%D0%BD%D1%96)
 
 ## Короткий зміст 
