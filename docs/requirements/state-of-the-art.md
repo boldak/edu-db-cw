@@ -178,12 +178,40 @@
 
 ## Посилання
 
-https://uk.wikipedia.org/wiki/Управління_проєктами#Методи_управління_проєктами
+[Wiki: Управління проєктами](https://uk.wikipedia.org/wiki/Управління_проєктами#Методи_управління_проєктами)
 
-https://www.atlassian.com/ru/agile/project-management
+[Atlassian: Project managemet](https://www.atlassian.com/ru/agile/project-management)
 
-https://www.pmservices.ru/project-management-news/top-7-metodov-upravleniya-proektami-agile-scrum-kanban-prince2-i-drugie/
+[Pmservices: Топ-7 методов управления проектами](https://www.pmservices.ru/project-management-news/top-7-metodov-upravleniya-proektami-agile-scrum-kanban-prince2-i-drugie/)
 
-https://blog.agrokebety.com/shcho-take-upravlinnya-proektamy
+[Agrokebety: Що таке управління проектами](https://blog.agrokebety.com/shcho-take-upravlinnya-proektamy)
 
+[Habr: Ещё раз про семь основных методологий разработки](https://habrahabr.ru/company/edison/blog/269789/)
 
+[Edsd: Тестирование программного обеспечения](https://www.edsd.ru/ru/uslugi/testirovanie_po)
+
+[Wiki: Гнучка розробка програмного забезпечення](https://uk.wikipedia.org/wiki/Гнучка_розробка_програмного_забезпечення)
+
+[ScrumAlliance: The 2020 Scrum Guide and Related Content](https://www.scrumalliance.org/why-scrum/scrum-guide)
+
+[Habr Q&A: Что такое артефакт в разработке ПО?](https://qna.habr.com/q/174615)
+
+[Wiki: Артефакт (UML)](https://ru.wikipedia.org/wiki/%D0%90%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82_(UML))
+
+[DB: Difference Between GitHub Repository and Project](http://www.differencebetween.net/technology/difference-between-github-repository-and-project/)
+
+[Startpack: Описание Trello](https://startpack.ru/application/fog-trello)
+
+[Habr: 52 системы управления проектами для командной работы в разных сферах](https://habr.com/ru/company/yougile/blog/545614/)
+
+[Обзор сервисов управления проектами](https://ain.ua/2015/03/04/obzor-servisov-upravleniya-proektami-basecamp-trello-slack-asana-worksection/)
+
+[Software Advice: Nifty Software](https://www.softwareadvice.com/project-management/nifty-profile/)
+
+[Startpack: Описание Backlog](https://startpack.ru/application/backlog)
+
+[BizzApps: Backlog. Что это такое?](https://bizzapps.ru/p/backlog/)
+
+[Ppc world: Планируй и управляй: обзор популярных сервисов для работы с задачами](https://ppc.world/articles/planiruy-i-upravlyay-obzor-populyarnyh-servisov-dlya-raboty-s-zadachami/)
+
+[MereHead: Система управления проектами Асана: обзор 2020](https://merehead.com/ru/blog/asana-review/)
