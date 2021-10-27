@@ -111,11 +111,6 @@ actor DataConsumer
   usecase Duse3_2 as "<b>DC_3.2</b>\nЗберегти дані у форматі xls"
 
   
-  
-
-
- 
-  
 
   DataConsumer .u.> Duse1
   DataConsumer .d.> Duse2
