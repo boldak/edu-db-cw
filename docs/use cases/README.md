@@ -111,6 +111,13 @@ actor DataConsumer
   usecase Duse3_2 as "<b>DC_3.2</b>\nЗберегти дані у форматі xls"
 
   
+  usecase Duse2_1 as "<b>DC_2.1</b>\nЗнайти дані за тегом"
+  usecase Duse2_2 as "<b>DC_2.2</b>\nЗнайти дані з використанням фільтру"
+  
+  usecase Duse3_1 as "<b>DC_3.1</b>\nЗберегти дані у форматі txt"
+  usecase Duse3_2 as "<b>DC_3.2</b>\nЗберегти дані у форматі xls"
+
+  
 
   DataConsumer .u.> Duse1
   DataConsumer .d.> Duse2
@@ -134,4 +141,5 @@ actor DataConsumer
 @enduml
 
 </center>
+
 
