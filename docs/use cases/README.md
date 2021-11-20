@@ -20,17 +20,18 @@
     usecase "<b>UC_1.2</b>\nАвторізація" as UC_1.1
     usecase "<b>UC_1.1</b>\nРеестрація" as UC_1.2  
 
-    usecase "<b>UC_2.1</b>\nВиконня завдання" as UC_2.1  
+    usecase "<b>UC_2.1</b>\nВиконня завдання" as UC_2.1 #aaeeaa
     usecase "<b>UC_2.2</b>\nНадсилання менеджеру \nна перевірку" as UC_2.2 
 
-    usecase "<b>UC_3.1</b>\nПодача умов до проекту" as UC_3.1  
+    usecase "<b>UC_3.1</b>\nПодача умов до проекту" as UC_3.1 #aaeeaa
     usecase "<b>UC_3.2</b>\nПеревірка виконаною\nроботи" as UC_3.2 
 
     usecase "<b>UC_4.1</b>\nРозподіл завдань\nміж учасниками " as UC_4.1  
     usecase "<b>UC_4.2</b>\nПеревірка виконаної\nроботи" as UC_4.2
 
-    usecase "<b>UC_5.1</b>\nУправління завданнями" as UC_5.1
-    usecase "<b>UC_5.5</b>\nУправління командою" as UC_5.2
+    usecase "<b>UC_5.1</b>\nУправління завданнями" as UC_5.1 #aaeeaa
+    usecase "<b>UC_5.5</b>\nУправління командою" as UC_5.2 #aaeeaa
+
     
     User -u-> UC_1.1
     User -u-> UC_1.2
@@ -41,9 +42,9 @@
     Сustomer -u-> UC_3.1
     Сustomer -u-> UC_3.2
 
-    Manager -d-> UC_4.1
     Manager -d-> UC_4.2
    
+    Teamlead -d-> UC_4.1
     Teamlead -d-> UC_5.1
     Teamlead -d-> UC_5.2
     
@@ -59,6 +60,89 @@
 **Діаграма прецедентів**
 
 </center>
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    actor "Тімлід" as Timlid #eeeeaa
+
+    usecase "Управління завданнями" as UC_5.1 #aaeeaa
+    usecase "Відправити завдання \nрозробникам" as UC_1
+    usecase "Повернути завдання \nрозробникам" as UC_2
+    usecase "Переглянути список \тзавдань" as UC_3
+    usecase "Підтвердити виконання \nзавдання розробником" as UC_4
+     usecase "Додавання \nзавдання" as UC_5
+
+    Timlid -d-> UC_5.1
+    UC_1 .u.> UC_5.1
+    UC_2 .u.> UC_5.1
+    UC_3 .u.> UC_5.1
+    UC_4 .u.> UC_5.1
+    UC_5 .u.> UC_5.1
+
+@enduml
+
+</center>
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    actor "Тімлід" as Timlid #eeeeaa
+    
+    usecase "Управління командою" as UC_5.1 #aaeeaa
+    usecase "Надати права nрозробнику" as UC_4
+    usecase "Змінити права\nрозробникам" as UC_1
+    usecase "Додати розробника \nдо проекту" as UC_2
+    usecase "Видалити розробника \nз проекту" as UC_3
+
+    Timlid -d-> UC_5.1
+    UC_1 .u.> UC_5.1
+    UC_2 .u.> UC_5.1
+    UC_3 .u.> UC_5.1
+    UC_4 .u.> UC_5.1
+    UC_1 .> UC_4
+@enduml
+
+</center>
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+     actor "Виконвці" as Workers #eeeeaa
+    
+    usecase "Виконання завдання" as UC_2.1 #aaeeaa
+    usecase "Відправити на перевірку" as UC_1
+    usecase "Прийняти завдання" as UC_2
+    usecase "Відмінити завдання" as UC_3
+
+    Workers -d-> UC_2.1
+    UC_1 .u.> UC_2.1
+    UC_2 .u.> UC_2.1
+    UC_3 .u.> UC_2.1
+
+@enduml
+
+</center>
+
+
 
 # 3. Сценарії
 
@@ -253,6 +337,50 @@ end header
         : Надсилає список розрбників;
     |Тімлід|
         : Обирає виконавця завдання;
+        : Натискає кнопку "Відправити завдання";
+    |Система|   
+        : Відправляє завдання розробнику;
+        stop;
+@enduml
+
+</center>
+
+## UC_5.3 Повернути завдання розробникам
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+    
+@startuml
+
+    left header
+    <font color=000 size=16><b>ID:</b> UC_5.3
+    <font color=000 size=16><b>Назва:</b> Повернення завдання розробнику
+    <font color=000 size=16><b>Учасники:</b> Тімлід, Система
+    <font color=000 size=16><b>Передумови:</b> Невірно виконане завдання
+    <font color=000 size=16><b>Результат:</b>Повернення завдання розробнику
+    <font color=000 size=16><b>Виключні ситуації:</b>
+    Немає
+    <font color=000 size=16><b>Основний сценарій:</b>
+end header
+
+    |Тімлід|
+        start
+        : Натискає кнопку "Управління завданнями";
+    |Система|
+        : Відкриває сторінку управління завданнями;
+    |Тімлід|
+        : Натискає кнопку "Список завдань";
+    |Система|   
+        : Надсилає список завдань;
+    |Тімлід|
+        : Обирає виконане завдання;
+    |Система|   
+        : Відкриває зміст завдання;
+    |Тімлід|
+        : Помічає невірне виконання завдання;
         : Натискає кнопку "Відправити завдання";
     |Система|   
         : Відправляє завдання розробнику;
