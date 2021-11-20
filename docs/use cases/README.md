@@ -73,7 +73,7 @@
 @startuml
 
     left header
-    <font color=000 size=16><b>ID:</b> UC-2
+    <font color=000 size=16><b>ID:</b> UC_1.1
     <font color=000 size=16><b>Назва:</b> Реєструватися у системі
     <font color=000 size=16><b>Учасники:</b> Користувач, Система
     <font color=000 size=16><b>Передумови:</b> Відсутні
@@ -117,7 +117,7 @@ end header
 @startuml
 
     left header
-        <font color=000 size=16><b>ID:</b> UC_1.1
+        <font color=000 size=16><b>ID:</b> UC_1.2
         <font color=000 size=16><b>Назва:</b> Авторизуватися у системі
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
         <font color=000 size=16><b>Передумови:</b> Зареєстрований користувач
@@ -145,6 +145,45 @@ end header
         : Надає доступ до сайту;
     |Користувач|
         stop;
+@enduml
+
+</center>
+
+## UC_2.1 Виконня завдання
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+    
+@startuml
+
+    left header
+    <font color=000 size=16><b>ID:</b> UC_2.1
+    <font color=000 size=16><b>Назва:</b> Розробник виконує завдання менеджера проекту
+    <font color=000 size=16><b>Учасники:</b> Розробник, Менеджер проекту
+    <font color=000 size=16><b>Передумови:</b> Відсутні
+    <font color=000 size=16><b>Результат:</b> Доступ до системи
+    <font color=000 size=16><b>Виключні ситуації:</b>
+    <font color=000 size=16>EX-1: Завдання не виконано
+    
+    <font color=000 size=16><b>Основний сценарій:</b>
+end header
+
+|Менеджер|
+    start
+    : Дає завдання розробнику;
+|Розробник|
+    : Завдання успішно виконано;
+    note right #ffaaaa
+    <b> Завдання не виконано
+    end note
+|Менеджер|
+    : Провіряє завдання;
+|Розробник|   
+    : Запускає проект з новими правками;
+    stop;
 @enduml
 
 </center>
