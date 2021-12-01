@@ -135,4 +135,4 @@ entity DataSet {
 
 - реляційна схема
 
-![alt text](https://github.com/KhrapkoVasyl/open-data-manage-system/tree/master/src/img/SQL_shceme.png)
+![alt text](./../../src/img/SQL_scheme.png)
