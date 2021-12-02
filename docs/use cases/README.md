@@ -588,3 +588,37 @@ end header
 @enduml
 
 </center>
+
+## UC_5.6 Переглянути активні завдання 
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+    
+@startuml
+
+    left header
+    <font color=000 size=16><b>ID:</b> UC_5.6
+    <font color=000 size=16><b>Назва:</b> Переглянути активні завдання 
+    <font color=000 size=16><b>Учасники:</b> Розробник ,Система
+    <font color=000 size=16><b>Передумови:</b> Немає
+    <font color=000 size=16><b>Результат:</b> Надається спісок активних завдань
+    <font color=000 size=16><b>Виключні ситуації:</b> Немає
+    <font color=000 size=16><b>Основний сценарій:</b>
+end header
+
+    |Розробник|
+        start
+        : Входить в систему ;
+    |Система|
+        : Відкриває "управління завданнями" ;
+    |Розробник|
+        : Натискає кнопку "Переглянути список активних завдань" ;
+    |Система|   
+        : Надсилає список завдань;
+        stop;
+@enduml
+
+</center>
