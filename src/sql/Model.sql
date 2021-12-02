@@ -320,3 +320,214 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`Type`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`Type` (`id`, `text`) VALUES (1, 'String');
+INSERT INTO `omds`.`Type` (`id`, `text`) VALUES (2, 'Number');
+INSERT INTO `omds`.`Type` (`id`, `text`) VALUES (3, 'Boolean');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`User`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`User` (`id`, `password`, `name`) VALUES (1, 'R6fu6v4X8B', 'Qwerty');
+INSERT INTO `omds`.`User` (`id`, `password`, `name`) VALUES (2, 'spKjN924T3', 'Misha3000');
+INSERT INTO `omds`.`User` (`id`, `password`, `name`) VALUES (3, 'XLy5F35a6v', 'Sam');
+INSERT INTO `omds`.`User` (`id`, `password`, `name`) VALUES (4, '2UXmzGz698', 'Loik');
+INSERT INTO `omds`.`User` (`id`, `password`, `name`) VALUES (5, 'VG3nguN685', 'Mark');
+INSERT INTO `omds`.`User` (`id`, `password`, `name`) VALUES (6, '8y8xcM9M5D', 'Antonio');
+INSERT INTO `omds`.`User` (`id`, `password`, `name`) VALUES (7, 'JG6Z3rcn57', 'Tzuker');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`State`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`State` (`id`, `name`) VALUES (1, 'Created');
+INSERT INTO `omds`.`State` (`id`, `name`) VALUES (2, 'Updated');
+INSERT INTO `omds`.`State` (`id`, `name`) VALUES (3, 'Deleted');
+INSERT INTO `omds`.`State` (`id`, `name`) VALUES (4, 'Viewed');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`Category`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`Category` (`id`, `Category`) VALUES (1, NULL);
+INSERT INTO `omds`.`Category` (`id`, `Category`) VALUES (2, 1);
+INSERT INTO `omds`.`Category` (`id`, `Category`) VALUES (3, 1);
+INSERT INTO `omds`.`Category` (`id`, `Category`) VALUES (4, NULL);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`MetaDataKey`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`MetaDataKey` (`id`, `key`, `description`, `MetaDataKey`) VALUES (1, 'Title', NULL, NULL);
+INSERT INTO `omds`.`MetaDataKey` (`id`, `key`, `description`, `MetaDataKey`) VALUES (2, 'Organization name', 'A team of contributors', NULL);
+INSERT INTO `omds`.`MetaDataKey` (`id`, `key`, `description`, `MetaDataKey`) VALUES (3, 'Author', NULL, 2);
+INSERT INTO `omds`.`MetaDataKey` (`id`, `key`, `description`, `MetaDataKey`) VALUES (4, 'Name', NULL, 3);
+INSERT INTO `omds`.`MetaDataKey` (`id`, `key`, `description`, `MetaDataKey`) VALUES (5, 'Surname', '', 3);
+INSERT INTO `omds`.`MetaDataKey` (`id`, `key`, `description`, `MetaDataKey`) VALUES (6, 'E-mail', 'Author\'s or contributor\'s email', 3);
+INSERT INTO `omds`.`MetaDataKey` (`id`, `key`, `description`, `MetaDataKey`) VALUES (7, 'Tags', 'Keywords to find information', NULL);
+INSERT INTO `omds`.`MetaDataKey` (`id`, `key`, `description`, `MetaDataKey`) VALUES (8, 'License', NULL, NULL);
+INSERT INTO `omds`.`MetaDataKey` (`id`, `key`, `description`, `MetaDataKey`) VALUES (9, 'Description', NULL, NULL);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`ActionType`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`ActionType` (`id`, `name`, `description`) VALUES (1, 'Create', 'Create dateset');
+INSERT INTO `omds`.`ActionType` (`id`, `name`, `description`) VALUES (2, 'Update', 'Update dataset');
+INSERT INTO `omds`.`ActionType` (`id`, `name`, `description`) VALUES (3, 'Delete', 'Delete dataset');
+INSERT INTO `omds`.`ActionType` (`id`, `name`, `description`) VALUES (4, 'Read', 'Read dataset');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`AvailableFor`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (1, 1, 1);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (2, 2, 1);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (3, 3, 1);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (4, 2, 2);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (5, 2, 3);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (6, 3, 3);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (7, 2, 4);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (8, 3, 4);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (9, 2, 5);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (10, 3, 5);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (11, 2, 6);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (12, 3, 6);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (13, 2, 7);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (14, 2, 8);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (15, 1, 9);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (16, 2, 9);
+INSERT INTO `omds`.`AvailableFor` (`id`, `Type`, `MetaDataKey`) VALUES (17, 3, 9);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`Role`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`Role` (`id`, `name`) VALUES (1, 'Author');
+INSERT INTO `omds`.`Role` (`id`, `name`) VALUES (2, 'DataPublisher');
+INSERT INTO `omds`.`Role` (`id`, `name`) VALUES (3, 'DataConsumer');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`AvailableAction`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`AvailableAction` (`id`, `Role`, `ActionType`) VALUES (1, 1, 1);
+INSERT INTO `omds`.`AvailableAction` (`id`, `Role`, `ActionType`) VALUES (2, 1, 2);
+INSERT INTO `omds`.`AvailableAction` (`id`, `Role`, `ActionType`) VALUES (3, 1, 3);
+INSERT INTO `omds`.`AvailableAction` (`id`, `Role`, `ActionType`) VALUES (4, 1, 4);
+INSERT INTO `omds`.`AvailableAction` (`id`, `Role`, `ActionType`) VALUES (5, 2, 2);
+INSERT INTO `omds`.`AvailableAction` (`id`, `Role`, `ActionType`) VALUES (6, 2, 4);
+INSERT INTO `omds`.`AvailableAction` (`id`, `Role`, `ActionType`) VALUES (7, 3, 4);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`DataSet`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`DataSet` (`id`, `updatedAt`, `createdAt`, `Category`) VALUES (1, '2021-11-01', '2021-10-01', 2);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`Grant`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`Grant` (`id`, `User`, `Role`, `ActionType`, `DataSet`) VALUES (1, 2, 3, 4, 1);
+INSERT INTO `omds`.`Grant` (`id`, `User`, `Role`, `ActionType`, `DataSet`) VALUES (2, 6, 1, 1, 1);
+INSERT INTO `omds`.`Grant` (`id`, `User`, `Role`, `ActionType`, `DataSet`) VALUES (3, 4, 2, 2, 1);
+INSERT INTO `omds`.`Grant` (`id`, `User`, `Role`, `ActionType`, `DataSet`) VALUES (4, 1, 2, 2, 1);
+INSERT INTO `omds`.`Grant` (`id`, `User`, `Role`, `ActionType`, `DataSet`) VALUES (5, 3, 3, 4, 1);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`Action`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`Action` (`id`, `at`, `State`, `ActionType`, `Grant`) VALUES (1, '2021-11-30', 4, 4, 1);
+INSERT INTO `omds`.`Action` (`id`, `at`, `State`, `ActionType`, `Grant`) VALUES (2, '2021-12-01', 1, 1, 2);
+INSERT INTO `omds`.`Action` (`id`, `at`, `State`, `ActionType`, `Grant`) VALUES (3, '2021-12-01', 2, 2, 3);
+INSERT INTO `omds`.`Action` (`id`, `at`, `State`, `ActionType`, `Grant`) VALUES (4, '2021-12-02', 2, 2, 4);
+INSERT INTO `omds`.`Action` (`id`, `at`, `State`, `ActionType`, `Grant`) VALUES (5, '2021-12-03', 4, 4, 5);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`DataFile`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`DataFile` (`id`, `updatedAt`, `createdAt`, `DataSet`) VALUES (1, '2021-10-04', '2021-10-03', 1);
+INSERT INTO `omds`.`DataFile` (`id`, `updatedAt`, `createdAt`, `DataSet`) VALUES (2, '2021-10-22', '2021-10-15', 1);
+INSERT INTO `omds`.`DataFile` (`id`, `updatedAt`, `createdAt`, `DataSet`) VALUES (3, '2021-12-02', '2021-11-01', 1);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `omds`.`MetaDataValue`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `omds`;
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (1, 'Finance', 1, NULL, 1, NULL);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (2, 'Prices', 1, NULL, 2, NULL);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (3, 'Prices correction coefficients in the World', 1, 1, NULL, NULL);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (4, 'International trade in services', 1, NULL, 3, NULL);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (5, 'Prices correction coefficients in the USA', 1, NULL, NULL, 1);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (6, 'Prices correction coefficients in the EU', 1, NULL, NULL, 2);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (7, 'Population', 1, NULL, 4, NULL);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (8, 'Prices correction coefficients in the Asia', 1, NULL, NULL, 3);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (9, 'QUAO_group', 2, 1, NULL, NULL);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (10, 'Alex', 4, 1, NULL, NULL);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (11, 'Swarowsky', 5, 1, NULL, NULL);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (12, 'Leo', 4, 1, NULL, NULL);
+INSERT INTO `omds`.`MetaDataValue` (`id`, `value`, `MetaDataKey`, `DataSet`, `Category`, `DataFile`) VALUES (13, 'Gorrezen', 5, 1, NULL, NULL);
+
+COMMIT;
+
