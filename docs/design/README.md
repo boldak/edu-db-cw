@@ -108,8 +108,64 @@
   
 @enduml
 
+
+
 В рамках проекту розробляється: 
 - модель бізнес-об'єктів 
 - ER-модель
 - реляційна схема
+
+@startuml
+entity User <<ENTITY>> {
+    email
+    password
+    name
+    activationKey
+    status
+  }
+  
+  entity Access <<ENTITY>> {
+      role
+  }
+  
+  entity Project <<ENTITY>> {
+    name
+    description
+  }
+  
+  entity Metadata <<ENTITY>> {
+    key
+    value
+  }
+  
+  
+  entity Task <<ENTITY>> {
+    name
+    description
+    deadline
+  }
+  
+  entity Action <<ENTITY>> {
+    name
+    description
+    planedAt: DATETIME
+    actedAt: DATETIME
+    status 
+  }
+  
+  entity Artifact <<ENTITY>> {
+    name
+    description
+    link
+  }
+  
+    Access "(0,*)"--"(1,1)" User
+    Access "(0,*)"--"(1,1)" Project
+    Task "(0,*)"-u-"(1,1)" Project
+    Task "(0,*)"--"(1,1)" Artifact
+    Action "(0,*)"--"(1,1)" Task
+    Action "(0,*)"-r-"(1,1)" User
+    Metadata "(0,*)"-r-"(1,1)" Project
+
+@enduml
 
