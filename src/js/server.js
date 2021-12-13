@@ -1,6 +1,9 @@
 const server = require('express')();
 const seq = require('./database/connection.js');
 const associate = require('./database/associate.js');
+const authRouter = require('./routers/authRouter.js');
+
+server.use('/auth', authRouter);
 
 (async () => {
     associate();

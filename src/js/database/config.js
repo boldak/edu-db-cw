@@ -1,0 +1,4 @@
+ActionType
+type
+role 
+state 
