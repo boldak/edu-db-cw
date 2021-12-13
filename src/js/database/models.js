@@ -67,8 +67,8 @@ const MetadataKey = seq.define('metaDataKey', {
     description: {
         type: Sequelize.STRING(511)
     },
-    MetaDataKey: {
-        type: Sequelize.INTEGER
+    metaDataKey: {
+        type: Sequelize.INTEGER,
     }
 });
 
@@ -97,18 +97,10 @@ const AvaliableFor = seq.define('avaliableFor', {
     type: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {
-            model: Type,
-            key: 'id'
-        }
     },
-    metaDataKey: {
+    metaKey: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {
-            model: MetadataKey,
-            key: 'id'
-        }
     }
 });
 
@@ -134,18 +126,10 @@ const AvaliableAction = seq.define('avaliableAction', {
     role: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {
-            model: Role,
-            key: 'id'
-        }
     },
     actionType: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {
-            model: ActionType,
-            key: 'id'
-        }
     }
 });
 
@@ -158,10 +142,6 @@ const DataSet = seq.define('dataSet', {
     },
     category: {
         type: Sequelize.INTEGER,
-        references: {
-            model: Category,
-            key: 'category'
-        }
     }
 });
 
@@ -175,35 +155,19 @@ const Grant = seq.define('grant', {
     user: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {
-            model: User,
-            key: 'id'
-        }
     },
     role: {
         type: Sequelize.INTEGER,
-        references: {
-            model: Role,
-            key: 'id'
-        }
     },
     actionType: {
         type: Sequelize.INTEGER,
-        references: {
-            model: ActionType,
-            key: 'id'
-        }
     },
     dataSet: {
         type: Sequelize.INTEGER,
-        references: {
-            model: DataSet,
-            key: 'id'
-        }
     }
 });
 
-const Aciton = seq.define('action', {
+const Action = seq.define('action', {
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -216,26 +180,14 @@ const Aciton = seq.define('action', {
     state: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {
-            model: State,
-            key: 'id'
-        }
     },
     actionType: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {
-            model: ActionType,
-            key: 'id'
-        }
     },
     grant: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {
-            model: Grant,
-            key: 'id'
-        }
     }
 });
 
@@ -249,10 +201,6 @@ const DataFile = seq.define('dataFile', {
     dataset: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {
-            model: DataSet,
-            key: 'id'
-        }
     }
 });
 
@@ -269,30 +217,32 @@ const MetaDataValue = seq.define('metaDataValue', {
     metaDataKey: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {
-            model: MetadataKey,
-            key: 'id'
-        }
     },
     dataSet: {
         type: Sequelize.INTEGER,
-        references:{
-            model: DataSet,
-            key: 'id'
-        }
     },
     category: {
         type: Sequelize.INTEGER,
-        references: {
-            model: Category,
-            key: 'id'
-        }
     },
     dataFile:{
         type: Sequelize.INTEGER,
-        references: {
-            model: DataFile,
-            key: 'id'
-        }
     }
 });
+
+
+module.exports = {
+    Type,
+    User,
+    State,
+    Category,
+    MetadataKey,
+    ActionType,
+    AvaliableFor,
+    Role,
+    AvaliableAction,
+    DataSet,
+    Grant,
+    Action,
+    DataFile,
+    MetaDataValue
+};
