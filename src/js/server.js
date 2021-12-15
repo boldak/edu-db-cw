@@ -5,9 +5,9 @@ const dotenv = require('dotenv').config();
 
 (async () => {
   associate();
-  await db.sync({force: true});
+  await db.sync({ force: false });
 
   app.listen(process.env.EXPRESS_PORT, () => {
-      console.log('server running');
+    console.log('server running');
   });
 })();
