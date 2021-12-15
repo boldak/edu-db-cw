@@ -34,7 +34,7 @@ const deleteData = async (req, res) => {
         }
     });
 
-    if(rows = 0){
+    if(rows === 0){
         res.send('smth wrong');
         return;
     }
@@ -43,13 +43,14 @@ const deleteData = async (req, res) => {
 };
 
 const updateData = async (req, res) => {
+    const id = req.body.id;
+    delete req.body.id;
+
     const rows = await MetaDataValue.update(req.body, {
-        where: {
-            id: req.body.id
-        }
+        where: {id}
     });
 
-    if(rows = 0){
+    if(rows === 0){
         res.send('smth wrong');
         return;
     }

@@ -216,7 +216,7 @@ const MetaDataValue = seq.define('metaDataValue', {
     },
     metaDataKey: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        //allowNull: false,
     },
     dataSet: {
         type: Sequelize.INTEGER,
