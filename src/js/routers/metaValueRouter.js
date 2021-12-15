@@ -9,10 +9,11 @@ const {
 
 router.route('/')
     .get(getAllData)
-    .post(createData)
+    .post(createData);    
+
+router.route('/:id')
+    .get(getDataById)
     .delete(deleteData)
     .patch(updateData);
-
-router.get('/:id', getDataById);
 
 module.exports = router;

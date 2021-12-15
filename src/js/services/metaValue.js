@@ -20,39 +20,36 @@ const createData = async (req, res) => {
     try{
         await MetaDataValue.create(req.body);
     } catch(e) {
-        console.log(e);
-        process.exit(0);
+        res.status(400).send('invalid data');
+        return;
     }
 
     res.send('done');
 };
 
 const deleteData = async (req, res) => {
-    const rows = await MetaDataValue.destroy({
-        where: {
-            id: req.body.id
-        }
-    });
-
-    if(rows === 0){
-        res.send('smth wrong');
-        return;
+    try{
+        await MetaDataValue.destroy({
+            where: {
+                id: req.params.id
+            }
+        });
+    } catch(e) {
+        throw 'smth went wrong while deleting';
     }
 
     res.send('done');
 };
 
 const updateData = async (req, res) => {
-    const id = req.body.id;
-    delete req.body.id;
-
-    const rows = await MetaDataValue.update(req.body, {
-        where: {id}
-    });
-
-    if(rows === 0){
-        res.send('smth wrong');
-        return;
+    try{
+        await MetaDataValue.update(req.body, {
+            where: {
+                id: req.params.id
+            }
+        });
+    } catch(e) {
+        throw 'smth went wrong while updating';
     }
 
     res.send('done');

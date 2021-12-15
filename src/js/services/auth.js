@@ -18,7 +18,7 @@ const postReg = async (req, res) => {
         }
     });
 
-    if(!exist){
+    if(exist){
         res.send('name already exists');
         return;
     }
