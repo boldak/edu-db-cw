@@ -1,5 +1,5 @@
 const DataTypes = require('sequelize');
-const db = require('../lib/db');
+const db = require('../db');
 
 const AvailableFor = db.define('availableFor', { 
   id: {
@@ -11,18 +11,10 @@ const AvailableFor = db.define('availableFor', {
   type: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    references: {
-      model: 'type',
-      key: 'id',
-    }
   },
   metaDataKey: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    references: {
-      model: 'metaDataKey',
-      key: 'id',
-    }
   }
 }, {
   db,

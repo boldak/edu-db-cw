@@ -1,19 +1,19 @@
 const DataTypes = require('sequelize');
-const db = require('../lib/db');
+const db = require('../db');
 
-const AvailableAction = db.define('availableAction', { 
+const Grant = db.define('grant', { 
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
     primaryKey: true,
     allowNull: false,
   },
+  user: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
   role: {
     type: DataTypes.INTEGER,
-    references: {
-      model: 'role',
-      key: 'id',
-    }
   },
   actionType: {
     type: DataTypes.INTEGER,
@@ -22,10 +22,14 @@ const AvailableAction = db.define('availableAction', {
       key: 'id',
     }
   },
+  dataSet: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
 }, {
   db,
   timestamps: false,
   freezeTableName: true,
 });
 
-module.exports = AvailableAction;
+module.exports = Grant;

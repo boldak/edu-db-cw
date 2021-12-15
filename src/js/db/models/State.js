@@ -1,16 +1,15 @@
 const DataTypes = require('sequelize');
-const db = require('../lib/db');
+const db = require('../db');
 
-
-const Type = db.define('type', { 
+const State = db.define('state', { 
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
     primaryKey: true,
     allowNull: false,
   },
-  text: {
-    type: DataTypes.STRING(45)
+  name: {
+    type: DataTypes.STRING(255)
   },
 }, {
   db,
@@ -18,4 +17,4 @@ const Type = db.define('type', {
   freezeTableName: true,
 });
 
-module.exports = Type;
+module.exports = State;

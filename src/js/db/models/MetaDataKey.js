@@ -1,5 +1,5 @@
 const DataTypes = require('sequelize');
-const db = require('../lib/db');
+const db = require('../db');
 
 const MetaDataKey = db.define('metaDataKey', { 
   id: {
@@ -16,10 +16,6 @@ const MetaDataKey = db.define('metaDataKey', {
   },
   metaDataKey: {
     type: DataTypes.INTEGER,
-    references: {
-      model: 'metaDataKey',
-      key: 'id',
-    }
   }
 }, {
   db,

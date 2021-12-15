@@ -1,7 +1,7 @@
 const DataTypes = require('sequelize');
-const db = require('../lib/db');
+const db = require('../db');
 
-const State = db.define('state', { 
+const ActionType = db.define('actionType', { 
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
@@ -11,10 +11,13 @@ const State = db.define('state', {
   name: {
     type: DataTypes.STRING(255)
   },
+  description: {
+    type: DataTypes.STRING(255)
+  },
 }, {
   db,
   timestamps: false,
   freezeTableName: true,
 });
 
-module.exports = State;
+module.exports = ActionType;
