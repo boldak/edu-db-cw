@@ -1,5 +1,5 @@
 const DataTypes = require('sequelize');
-const db = require('../lib/db');
+const db = require('../db');
 
 const DataSet = db.define('dataSet', { 
   id: {
@@ -16,10 +16,6 @@ const DataSet = db.define('dataSet', {
   },
   category: {
     type: DataTypes.INTEGER,
-    references: {
-      model: 'category',
-      key: 'id',
-    }
   },
 }, {
   db,

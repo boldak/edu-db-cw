@@ -10,7 +10,7 @@
     "docs:dev": "npx vuepress dev docs",
     "docs:build": "npx vuepress build docs",
     "publish": "publish.sh",
-    "start": "node ./src/js/index.js"
+    "start": "node ./src/js/server.js"
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.7.1",

@@ -1,5 +1,5 @@
 const DataTypes = require('sequelize');
-const db = require('../lib/db');
+const db = require('../db');
 
 const Action = db.define('action', { 
   id: {
@@ -14,26 +14,14 @@ const Action = db.define('action', {
   state: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    references: {
-      model: 'state',
-      key: 'id',
-    }
   },
   actionType: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    references: {
-      model: 'actionType',
-      key: 'id',
-    }
   },
   grant: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    references: {
-      model: 'grant',
-      key: 'id',
-    }
   },
 }, {
   db,
