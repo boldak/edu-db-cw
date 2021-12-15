@@ -1,14 +1,14 @@
 const {User} = require('../database/models');
 
 const postLogin = async (req, res) => {
-    const res = await User.findOne({
+    const result = await User.findOne({
         where: {
             name: req.body.name,
             password: req.body.password
         }
     });
 
-    res.send(res.dataValues.id ? 'auth completed' : 'incorrect auth data');
+    res.send(result.dataValues.id ? 'auth completed' : 'incorrect auth data');
 };
 
 const postReg = async (req, res) => {
