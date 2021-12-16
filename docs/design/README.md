@@ -98,7 +98,7 @@
   
 @enduml
 
-
+![image](https://user-images.githubusercontent.com/71709210/146343720-297caefa-479f-429c-b46d-1cac416a3cae.png)
 
 
 
@@ -149,6 +149,7 @@ entity User <<ENTITY>> {
     Action "(0,*)"-r-"(1,1)" User
     
 @enduml
+![image](https://user-images.githubusercontent.com/71709210/146343851-0901b920-a4d9-47d0-af5f-288f36630799.png)
 
 - реляційна схема
 
