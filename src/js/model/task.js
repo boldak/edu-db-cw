@@ -17,6 +17,9 @@ const Task = sequelize.define("tasks", {
     type: Sequelize.STRING,
     allowNull: false,
   },
+},
+{
+  timestamps: false,
 });
 
 Task.hasMany(Action);

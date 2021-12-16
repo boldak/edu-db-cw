@@ -1,6 +1,7 @@
 import Sequelize from 'sequelize';
 import { sequelize } from '../config/db.js';
 import { Task } from './task.js';
+import { User } from './user.js';
 
 const Project = sequelize.define("projects", {
   id: {
@@ -17,8 +18,12 @@ const Project = sequelize.define("projects", {
     type: Sequelize.STRING,
     allowNull: true,
   },
+},
+{
+  timestamps: false,
 });
 
 Project.hasMany(Task);
+Project.hasMany(User);
 
 export {Project};

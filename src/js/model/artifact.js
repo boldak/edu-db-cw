@@ -21,6 +21,9 @@ const Artifact = sequelize.define("artifacts", {
     type: Sequelize.STRING,
     allowNull: false,
   },
+},
+{
+  timestamps: false,
 });
 
 Artifact.hasMany(Task);

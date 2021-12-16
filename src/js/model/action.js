@@ -32,6 +32,9 @@ const Action = sequelize.define("action", {
     type: Sequelize.STRING,
     allowNull: false,
   },
+},
+{
+  timestamps: false,
 });
 
 export {Action};
