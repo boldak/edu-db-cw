@@ -8,7 +8,7 @@ const postLogin = async (req, res) => {
         }
     });
 
-    res.send(result.dataValues.id ? 'auth completed' : 'incorrect auth data');
+    res.send(result ? 'auth completed' : 'incorrect auth data');
 };
 
 const postReg = async (req, res) => {
