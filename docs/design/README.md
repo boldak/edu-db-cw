@@ -152,3 +152,4 @@ entity User <<ENTITY>> {
 
 - реляційна схема
 
+![image](https://user-images.githubusercontent.com/72148650/146340101-d1380d70-c598-4d84-aba4-d603034ce2ff.png)
