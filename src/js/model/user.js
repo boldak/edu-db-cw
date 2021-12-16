@@ -1,7 +1,7 @@
 import Sequelize from 'sequelize';
 import { sequelize } from '../config/db.js';
 import { Action } from './action.js';
-import { Project } from './project.js';
+//import { Project } from './project.js';
 
 const User = sequelize.define("users", {
   id: {
@@ -37,6 +37,6 @@ const User = sequelize.define("users", {
 });
 
 User.hasMany(Action);
-User.hasMany(Project);
+//User.hasMany(Project);
 
 export {User};
