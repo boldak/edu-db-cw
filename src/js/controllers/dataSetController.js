@@ -1,8 +1,10 @@
+'use strict';
+
 const DataSet = require('../db/models/DataSet');
 
 exports.getAllDataSets = async (req, res) => {
   try {
-    let dataSets = await DataSet.findAll();
+    const dataSets = await DataSet.findAll();
 
     res.status(200).json({
       status: 'success',

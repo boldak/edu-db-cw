@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express');
 const dataSetController = require('../controllers/dataSetController');
 const dataFileController = require('../controllers/dataFileController');
