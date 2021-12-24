@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express');
 const availableForController = require('../controllers/AvailableForController');
 const availableForRouter = express.Router();

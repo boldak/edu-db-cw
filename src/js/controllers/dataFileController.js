@@ -1,8 +1,10 @@
+'use strict';
+
 const DataFile = require('../db/models/DataFile');
 
 exports.getAllDataFiles = async (req, res) => {
   try {
-    let files = await DataFile.findAll();
+    const files = await DataFile.findAll();
 
     res.status(200).json({
       status: 'success',
@@ -21,7 +23,7 @@ exports.getAllDataFiles = async (req, res) => {
 
 exports.getAllDataFilesInDataSet = async (req, res) => {
   try {
-    let files = await DataFile.findAll({
+    const files = await DataFile.findAll({
       where: {
         dataSet: req.params.id,
       },

@@ -1,3 +1,5 @@
+'use strict';
+
 const AvailableFor = require('../db/models/AvailableFor');
 
 exports.getAllAvailableFor = async (req, res) => {

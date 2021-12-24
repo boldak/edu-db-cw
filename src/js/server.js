@@ -1,7 +1,9 @@
+'use strict';
+
 const fastify = require('./fastify');
 const db = require('./db/db');
 const associate = require('./db/associate');
-const dotenv = require('dotenv').config();
+require('dotenv').config();
 
 const port = process.env.FASTIFY_PORT;
 
