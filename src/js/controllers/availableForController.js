@@ -2,65 +2,105 @@
 
 const AvailableFor = require('../db/models/AvailableFor');
 
-exports.getAllAvailableFor = async (req, res) => {
+exports.getAllAvailableFor = async (req, reply) => {
   try {
-    const aFor = await AvailableFor.findAll();
-    return res.json(aFor);
-  } catch (e) {
-    return res.json({ message: e.message });
+    const availableFor = await AvailableFor.findAll();
+
+    reply.status(200).send({
+      status: 'success',
+      results: availableFor.length,
+      data: {
+        availableFor,
+      },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err,
+    });
   }
 };
 
 exports.createAvailableFor = async (req, res) => {
   try {
-    const aFor = await AvailableFor.create(req.body);
+    const newAvailableFor = await AvailableFor.create(req.body);
 
-    return res.json(aFor);
-  } catch (e) {
-    return res.json({ message: e.message });
+    res.status(201).send({
+      status: 'success',
+      data: {
+        newAvailableFor,
+      },
+    });
+  } catch (err) {
+    res.status(400).send({
+      status: 'fail',
+      message: err,
+    });
   }
 };
 
 exports.getAvailableFor = async (req, res) => {
   try {
-    const id = req.params.id;
-    const aFor = await AvailableFor.findOne({
+    const availableFor = await AvailableFor.findOne({
       where: {
-        id,
+        id: req.params.id,
       },
     });
-    return res.json(aFor);
-  } catch (e) {
-    return res.json({ message: e.message });
+
+    res.status(200).send({
+      status: 'success',
+      data: {
+        availableFor,
+      },
+    });
+  } catch (err) {
+    res.status(404).send({
+      status: 'fail',
+      message: err,
+    });
   }
 };
 
 exports.updateAvailableFor = async (req, res) => {
   try {
-    const id = req.params.id;
-    const aFor = await AvailableFor.findOne({
+    await AvailableFor.update(req.body, {
+      where: { id: req.params.id },
+    });
+
+    const updatedAvailableFor = await AvailableFor.findOne({
       where: {
-        id,
+        id: req.params.id,
       },
     });
-    aFor.update(req.body);
-    aFor.save();
-    return res.json(aFor);
-  } catch (e) {
-    return res.json({ message: e.message });
+
+    res.status(200).send({
+      status: 'success',
+      data: {
+        updatedAvailableFor,
+      },
+    });
+  } catch (err) {
+    res.status(404).send({
+      status: 'fail',
+      message: err,
+    });
   }
 };
 
 exports.deleteAvailableFor = async (req, res) => {
   try {
-    const id = req.params.id;
-    const aFor = await AvailableFor.destroy({
-      where: {
-        id,
-      },
+    await AvailableFor.destroy({
+      where: { id: req.params.id },
     });
-    return res.json(aFor);
-  } catch (e) {
-    return res.json({ message: e.message });
+
+    res.status(200).send({
+      status: 'success',
+      data: null,
+    });
+  } catch (err) {
+    res.status(404).send({
+      status: 'fail',
+      message: err,
+    });
   }
 };
