@@ -1,13 +1,19 @@
-const app = require('./app');
+const app = require('./fastify');
 const db = require('./db/db');
 const associate = require('./db/associate');
 const dotenv = require('dotenv').config();
+
+const port = process.env.FASTIFY_PORT;
 
 (async () => {
   associate();
   await db.sync({ force: false });
 
-  app.listen(process.env.EXPRESS_PORT, () => {
-    console.log('server running');
+  app.listen(port, err => {
+    if (err) {
+      fastify.log.error(err);
+      process.exit(1);
+    }
+    console.log(`Server running on port ${port}`);
   });
 })();
