@@ -1,4 +1,4 @@
-const app = require('./fastify');
+const fastify = require('./fastify');
 const db = require('./db/db');
 const associate = require('./db/associate');
 const dotenv = require('dotenv').config();
@@ -9,7 +9,7 @@ const port = process.env.FASTIFY_PORT;
   associate();
   await db.sync({ force: false });
 
-  app.listen(port, err => {
+  fastify.listen(port, err => {
     if (err) {
       fastify.log.error(err);
       process.exit(1);
