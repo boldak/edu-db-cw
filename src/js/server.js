@@ -1,21 +1,21 @@
 'use strict';
 
-const fastify = require('./fastify');
+const app = require('./app');
 const db = require('./db/db');
 const associate = require('./db/associate');
 require('dotenv').config();
 
-const port = process.env.FASTIFY_PORT;
+const PORT = process.env.FASTIFY_PORT;
 
 (async () => {
   associate();
   await db.sync({ force: false });
 
-  fastify.listen(port, err => {
+  app.listen(PORT || 3000, process.env.FASTIFY_HOST || '127.0.0.1', err => {
     if (err) {
-      fastify.log.error(err);
+      app.log.error(err);
       process.exit(1);
     }
-    console.log(`Server running on port ${port}`);
+    console.log(`Server running on port ${PORT}`);
   });
 })();

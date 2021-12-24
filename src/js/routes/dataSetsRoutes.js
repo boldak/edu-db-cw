@@ -1,33 +1,27 @@
 'use strict';
 
-const express = require('express');
 const dataSetController = require('../controllers/dataSetController');
 const dataFileController = require('../controllers/dataFileController');
 
-const router = express.Router();
+const setDataSetsRoutes = (fastify, options, done) => {
+  fastify
+    .get('/', dataSetController.getAllDataSets)
+    .post('/', dataSetController.createDataSet)
 
-router
-  .route('/')
-  .get(dataSetController.getAllDataSets)
-  .post(dataSetController.createDataSet);
+    .get('/dataFiles/', dataFileController.getAllDataFiles)
 
-router.route('/dataFiles').get(dataFileController.getAllDataFiles);
+    .get('/:id', dataSetController.getDataSet)
+    .patch('/:id', dataSetController.updateDataSet)
+    .delete('/:id', dataSetController.deleteDataSet)
 
-router
-  .route('/:id')
-  .get(dataSetController.getDataSet)
-  .patch(dataSetController.updateDataSet)
-  .delete(dataSetController.deleteDataSet);
+    .get('/:id/dataFiles/', dataFileController.getAllDataFilesInDataSet)
+    .post('/:id/dataFiles/', dataFileController.createDataFile)
 
-router
-  .route('/:id/DataFiles')
-  .get(dataFileController.getAllDataFilesInDataSet)
-  .post(dataFileController.createDataFile);
+    .get('/:id/dataFiles/:fileId', dataFileController.getDataFile)
+    .patch('/:id/dataFiles/:fileId', dataFileController.updateDataFile)
+    .delete('/:id/dataFiles/:fileId', dataFileController.deleteDataFile);
 
-router
-  .route('/:id/DataFiles/:fileId')
-  .get(dataFileController.getDataFile)
-  .patch(dataFileController.updateDataFile)
-  .delete(dataFileController.deleteDataFile);
+  done();
+};
 
-module.exports = router;
+module.exports = setDataSetsRoutes;
