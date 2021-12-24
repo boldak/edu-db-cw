@@ -2,44 +2,44 @@
 
 Отримати список всіх датасетів:
 
-![alt text](./../../test/GetAllDatasets.png)
+![alt text](./GetAllDatasets.png)
 
 Отримати датасет за його ID:
 
-![alt text](./../../test/GetDatasetById.png)
+![alt text](./GetDatasetById.png)
 
 Створити новий датасет:
 
-![alt text](./../../test/CreateDataset.png)
+![alt text](./CreateDataset.png)
 
 Оновити датасет:
 
-![alt text](./../../test/UpdateDataset.png)
+![alt text](./UpdateDataset.png)
 
 Видалити датасет:
 
-![alt text](./../../test/DeleteDataset.png)
+![alt text](./DeleteDataset.png)
 
 Отримати список всіх файлів:
 
-![alt text](./../../test/GetAllDatafiles.png)
+![alt text](./GetAllDatafiles.png)
 
 Отримати список всіх файлів датасету:
 
-![alt text](./../../test/GetAllDatafilesInDataset.png)
+![alt text](./GetAllDatafilesInDataset.png)
 
 Отримати файл за його ID:
 
-![alt text](./../../test/GetDatafileInDatasetById.png)
+![alt text](./GetDatafileInDatasetById.png)
 
 Створити новий файл:
 
-![alt text](./../../test/CreateDatafile.png)
+![alt text](./CreateDatafile.png)
 
 Оновити файл:
 
-![alt text](./../../test/UpdateDatafile.png)
+![alt text](./UpdateDatafile.png)
 
 Видалити файл:
 
-![alt text](./../../test/DeleteDatafile.png)
+![alt text](./DeleteDatafile.png)
