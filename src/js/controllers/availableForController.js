@@ -4,11 +4,59 @@ const AvailableFor = require('../db/models/AvailableFor');
 
 exports.getAllAvailableFor = async (req, reply) => {
   try {
-    const availableFor = await AvailableFor.findAll();
+    const allAvailableFor = await AvailableFor.findAll();
+
+    if (!allAvailableFor.length)
+      throw new Error('No items (availableFor) found');
 
     reply.status(200).send({
       status: 'success',
-      results: availableFor.length,
+      results: allAvailableFor.length,
+      data: {
+        allAvailableFor,
+      },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
+
+exports.createAvailableFor = async (req, reply) => {
+  try {
+    const newAvailableFor = await AvailableFor.create(req.body);
+
+    if (!newAvailableFor)
+      throw new Error('Failed to create a new availableFor');
+
+    reply.status(201).send({
+      status: 'success',
+      data: {
+        newAvailableFor,
+      },
+    });
+  } catch (err) {
+    reply.status(400).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
+
+exports.getAvailableFor = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const availableFor = await AvailableFor.findOne({
+      where: { id },
+    });
+
+    if (!availableFor)
+      throw new Error('AvailableFor with the specified ID does not exists');
+
+    reply.status(200).send({
+      status: 'success',
       data: {
         availableFor,
       },
@@ -16,91 +64,61 @@ exports.getAllAvailableFor = async (req, reply) => {
   } catch (err) {
     reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
 
-exports.createAvailableFor = async (req, res) => {
+exports.updateAvailableFor = async (req, reply) => {
   try {
-    const newAvailableFor = await AvailableFor.create(req.body);
-
-    res.status(201).send({
-      status: 'success',
-      data: {
-        newAvailableFor,
-      },
-    });
-  } catch (err) {
-    res.status(400).send({
-      status: 'fail',
-      message: err,
-    });
-  }
-};
-
-exports.getAvailableFor = async (req, res) => {
-  try {
-    const availableFor = await AvailableFor.findOne({
-      where: {
-        id: req.params.id,
-      },
-    });
-
-    res.status(200).send({
-      status: 'success',
-      data: {
-        availableFor,
-      },
-    });
-  } catch (err) {
-    res.status(404).send({
-      status: 'fail',
-      message: err,
-    });
-  }
-};
-
-exports.updateAvailableFor = async (req, res) => {
-  try {
+    const { id } = req.params;
     await AvailableFor.update(req.body, {
-      where: { id: req.params.id },
+      where: { id },
     });
 
     const updatedAvailableFor = await AvailableFor.findOne({
-      where: {
-        id: req.params.id,
-      },
+      where: { id },
     });
 
-    res.status(200).send({
+    if (!updatedAvailableFor)
+      throw new Error('AvailableFor with the specified ID does not exists');
+
+    reply.status(200).send({
       status: 'success',
       data: {
         updatedAvailableFor,
       },
     });
   } catch (err) {
-    res.status(404).send({
+    reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
 
-exports.deleteAvailableFor = async (req, res) => {
+exports.deleteAvailableFor = async (req, reply) => {
   try {
-    await AvailableFor.destroy({
-      where: { id: req.params.id },
+    const { id } = req.params;
+    const availableFor = await AvailableFor.findOne({
+      where: { id },
     });
 
-    res.status(200).send({
+    if (!availableFor)
+      throw new Error('AvailableFor with the specified ID does not exists');
+
+    await AvailableFor.destroy({
+      where: { id },
+    });
+
+    reply.status(200).send({
       status: 'success',
       data: null,
     });
   } catch (err) {
-    res.status(404).send({
+    reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
