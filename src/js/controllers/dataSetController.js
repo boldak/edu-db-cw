@@ -8,7 +8,7 @@ exports.getAllDataSets = async (req, reply) => {
 
     reply.status(200).send({
       status: 'success',
-      replyults: dataSets.length,
+      results: dataSets.length,
       data: {
         dataSets,
       },
