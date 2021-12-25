@@ -63,7 +63,7 @@ exports.deleteMetadataKey = async (req, reply) => {
     if (!metadataKey)
       throw new Error(`Can't delete a metadata key with an id value of ${id}`);
 
-    const destroyedRowsCount = await MetadataKey.destroy({
+    await MetadataKey.destroy({
       where: {
         id,
       },
