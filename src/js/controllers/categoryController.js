@@ -1,10 +1,11 @@
 'use strict';
 
 const Category = require('../db/models/Category');
+const DataSet = require('../db/models/DataSet');
 
 exports.getAllCategories = async (req, reply) => {
   try {
-    const categories = await Category.findAll();
+    const categories = await Category.findAll({ order: ['id'] });
 
     reply.status(200).send({
       status: 'success',
@@ -111,6 +112,37 @@ exports.deleteCategory = async (req, reply) => {
     reply.status(200).send({
       status: 'success',
       data: null,
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
+
+exports.getAllDataSetsOfCategory = async (req, reply) => {
+  try {
+    const id = +req.params.id;
+
+    const category = await Category.findOne({
+      where: { id },
+    });
+
+    if (!category)
+      throw new Error('Category with the specified ID does not exist');
+
+    const dataSets = await Category.findAll({
+      where: { id },
+      include: [DataSet],
+    });
+
+    reply.status(200).send({
+      status: 'success',
+      results: dataSets.length,
+      data: {
+        dataSets,
+      },
     });
   } catch (err) {
     reply.status(404).send({
