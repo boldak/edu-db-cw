@@ -6,7 +6,8 @@ exports.getAllAvailableFor = async (req, reply) => {
   try {
     const allAvailableFor = await AvailableFor.findAll();
 
-    if (!allAvailableFor.length) throw 'No items (availableFor) found';
+    if (!allAvailableFor.length)
+      throw new Error('No items (availableFor) found');
 
     reply.status(200).send({
       status: 'success',
@@ -18,7 +19,7 @@ exports.getAllAvailableFor = async (req, reply) => {
   } catch (err) {
     reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
@@ -27,7 +28,8 @@ exports.createAvailableFor = async (req, reply) => {
   try {
     const newAvailableFor = await AvailableFor.create(req.body);
 
-    if (!newAvailableFor) throw 'Failed to create a new availableFor';
+    if (!newAvailableFor)
+      throw new Error('Failed to create a new availableFor');
 
     reply.status(201).send({
       status: 'success',
@@ -38,7 +40,7 @@ exports.createAvailableFor = async (req, reply) => {
   } catch (err) {
     reply.status(400).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
@@ -52,7 +54,7 @@ exports.getAvailableFor = async (req, reply) => {
     });
 
     if (!availableFor)
-      throw 'availableFor with the specified ID does not exists';
+      throw new Error('availableFor with the specified ID does not exists');
 
     reply.status(200).send({
       status: 'success',
@@ -63,7 +65,7 @@ exports.getAvailableFor = async (req, reply) => {
   } catch (err) {
     reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
@@ -74,7 +76,8 @@ exports.updateAvailableFor = async (req, reply) => {
       where: { id: req.params.id },
     });
 
-    if (!updated) throw 'availableFor with the specified ID does not exists';
+    if (!updated)
+      throw new Error('availableFor with the specified ID does not exists');
 
     const updatedAvailableFor = await AvailableFor.findOne({
       where: {
@@ -91,7 +94,7 @@ exports.updateAvailableFor = async (req, reply) => {
   } catch (err) {
     reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
@@ -103,7 +106,7 @@ exports.deleteAvailableFor = async (req, reply) => {
     });
 
     if (!availableFor)
-      throw 'availableFor with the specified ID does not exists';
+      throw new Error('availableFor with the specified ID does not exists');
 
     await AvailableFor.destroy({
       where: { id: req.params.id },
