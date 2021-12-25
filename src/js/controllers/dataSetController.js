@@ -16,7 +16,7 @@ exports.getAllDataSets = async (req, reply) => {
   } catch (err) {
     reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
@@ -29,7 +29,8 @@ exports.getDataSet = async (req, reply) => {
       },
     });
 
-    if (!dataSet) throw 'Dataset with the specified ID does not exists';
+    if (!dataSet)
+      throw new Error('Dataset with the specified ID does not exist');
 
     reply.status(200).send({
       status: 'success',
@@ -40,7 +41,7 @@ exports.getDataSet = async (req, reply) => {
   } catch (err) {
     reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
@@ -48,7 +49,6 @@ exports.getDataSet = async (req, reply) => {
 exports.createDataSet = async (req, reply) => {
   try {
     const newDataSet = await DataSet.create(req.body);
-
     reply.status(201).send({
       status: 'success',
       data: {
@@ -58,7 +58,7 @@ exports.createDataSet = async (req, reply) => {
   } catch (err) {
     reply.status(400).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
@@ -70,7 +70,8 @@ exports.updateDataSet = async (req, reply) => {
       where: { id },
     });
 
-    if (!updated) throw 'Dataset with the specified ID does not exists';
+    if (!updated)
+      throw new Error('Dataset with the specified ID does not exist');
 
     const updatedDataSet = await DataSet.findOne({
       where: { id },
@@ -84,7 +85,7 @@ exports.updateDataSet = async (req, reply) => {
   } catch (err) {
     reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
@@ -97,11 +98,12 @@ exports.deleteDataSet = async (req, reply) => {
       where: { id },
     });
 
-    if (!dataSet) throw 'Dataset with the specified ID does not exists';
+    if (!dataSet)
+      throw new Error('Dataset with the specified ID does not exist');
 
     await DataSet.destroy({
       where: {
-        id: req.params.id,
+        id,
       },
     });
 
@@ -112,7 +114,7 @@ exports.deleteDataSet = async (req, reply) => {
   } catch (err) {
     reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };

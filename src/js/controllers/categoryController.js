@@ -30,7 +30,7 @@ exports.getCategory = async (req, reply) => {
     });
 
     if (!category)
-      throw new Error('Category with the specified ID does not exists');
+      throw new Error('Category with the specified ID does not exist');
 
     reply.status(200).send({
       status: 'success',
@@ -72,7 +72,7 @@ exports.updateCategory = async (req, reply) => {
     });
 
     if (!updated)
-      throw new Error('Category with the specified ID does not exists');
+      throw new Error('Category with the specified ID does not exist');
 
     const updatedCategory = await Category.findOne({
       where: { id },
@@ -100,7 +100,7 @@ exports.deleteCategory = async (req, reply) => {
     });
 
     if (!category)
-      throw new Error('Category with the specified ID does not exists');
+      throw new Error('Category with the specified ID does not exist');
 
     await Category.destroy({
       where: {
