@@ -1,16 +1,16 @@
 'use strict';
 
-const DataSet = require('../db/models/DataSet');
+const Category = require('../db/models/Category');
 
-exports.getAllDataSets = async (req, reply) => {
+exports.getAllCategories = async (req, reply) => {
   try {
-    const dataSets = await DataSet.findAll();
+    const categories = await Category.findAll();
 
     reply.status(200).send({
       status: 'success',
-      results: dataSets.length,
+      results: categories.length,
       data: {
-        dataSets,
+        categories,
       },
     });
   } catch (err) {
@@ -21,21 +21,21 @@ exports.getAllDataSets = async (req, reply) => {
   }
 };
 
-exports.getDataSet = async (req, reply) => {
+exports.getCategory = async (req, reply) => {
   try {
-    const dataSet = await DataSet.findOne({
+    const category = await Category.findOne({
       where: {
         id: req.params.id,
       },
     });
 
-    if (!dataSet)
-      throw new Error('Dataset with the specified ID does not exist');
+    if (!category)
+      throw new Error('Category with the specified ID does not exist');
 
     reply.status(200).send({
       status: 'success',
       data: {
-        dataSet,
+        category,
       },
     });
   } catch (err) {
@@ -46,13 +46,14 @@ exports.getDataSet = async (req, reply) => {
   }
 };
 
-exports.createDataSet = async (req, reply) => {
+exports.createCategory = async (req, reply) => {
   try {
-    const newDataSet = await DataSet.create(req.body);
+    const newCategory = await Category.create(req.body);
+
     reply.status(201).send({
       status: 'success',
       data: {
-        newDataSet,
+        newCategory,
       },
     });
   } catch (err) {
@@ -63,23 +64,23 @@ exports.createDataSet = async (req, reply) => {
   }
 };
 
-exports.updateDataSet = async (req, reply) => {
+exports.updateCategory = async (req, reply) => {
   try {
     const { id } = req.params;
-    const [updated] = await DataSet.update(req.body, {
+    const [updated] = await Category.update(req.body, {
       where: { id },
     });
 
     if (!updated)
-      throw new Error('Dataset with the specified ID does not exist');
+      throw new Error('Category with the specified ID does not exist');
 
-    const updatedDataSet = await DataSet.findOne({
+    const updatedCategory = await Category.findOne({
       where: { id },
     });
     reply.status(200).send({
       status: 'success',
       data: {
-        updatedDataSet,
+        updatedCategory,
       },
     });
   } catch (err) {
@@ -90,18 +91,18 @@ exports.updateDataSet = async (req, reply) => {
   }
 };
 
-exports.deleteDataSet = async (req, reply) => {
-  const id = req.params.id;
+exports.deleteCategory = async (req, reply) => {
+  const id = +req.params.id;
 
   try {
-    const dataSet = await DataSet.findOne({
+    const category = await Category.findOne({
       where: { id },
     });
 
-    if (!dataSet)
-      throw new Error('Dataset with the specified ID does not exist');
+    if (!category)
+      throw new Error('Category with the specified ID does not exist');
 
-    await DataSet.destroy({
+    await Category.destroy({
       where: {
         id,
       },

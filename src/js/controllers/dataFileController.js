@@ -16,12 +16,12 @@ exports.getAllDataFiles = async (req, reply) => {
   } catch (err) {
     reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
 
-exports.getAllDataFilesInDataSet = async (req, res) => {
+exports.getAllDataFilesInDataSet = async (req, reply) => {
   try {
     const files = await DataFile.findAll({
       where: {
@@ -29,7 +29,7 @@ exports.getAllDataFilesInDataSet = async (req, res) => {
       },
     });
 
-    res.status(200).send({
+    reply.status(200).send({
       status: 'success',
       results: files.length,
       data: {
@@ -37,14 +37,14 @@ exports.getAllDataFilesInDataSet = async (req, res) => {
       },
     });
   } catch (err) {
-    res.status(404).send({
+    reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
 
-exports.getDataFile = async (req, res) => {
+exports.getDataFile = async (req, reply) => {
   try {
     const file = await DataFile.findOne({
       where: {
@@ -54,43 +54,45 @@ exports.getDataFile = async (req, res) => {
     });
 
     if (!file) {
-      throw 'Datafile with the specified ID was not found in this Dataset';
+      throw new Error(
+        'Datafile with the specified ID was not found in this Dataset'
+      );
     }
 
-    res.status(200).send({
+    reply.status(200).send({
       status: 'success',
       data: {
         file,
       },
     });
   } catch (err) {
-    res.status(404).send({
+    reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
 
-exports.createDataFile = async (req, res) => {
+exports.createDataFile = async (req, reply) => {
   try {
-    req.body.dataSet = +req.params.id;
-    const newFile = await DataFile.create(req.body);
+    const dataSet = +req.params.id;
+    const newFile = await DataFile.create({ dataSet });
 
-    res.status(201).send({
+    reply.status(201).send({
       status: 'success',
       data: {
         newFile,
       },
     });
   } catch (err) {
-    res.status(400).send({
+    reply.status(400).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
 
-exports.updateDataFile = async (req, res) => {
+exports.updateDataFile = async (req, reply) => {
   try {
     const { id, fileId } = req.params;
     const [updated] = await DataFile.update(req.body, {
@@ -102,23 +104,25 @@ exports.updateDataFile = async (req, res) => {
     });
 
     if (!updated)
-      throw 'Datafile with the specified ID was not found in this Dataset';
+      throw new Error(
+        'Datafile with the specified ID was not found in this Dataset'
+      );
 
-    res.status(200).send({
+    reply.status(200).send({
       status: 'success',
       data: {
         updatedFile,
       },
     });
   } catch (err) {
-    res.status(404).send({
+    reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
 
-exports.deleteDataFile = async (req, res) => {
+exports.deleteDataFile = async (req, reply) => {
   try {
     const { id, fileId } = req.params;
     const deleted = await DataFile.destroy({
@@ -128,16 +132,18 @@ exports.deleteDataFile = async (req, res) => {
       },
     });
     if (!deleted)
-      throw 'Datafile with the specified ID was not found in this Dataset';
+      throw new Error(
+        'Datafile with the specified ID was not found in this Dataset'
+      );
 
-    res.status(200).send({
+    reply.status(200).send({
       status: 'success',
       data: null,
     });
   } catch (err) {
-    res.status(404).send({
+    reply.status(404).send({
       status: 'fail',
-      message: err,
+      message: err.message,
     });
   }
 };
