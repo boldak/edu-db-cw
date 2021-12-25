@@ -51,5 +51,23 @@ exports.createMetadataKey = async (req, reply) => {
   }
 };
 
-exports.deleteMetadataKey = async (req, reply) => {};
+exports.deleteMetadataKey = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const [destroyedRowsCount] = await MetadataKey.destroy({
+      where: {
+        id,
+      },
+    });
+    reply.status(200).send({
+      status: 'success',
+      data: { destroyedRowsCount },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
 exports.updateMetadataKey = async (req, reply) => {};
