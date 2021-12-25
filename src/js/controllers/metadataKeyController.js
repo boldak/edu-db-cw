@@ -71,7 +71,7 @@ exports.deleteMetadataKey = async (req, reply) => {
 
     reply.status(200).send({
       status: 'success',
-      data: { destroyedRowsCount },
+      data: null,
     });
   } catch (err) {
     reply.status(404).send({
@@ -103,7 +103,6 @@ exports.updateMetadataKey = async (req, reply) => {
     reply.status(200).send({
       status: 'success',
       data: {
-        affectedRowsCount,
         updatedMetadataKey,
       },
     });
