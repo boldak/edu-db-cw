@@ -20,7 +20,22 @@ exports.getAllMetadataKeys = async (req, reply) => {
   }
 };
 
+exports.getMetadataKey = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const metadataKey = await MetadataKey.findOne({ where: { id } });
+    reply.status(200).send({
+      status: 'success',
+      data: { metadataKey },
+    });
+  } catch (err) {
+    reply.status(404).json({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
+
 exports.createMetadataKey = async (req, reply) => {};
-exports.getMetadataKey = async (req, reply) => {};
 exports.deleteMetadataKey = async (req, reply) => {};
 exports.updateMetadataKey = async (req, reply) => {};
