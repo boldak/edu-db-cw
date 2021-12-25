@@ -29,13 +29,27 @@ exports.getMetadataKey = async (req, reply) => {
       data: { metadataKey },
     });
   } catch (err) {
-    reply.status(404).json({
+    reply.status(404).send({
       status: 'fail',
       message: err.message,
     });
   }
 };
 
-exports.createMetadataKey = async (req, reply) => {};
+exports.createMetadataKey = async (req, reply) => {
+  try {
+    const newMetadataKey = await MetadataKey.create(req.body);
+    reply.status(201).send({
+      status: 'success',
+      data: { newMetadataKey },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
+
 exports.deleteMetadataKey = async (req, reply) => {};
 exports.updateMetadataKey = async (req, reply) => {};
