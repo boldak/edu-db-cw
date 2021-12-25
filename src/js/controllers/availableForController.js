@@ -53,7 +53,7 @@ exports.getAvailableFor = async (req, reply) => {
     });
 
     if (!availableFor)
-      throw new Error('availableFor with the specified ID does not exists');
+      throw new Error('AvailableFor with the specified ID does not exists');
 
     reply.status(200).send({
       status: 'success',
@@ -81,7 +81,7 @@ exports.updateAvailableFor = async (req, reply) => {
     });
 
     if (!updatedAvailableFor)
-      throw new Error('availableFor with the specified ID does not exists');
+      throw new Error('AvailableFor with the specified ID does not exists');
 
     reply.status(200).send({
       status: 'success',
@@ -105,7 +105,7 @@ exports.deleteAvailableFor = async (req, reply) => {
     });
 
     if (!availableFor)
-      throw new Error('availableFor with the specified ID does not exists');
+      throw new Error('AvailableFor with the specified ID does not exists');
 
     await AvailableFor.destroy({
       where: { id },
