@@ -121,27 +121,22 @@ exports.deleteCategory = async (req, reply) => {
   }
 };
 
-exports.getAllDataSetsOfCategory = async (req, reply) => {
+exports.getAllDataSetsInCategory = async (req, reply) => {
   try {
     const id = +req.params.id;
 
     const category = await Category.findOne({
       where: { id },
+      include: [DataSet],
     });
 
     if (!category)
       throw new Error('Category with the specified ID does not exist');
 
-    const dataSets = await Category.findAll({
-      where: { id },
-      include: [DataSet],
-    });
-
     reply.status(200).send({
       status: 'success',
-      results: dataSets.length,
       data: {
-        dataSets,
+        category,
       },
     });
   } catch (err) {
