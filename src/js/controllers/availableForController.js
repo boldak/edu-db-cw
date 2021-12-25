@@ -47,14 +47,13 @@ exports.createAvailableFor = async (req, reply) => {
 
 exports.getAvailableFor = async (req, reply) => {
   try {
+    const { id } = req.params;
     const availableFor = await AvailableFor.findOne({
-      where: {
-        id: req.params.id,
-      },
+      where: { id },
     });
 
     if (!availableFor)
-      throw new Error('availableFor with the specified ID does not exists');
+      throw new Error('AvailableFor with the specified ID does not exists');
 
     reply.status(200).send({
       status: 'success',
@@ -72,18 +71,17 @@ exports.getAvailableFor = async (req, reply) => {
 
 exports.updateAvailableFor = async (req, reply) => {
   try {
-    const [updated] = await AvailableFor.update(req.body, {
-      where: { id: req.params.id },
+    const { id } = req.params;
+    await AvailableFor.update(req.body, {
+      where: { id },
     });
-
-    if (!updated)
-      throw new Error('availableFor with the specified ID does not exists');
 
     const updatedAvailableFor = await AvailableFor.findOne({
-      where: {
-        id: req.params.id,
-      },
+      where: { id },
     });
+
+    if (!updatedAvailableFor)
+      throw new Error('AvailableFor with the specified ID does not exists');
 
     reply.status(200).send({
       status: 'success',
@@ -101,15 +99,16 @@ exports.updateAvailableFor = async (req, reply) => {
 
 exports.deleteAvailableFor = async (req, reply) => {
   try {
+    const { id } = req.params;
     const availableFor = await AvailableFor.findOne({
-      where: { id: req.params.id },
+      where: { id },
     });
 
     if (!availableFor)
-      throw new Error('availableFor with the specified ID does not exists');
+      throw new Error('AvailableFor with the specified ID does not exists');
 
     await AvailableFor.destroy({
-      where: { id: req.params.id },
+      where: { id },
     });
 
     reply.status(200).send({
