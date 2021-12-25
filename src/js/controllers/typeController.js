@@ -50,7 +50,7 @@ exports.getType = async (req, reply) => {
       where: { id },
     });
 
-    if (!type) throw new Error('type with the specified ID does not exists');
+    if (!type) throw new Error('Type with the specified ID does not exists');
 
     reply.status(200).send({
       status: 'success',
@@ -78,7 +78,7 @@ exports.updateType = async (req, reply) => {
     });
 
     if (!updatedType)
-      throw new Error('type with the specified ID does not exists');
+      throw new Error('Type with the specified ID does not exists');
 
     reply.status(200).send({
       status: 'success',
@@ -101,7 +101,7 @@ exports.deleteType = async (req, reply) => {
       where: { id },
     });
 
-    if (!type) throw new Error('type with the specified ID does not exists');
+    if (!type) throw new Error('Type with the specified ID does not exists');
 
     await Type.destroy({
       where: { id },
