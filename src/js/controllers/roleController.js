@@ -74,3 +74,33 @@ exports.deleteRole = async (req, reply) => {
     });
   }
 };
+
+exports.updateRole = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const role = await Role.findOne({ where: { id } });
+
+    if (!role) throw new Error(`There's no role with an id value of ${id}`);
+
+    const [affectedRowsCount] = await Role.update(req.body, {
+      where: { id },
+    });
+
+    if (!affectedRowsCount)
+      throw new Error(`Role with an id value of ${id} hasn't been updated`);
+
+    const updatedRole = await Role.findOne({ where: { id } });
+
+    reply.status(200).send({
+      status: 'success',
+      data: {
+        updatedRole,
+      },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
