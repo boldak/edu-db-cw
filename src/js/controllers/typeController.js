@@ -50,7 +50,7 @@ exports.getType = async (req, reply) => {
       where: { id },
     });
 
-    if (!type) throw new Error('Type with the specified ID does not exists');
+    if (!type) throw new Error('Type with the specified ID does not exist');
 
     reply.status(200).send({
       status: 'success',
@@ -69,6 +69,12 @@ exports.getType = async (req, reply) => {
 exports.updateType = async (req, reply) => {
   try {
     const { id } = req.params;
+    const type = await Type.findOne({
+      where: { id },
+    });
+
+    if (!type) throw new Error('Type with the specified ID does not exist');
+
     await Type.update(req.body, {
       where: { id },
     });
@@ -76,9 +82,6 @@ exports.updateType = async (req, reply) => {
     const updatedType = await Type.findOne({
       where: { id },
     });
-
-    if (!updatedType)
-      throw new Error('Type with the specified ID does not exists');
 
     reply.status(200).send({
       status: 'success',
@@ -101,7 +104,7 @@ exports.deleteType = async (req, reply) => {
       where: { id },
     });
 
-    if (!type) throw new Error('Type with the specified ID does not exists');
+    if (!type) throw new Error('Type with the specified ID does not exist');
 
     await Type.destroy({
       where: { id },
