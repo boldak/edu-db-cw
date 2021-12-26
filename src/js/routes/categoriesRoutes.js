@@ -11,7 +11,7 @@ const setCategoriesRoutes = (fastify, options, done) => {
     .patch('/:id', categoryController.updateCategory)
     .delete('/:id', categoryController.deleteCategory)
 
-    .get('/:id/dataSets', categoryController.getAllDataSetsOfCategory);
+    .get('/:id/dataSets', categoryController.getAllDataSetsInCategory);
 
   done();
 };

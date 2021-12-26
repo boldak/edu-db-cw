@@ -1,18 +1,18 @@
 'use strict';
 
-const Type = require('../db/models/Type');
+const State = require('../db/models/State');
 
-exports.getAllTypes = async (req, reply) => {
+exports.getAllStates = async (req, reply) => {
   try {
-    const allTypes = await Type.findAll();
+    const allStates = await State.findAll();
 
-    if (!allTypes.length) throw new Error('No items (types) found');
+    if (!allStates.length) throw new Error('No items (state) found');
 
     reply.status(200).send({
       status: 'success',
-      results: allTypes.length,
+      results: allStates.length,
       data: {
-        allTypes,
+        allStates,
       },
     });
   } catch (err) {
@@ -23,16 +23,16 @@ exports.getAllTypes = async (req, reply) => {
   }
 };
 
-exports.createType = async (req, reply) => {
+exports.createState = async (req, reply) => {
   try {
-    const newType = await Type.create(req.body);
+    const newState = await State.create(req.body);
 
-    if (!newType) throw new Error('Failed to create a new type');
+    if (!newState) throw new Error('Failed to create a new state');
 
     reply.status(201).send({
       status: 'success',
       data: {
-        newType,
+        newState,
       },
     });
   } catch (err) {
@@ -43,19 +43,19 @@ exports.createType = async (req, reply) => {
   }
 };
 
-exports.getType = async (req, reply) => {
+exports.getState = async (req, reply) => {
   try {
     const { id } = req.params;
-    const type = await Type.findOne({
+    const state = await State.findOne({
       where: { id },
     });
 
-    if (!type) throw new Error('Type with the specified ID does not exist');
+    if (!state) throw new Error('State with the specified ID does not exist');
 
     reply.status(200).send({
       status: 'success',
       data: {
-        type,
+        state,
       },
     });
   } catch (err) {
@@ -66,27 +66,27 @@ exports.getType = async (req, reply) => {
   }
 };
 
-exports.updateType = async (req, reply) => {
+exports.updateState = async (req, reply) => {
   try {
     const { id } = req.params;
-    const type = await Type.findOne({
+    const state = await State.findOne({
       where: { id },
     });
 
-    if (!type) throw new Error('Type with the specified ID does not exist');
+    if (!state) throw new Error('State with the specified ID does not exist');
 
-    await Type.update(req.body, {
+    await State.update(req.body, {
       where: { id },
     });
 
-    const updatedType = await Type.findOne({
+    const updatedState = await State.findOne({
       where: { id },
     });
 
     reply.status(200).send({
       status: 'success',
       data: {
-        updatedType,
+        updatedState,
       },
     });
   } catch (err) {
@@ -97,16 +97,16 @@ exports.updateType = async (req, reply) => {
   }
 };
 
-exports.deleteType = async (req, reply) => {
+exports.deleteState = async (req, reply) => {
   try {
     const { id } = req.params;
-    const type = await Type.findOne({
+    const state = await State.findOne({
       where: { id },
     });
 
-    if (!type) throw new Error('Type with the specified ID does not exist');
+    if (!state) throw new Error('State with the specified ID does not exist');
 
-    await Type.destroy({
+    await State.destroy({
       where: { id },
     });
 

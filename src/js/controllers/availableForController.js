@@ -53,7 +53,7 @@ exports.getAvailableFor = async (req, reply) => {
     });
 
     if (!availableFor)
-      throw new Error('AvailableFor with the specified ID does not exists');
+      throw new Error('AvailableFor with the specified ID does not exist');
 
     reply.status(200).send({
       status: 'success',
@@ -72,6 +72,13 @@ exports.getAvailableFor = async (req, reply) => {
 exports.updateAvailableFor = async (req, reply) => {
   try {
     const { id } = req.params;
+    const availableFor = await AvailableFor.findOne({
+      where: { id },
+    });
+
+    if (!availableFor)
+      throw new Error('AvailableFor with the specified ID does not exist');
+
     await AvailableFor.update(req.body, {
       where: { id },
     });
@@ -79,9 +86,6 @@ exports.updateAvailableFor = async (req, reply) => {
     const updatedAvailableFor = await AvailableFor.findOne({
       where: { id },
     });
-
-    if (!updatedAvailableFor)
-      throw new Error('AvailableFor with the specified ID does not exists');
 
     reply.status(200).send({
       status: 'success',
@@ -105,7 +109,7 @@ exports.deleteAvailableFor = async (req, reply) => {
     });
 
     if (!availableFor)
-      throw new Error('AvailableFor with the specified ID does not exists');
+      throw new Error('AvailableFor with the specified ID does not exist');
 
     await AvailableFor.destroy({
       where: { id },
