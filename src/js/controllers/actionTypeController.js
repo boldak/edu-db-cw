@@ -19,3 +19,23 @@ exports.getAllActionTypes = async (req, reply) => {
     });
   }
 };
+
+exports.getActionType = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const actionType = await ActionType.findOne({ where: { id } });
+
+    if (!actionType)
+      throw new Error(`There's no action type with an id value of ${id}`);
+
+    reply.status(200).send({
+      status: 'success',
+      data: { actionType },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
