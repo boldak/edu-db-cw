@@ -22,3 +22,23 @@ exports.getAllUsers = async (req, reply) => {
     });
   }
 };
+
+exports.createUser = async (req, reply) => {
+  try {
+    const newUser = await User.create(req.body);
+
+    if (!newUser) throw new Error('Failed to create a new user');
+
+    reply.status(201).send({
+      status: 'success',
+      data: {
+        newUser,
+      },
+    });
+  } catch (err) {
+    reply.status(400).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
