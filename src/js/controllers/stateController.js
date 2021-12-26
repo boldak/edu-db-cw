@@ -42,3 +42,79 @@ exports.createState = async (req, reply) => {
     });
   }
 };
+
+exports.getState = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const state = await State.findOne({
+      where: { id },
+    });
+
+    if (!state) throw new Error('State with the specified ID does not exists');
+
+    reply.status(200).send({
+      status: 'success',
+      data: {
+        state,
+      },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
+
+exports.updateState = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    await State.update(req.body, {
+      where: { id },
+    });
+
+    const updatedState = await State.findOne({
+      where: { id },
+    });
+
+    if (!updatedState)
+      throw new Error('State with the specified ID does not exists');
+
+    reply.status(200).send({
+      status: 'success',
+      data: {
+        updatedState,
+      },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
+
+exports.deleteState = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const state = await State.findOne({
+      where: { id },
+    });
+
+    if (!state) throw new Error('State with the specified ID does not exists');
+
+    await State.destroy({
+      where: { id },
+    });
+
+    reply.status(200).send({
+      status: 'success',
+      data: null,
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
