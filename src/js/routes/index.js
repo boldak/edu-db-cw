@@ -7,6 +7,8 @@ const metadataKeyRouter = require('./metadataKeyRoutes');
 const metadataValueRouter = require('./metadataValueRoutes');
 const typeRouter = require('./typeRoutes');
 const stateRouter = require('./stateRoutes');
+const actionTypeRouter = require('./actionTypeRoutes');
+const roleRouter = require('./roleRoutes');
 
 module.exports = {
   availableForRouter,
@@ -16,4 +18,6 @@ module.exports = {
   metadataValueRouter,
   typeRouter,
   stateRouter,
+  actionTypeRouter,
+  roleRouter,
 };
