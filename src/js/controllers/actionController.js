@@ -42,3 +42,26 @@ exports.createAction = async (req, reply) => {
     });
   }
 };
+
+exports.getAction = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const action = await Action.findOne({
+      where: { id },
+    });
+
+    if (!action) throw new Error('Action with the specified ID does not exist');
+
+    reply.status(200).send({
+      status: 'success',
+      data: {
+        action,
+      },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
