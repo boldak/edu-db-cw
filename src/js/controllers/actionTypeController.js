@@ -1,6 +1,6 @@
 'use strict';
 
-const ActionType = require('../db/models/MetaDataKey');
+const ActionType = require('../db/models/ActionType');
 
 exports.getAllActionTypes = async (req, reply) => {
   try {
