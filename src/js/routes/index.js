@@ -6,6 +6,7 @@ const dataSetsRouter = require('./dataSetsRoutes');
 const metadataKeyRouter = require('./metadataKeyRoutes');
 const metadataValueRouter = require('./metadataValueRoutes');
 const typeRouter = require('./typeRoutes');
+const stateRouter = require('./stateRoutes');
 
 module.exports = {
   availableForRouter,
@@ -14,4 +15,5 @@ module.exports = {
   metadataKeyRouter,
   metadataValueRouter,
   typeRouter,
+  stateRouter,
 };
