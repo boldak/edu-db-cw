@@ -50,7 +50,7 @@ exports.getState = async (req, reply) => {
       where: { id },
     });
 
-    if (!state) throw new Error('State with the specified ID does not exists');
+    if (!state) throw new Error('State with the specified ID does not exist');
 
     reply.status(200).send({
       status: 'success',
@@ -78,7 +78,7 @@ exports.updateState = async (req, reply) => {
     });
 
     if (!updatedState)
-      throw new Error('State with the specified ID does not exists');
+      throw new Error('State with the specified ID does not exist');
 
     reply.status(200).send({
       status: 'success',
@@ -101,7 +101,7 @@ exports.deleteState = async (req, reply) => {
       where: { id },
     });
 
-    if (!state) throw new Error('State with the specified ID does not exists');
+    if (!state) throw new Error('State with the specified ID does not exist');
 
     await State.destroy({
       where: { id },
