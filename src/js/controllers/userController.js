@@ -96,3 +96,28 @@ exports.updateUser = async (req, reply) => {
     });
   }
 };
+
+exports.deleteUser = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const user = await User.findOne({
+      where: { id },
+    });
+
+    if (!user) throw new Error('User with the specified ID does not exist');
+
+    await User.destroy({
+      where: { id },
+    });
+
+    reply.status(200).send({
+      status: 'success',
+      data: null,
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
