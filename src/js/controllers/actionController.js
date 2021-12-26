@@ -22,3 +22,23 @@ exports.getAllActions = async (req, reply) => {
     });
   }
 };
+
+exports.createAction = async (req, reply) => {
+  try {
+    const newAction = await Action.create(req.body);
+
+    if (!newAction) throw new Error('Failed to create a new action');
+
+    reply.status(201).send({
+      status: 'success',
+      data: {
+        newAction,
+      },
+    });
+  } catch (err) {
+    reply.status(400).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
