@@ -39,3 +39,18 @@ exports.getActionType = async (req, reply) => {
     });
   }
 };
+
+exports.createActionType = async (req, reply) => {
+  try {
+    const newActionType = await ActionType.create(req.body);
+    reply.status(201).send({
+      status: 'success',
+      data: { newActionType },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
