@@ -38,3 +38,39 @@ exports.getRole = async (req, reply) => {
     });
   }
 };
+
+exports.createRole = async (req, reply) => {
+  try {
+    const newRole = await Role.create(req.body);
+    reply.status(201).send({
+      status: 'success',
+      data: { newRole },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
+
+exports.deleteRole = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const role = await Role.findOne({ where: { id } });
+
+    if (!role) throw new Error(`Can't delete a role with an id value of ${id}`);
+
+    await Role.destroy({ where: { id } });
+
+    reply.status(200).send({
+      status: 'success',
+      data: null,
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
