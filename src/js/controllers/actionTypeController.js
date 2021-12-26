@@ -76,3 +76,36 @@ exports.deleteActionType = async (req, reply) => {
     });
   }
 };
+
+exports.updateActionType = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const actionType = await ActionType.findOne({ where: { id } });
+
+    if (!actionType)
+      throw new Error(`There's no action type with an id value of ${id}`);
+
+    const [affectedRowsCount] = await ActionType.update(req.body, {
+      where: { id },
+    });
+
+    if (!affectedRowsCount)
+      throw new Error(
+        `An action type with an id value of ${id} hasn't been updated`
+      );
+
+    const updatedActionType = await ActionType.findOne({ where: { id } });
+
+    reply.status(200).send({
+      status: 'success',
+      data: {
+        updatedActionType,
+      },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
