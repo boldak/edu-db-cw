@@ -65,3 +65,34 @@ exports.getUser = async (req, reply) => {
     });
   }
 };
+
+exports.updateUser = async (req, reply) => {
+  try {
+    const { id } = req.params;
+    const user = await User.findOne({
+      where: { id },
+    });
+
+    if (!user) throw new Error('User with the specified ID does not exist');
+
+    await User.update(req.body, {
+      where: { id },
+    });
+
+    const updatedUser = await User.findOne({
+      where: { id },
+    });
+
+    reply.status(200).send({
+      status: 'success',
+      data: {
+        updatedUser,
+      },
+    });
+  } catch (err) {
+    reply.status(404).send({
+      status: 'fail',
+      message: err.message,
+    });
+  }
+};
