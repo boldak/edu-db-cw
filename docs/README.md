@@ -18,6 +18,8 @@ _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></
 
 _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[НЕУМТИИЙ ВЛАДИСЛАВ](https://t.me/Snare295)**
 
+_студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[ПЕРВЄЄВ ВАЛЕНТИН](https://t.me/nolove_valik)**
+
 
 **Керівник**
 
