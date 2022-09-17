@@ -22,6 +22,8 @@ _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></
 
 _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[ПЕРВЄЄВ ЄВГЕНІЙ](https://t.me/Ch_Bronsonn)**
 
+_студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[ШОПЯК ОЛЕКСІЙ](https://t.me/alex_shopiak)**
+
 
 **Керівник**
 
