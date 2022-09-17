@@ -12,6 +12,8 @@ _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></
 
 _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[АНЕНКО ІВАН](https://t.me/ivan_anenko)**
 
+_студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[ПАВЕЛКО ЛЕВ](https://t.me/imLewel)**
+
 **Керівник**
 
 _доцент кафедри ОТ ФІОТ, к.т.н., доцент_<span padding-right:5em></span> **Андрій БОЛДАК**
