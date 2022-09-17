@@ -20,6 +20,8 @@ _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></
 
 _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[ПЕРВЄЄВ ВАЛЕНТИН](https://t.me/nolove_valik)**
 
+_студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[ПЕРВЄЄВ ЄВГЕНІЙ](https://t.me/Ch_Bronsonn)**
+
 
 **Керівник**
 
