@@ -14,6 +14,9 @@ _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></
 
 _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[ПАВЕЛКО ЛЕВ](https://t.me/imLewel)**
 
+_студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[ЧІРОЗІДІ МИХАЙЛО](https://t.me/poor_boy)**
+
+
 **Керівник**
 
 _доцент кафедри ОТ ФІОТ, к.т.н., доцент_<span padding-right:5em></span> **Андрій БОЛДАК**
