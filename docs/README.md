@@ -24,6 +24,7 @@ _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></
 
 _студент 2-го курсу, групи ІМ-13_<span padding-right:5em></span> **[Олексій ШОПЯК](https://t.me/alex_shopiak)**
 
+
 **Керівник**
 
 _доцент кафедри ОТ ФІОТ, к.т.н., доцент_<span padding-right:5em></span> **Андрій БОЛДАК**
