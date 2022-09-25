@@ -47,4 +47,22 @@
 
 ## Посилання
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+<a name="link5"></a>[5] <https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects>
+
+<a name="link6"></a>[6] <https://uk.wikipedia.org/wiki/Basecamp>
+
+<a name="link7"></a>[7] <https://startpack.ru/application/basecamp>
+
+<a name="link8"></a>[8] <https://uk.wikipedia.org/wiki/Basecamp>
+
+<a name="link9"></a>[9] <https://uk.wikipedia.org/wiki/Wrike>
+
+<a name="link10"></a>[10] <https://hellip.com/ru/product/backlog.html>
+
+<a name="link11"></a>[11] <https://www.onlineprojects.ru/tool/205/>
+
+<a name="link12"></a>[12] <https://startpack.ru/application/wrike-project-management>
+
+<a name="link13"></a>[13] <https://startpack.ru/application/teamwork-projects>
+
+
