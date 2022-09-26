@@ -9,7 +9,7 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 **Виконав(-ла):** 
 
-*студент 2-го курсу, групи ІМ-13*<span padding-right:5em></span> **[Дмитро Тавлуй] [https://t.me/demasmxrxz]**
+*студент 2-го курсу, групи ІМ-13*<span padding-right:5em></span> **[Дмитро Тавлуй](https://t.me/demasmxrxz)**
 
 
 **Керівник**
