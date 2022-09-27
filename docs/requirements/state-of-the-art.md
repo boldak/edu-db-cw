@@ -71,6 +71,6 @@ FAQ, F.A.Q. — підбірка часто задаваних питань на
 *[Робляться висновки щодо доцільності розробки нової або модифікації існуючої інформаційної системи, необхідності та способів інтеграції з системами(сервісами) третіх сторін, тощо.]*
 
 ## Посилання
-https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82_(UML)
-https://uk.wikipedia.org/wiki/Unified_Modeling_Language
-https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjFtNOckLX6AhWEjuYKHROgCJAQFnoECAwQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFAQ&usg=AOvVaw2nzH5xbTQizZqqkWVZ1649
+https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82_(UML)  
+https://uk.wikipedia.org/wiki/Unified_Modeling_Language  
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjFtNOckLX6AhWEjuYKHROgCJAQFnoECAwQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFAQ&usg=AOvVaw2nzH5xbTQizZqqkWVZ1649  
