@@ -12,6 +12,15 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 *студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
 
 
+
+
+
+
+
+
+
+*студентка 2-го курсу, групи ІМ-13*<span padding-right:5em></span> **[Марія Мартинюк](https://t.me/mm_1204)**
+
 **Керівник**
 
 *доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> **Андрій БОЛДАК** 
