@@ -3,7 +3,7 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [2022]"
+footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
@@ -31,4 +31,4 @@ footer: "ECL 2.0 Licensed | Copyright © [2022]"
 
 [Кафедра обчислювальної техніки](https://comsys.kpi.ua/)
 
-Київ, 2022
+Київ
