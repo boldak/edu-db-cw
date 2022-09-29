@@ -11,7 +11,13 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 *студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
 
+*студентка 2-го курсу, групи ІМ-13*<span padding-right:5em></span> **[Віта Андрухів](https://t.me/vita_andrukhiv)**
+
 *студентка 2-го курсу, групи ІМ-13*<span padding-right:5em></span> **[Христина ЯСКУЛЬСЬКА](https://t.me/Chrysstia)**
+
+*студент 2-го курсу, групи ІМ-13*<span padding-right:5em></span> **[Денис СИТНИК](https://t.me/crazysparrow18)**
+
+*студент 2-го курсу, групи ІМ-13*<span padding-right:5em></span> **[Ярослав КОТЕНКО](https://t.me/everain_19)**
 
 
 **Керівник**
