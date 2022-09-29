@@ -240,7 +240,7 @@
             <td></td>
             <td></td>
             <td>TLS</td>
-            <td>SSL</td>
+            <td>TLS</td>
             <td>TLS</td>
             <td>SSL</td>
         </tr>
@@ -292,7 +292,7 @@
             <td></td>
             <td></td>
             <td>🟢</td>
-            <td>🟡</td>
+            <td>🟢</td>
             <td>🟢</td>
             <td>🟢</td>
         </tr>
@@ -312,7 +312,7 @@
             <td></td>
             <td></td>
             <td>🟢</td>
-            <td>🟡</td>
+            <td>🟢</td>
             <td>🟢</td>
             <td>🟢</td>
         </tr>
