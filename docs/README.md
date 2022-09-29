@@ -14,6 +14,7 @@ footer: "ECL 2.0 Licensed | Copyright © [2022] [Oleg Korniychuk]"
 - *студент 2-го курсу, групи ІМ-13* **Потапенко Михайло (tg: https://t.me/m1guelten)**
 - *студент 2-го курсу, групи ІМ-13* **Мудрик Дмитро (tg: https://t.me/mudrykkkk)**
 - *студент 2-го курсу, групи ІМ-13* **Кравчук Ілля (tg: https://t.me/dolphin_KPI)**
+- *студент 2-го курсу, групи ІМ-13* **Чогадзе Данило (tg: https://t.me/dolphin3king)**
 
 
 
