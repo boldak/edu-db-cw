@@ -19,6 +19,7 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 *студент 2-го курсу, групи ІМ-13*<span padding-right:5em></span> **[Ярослав КОТЕНКО](https://t.me/everain_19)**
 
+*студент 2-го курсу, групи ІМ-13*<span padding-right:5em></span> **[Землянський Олександр](https://t.me/Alvenzer)**
 
 **Керівник**
 
