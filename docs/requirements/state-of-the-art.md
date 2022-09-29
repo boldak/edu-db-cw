@@ -34,13 +34,13 @@
 - *Performance (вимоги до продуктивності)*
 - *Supportability (вимоги до підтримки)*
 
-| Сервіс/Показник |    doccano    |    LightTag    |    Prodigy    |   Dandelion   |   
-|      :---:      |     :---:     |      :---:     |     :---:     |     :---:     |
-| Functionality   |               |                |               |               |
-| Usability       |               |                |               |               |
-| Reliability     |               |                |               |               |
-| Performance     |               |                |               |               |
-| Supportability  |               |                |               |               |
+| Сервіс/Показник |     Деталі    |    doccano     |    LightTag   |    Prodigy    |   Dandelion   |   
+|      :---:      |     :---:     |      :---:     |     :---:     |     :---:     |     :---:     |
+| Functionality   |               |                |               |               |               |
+| Usability       |               |                |               |               |               |
+| Reliability     |               |                |               |               |               |
+| Performance     |               |                |               |               |               |
+| Supportability  |               |                |               |               |               |
 
 ## Висновки
 
