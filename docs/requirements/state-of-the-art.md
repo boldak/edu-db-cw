@@ -40,13 +40,13 @@
 - *Performance (вимоги до продуктивності)*
 - *Supportability (вимоги до підтримки)*
 - 
-| Сервіс/Показник | Google Trends |  Pew Research  |    Chartr    |        
-|      :---:      |
-| Functionality   |
-| Usability       |
-| Reliability     |
-| Performance     |
-| Supportability  |
+| Сервіс/Показник | Google Trends |  Pew Research  |    Chartr    |      
+|      :---:      |     :---:     |      :---:     |     :---:    |
+| Functionality   |               |                |              |
+| Usability       |               |                |              |
+| Reliability     |               |                |              |
+| Performance     |               |                |              |
+| Supportability  |               |                |              |
 
 ## Висновки
 
