@@ -39,8 +39,8 @@
 - *Reliability (вимоги до надійності)*
 - *Performance (вимоги до продуктивності)*
 - *Supportability (вимоги до підтримки)*
-
-| Сервіс/Показник |
+- 
+| Сервіс/Показник | Google Trends |  Pew Research  |    Chartr    |        
 |      :---:      |
 | Functionality   |
 | Usability       |
