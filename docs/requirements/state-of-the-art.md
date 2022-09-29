@@ -98,10 +98,12 @@ Basecamp - онлайн-сервіс для керування проектам�
 *[Робляться висновки щодо доцільності розробки нової або модифікації існуючої інформаційної системи, необхідності та способів інтеграції з системами(сервісами) третіх сторін, тощо.]*
 
 ## Посилання
-https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82_(UML)  
-https://uk.wikipedia.org/wiki/Unified_Modeling_Language  
-https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjFtNOckLX6AhWEjuYKHROgCJAQFnoECAwQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFAQ&usg=AOvVaw2nzH5xbTQizZqqkWVZ1649  
-https://basecamp.com/
-https://www.vpnunlimited.com/ua/help/vpn-protocols/tls-protocol
-https://deltahost.ua/ua/tipi-merezhevix-protokoliv-i-ih-priznachennya-http-ip-ssh-ftp-pop3-mac.html
-https://dev.ua/news/chto-takoe-api-prostym-yazykom
+[Що таке Артефакт?](https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82_(UML))  
+[Що таке UML?](https://uk.wikipedia.org/wiki/Unified_Modeling_Language)  
+[Що таке FAQ?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjFtNOckLX6AhWEjuYKHROgCJAQFnoECAwQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFAQ&usg=AOvVaw2nzH5xbTQizZqqkWVZ1649)
+[BaseCamp](https://basecamp.com/)
+[Що таке TLS протокол?](https://www.vpnunlimited.com/ua/help/vpn-protocols/tls-protocol)
+[ТИПИ МЕРЕЖЕВИХ ПРОТОКОЛІВ](https://deltahost.ua/ua/tipi-merezhevix-protokoliv-i-ih-priznachennya-http-ip-ssh-ftp-pop3-mac.html)
+[Що таке API? Просте пояснення для початківців](https://dev.ua/news/chto-takoe-api-prostym-yazykom)
+[52 системы управления проектами для командной работы в разных сферах](https://habr.com/ru/company/yougile/blog/545614/)  
+[Возможности сервиса Backlog](https://startpack.ru/application/backlog)
