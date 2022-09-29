@@ -7,9 +7,9 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студент 2-го курсу, групи ІМ-12)*<span padding-right:5em></span> **Антон СВІРСЬКИЙ [E-mail: antonsvirskiy690@gmail.com <a href="https://t.me/Stoopiddum">Телеграм</a>]**
 
 
 **Керівник**
