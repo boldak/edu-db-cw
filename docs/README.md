@@ -3,13 +3,19 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © [2022] [Oleg Korniychuk]"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали:** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+- *студент 2-го курсу, групи ІМ-13* **Корнійчук Олег (tg: https://t.me/gladusgladus)**
+- *студент 2-го курсу, групи ІМ-13* **Даніленко Володимир (tg: https://t.me/VolodymyrDanilenko)**
+- *студент 2-го курсу, групи ІМ-13* **Потапенко Михайло (tg: https://t.me/m1guelten)**
+- *студент 2-го курсу, групи ІМ-13* **Мудрик Дмитро (tg: https://t.me/mudrykkkk)**
+- *студент 2-го курсу, групи ІМ-13* **Кравчук Ілля (tg: https://t.me/dolphin_KPI)**
+- *студент 2-го курсу, групи ІМ-13* **Чогадзе Данило (tg: https://t.me/dolphin3king)**
+
 
 
 **Керівник**
