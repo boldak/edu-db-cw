@@ -94,13 +94,13 @@
 
 ---
 
-**Артефакт** (UML) — окрема частина інформації, що використовується чи з'являється в процесі розробки програмного забезпечення. Це може бути програмний скрипт, файл з вихідним кодом, вихідний модуль, таблиця бази даних, веб сторінки, модель тощо. Загалом, коли мова йде про інформаційні системи, під артефактами ми розуміємо інформаційні елементи, які пов’язані із цією системою [1].
+**Артефакт** (UML) — окрема частина інформації, що використовується чи з'являється в процесі розробки програмного забезпечення. Це може бути програмний скрипт, файл з вихідним кодом, вихідний модуль, таблиця бази даних, веб сторінки, модель тощо. Загалом, коли мова йде про інформаційні системи, під артефактами ми розуміємо інформаційні елементи, які пов’язані із цією системою [[16]](#link16).
 
-Обов’язковий атрибут будь-якого артефакта – це задане для нього **ім’я**. Називати артефакти можна по різному – або ж звичайним текстовим рядком, або ж ще й кваліфікованим уточненням у вигляді імені пакету, який містить даний артефакт. В системі UML артефакт представляється у вигляді прямокутної піктограми із словом «артефакт», яке розміщується над його ім’ям [1].
+Обов’язковий атрибут будь-якого артефакта – це задане для нього **ім’я**. Називати артефакти можна по різному – або ж звичайним текстовим рядком, або ж ще й кваліфікованим уточненням у вигляді імені пакету, який містить даний артефакт. В системі UML артефакт представляється у вигляді прямокутної піктограми із словом «артефакт», яке розміщується над його ім’ям [[16]](#link16).
 
-Поняття артефакту можна переплутати із поняттям класу. Так, вони обидва є класифікаторами. Проте, на відміну від класу, артефакт не є абстрактним концептом. Це реально існуючий бітовий об’єкт. Крім того, класи містять в собі атрибути та операції, в той час як артефакти реалізовують собою класи та методи, при цьому не маючи ані атрибутів, ані операцій [1].
+Поняття артефакту можна переплутати із поняттям класу. Так, вони обидва є класифікаторами. Проте, на відміну від класу, артефакт не є абстрактним концептом. Це реально існуючий бітовий об’єкт. Крім того, класи містять в собі атрибути та операції, в той час як артефакти реалізовують собою класи та методи, при цьому не маючи ані атрибутів, ані операцій [[16]](#link16).
 
-Як правило, артефакти поділяються на **3** групи [1]:
+Як правило, артефакти поділяються на **3** групи [[16]](#link16):
 
  - *Артефакти розміщення* (англ. deployment artifacts) - динамічні бібліотеки, вихідні коди, класичні та альтернативні об'єктні моделі. Наприклад, .NET, CORBA, Enterprise Java Beans.
  - *Артефакти робочих продуктів* (англ. work product artifacts) - результати процесу розробки програмного продукту, які безпосередньо не беруть участь у роботі створеного додатка, але вони є результатами розробки. Наприклад, файли вихідного коду і файли даних, з яких створюються артефакти розміщення.
@@ -409,34 +409,35 @@
 
 ## Посилання
 
-<a name="link1"></a>[1] <https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8>
+<a name="link1"></a>[1] <https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8> (дата звернення: 29.09.2022)
 
-<a name="link2"></a>[2] <https://uk.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8>
+<a name="link2"></a>[2] <https://uk.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8> (дата звернення: 29.09.2022)
 
-<a name="link3"></a>[3] <https://uk.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8>
+<a name="link3"></a>[3] <https://uk.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8> (дата звернення: 29.09.2022)
 
-<a name="link4"></a>[4] <https://pidru4niki.com/12810419/ekonomika/zhittyeviy_tsikl_proektu#:~:text=%D0%96%D0%B8%D1%82%D1%82%D1%94%D0%B2%D0%B8%D0%B9%20%D1%86%D0%B8%D0%BA%D0%BB%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83%20%E2%80%93%20%D1%86%D0%B5%20%D0%BF%D0%B5%D1%80%D1%96%D0%BE%D0%B4,%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8C%D0%BE%D1%97%20%D0%B2%D0%B8%D0%B3%D0%BE%D0%B4%D0%B8%20(%D0%BB%D1%96%D0%BA%D0%B2%D1%96%D0%B4%D0%B0%D1%86%D1%96%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83).>
+<a name="link4"></a>[4] <https://pidru4niki.com/12810419/ekonomika/zhittyeviy_tsikl_proektu#:~:text=%D0%96%D0%B8%D1%82%D1%82%D1%94%D0%B2%D0%B8%D0%B9%20%D1%86%D0%B8%D0%BA%D0%BB%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83%20%E2%80%93%20%D1%86%D0%B5%20%D0%BF%D0%B5%D1%80%D1%96%D0%BE%D0%B4,%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8C%D0%BE%D1%97%20%D0%B2%D0%B8%D0%B3%D0%BE%D0%B4%D0%B8%20(%D0%BB%D1%96%D0%BA%D0%B2%D1%96%D0%B4%D0%B0%D1%86%D1%96%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83).> (дата звернення: 29.09.2022)
 
-<a name="link5"></a>[5] <https://ru.wikipedia.org/wiki/UML>
+<a name="link5"></a>[5] <https://ru.wikipedia.org/wiki/UML> (дата звернення: 29.09.2022)
 
-<a name="link6"></a>[6] <https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F_%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8F#:~:text=Software%20development%20methodology)%20%E2%80%94%20%D1%81%D1%83%D0%BA%D1%83%D0%BF%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%96%D0%B2,%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B8%D1%82%D0%B8%20%D0%BD%D0%B0%D0%B9%D0%BA%D1%80%D0%B0%D1%89%D1%83%20%D0%B5%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%96%D0%B2%20%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B8.>
+<a name="link6"></a>[6] <https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F_%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8F#:~:text=Software%20development%20methodology)%20%E2%80%94%20%D1%81%D1%83%D0%BA%D1%83%D0%BF%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%96%D0%B2,%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B8%D1%82%D0%B8%20%D0%BD%D0%B0%D0%B9%D0%BA%D1%80%D0%B0%D1%89%D1%83%20%D0%B5%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%96%D0%B2%20%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B8.> (дата звернення: 29.09.2022)
 
-<a name="link7"></a>[7] <https://www.atlassian.com/ru/agile>
+<a name="link7"></a>[7] <https://www.atlassian.com/ru/agile> (дата звернення: 29.09.2022)
 
-<a name="link8"></a>[8] <https://www.atlassian.com/ru/agile/scrum>
+<a name="link8"></a>[8] <https://www.atlassian.com/ru/agile/scrum> (дата звернення: 29.09.2022)
 
-<a name="link9"></a>[9] <https://www.atlassian.com/ru/agile/scrum/sprints>
+<a name="link9"></a>[9] <https://www.atlassian.com/ru/agile/scrum/sprints> (дата звернення: 29.09.2022)
 
-<a name="link10"></a>[10] <https://www.atlassian.com/ru/agile/kanban>
+<a name="link10"></a>[10] <https://www.atlassian.com/ru/agile/kanban> (дата звернення: 29.09.2022)
 
-<a name="link11"></a>[11] <https://www.atlassian.com/ru/agile/kanban/boards>
+<a name="link11"></a>[11] <https://www.atlassian.com/ru/agile/kanban/boards> (дата звернення: 29.09.2022)
 
-<a name="link12"></a>[12] <https://www.atlassian.com/ru/agile/kanban/cards>
+<a name="link12"></a>[12] <https://www.atlassian.com/ru/agile/kanban/cards> (дата звернення: 29.09.2022)
 
-<a name="link13"></a>[13] <https://uk.wikipedia.org/wiki/%D0%92%D1%96%D1%85%D0%B0_(%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8)#:~:text=milestone)%20%E2%80%94%20%D1%82%D0%B5%D1%80%D0%BC%D1%96%D0%BD%20(%D1%88%D0%B8%D1%80%D0%BE%D0%BA%D0%BE%20%D0%B7%D0%B0%D1%81%D1%82%D0%BE%D1%81%D0%BE%D0%B2%D1%83%D1%94%D1%82%D1%8C%D1%81%D1%8F,%D0%BD%D0%B0%20%D0%BD%D0%BE%D0%B2%D1%83%20%D1%81%D1%82%D0%B0%D0%B4%D1%96%D1%8E%20%D1%80%D0%BE%D0%B7%D0%B2%D0%B8%D1%82%D0%BA%D1%83%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D1%83.>
+<a name="link13"></a>[13] <https://uk.wikipedia.org/wiki/%D0%92%D1%96%D1%85%D0%B0_(%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8)#:~:text=milestone)%20%E2%80%94%20%D1%82%D0%B5%D1%80%D0%BC%D1%96%D0%BD%20(%D1%88%D0%B8%D1%80%D0%BE%D0%BA%D0%BE%20%D0%B7%D0%B0%D1%81%D1%82%D0%BE%D1%81%D0%BE%D0%B2%D1%83%D1%94%D1%82%D1%8C%D1%81%D1%8F,%D0%BD%D0%B0%20%D0%BD%D0%BE%D0%B2%D1%83%20%D1%81%D1%82%D0%B0%D0%B4%D1%96%D1%8E%20%D1%80%D0%BE%D0%B7%D0%B2%D0%B8%D1%82%D0%BA%D1%83%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D1%83.> (дата звернення: 29.09.2022)
 
-<a name="link14"></a>[14] <https://www.atlassian.com/ru/agile/scrum/backlogs>
+<a name="link14"></a>[14] <https://www.atlassian.com/ru/agile/scrum/backlogs> (дата звернення: 29.09.2022)
 
+<a name="link15"></a>[15] <https://wezom.com.ua/ua/blog/metodologija-razrabotki-programmnogo-obespechenija> (дата звернення: 29.09.2022)
 
-<a name="link15"></a>[15] <https://wezom.com.ua/ua/blog/metodologija-razrabotki-programmnogo-obespechenija>
+<a name="link16"></a>[16] <https://ru.wikipedia.org/wiki/Артефакт_(UML)> (дата звернення: 29.09.2022)
 
