@@ -45,7 +45,11 @@
 
 [RUP](https://uk.wikipedia.org/wiki/Rational_Unified_Process) (Rational Unified Process) – методологія розробки програмного забезпечення, створена компанією Rational Software.
 
+[Метадані](https://tebapit.com/%D1%89%D0%BE-%D1%82%D0%B0%D0%BA%D0%B5-%D0%BC%D0%B5%D1%82%D0%B0%D0%B4%D0%B0%D0%BD%D1%96/)  – це дані про дані. Іншими словами, це інформація, яка використовується для опису даних, що містяться у чомусь на зразок веб-сторінки, документа чи файлу. Інший спосіб думати про метадані – це коротке пояснення або короткий зміст даних.
 
+[Ітера́ція](https://uk.wikipedia.org/wiki/%D0%86%D1%82%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%8F) (від лат. iteratio — повторювання) — овторне застосування математичної операції (із зміненими даними) при розв'язанні обчислювальних задач, яке дає можливість поступово наблизитися до правильного результату або це результат багаторазового повторення якоїсь математичної операції.
+
+[Проєкт](http://dspace.wunu.edu.ua/retrieve/19690/) (в управлінні проєктами) - це унікальний процес, обмежений з точки зору часу, ресурсів та вимог до якості, і спрямований на досягнення унікальних цілей та завдань для створення нової цінності (продукту чи послуги).
 ## Підходи та способи вирішення завдання
 
 Зазвичай до етапів життєвого циклу програмного забезпечення відносять:
@@ -360,9 +364,9 @@ Trello — безплатна багатоплатформна система у
 Проаналізувавши результати дослідження різноманітних сервісів систем управління проєктами та вище сказану інформацію, можна дійти до висновку, що немає платформи, яка задовольняє всі вимоги. Зокрема, підтримка артефактів, офлайн доступ, доступ до дошки без реєстрації тощо - є не реалізованими практично у всіх системах. Крім того, деякі важливі функції доступні тільки у платних версіях. Тому ми вважаємо, що буде доцільно розробити власний проєкт, де крім базових критеріїв, будуть реалізовані деякі додаткові функції, які відсутні або є платними у вище проаналізованих сервісах.
 
 ## Посилання
-[Що таке Артефакт?](https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82_(UML)) 
+[Артефакт - Вікіпедія](https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82_(UML)) 
 
-[Що таке UML?](https://uk.wikipedia.org/wiki/Unified_Modeling_Language)  
+[UML - Вікіпедія](https://uk.wikipedia.org/wiki/Unified_Modeling_Language)  
 
 [Що таке FAQ?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjFtNOckLX6AhWEjuYKHROgCJAQFnoECAwQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFAQ&usg=AOvVaw2nzH5xbTQizZqqkWVZ1649)
 
@@ -412,6 +416,15 @@ Trello — безплатна багатоплатформна система у
 
 [System - Wikipedia](https://en.wikipedia.org/wiki/System)
 
+[Водоспадна модель - Wikipedia](https://uk.wikipedia.org/wiki/%D0%92%D0%BE%D0%B4%D0%BE%D1%81%D0%BF%D0%B0%D0%B4%D0%BD%D0%B0_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C)
+
+[Що таке метадані?](https://tebapit.com/%D1%89%D0%BE-%D1%82%D0%B0%D0%BA%D0%B5-%D0%BC%D0%B5%D1%82%D0%B0%D0%B4%D0%B0%D0%BD%D1%96/)
+
+[Ітерація - Wikipedia](https://uk.wikipedia.org/wiki/%D0%86%D1%82%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%8F)
+
+[Загальна характеристика управління проектами](http://dspace.wunu.edu.ua/retrieve/19690/)
+
 [Nifty Project Management Review](https://clickup.com/blog/nifty-project-management/)
 
 [GitHub Project Management Guide | Jobcity](https://www.jobsity.com/blog/a-quick-guide-to-using-github-for-project-management)
+
