@@ -7,7 +7,7 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали:** 
 
 *студент(-ка) 2-го курсу, групи ІМ-12*<span padding-right:5em></span> **Святослав Олексин [Email: sviat1001@gmail.com, <a href="https://t.me/usnder">Телеграм</a>]**
 
