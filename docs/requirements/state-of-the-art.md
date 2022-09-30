@@ -203,7 +203,7 @@
    <th>Basecamp</th>
    <th>Asana</th> 
    <th>Backlog</th> 
-   <th>SUP</th>
+   <th>SUP<br>(наш)</th>
   </tr>
  </thead>
 <tbody>
@@ -402,11 +402,11 @@
 
 <a name="link5"></a>[14]<https://uk.wikipedia.org/wiki/%D0%96%D0%B8%D1%82%D1%82%D1%94%D0%B2%D0%B8%D0%B9_%D1%86%D0%B8%D0%BA%D0%BB_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8F>
 
-<a name="link6"></a>[15]<https://evnuir.vnu.edu.ua/bitstream/123456789/19275/1/696-697.pdf>
+<a name="link6"></a>[15] <https://evnuir.vnu.edu.ua/bitstream/123456789/19275/1/696-697.pdf>
 
 <a name="link16"></a>[16]<https://uk.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8#%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8>
 
-<a name="link17"></a>[17]<https://blog.agrokebety.com/shcho-take-upravlinnya-proektamy>
+<a name="link17"></a>[17] <https://blog.agrokebety.com/shcho-take-upravlinnya-proektamy>
 
 <a name="link18"></a>[18]<https://buklib.net/books/34104/#:~:text=%D0%9F%D1%80%D0%B5%D0%B4%D0%BC%D0%B5%D1%82%D0%BD%D0%B0%20%D1%81%D1%84%D0%B5%D1%80%D0%B0%20%E2%80%94%20%D1%86%D0%B5%20%D1%81%D1%83%D0%BA%D1%83%D0%BF%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%96%D0%B2,%D0%BC%D0%B5%D1%82%D0%B0%2C%20%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%B8%20%D0%B9%20%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%20%D1%80%D0%BE%D0%B1%D1%96%D1%82.>
 
@@ -416,13 +416,13 @@
  
 <a name="link21"></a>[21]<https://uk.wikipedia.org/wiki/%D0%92%D1%96%D1%85%D0%B0_(%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8)#:~:text=milestone)%20%E2%80%94%20%D1%82%D0%B5%D1%80%D0%BC%D1%96%D0%BD%20(%D1%88%D0%B8%D1%80%D0%BE%D0%BA%D0%BE%20%D0%B7%D0%B0%D1%81%D1%82%D0%BE%D1%81%D0%BE%D0%B2%D1%83%D1%94%D1%82%D1%8C%D1%81%D1%8F,%D0%BD%D0%B0%20%D0%BD%D0%BE%D0%B2%D1%83%20%D1%81%D1%82%D0%B0%D0%B4%D1%96%D1%8E%20%D1%80%D0%BE%D0%B7%D0%B2%D0%B8%D1%82%D0%BA%D1%83%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D1%83>
 
-<a name="link22"></a>[22]<https://jiraved.ru/agile/scrum/sprints>
+<a name="link22"></a>[22] <https://jiraved.ru/agile/scrum/sprints>
 
-<a name="link23"></a>[23]<https://www.atlassian.com/ru/agile/scrum/backlogs>
+<a name="link23"></a>[23] <https://www.atlassian.com/ru/agile/scrum/backlogs>
 
-<a name="link24"></a>[24]<https://qna.habr.com/q/174615>
+<a name="link24"></a>[24] <https://qna.habr.com/q/174615>
 
-<a name="link25"></a>[25]<https://git-scm.com/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%9F%D1%80%D0%BE-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8E-%D0%B2%D0%B5%D1%80%D1%81%D1%96%D0%B9>
+<a name="link25"></a>[25] <https://git-scm.com/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%9F%D1%80%D0%BE-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8E-%D0%B2%D0%B5%D1%80%D1%81%D1%96%D0%B9>
 
 <a name="link26"></a>[26]<https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9_%D0%B3%D1%80%D0%B0%D1%84%D1%96%D0%BA#:~:text=%D0%9C%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9%20%D0%B3%D1%80%D0%B0%D1%84%D1%96%D0%BA%20%E2%80%94%20%D1%86%D0%B5%20%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D1%96%D1%87%D0%BD%D0%B0%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C,%D1%86%D1%8C%D0%BE%D0%BC%D1%83%20%D0%B2%D1%83%D0%B7%D1%8C%D0%BA%D0%B8%D1%85%20(%D0%BA%D1%80%D0%B8%D1%82%D0%B8%D1%87%D0%BD%D0%B8%D1%85)%20%D0%BC%D1%96%D1%81%D1%86%D1%8C.>
 
