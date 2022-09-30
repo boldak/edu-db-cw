@@ -48,7 +48,7 @@
 [Ітера́ція](https://uk.wikipedia.org/wiki/%D0%86%D1%82%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%8F) (від лат. iteratio — повторювання) — овторне застосування математичної операції (із зміненими даними) при розв'язанні обчислювальних задач, яке дає можливість поступово наблизитися до правильного результату або це результат багаторазового повторення якоїсь математичної операції.
 
 [Проєкт](http://dspace.wunu.edu.ua/retrieve/19690/) (в управлінні проєктами) - це унікальний процес, обмежений з точки зору часу, ресурсів та вимог до якості, і спрямований на досягнення унікальних цілей та завдань для створення нової цінності (продукту чи послуги).
-## Підходи та способи вирішення завдання
+## Підходи та способи вирішення завдання [[1]](http://dspace.wunu.edu.ua/retrieve/19690/)[[5]](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
 
 Зазвичай до етапів життєвого циклу програмного забезпечення відносять:
 + Аналіз вимог;
@@ -59,7 +59,7 @@
 
 Для полегшення проєктування, створення і випуску якісного програмного продукту існують різні моделі життєвого циклу ПЗ.
 
-**Каскадна або водоспадна модель (Waterfall model)**
+**Каскадна або водоспадна модель (Waterfall model)** 
 
 При такій моделі кожна з фаз проєкту проводиться один раз, слідуючи одна за одною. Для того, щоб почати наступну стадію, необхідне повне завершення попередньої.
 
@@ -73,7 +73,7 @@
 
 + складності при формулюванні чітких вимог і неможливість їхньої зміни;
 + тестування починається тільки з середини розвитку проєкту;
-+ до завершення процесу розробки користувачі не можуть переконатися, чи якісний продукт, який розробляється.
++ до завершення процесу розробки користувачі не можуть переконатися, чи якісний продукт, який розробляється[[1]](http://dspace.wunu.edu.ua/retrieve/19690/)[[2]](https://uk.wikipedia.org/wiki/%D0%92%D0%BE%D0%B4%D0%BE%D1%81%D0%BF%D0%B0%D0%B4%D0%BD%D0%B0_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C).
 
 ![Водоспадна модель](./assets/images/Waterfall-model.jpg)
 
@@ -215,7 +215,7 @@
 
 Насамперед потрібно врахувати кілька моментів. Наприклад, якщо ваш перелік завдань за обсягом не поступається «Війні та миру», то подумайте, чи справді потрібно виносити всі їх на дошку. Звичайно ж ні. Постає питання: що відсіяти? Деякі речі настільки незначні, що безглуздо захаращувати ними колонку завдань, інакше вони відвернуть вас від важливіших справ. Крім того, до того часу, як ви виконаєте від трьох до п'яти основних пріоритетів, наступна група першочергових завдань, напевно, вже зміниться.
 
-Які завдання можна залишити? Що дає видимість вашій команді та іншим? Відповідь: це впливають обставини. Що візуалізувати залежить від типу роботи та основних проблем.
+Які завдання можна залишити? Що дає видимість вашій команді та іншим? Відповідь: це впливають обставини. Що візуалізувати залежить від типу роботи та основних проблем[[3]](https://biz.mann-ivanov-ferber.ru/2020/03/04/kratko-i-ponyatno-o-kanbane/).
 
 ![Kanban](./assets/images/kanban.png)
 
@@ -239,9 +239,9 @@
 
 Процеси та стадії RUP
 
-RUP використовує ітеративну модель розробки. Наприкінці кожної ітерації (в ідеалі, що триває від 2 до 6 тижнів) проектна команда повинна досягти запланованих на дану ітерацію цілей, створити або доопрацювати проектні артефакти та отримати проміжну, але функціональну версію кінцевого продукту .
+RUP використовує ітеративну модель розробки. Наприкінці кожної ітерації (в ідеалі, що триває від 2 до 6 тижнів) проектна команда повинна досягти запланованих на дану ітерацію цілей, створити або доопрацювати проектні артефакти та отримати проміжну, але функціональну версію кінцевого продукту [[4]](https://qaevolution.ru/metodologiya-menedzhment/rup/).
 
-Повний життєвий цикл розробки програмного забезпечення складається з 4 етапів:
+Повний життєвий цикл розробки програмного забезпечення складається з 4 етапів[[5]](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/):
 
 1. **Початкова стадія** (Inception). У фазі початкової стадії:
 
@@ -280,7 +280,7 @@ RUP використовує ітеративну модель розробки.
 
 ### [GitHub Projects](https://github.com/features/project-management/) ###
 
-Проєкт **GitHub Projects** — це адаптована електронна таблиця, яка інтегрується з вашими issues та pull-реквестами на GitHub, щоб допомогти вам ефективно планувати та відстежувати свою роботу. Ви можете створювати та налаштовувати кілька представлень, фільтруючи, сортуючи, групуючи ваші issues та pull-реквести, додаючи власні поля для відстеження метаданих, специфічних для вашої команди, і візуалізувати роботу за допомогою настроюваних діаграм. Замість того, щоб застосовувати певну методологію, проєкт надає гнучкі функції, які можна налаштувати відповідно до потреб і процесів вашої команди.
+Проєкт **GitHub Projects** — це адаптована електронна таблиця, яка інтегрується з вашими issues та pull-реквестами на GitHub, щоб допомогти вам ефективно планувати та відстежувати свою роботу. Ви можете створювати та налаштовувати кілька представлень, фільтруючи, сортуючи, групуючи ваші issues та pull-реквести, додаючи власні поля для відстеження метаданих, специфічних для вашої команди, і візуалізувати роботу за допомогою настроюваних діаграм. Замість того, щоб застосовувати певну методологію, проєкт надає гнучкі функції, які можна налаштувати відповідно до потреб і процесів вашої команди[[6]](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)[[7]](https://www.jobsity.com/blog/a-quick-guide-to-using-github-for-project-management).
 
 ### [Trello](https://trello.com/) ###
 
@@ -294,15 +294,15 @@ Trello — безплатна багатоплатформна система у
 
 ### [Nifty](https://niftypm.com/) ###
 
-**Nifty** — це гнучке програмне забезпечення для керування проектами, яке дозволяє працювати над масштабними проектами з кількома членами команди. Як і більшість програмного забезпечення для керування проектами, це робочий простір для спільної роботи, який допомагає вам і вашій команді організовувати завдання, відстежувати час, керувати документами тощо в одному місці. Ви навіть можете працювати та насолоджуватися співпрацею в робочому процесі на ходу за допомогою програми Nifty для Android та iOS.
+**Nifty** — це гнучке програмне забезпечення для керування проектами, яке дозволяє працювати над масштабними проектами з кількома членами команди. Як і більшість програмного забезпечення для керування проектами, це робочий простір для спільної роботи, який допомагає вам і вашій команді організовувати завдання, відстежувати час, керувати документами тощо в одному місці. Ви навіть можете працювати та насолоджуватися співпрацею в робочому процесі на ходу за допомогою програми Nifty для Android та iOS[[8]](https://clickup.com/blog/nifty-project-management/).
 
 ### [Backlog](https://backlog.com/) ###
 
-**Backlog** - це веб-сервіс для спрощення роботи з проєктами, гнучким управлінням ними та організації своєї команди задля досягнення максимальної продуктивності.Спочатку ця система створювалася для дизацнерів, але зараз нею в більшості користуються невеликі творчі команди (до 30 людей). Вступ легкий, а інструмент максимально простий.
+**Backlog** - це веб-сервіс для спрощення роботи з проєктами, гнучким управлінням ними та організації своєї команди задля досягнення максимальної продуктивності.Спочатку ця система створювалася для дизацнерів, але зараз нею в більшості користуються невеликі творчі команди (до 30 людей). Вступ легкий, а інструмент максимально простий[[9]](https://startpack.ru/application/backlog).
 
 ### [Asana](https://asana.com/) ###
 
-**Asana** - це веб та мобільна платформа для спільної роботи над проєктами. Asana допомагає командам керувати проєктами та завданнями в одному інструменті - надає можливість створювати проєкти, доручати роботу іншим членам команди, вказувати терміни виконання та обговорювати завдання безпосередньо на платформі. Також містить багатофункціональний набір інструментів, зокрема, інструменти звітності, вкладення файлів, календарі, встановлення та відстеження цілей компанії. Учасники можуть додавати примітки, коментарі, файли та теги до кожного завдання, а також перевіряти хід виконання проєктів і завдань вручну, у звітах і портфоліо.
+**Asana** - це веб та мобільна платформа для спільної роботи над проєктами. Asana допомагає командам керувати проєктами та завданнями в одному інструменті - надає можливість створювати проєкти, доручати роботу іншим членам команди, вказувати терміни виконання та обговорювати завдання безпосередньо на платформі. Також містить багатофункціональний набір інструментів, зокрема, інструменти звітності, вкладення файлів, календарі, встановлення та відстеження цілей компанії. Учасники можуть додавати примітки, коментарі, файли та теги до кожного завдання, а також перевіряти хід виконання проєктів і завдань вручну, у звітах і портфоліо[[10]](https://en.wikipedia.org/wiki/Asana_(software))[[11]](https://www.dz-techs.com/ru/asana-free-vs-premium)[[12]](https://asana.com/guide/help).
 
 <br />
     <summary>
@@ -362,67 +362,74 @@ Trello — безплатна багатоплатформна система у
 Проаналізувавши результати дослідження різноманітних сервісів систем управління проєктами та вище сказану інформацію, можна дійти до висновку, що немає платформи, яка задовольняє всі вимоги. Зокрема, підтримка артефактів, офлайн доступ, доступ до дошки без реєстрації тощо - є не реалізованими практично у всіх системах. Крім того, деякі важливі функції доступні тільки у платних версіях. Тому ми вважаємо, що буде доцільно розробити власний проєкт, де крім базових критеріїв, будуть реалізовані деякі додаткові функції, які відсутні або є платними у вище проаналізованих сервісах.
 
 ## Посилання
-[Артефакт - Вікіпедія](https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82_(UML)) 
+[System - Wikipedia](https://en.wikipedia.org/wiki/System)
+
+[Артефакт - Вікіпедія](https://uk.wikipedia.org/wiki/Артефакт_(UML))  
 
 [UML - Вікіпедія](https://uk.wikipedia.org/wiki/Unified_Modeling_Language)  
 
 [Що таке FAQ?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjFtNOckLX6AhWEjuYKHROgCJAQFnoECAwQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFAQ&usg=AOvVaw2nzH5xbTQizZqqkWVZ1649)
 
-[BaseCamp](https://basecamp.com/)
-
-[Що таке TLS протокол?](https://www.vpnunlimited.com/ua/help/vpn-protocols/tls-protocol)
+[Система керування версіями](https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BA%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%B2%D0%B5%D1%80%D1%81%D1%96%D1%8F%D0%BC%D0%B8)
 
 [ТИПИ МЕРЕЖЕВИХ ПРОТОКОЛІВ](https://deltahost.ua/ua/tipi-merezhevix-protokoliv-i-ih-priznachennya-http-ip-ssh-ftp-pop3-mac.html)
 
-[Що таке API? Просте пояснення для початківців](https://dev.ua/news/chto-takoe-api-prostym-yazykom)
+[Що таке TLS протокол?](https://www.vpnunlimited.com/ua/help/vpn-protocols/tls-protocol)
 
-[52 системы управления проектами для командной работы в разных сферах](https://habr.com/ru/company/yougile/blog/545614/)  
-
-[Возможности сервиса Backlog](https://startpack.ru/application/backlog)
-
-[Кратко и понятно о канбане](https://biz.mann-ivanov-ferber.ru/2020/03/04/kratko-i-ponyatno-o-kanbane/)
-
-[Канбан-доска - Википедия](https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BD%D0%B1%D0%B0%D0%BD-%D0%B4%D0%BE%D1%81%D0%BA%D0%B0)
-
-[RUP методология разработки](https://qaevolution.ru/metodologiya-menedzhment/rup/)
-
-[About GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-
-[Популярні життєві цикли розробки ПЗ](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
-
-[Моделі життєвого циклу, принципи і методології розробки програмного забезпечення (ПЗ)](https://evergreens.com.ua/ua/articles/software-development-metodologies.html)
-
-[Що таке лендінг і як його зробити](https://hostiq.ua/blog/ukr/what-is-landing/)
+[Що таке API? Просте пояснення для початківців](https://dev.ua/news/chto-takoe-api-prostym-yazykom)\
 
 [GitHub - Вікіпедія](https://uk.wikipedia.org/wiki/GitHub)
 
 [Модель - Вікіпедія](https://uk.wikipedia.org/wiki/Модель)
 
-[Ітерація - Вікіпедія](https://uk.upwiki.one/wiki/Iteration)
+[Життєвий цикл програмного забезпечення](https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D1%81%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8F)
 
-[Артефакт - Вікіпедія](https://uk.wikipedia.org/wiki/Артефакт_(UML))  
+[Модель життєвого циклу ПЗ](https://edu-db.github.io/p2/3)  
 
-[Unified Modeling Language - Вікіпедія](https://uk.wikipedia.org/wiki/Unified_Modeling_Language)  
+[Керування часом, тайм-менеджмент](https://uk.wikipedia.org/wiki/%D0%9A%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D1%87%D0%B0%D1%81%D0%BE%D0%BC) (від англ. time management)
 
-[FAQ - Wikipedia](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjFtNOckLX6AhWEjuYKHROgCJAQFnoECAwQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFAQ&usg=AOvVaw2nzH5xbTQizZqqkWVZ1649)
+[Спринт](https://ucode.world/shho-take-skram-i-yak-tse-pratsyuye/)
 
-[Asana - Wikipedia](https://en.wikipedia.org/wiki/Asana_(software))
+[Що таке лендінг і як його зробити](https://hostiq.ua/blog/ukr/what-is-landing/)
 
-[Сравнение бесплатных и платных планов Asana](https://www.dz-techs.com/ru/asana-free-vs-premium)
+[Моделі життєвого циклу, принципи і методології розробки програмного забезпечення (ПЗ)](https://evergreens.com.ua/ua/articles/software-development-metodologies.html)
 
-[Asana Guide](https://asana.com/guide/help)
+[Канбан-доска - Википедия](https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BD%D0%B1%D0%B0%D0%BD-%D0%B4%D0%BE%D1%81%D0%BA%D0%B0)
 
-[System - Wikipedia](https://en.wikipedia.org/wiki/System)
-
-[Водоспадна модель - Wikipedia](https://uk.wikipedia.org/wiki/%D0%92%D0%BE%D0%B4%D0%BE%D1%81%D0%BF%D0%B0%D0%B4%D0%BD%D0%B0_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C)
+[RUP](https://uk.wikipedia.org/wiki/Rational_Unified_Process)
 
 [Що таке метадані?](https://tebapit.com/%D1%89%D0%BE-%D1%82%D0%B0%D0%BA%D0%B5-%D0%BC%D0%B5%D1%82%D0%B0%D0%B4%D0%B0%D0%BD%D1%96/)
 
+[Ітерація - Вікіпедія](https://uk.upwiki.one/wiki/Iteration)
+
 [Ітерація - Wikipedia](https://uk.wikipedia.org/wiki/%D0%86%D1%82%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%8F)
 
-[Загальна характеристика управління проектами](http://dspace.wunu.edu.ua/retrieve/19690/)
+[Проєкт](http://dspace.wunu.edu.ua/retrieve/19690/)
 
-[Nifty Project Management Review](https://clickup.com/blog/nifty-project-management/)
+1. [Загальна характеристика управління проектами](http://dspace.wunu.edu.ua/retrieve/19690/)
 
-[GitHub Project Management Guide | Jobcity](https://www.jobsity.com/blog/a-quick-guide-to-using-github-for-project-management)
+2. [Водоспадна модель - Wikipedia](https://uk.wikipedia.org/wiki/%D0%92%D0%BE%D0%B4%D0%BE%D1%81%D0%BF%D0%B0%D0%B4%D0%BD%D0%B0_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C)
 
+3. [Кратко и понятно о канбане](https://biz.mann-ivanov-ferber.ru/2020/03/04/kratko-i-ponyatno-o-kanbane/)
+
+4. [RUP методология разработки](https://qaevolution.ru/metodologiya-menedzhment/rup/)
+
+5. [Популярні життєві цикли розробки ПЗ](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)  
+
+[52 системы управления проектами для командной работы в разных сферах](https://habr.com/ru/company/yougile/blog/545614/)
+
+6. [About GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+
+7. [GitHub Project Management Guide | Jobcity](https://www.jobsity.com/blog/a-quick-guide-to-using-github-for-project-management)
+
+[BaseCamp](https://basecamp.com/)
+
+8. [Nifty Project Management Review](https://clickup.com/blog/nifty-project-management/)
+
+9. [Возможности сервиса Backlog](https://startpack.ru/application/backlog)
+
+10. [Asana - Wikipedia](https://en.wikipedia.org/wiki/Asana_(software))
+
+11. [Сравнение бесплатных и платных планов Asana](https://www.dz-techs.com/ru/asana-free-vs-premium)
+
+12. [Asana Guide](https://asana.com/guide/help)
