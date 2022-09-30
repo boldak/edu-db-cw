@@ -9,7 +9,12 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 **Виконали:** 
 
-*студент(-ка) 2-го курсу, групи ІМ-12*<span padding-right:5em></span> **Святослав Олексин [Email: sviat1001@gmail.com, <a href="https://t.me/usnder">Телеграм</a>]**
+
+*студент 2-го курсу, групи ІМ-12*<span padding-right:5em></span> **Данило ГОЛЕЦЬ [Email: goletsdan@gmail.com, <a href="https://t.me/dnlglts">Телеграм</a>]**
+
+*студент 2-го курсу, групи ІМ-12*<span padding-right:5em></span> **Антон СВІРСЬКИЙ [Email: antonsvirskiy690@gmail.com <a href="https://t.me/Stoopiddum">Телеграм</a>]**
+
+*студент 2-го курсу, групи ІМ-12*<span padding-right:5em></span> **Святослав ОЛЕКСИН [Email: sviat1001@gmail.com, <a href="https://t.me/usnder">Телеграм</a>]**
 
 
 **Керівник**
