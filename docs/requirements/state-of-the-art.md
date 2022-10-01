@@ -16,9 +16,15 @@
 
 [**Відкриті дані (open data)**](https://dostup.pravda.com.ua/explainers/publications/vidkryti-dani-shcho-tse-take-de-ikh-shukaty-i-iak-vykorystovuvaty#box1) - це публічна інформація у форматі, придатному для автоматизованої обробки електронними засобами, інакше кажучи, у форматі, який може опрацювати програмне забезпечення без участі людини.
 
-[**База даних (data base)**](https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D1%96_%D0%B4%D0%B0%D0%BD%D1%96) - це організована структура, призначена для зберігання, зміни й обробки взаємопов’язаної інформації, переважно великих обсягів. Бази даних активно використовують для динамічних сайтів зі значними обсягами даних.
+[**База даних (data base)**](https://apeps.kpi.ua/shco-take-basa-danykh) - це організована структура, призначена для зберігання, зміни й обробки взаємопов’язаної інформації, переважно великих обсягів. Бази даних активно використовують для динамічних сайтів зі значними обсягами даних.
 
-[**Великі дані (big data)**](https://apeps.kpi.ua/shco-take-basa-danykh) - набори інформації (як структурованої, так і неструктурованої) настільки великих розмірів, що традиційні способи та підходи (здебільшого засновані на рішеннях класу бізнесової аналітики та системах управління базами даних) не можуть бути застосовані до них. Альтернативне визначення називає великими даними феноменальне прискорення нагромадження даних та їх ускладнення. Важливо також відзначити те, що часто під цим поняттям у різних контекстах можуть мати на увазі як дані великого об'єму, так і набір інструментів та методів
+[**Реляційна база даних**](https://bondarenko.dn.ua/osnovni-ponyattya-relyatsijnih-bd-normalizatsiya-zv-yazok-ta-klyuchi/)  — це тип бази даних, що зберігає інформацію в електронних таблицях і здійснює пошук даних в одній таблиці на підставі визначених ключових полів іншої таблиці.
+
+[**Object-relational mapping (ORM)**](https://highload.today/django-orm/) - це спосіб (він же шаблон проєктування) доступу до реляційної бази даних за допомогою об'єктноорієнтованої мови програмування. Простими словами це інструмент, який дозволяє взаємодіяти з базами даних за допомогою високорівневих методів мови програмування, а не SQL-запитів.
+
+[**SQL (Structured Query Language)**](https://blog.skillfactory.ru/glossary/sql/) - це структурована мова запитів, створена для того, щоб взаємодіяти (стоворювати таблиці, додавати, редагувати, видаляти, сортувати, фільтрувати записи тощо) з реляційними базами даних.
+
+[**Великі дані (big data)**](https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D1%96_%D0%B4%D0%B0%D0%BD%D1%96) - набори інформації (як структурованої, так і неструктурованої) настільки великих розмірів, що традиційні способи та підходи (здебільшого засновані на рішеннях класу бізнесової аналітики та системах управління базами даних) не можуть бути застосовані до них. Альтернативне визначення називає великими даними феноменальне прискорення нагромадження даних та їх ускладнення. Важливо також відзначити те, що часто під цим поняттям у різних контекстах можуть мати на увазі як дані великого об'єму, так і набір інструментів та методів
 
 [**Система управління базами даних (Database Management System, DBMS)**](https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%B1%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85) — набір взаємопов'язаних даних (база даних) і програм для доступу до цих даних. Надає можливості створення, збереження, оновлення та пошуку інформації в базах даних з контролем доступу до даних.
 
@@ -68,4 +74,20 @@
 
 ## Посилання
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+- [dostup.pravda.com.ua](https://dostup.pravda.com.ua/explainers/publications/vidkryti-dani-shcho-tse-take-de-ikh-shukaty-i-iak-vykorystovuvaty#box1)
+- [apeps.kpi.ua](https://apeps.kpi.ua/shco-take-basa-danykh)
+- [bondarenko.dn.ua](https://bondarenko.dn.ua/osnovni-ponyattya-relyatsijnih-bd-normalizatsiya-zv-yazok-ta-klyuchi/)
+- [highload.today](https://highload.today/django-orm/)
+- [blog.skillfactory.ru](https://blog.skillfactory.ru/glossary/sql/)
+- [wikipedia.org¹](https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D1%96_%D0%B4%D0%B0%D0%BD%D1%96)
+- [wikipedia.org²](https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%B1%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
+- [wikipedia.org³](https://uk.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B1%D1%96%D1%80_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
+- [wikipedia.org⁴](https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0)
+- [wikipedia.org⁵](https://uk.wikipedia.org/wiki/FAQ)
+- [wikipedia.org⁶](https://uk.wikipedia.org/wiki/%D0%96%D0%B8%D1%82%D1%82%D1%94%D0%B2%D0%B8%D0%B9_%D1%86%D0%B8%D0%BA%D0%BB_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8F)
+- [ru.bmstu.wiki](https://ru.bmstu.wiki/%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8_%D0%B1%D0%B0%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
+- [upwiki.one](https://uk.upwiki.one/wiki/Data_model)
+- [studfile.net¹](https://studfile.net/preview/5454386/)
+- [studfile.net²](https://studfile.net/preview/5454386/D1%85)
+- [pidru4niki.com](https://pidru4niki.com/18421120/ekonomika/suchasni_avtomatizovani_informatsiyni_sistemi_vikoristannya_ekonomichnomu_analizi_upravlinni)
+- [aws.amazon.com](https://aws.amazon.com/what-is/api/)
