@@ -7,7 +7,6 @@ module.exports = {
       serviceWorker: true,
       updatePopup: true
     },
-    ,
     ['container', {
       type: 'vue',
       before: '<pre class="vue-container"><code>',
@@ -42,7 +41,7 @@ module.exports = {
     },
 
     {
-      title: 'Розроблення вимог до функціональности системи',
+      title: 'Розроблення вимог до функціональності системи',
       path:"/use cases/"
     },
 
