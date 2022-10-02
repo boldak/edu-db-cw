@@ -3,18 +3,28 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: 'ECL 2.0 Licensed | Copyright © [2022] [Ткаченко Олександр]'
 ---
 
+**Виконали:**
 
-**Виконав(-ла):** 
+_студент 2-го курсу, групи ІМ-11_<span padding-right:5em></span> **[Максим ЧИРКОВ](https://t.me/maxchyrkov)**
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+_студент 2-го курсу, групи ІМ-11_<span padding-right:5em></span> **[Олександр ТКАЧЕНКО](https://t.me/alexander_pixel)**
 
+_студент 2-го курсу, групи ІМ-11_<span padding-right:5em></span> **[Олег МАРТИНЕНКО](https://t.me/olegoofy)**
+
+_студент 2-го курсу, групи ІМ-11_<span padding-right:5em></span> **[Микола ЦАРИК](https://t.me/Ts4ryk)**
+
+_студент 2-го курсу, групи ІМ-11_<span padding-right:5em></span> **[Владислав ШЕВИРЬОВ](https://t.me/o_g_vlad)**
+
+_студент 2-го курсу, групи ІМ-11_<span padding-right:5em></span> **[Нікіта НЕСТЕРОВ](https://t.me/kamesoed)**
+
+_студент 2-го курсу, групи ІМ-11_<span padding-right:5em></span> **[Вадим УЛАНОВСЬКИЙ](https://t.me/sol_n_tse)**
 
 **Керівник**
 
-*доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> **Андрій БОЛДАК** 
+_доцент кафедри ОТ ФІОТ, к.т.н., доцент_<span padding-right:5em></span> **Андрій БОЛДАК**
 
 [НТУУ "КИЇВСЬКИЙ ПОЛІТЕХНІЧНИЙ ІНСТИТУТ імені ІГОРЯ СІКОРСЬКОГО](https://kpi.ua/)
 
