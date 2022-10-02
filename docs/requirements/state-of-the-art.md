@@ -128,7 +128,7 @@
         <tr>
             <th>Вимоги</th>
             <th>Критерії</th>
-            <th>Imbaza</th>
+            <th>Imbaza (Наш проект)</th>
             <th>Github Projects</th>
             <th>Notion</th>
             <th>Trello</th>
@@ -166,7 +166,7 @@
             <td>🔴</td>
             <td>🔴</td>
             <td>🔴</td>
-            <td>🟢</td>
+            <td>Product backlog, Increment</td>
             <td>🔴</td>
         </tr>
         <tr>
