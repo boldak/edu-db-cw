@@ -98,18 +98,28 @@
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
-Gapminder
+### [Gapminder](https://www.gapminder.org/) 
 
-The World Bank DataBank
+Це є некомерційним підприємством , що сприяє сталому глобальному розвитку та досягненню Цілей розвитку тисячоліття Організації Об'єднаних Націй шляхом розширення використання і розуміння статистичних даних та іншої інформації про соціальний, економічний та екологічний розвиток на місцевому, національному та глобальному рівнях.
 
-Google Public Data Explorer
+### [The World Bank DataBank](https://databank.worldbank.org/) 
 
-### [Statistics Poland](https://stat.gov.pl/en/)
+Це інструмент аналізу та візуалізації, який містить колекції даних часових рядів за різними темами. Ви можете створювати власні запити; створювати таблиці, діаграми та карти; і легко зберігати, вставляти та ділитися ними.
+
+### [Google Public Data Explorer](https://www.google.com/publicdata/directory)
+
+Google Public Data Explorer надає загальнодоступні дані і прогнози від цілого ряду міжнародних організацій і наукових установ, таких як Світовий банк, ОЕСР, Євростат та Університет Денвера. Вони можуть відображатися у вигляді лінійних графіків, гістограм, поперечних перерізів ділянок або на мапах.
+### [Statistics Poland](https://stat.gov.pl/en/) 
+
 Головна державна платформа Польщі, яке займається збором та публікацією статистичних даних, що стосуються економіки, населення та суспільства країни, на національному та місцевому рівнях.
 
-Eurostat
+### [Eurostat](https://ec.europa.eu/eurostat)
 
-Dataverse
+Євростат виробляє європейську статистику у партнерстві з національними статистичними інститутами та іншими національними органами в країнах-членах ЄС. Це партнерство відоме як Європейська статистична система (ESS). До нього також входять статистичні органи країн Європейської економічної зони і Швейцарії.
+
+### [Dataverse](https://powerplatform.microsoft.com/en-us/dataverse/)
+
+Dataverse — сукупність репозиторіїв із відкритими науковими даними, які працюють на програмному забезпеченні Dataverse. Призначений для публікації, цитування, скачування та аналізу даних різних досліджень.
 
 |              Вимоги              |         Критерії          | Система управління відкритими даними | Gapminder | The World Bank DataBank | Google Public Data Explorer | Statistics Poland | Eurostat | Dataverse |
 |:--------------------------------:|:-------------------------:|:------------------------------------:|:---------:|:-----------------------:|:---------------------------:|:-----------------:|:--------:|:---------:|
@@ -139,7 +149,34 @@ Dataverse
 *[Робляться висновки щодо доцільності розробки нової або модифікації існуючої інформаційної системи, необхідності та способів інтеграції з системами(сервісами) третіх сторін, тощо.]*
 
 ## Посилання
+1. Відкриті дані (Open Data) - [Google Docs](https://docs.google.com/document/d/1G3ZcQ5NyHAfaJWXE6uGPRIBLqdRLRk9LXtgQS9utYmQ/edit#heading=h.1u8zm7362v0t)
+2. Великі дані (Big Data) - [Wiki Nina.az](https://www.wiki.uk-ua.nina.az/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D1%96_%D0%B4%D0%B0%D0%BD%D1%96.html)
+3. Дані (Data), Використання даних (Data Use) - [Wikipedia](https://uk.wikipedia.org/wiki/%D0%94%D0%B0%D0%BD%D1%96)
+4. Набір даних (dataset)  - [Wikipedia](https://uk.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B1%D1%96%D1%80_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
+5. База даних (Data Base) - [Host Iq](https://hostiq.ua/wiki/ukr/database/)
+6. Системи керування базами даних (СУБД)  - [Pidru4niki](https://pidru4niki.com/81326/tehnika/sistemi_keruvannya_bazami_danih)
+7. Модель даних (Data Model)  - [Csstricks](https://uk.csstricks.net/8226422-data-modelling-conceptual-logical-physical-data-model-types#menu-2)
+8. [Gapminder](https://www.gapminder.org/)
+9. [The World Bank DataBank](https://databank.worldbank.org/)
+10. [Google Public Data Explorer](https://www.google.com/publicdata/directory)
+11. [Statistics Poland](https://stat.gov.pl/en/)
+12. [Eurostat](https://ec.europa.eu/eurostat)
+13. [Dataverse](https://powerplatform.microsoft.com/en-us/dataverse/)
+14. Системи відкритих даних в Україні - [Wikipedia](https://uk.m.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96#%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96_%D0%B2_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96)
+15. [CityScale](https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96#%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96_%D0%B2_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96)
+16. [Youcontrol](https://youcontrol.com.ua/)
+17. [Opendatabot](https://opendatabot.ua/)
+18. [Clarity Project](https://clarity-project.info/edrs)
+19. [Ring](https://ring.com/)
+20. [EasyWay](https://www.eway.in.ua/ua/cities/kyiv)
+21. [Monitor.Estate](https://monitor.estate/)
+22. Постанова КМУ № 835 - [Zakon.rada.gov.ua](https://zakon.rada.gov.ua/laws/show/835-2015-%D0%BF#Text)
+23. Закон України «Про доступ до публічної інформації» - [Minjust.gov.ua](https://minjust.gov.ua/m/str_35409)
+24. Постанова КМУ від 26 жовтня 2011 р. № 1102 - [Zakononline.com.ua](https://zakononline.com.ua/documents/show/333431___691290)
+25. Закон «Про бухгалтерський облік та фінансову звітність в Україні» - [Zakon.rada.gov.ua](https://zakon.rada.gov.ua/laws/show/996-14#Text)
+26. Закон України «Про доступ до публічної інформації» - [Minjust.gov.ua](https://minjust.gov.ua/m/str_35409)
 
-2. lltlg
-3. g
-*[Розділ містить повний список всіх документів, про які згадується.]*
+
+
+
+
