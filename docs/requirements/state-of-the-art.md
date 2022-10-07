@@ -128,7 +128,7 @@
         <tr>
             <th>Вимоги</th>
             <th>Критерії</th>
-            <th>Imbaza (Наш проект)</th>
+            <th>Imbaza (Наш проєкт)</th>
             <th>Github Projects</th>
             <th>Notion</th>
             <th>Trello</th>
@@ -160,10 +160,10 @@
             <td>🟢</td>
         </tr>
         <tr>
-            <td>Artefacts</td>
+            <td>Artifacts</td>
             <td>🟢</td>
-            <td>🟢</td>
-            <td>🔴</td>
+            <td>Workflow artifacts</td>
+            <td>Export tables, blocks, pages, databases etc.</td>
             <td>🔴</td>
             <td>🔴</td>
             <td>Product backlog, Increment</td>
