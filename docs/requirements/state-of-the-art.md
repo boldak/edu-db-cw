@@ -206,7 +206,7 @@
 4. <a name="link4" href="https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F">Анкетування та його види</a>
 5. <a name="link5" href="https://qala-project-1.gitbook.io/vivchennya-potreb-u-navchann-ta-profes-jnomu-rozvi/anketuvannya-1/anketuvannya">Види запитань в анкетах</a>
 6. <a name="link6.1" href="[https://qala-project-1.gitbook.io/vivchennya-potreb-u-navchann-ta-profes-jnomu-rozvi/anketuvannya-1/anketuvannya](https://stud.com.ua/50988/menedzhment/kilkisni_metodi_otsinki#:~:text=%D0%A0%D0%B0%D0%BD%D0%B6%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F%20-%20%D0%BD%D0%B0%D0%B9%D0%B1%D1%96%D0%BB%D1%8C%D1%88%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B8%D0%B9%20%D0%B7%20%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D0%BE%D1%97%20%D1%82%D0%BE%D1%87%D0%BA%D0%B8%20%D0%B7%D0%BE%D1%80%D1%83,%D0%BE%D1%86%D1%96%D0%BD%D1%8E%D0%B2%D0%B0%D0%BD%D1%96%20%D1%80%D0%B0%D0%BD%D0%B6%D1%83%D1%8E%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%D1%96%D0%B4%20%D0%BA%D1%80%D0%B0%D1%89%D0%BE%D0%B3%D0%BE%20%D0%B4%D0%BE%20%D0%B3%D1%96%D1%80%D1%88%D0%BE%D0%B3%D0%BE%20%D0%B0%D0%B1%D0%BE%20%D0%BD%D0%B0%D0%B2%D0%BF%D0%B0%D0%BA%D0%B8.)">Кількісні методи оцінки ранджування</a>
-7. <a name="link6.2 href="(http://ukrefs.com.ua/213417-Metod-posledovatel-nyh-sravneniiy.html)">Метод послідовних порівнянь</a>
+7. <a name="link6.2" href="(http://ukrefs.com.ua/213417-Metod-posledovatel-nyh-sravneniiy.html)">Метод послідовних порівнянь</a>
 8. <a name="link6.3" href="(http://www.rusnauka.com/1_NIO_2012/Economics/8_97879.doc.htm)">Метод попарних порівнянь</a>
 8. <a name="link6" href="https://stydopedia.ru/4x8698.html">Обробка результатів експертного опитування</a>
 9. <a name="link7" href="https://studfile.net/preview/5456986/page:6/">Методи експертних опитувань</a>
