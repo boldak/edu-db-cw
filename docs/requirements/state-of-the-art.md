@@ -161,47 +161,47 @@ Named Entity (NE) — це назва, яка вказує на певну ун�
 
 ## Посилання
 
-<a name='link1'>[1](https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96)
+<a name='link1'>1(https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96)
 
-<a name='link2'>[2](https://step.org.ua/konspekt/base/tema1)
+<a name='link2'>2(https://step.org.ua/konspekt/base/tema1)
 
-<a name='link3'>[3](https://futurenow.com.ua/shho-take-big-data-velyki-dani/)
+<a name='link3'>3(https://futurenow.com.ua/shho-take-big-data-velyki-dani/)
 
-<a name='link4'>[4](https://www.oracle.com/database/what-is-database/)
+<a name='link4'>4(https://www.oracle.com/database/what-is-database/)
 
-<a name='link5'>[5](https://www.techtarget.com/searchdatamanagement/definition/database-management-system)
+<a name='link5'>5(https://www.techtarget.com/searchdatamanagement/definition/database-management-system)
 
-<a name='link6'>[6](https://www.erwin.com/solutions/data-modeling/data-model.aspx)
+<a name='link6'>6(https://www.erwin.com/solutions/data-modeling/data-model.aspx)
 
-<a name='link7'>[7](https://www.techopedia.com/definition/6731/data-bank)
+<a name='link7'>7(https://www.techopedia.com/definition/6731/data-bank)
 
-<a name='link8'>[8](https://byjus.com/maths/data-sets/)
+<a name='link8'>8(https://byjus.com/maths/data-sets/)
 
-<a name='link9'>[9](https://uk.wikipedia.org/wiki/%D0%A8%D1%82%D1%83%D1%87%D0%BD%D0%B8%D0%B9_%D1%96%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82)
+<a name='link9'>9(https://uk.wikipedia.org/wiki/%D0%A8%D1%82%D1%83%D1%87%D0%BD%D0%B8%D0%B9_%D1%96%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82)
 
-<a name='link10'>[10](https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%BC%D0%BE%D0%B2%D0%B8)
+<a name='link10'>10(https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%BC%D0%BE%D0%B2%D0%B8)
 
-<a name='link11'>[11](https://appen.com/blog/text-annotation/)
+<a name='link11'>11(https://appen.com/blog/text-annotation/)
 
-<a name='link12'>[12](https://www.telusinternational.com/articles/an-introduction-to-5-types-of-text-annotation)
+<a name='link12'>12(https://www.telusinternational.com/articles/an-introduction-to-5-types-of-text-annotation)
 
-<a name='link13'>[13](https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D0%BB%D1%96%D0%B7_%D1%82%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%96_%D1%82%D0%B5%D0%BA%D1%81%D1%82%D1%83)
+<a name='link13'>13(https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D0%BB%D1%96%D0%B7_%D1%82%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%96_%D1%82%D0%B5%D0%BA%D1%81%D1%82%D1%83)
 
-<a name='link14'>[14](https://ioannotator.com/sentiment)
+<a name='link14'>14(https://ioannotator.com/sentiment)
 
-<a name='link15'>[15](https://www.taus.net/resources/blog/intent-recognition-in-nlp)
+<a name='link15'>15(https://www.taus.net/resources/blog/intent-recognition-in-nlp)
 
-<a name="link16">[16](https://github.com/lang-uk/ner-uk/blob/master/doc/tokenization.md)
+<a name="link16">16(https://github.com/lang-uk/ner-uk/blob/master/doc/tokenization.md)
 
-<a name="link17">[17](https://en.wikipedia.org/wiki/Named-entity_recognition)  
+<a name="link17">17(https://en.wikipedia.org/wiki/Named-entity_recognition)  
 
-<a name="link18">[18](https://github.com/lang-uk/ner-uk/blob/master/doc/README.md) 
+<a name="link18">18(https://github.com/lang-uk/ner-uk/blob/master/doc/README.md) 
 
-[*doccano*](https://doccano.herokuapp.com)
+*doccano*(https://doccano.herokuapp.com)
 
-[*LightTag*](https://www.lighttag.io)
+*LightTag*(https://www.lighttag.io)
 
-[*Prodigy*](https://prodi.gy)
+*Prodigy*(https://prodi.gy)
 
-[*Dandelion API*](https://dandelion.eu)
+*Dandelion API*(https://dandelion.eu)
 
