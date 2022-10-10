@@ -57,7 +57,8 @@
 + Тестування і налагодження;
 + Експлуатацію, супровід і підтримку.
 
-Для полегшення проєктування, створення і випуску якісного програмного продукту існують різні моделі життєвого циклу ПЗ[[1]](http://dspace.wunu.edu.ua/retrieve/19690/)[[5]](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/).
+Для полегшення проєктування, створення і випуску якісного програмного продукту існують різні моделі життєвого циклу ПЗ
+[[1]](http://dspace.wunu.edu.ua/retrieve/19690/) [[5]](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/).
 
 **Каскадна або водоспадна модель (Waterfall model)** 
 
@@ -77,7 +78,7 @@
 
 ![Водоспадна модель](../../assets/images/Waterfall-model.jpg "Водоспадна модель" )
 
-*Водоспадна модель*
+*Водоспадна модель*[[5]](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
 
 
 **V-подібна модель (V-model)**
@@ -100,7 +101,7 @@
 
 ![V-подібна модель](../../assets/images/V-model-1.jpg "V-подібна модель" )
 
-*V-подібна модель*
+*V-подібна модель*[[5]](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
 
 
 **Ітераційна модель**
@@ -115,7 +116,7 @@
 
 ![Ітераційна модель](../../assets/images/iteration_model.png "Ітераційна модель" )
 
-*Ітераційна модель*
+*Ітераційна модель*[[13]](https://evergreens.com.ua/ua/articles/software-development-metodologies.html)
 
 Подальші приклади наслідують ітераційну модель життєвого циклу програмного забезпечення.
 
@@ -140,7 +141,7 @@
 
 ![Інкрементна модель](../../assets/images/incremental_model.jpg "Інкрементна модель" )
 
-*Інкрементна модель*
+*Інкрементна модель*[[5]](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
 
 
 **Спіральна модель (Spiral model)**
@@ -161,7 +162,7 @@
 
 ![Спіральна модель](../../assets/images/Spiral-model.jpg "Спіральна модель" )
 
-*Спіральна модель*
+*Спіральна модель*[[5]](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
 
 
 **Гнучка модель (Agile model)**
@@ -181,7 +182,7 @@
 
 ![Гнучка модель](../../assets/images/Agile-model1.jpg "Гнучка модель" )
 
-*Гнучка модель*
+*Гнучка модель*[[5]](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
 
 
 **Скрам (Scrum)**
@@ -207,7 +208,7 @@
 
 ![Скрам-модель](../../assets/images/Scrum1.jpg "Скрам-модель" )
 
-*Скрам-модель*
+*Скрам-модель*[[5]](https://training.qatestlab.com/blog/technical-articles/popular-software-development-life-cycles/)
 
 
 **Lean**
@@ -240,7 +241,7 @@
 
 ![Kanban](../../assets/images/kanban.png "Kanban" )
 
-*Kanban*
+*Kanban*[[3]](https://biz.mann-ivanov-ferber.ru/2020/03/04/kratko-i-ponyatno-o-kanbane/)
 
 
 **RUP**
@@ -299,7 +300,7 @@ RUP використовує ітеративну модель розробки.
 
 ![RUP](../../assets/images/rup.png "RUP" )
 
-*RUP*
+*RUP*[[6]](https://qaevolution.ru/metodologiya-menedzhment/rup/)
 
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
@@ -402,7 +403,7 @@ Trello — безплатна багатоплатформна система у
 
 [Що таке TLS протокол?](https://www.vpnunlimited.com/ua/help/vpn-protocols/tls-protocol)
 
-[Що таке API? Просте пояснення для початківців](https://dev.ua/news/chto-takoe-api-prostym-yazykom)\
+[Що таке API? Просте пояснення для початківців](https://dev.ua/news/chto-takoe-api-prostym-yazykom)
 
 [GitHub - Вікіпедія](https://uk.wikipedia.org/wiki/GitHub)
 
@@ -417,8 +418,6 @@ Trello — безплатна багатоплатформна система у
 [Спринт](https://ucode.world/shho-take-skram-i-yak-tse-pratsyuye/)
 
 [Що таке лендінг і як його зробити](https://hostiq.ua/blog/ukr/what-is-landing/)
-
-[Моделі життєвого циклу, принципи і методології розробки програмного забезпечення (ПЗ)](https://evergreens.com.ua/ua/articles/software-development-metodologies.html)
 
 [Канбан-доска - Википедия](https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BD%D0%B1%D0%B0%D0%BD-%D0%B4%D0%BE%D1%81%D0%BA%D0%B0)
 
@@ -459,3 +458,5 @@ Trello — безплатна багатоплатформна система у
 11. [Сравнение бесплатных и платных планов Asana](https://www.dz-techs.com/ru/asana-free-vs-premium)
 
 12. [Asana Guide](https://asana.com/guide/help)
+
+13. [Моделі життєвого циклу, принципи і методології розробки програмного забезпечення (ПЗ)](https://evergreens.com.ua/ua/articles/software-development-metodologies.html)
