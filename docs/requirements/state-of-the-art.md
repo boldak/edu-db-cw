@@ -50,6 +50,7 @@
 * та антикорупції (від 0,7 до 0,9 млн користувачів)
 
 ![Foto](https://upload.wikimedia.org/wikipedia/commons/b/b1/%D0%A2%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0_%D1%81%D0%B5%D1%80%D0%B2%D1%96%D1%81%D1%96%D0%B2_%D0%BD%D0%B0_%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%96_%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D0%B8%D1%85_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85.png)
+[[12]](#link12)
 
 Популярніші системи:
 - [CityScale](https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96#%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96_%D0%B2_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96)
@@ -94,7 +95,7 @@
 
 У множин можуть бути різні властивості, та можуть мати свою ієрархію. Ієрархія визначається властивістю *drill_up*. Сутності які нижче за ієрархією, визначається пов'язана до ієрархії сутність.
 
-### Concepts(поняття)
+### Concepts(поняття)[[15]](link15)
 Концепти можуть мати властивості та мають свої індетифікатори, які мають складатися лише з малих літер, цифр та підкреслень.
 
 Існують різні типи понятть:
@@ -108,10 +109,11 @@
 - *composite* - концепт, який складається з декількох концептів.
 - *time* - концепт часу. Особливий випадок, так як не є однозначно визначеним - визначається за допомогою форматів часу.
 
-### Metadata(Метадані)
+### Metadata(Метадані) [[13]](link13)
 ***Метадані*** - як прийнято, це дані про дані, тобто ті дані які пояснюють інші дані. Різні дані можуть мати різні метадані. *В DDF **метадані*** - властивість однієї з пари ключ-значення.
 
-### Synonyms(Синоніми)
+### Synonyms(Синоніми)[[14]](https://learn.microsoft.com/en-us/sql/relational-databases/synonyms/synonyms-database-engine?view=sql-server-ver16)
+
 ***Синоніми*** - рядок який дає змогу визначити поняття або сутність у набору даних. Та також множина сутностей містить ідентифікатори сутностей та понять з їхніми синонімами.
 
 Вони використовуються для перекладу набора даних з одного простору імен до іншого, тобто для гармонізації ідентичних понять та сутностей.
@@ -131,12 +133,14 @@
 Головна державна платформа Польщі, яке займається збором та публікацією статистичних даних, що стосуються економіки, населення та суспільства країни, на національному та місцевому рівнях.
 
 ### [Eurostat](https://ec.europa.eu/eurostat/web/main/data/database)
-Cтатистичне управління Європейського Союзу. Головна місія - надавати високоякісні статистичні дані про Європу. Eurostat розробляє європейську статистику у партнерстві з Національними статистичними інститутами та іншими національними органами держав-членів ЄС. Це партнерство відоме як Європейська статистична система (ЄСС). Веб-сайт Eurostat надає прямий і безкоштовний онлайн-доступ до всіх статистичних баз даних Євростату та електронних публікацій. База даних Євростату охоплює дані для таких країн:
+Cтатистичне управління Європейського Союзу. Головна місія - надавати високоякісні статистичні дані про Європу. Eurostat розробляє європейську статистику у партнерстві з Національними статистичними інститутами та іншими національними органами держав-членів ЄС. Це партнерство відоме як Європейська статистична система (ЄСС). Веб-сайт Eurostat надає прямий і безкоштовний онлайн-доступ до всіх статистичних баз даних Євростату та електронних публікацій.
 
--країни-члени ЄC
--країни-кандидати до ЄС
--єврозона
--країни EFTA
+База даних Євростату охоплює дані для таких країн:
+
+- країни-члени ЄC
+- країни-кандидати до ЄС
+- єврозона
+- країни EFTA
 
 ### [Dataverse](https://dataverse.org/)
 Dataverse - це open-source програмне забезпечення, яке призначене для поширення, збереження, пошуку та аналізу відкритих даних. Воно полегшує надання даних іншим особам, тобто робить дані більш доступними. Головна особливість цього сервісу в тому, як він дозволяє організовувати інформацію. Dataverse репозиторій зберігає в собі віртуальні архіви, які називаються Dataverse колекціями. Кожна Dataverse колекція містить в собі сети інформації (datasets) або інші Dataverse колекції. Сети інформації в свою чергу містять в собі описові метадані та файли з даними (документація, код та інше). Головною метою даного програмного забеспечення є автоматизація більшості рутинної роботи професійних архівістів та збереження/розповсюдження інформації про автора даних.
@@ -182,29 +186,48 @@ Dataverse - це open-source програмне забезпечення, яке
  * пошук потрібної інформації.
 
 ## Посилання
-<a name="link1"></a>1. Відкриті дані (Open Data) - [Google Docs](https://docs.google.com/document/d/1G3ZcQ5NyHAfaJWXE6uGPRIBLqdRLRk9LXtgQS9utYmQ/edit#heading=h.1u8zm7362v0t)
+<a name="link1"></a>
+1. Відкриті дані (Open Data) - [Google Docs](https://docs.google.com/document/d/1G3ZcQ5NyHAfaJWXE6uGPRIBLqdRLRk9LXtgQS9utYmQ/edit#heading=h.1u8zm7362v0t)
 
-<a name="link2"></a>2. Великі дані (Big Data) - [Wiki Nina.az](https://www.wiki.uk-ua.nina.az/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D1%96_%D0%B4%D0%B0%D0%BD%D1%96.html)
+<a name="link2"></a>
+2. Великі дані (Big Data) - [Wiki Nina.az](https://www.wiki.uk-ua.nina.az/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D1%96_%D0%B4%D0%B0%D0%BD%D1%96.html)
 
-<a name="link3"></a>3. Дані (Data), Використання даних (Data Use) - [Wikipedia](https://uk.wikipedia.org/wiki/%D0%94%D0%B0%D0%BD%D1%96)
+<a name="link3"></a>
+3. Дані (Data), Використання даних (Data Use) - [Wikipedia](https://uk.wikipedia.org/wiki/%D0%94%D0%B0%D0%BD%D1%96)
 
-<a name="link4"></a>4. Набір даних (dataset)  - [Wikipedia](https://uk.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B1%D1%96%D1%80_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
+<a name="link4"></a>
+4. Набір даних (dataset)  - [Wikipedia](https://uk.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B1%D1%96%D1%80_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
 
-<a name="link5"></a>5. База даних (Data Base) - [Host Iq](https://hostiq.ua/wiki/ukr/database/)
+<a name="link5"></a>
+5. База даних (Data Base) - [Host Iq](https://hostiq.ua/wiki/ukr/database/)
 
-<a name="link6"></a>6. Банк даних (Data Bank) - [Life Prog](https://life-prog.ru/ukr/1_324_ponyattya-pro-bank-danih.html)
+<a name="link6"></a>
+6. Банк даних (Data Bank) - [Life Prog](https://life-prog.ru/ukr/1_324_ponyattya-pro-bank-danih.html)
 
-<a name="link7"></a>7. Системи керування базами даних (СУБД)  - [Pidru4niki](https://pidru4niki.com/81326/tehnika/sistemi_keruvannya_bazami_danih)
+<a name="link7"></a>
+7. Системи керування базами даних (СУБД)  - [Pidru4niki](https://pidru4niki.com/81326/tehnika/sistemi_keruvannya_bazami_danih)
 
-<a name="link8"></a>8. Модель даних (Data Model)  - [Csstricks](https://uk.csstricks.net/8226422-data-modelling-conceptual-logical-physical-data-model-types#menu-2)
+<a name="link8"></a>
+8. Модель даних (Data Model)  - [Csstricks](https://uk.csstricks.net/8226422-data-modelling-conceptual-logical-physical-data-model-types#menu-2)
 
-<a name="link9"></a>9. Модель даних DDF - [Google Docs](https://docs.google.com/document/d/1Cd2kEH5w3SRJYaDcu-M4dU5SY8No84T3g-QlNSW6pIE/edit#)
+<a name="link9"></a>
+9. Модель даних DDF - [Google Docs](https://docs.google.com/document/d/1Cd2kEH5w3SRJYaDcu-M4dU5SY8No84T3g-QlNSW6pIE/edit#)
 
-<a name="link10"></a>10. Системи відкритих даних в Україні - [Wikipedia](https://uk.m.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96#%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96_%D0%B2_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96)
+<a name="link10"></a>
+10. Системи відкритих даних в Україні - [Wikipedia](https://uk.m.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96#%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96_%D0%B2_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96)
 
-<a name="link11"></a>11. Закон України «Про доступ до публічної інформації» - [Minjust.gov.ua](https://minjust.gov.ua/m/str_35409)
+<a name="link11"></a>
+11. Закон України «Про доступ до публічної інформації» - [Minjust.gov.ua](https://minjust.gov.ua/m/str_35409)
 
+<a name="link12"></a>
+12. Фотографія - [Wikipedia](https://uk.m.wikipedia.org/wiki/%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96#%D0%92%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96_%D0%B4%D0%B0%D0%BD%D1%96_%D0%B2_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96)
 
+<a name="link13"></a>
+13. Метаданні- [Wikipedia](https://en.wikipedia.org/wiki/Metadata)
 
+<a name="link14"></a>
+14. Синоніми - [Microsoft learn](https://learn.microsoft.com/en-us/sql/relational-databases/synonyms/synonyms-database-engine?view=sql-server-ver16)
 
+<a name="link15"></a>
+15. Концепти - [Google Docs](https://docs.google.com/document/d/1Cd2kEH5w3SRJYaDcu-M4dU5SY8No84T3g-QlNSW6pIE/edit#)
 
