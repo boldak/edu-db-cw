@@ -265,6 +265,7 @@ DataBank — це інструмент аналізу та візуалізац�
 - [wikipedia.org⁹](https://ru.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself)
 - [wikipedia.org¹⁰](https://uk.wikipedia.org/wiki/SOLID_(%D0%BE%D0%B1%27%D1%94%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D1%96%D1%94%D0%BD%D1%82%D0%BE%D0%B2%D0%B0%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F))
 - [wikipedia.org¹¹](https://en.wikipedia.org/wiki/Hard_coding)
+- [wikipedia.org¹²](https://uk.wikipedia.org/wiki/%D0%86%D1%94%D1%80%D0%B0%D1%80%D1%85%D1%96%D1%87%D0%BD%D0%B0_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
 - [ru.bmstu.wiki](https://ru.bmstu.wiki/%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8_%D0%B1%D0%B0%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
 - [upwiki.one](https://uk.upwiki.one/wiki/Data_model)
 - [studfile.net¹](https://studfile.net/preview/5454386/)
