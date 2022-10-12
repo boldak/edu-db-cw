@@ -218,22 +218,22 @@
 
 ## Посилання
 
-1. <a name="link1" href="https://uk.wikipedia.org/wiki/%D0%95%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82">Експерт</a>
-2. <a name="link2" href="https://buromt.com.ua/uk/expert-survey/">Проведення експертних опитувань</a>
-3. <a name="link3" href="https://studfile.net/preview/5456986/page:6/">Експертне опитування та його види</a>
-4. <a name="link4" href="https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F">Анкетування та його види</a>
-5. <a name="link5" href="https://qala-project-1.gitbook.io/vivchennya-potreb-u-navchann-ta-profes-jnomu-rozvi/anketuvannya-1/anketuvannya">Види запитань в анкетах</a>
-6. <a name="link6.1" href="https://qala-project-1.gitbook.io/vivchennya-potreb-u-navchann-ta-profes-jnomu-rozvi/anketuvannya-1/anketuvannya">Кількісні методи оцінки ранджування</a>
-7. <a name="link6.2" href="http://ukrefs.com.ua/213417-Metod-posledovatel-nyh-sravneniiy.html">Метод послідовних порівнянь</a>
-8. <a name="link6.3" href="http://www.rusnauka.com/1_NIO_2012/Economics/8_97879.doc.htm">Метод попарних порівнянь</a>
-9. <a name="link6" href="https://stydopedia.ru/4x8698.html">Обробка результатів експертного опитування</a>
-10. <a name="link7" href="https://studfile.net/preview/5456986/page:6/">Методи експертних опитувань</a>
-11. <a name="link8" href="http://ni.biz.ua/1/1_8/1_82424_dostoinstva-i-nedostatki-raznih-sposobov-oprosa-ekspertov.html">Метод Дельфі та Патерн</a>
-12. <a name="link9" href="https://uk.wikipedia.org/wiki/Google_Форми">Google Forms</a>
-13. <a name="link10" href="https://www.survio.com/">Survio</a>
-14. <a name="link11" href="https://en.everybodywiki.com/SurveyJS">SurveyJS</a>
-15. <a name="link12" href="https://oca.com.ua/index.php">Система “ОСА”</a>
-16. <a name="link13" href="https://startpack.ru/application/typeform">Typeform</a>
-17. <a name="link14" href="https://coba.tools/examinare">Examinare</a>
-18. <a name="link15" href="https://gruzdevv.ru/services/oprosy-survey-monkey/">SurveyMonkey</a>
-19. <a name="link16" href="https://www.zoho.com/survey/">Zoho Survey</a>
+- <a name="link1" href="https://uk.wikipedia.org/wiki/%D0%95%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82">Експерт</a>
+- <a name="link2" href="https://buromt.com.ua/uk/expert-survey/">Проведення експертних опитувань</a>
+- <a name="link3" href="https://studfile.net/preview/5456986/page:6/">Експертне опитування та його види</a>
+- <a name="link4" href="https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F">Анкетування та його види</a>
+- <a name="link5" href="https://qala-project-1.gitbook.io/vivchennya-potreb-u-navchann-ta-profes-jnomu-rozvi/anketuvannya-1/anketuvannya">Види запитань в анкетах</a>
+- <a name="link6.1" href="https://qala-project-1.gitbook.io/vivchennya-potreb-u-navchann-ta-profes-jnomu-rozvi/anketuvannya-1/anketuvannya">Кількісні методи оцінки ранджування</a>
+-  <a name="link6.2" href="http://ukrefs.com.ua/213417-Metod-posledovatel-nyh-sravneniiy.html">Метод послідовних порівнянь</a>
+-  <a name="link6.3" href="http://www.rusnauka.com/1_NIO_2012/Economics/8_97879.doc.htm">Метод попарних порівнянь</a>
+-  <a name="link6" href="https://stydopedia.ru/4x8698.html">Обробка результатів експертного опитування</a>
+-  <a name="link7" href="https://studfile.net/preview/5456986/page:6/">Методи експертних опитувань</a>
+-  <a name="link8" href="http://ni.biz.ua/1/1_8/1_82424_dostoinstva-i-nedostatki-raznih-sposobov-oprosa-ekspertov.html">Метод Дельфі та Патерн</a>
+-  <a name="link9" href="https://uk.wikipedia.org/wiki/Google_Форми">Google Forms</a>
+-  <a name="link10" href="https://www.survio.com/">Survio</a>
+-  <a name="link11" href="https://en.everybodywiki.com/SurveyJS">SurveyJS</a>
+-  <a name="link12" href="https://oca.com.ua/index.php">Система “ОСА”</a>
+-  <a name="link13" href="https://startpack.ru/application/typeform">Typeform</a>
+-  <a name="link14" href="https://coba.tools/examinare">Examinare</a>
+-  <a name="link15" href="https://gruzdevv.ru/services/oprosy-survey-monkey/">SurveyMonkey</a>
+-  <a name="link16" href="https://www.zoho.com/survey/">Zoho Survey</a>
