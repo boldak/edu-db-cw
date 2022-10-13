@@ -35,16 +35,16 @@
 - Напівструктуровані дані: як випливає з назви, ці дані являють собою суміш структурованих і неструктурованих форматів даних. Хоча у нього є певна організація, у нього недостатньо структури, щоб відповідати вимогам реляційної бази даних. Приклади напівструктурованих даних включають файли XML, JSON і HTML.
 
 ![Struct data](../media/1.png)
-<small>
-*[What Is Unstructured Data](https://monkeylearn.com/blog/what-is-unstructured-data/)*
-</small>
+
+*[Pic.1. What Is Unstructured Data](https://monkeylearn.com/blog/what-is-unstructured-data/)*
+
 
 Перш ніж застосовувати різні методи інтелектуального аналізу тексту, ви повинні почати з попередньої обробки тексту, яка є практикою очищення та перетворення текстових даних у придатний для використання формат. Ця практика є основним аспектом **Natural Language Processing** (або NLP) — це компонент видобутку тексту, який виконує особливий вид лінгвістичного аналізу, який по суті допомагає машині «читати» текст.[<sup>[10]</sup>](./state-of-the-art.html#висновки) 
 
 ![NLP](../media/2.png)
-<small>
-*[Natural Language Processing (NLP) based Chatbots](https://medium.com/analytics-vidhya/natural-language-processing-nlp-based-chatbots-7b2436428256)*
-</small>
+
+*[Pic.2. Natural Language Processing (NLP) based Chatbots](https://medium.com/analytics-vidhya/natural-language-processing-nlp-based-chatbots-7b2436428256)*
+
 
 
 NLP використовує різні методології для розшифровки неоднозначності в людській мові, включаючи наступні:
@@ -56,37 +56,37 @@ NLP використовує різні методології для розши
 - **Summarization**: Цей метод забезпечує короткий виклад довгих фрагментів тексту для створення короткого, зв'язного резюме основних положень документа.[<sup>[2]</sup>](./state-of-the-art.html#висновки)
 
 ![TPS](../media/3.jpeg)
-<small>
-*[Email Classification Using Natural Language Processing (NLP)](https://medium.datadriveninvestor.com/email-classification-using-natural-language-processing-nlp-ee3573bc79f7)*
-</small>
+
+[Pic.3. Email Classification Using Natural Language Processing (NLP)](https://medium.datadriveninvestor.com/email-classification-using-natural-language-processing-nlp-ee3573bc79f7)
+
 
 - **Part-of-Speech (PoS) tagging**: Цей метод присвоює тег кожному токену в документі на основі його частини мови, тобто позначає іменники, дієслова, прикметники тощо. цей крок дозволяє проводити семантичний аналіз неструктурованого тексту.[<sup>[9]</sup>](./state-of-the-art.html#висновки)
 
 ![PoS](../media/4.png)
-<small>
-*[Learning POS Tagging & Chunking in NLP](https://medium.com/greyatom/learning-pos-tagging-chunking-in-nlp-85f7f811a8cb)*
-</small>
+
+*[Pic.4. Learning POS Tagging & Chunking in NLP](https://medium.com/greyatom/learning-pos-tagging-chunking-in-nlp-85f7f811a8cb)*
+
 
 - **Text categorization**: Ця задача, яка також відома як text classification, відповідає за аналіз текстових документів і їх класифікацію на основі зумовлених тим або категорій. Ця підзадача особливо корисна при категоризації синонімів і скорочень.[<sup>[9]</sup>](./state-of-the-art.html#висновки)
 
 ![TC](../media/5.jpg)
-<small>
-*[Text Classification: What it is And Why it Matters](https://monkeylearn.com/text-classification/)*
-</small>
+
+*[Pic.5. Text Classification: What it is And Why it Matters](https://monkeylearn.com/text-classification/)*
+
 
 - **Sentiment analysis**: Використання цього підходу дозволяє нам визначати позитивні або негативні настрої з внутрішніх або зовнішніх джерел даних, дозволяючи відстежувати зміни щодо об'єктів за якими ми слідкуємо з плином часу. Він зазвичай використовується для надання інформації про сприйняття аудиторією різних брендів, продуктів і послуг. Ці аналітичні дані можуть спонукати компанії встановлювати контакти з клієнтами, покращувати внутрішні процеси та користувальницький досвід.[<sup>[9]</sup>](./state-of-the-art.html#висновки)
 
 ![SA](../media/6.jpeg)
-<small>
-*[Email Sentiment Analysis in 3 Steps](https://monkeylearn.com/blog/email-sentiment-analysis/)*
-</small>
+
+*[Pic.6. Email Sentiment Analysis in 3 Steps](https://monkeylearn.com/blog/email-sentiment-analysis/)*
+
 
 - **Named-entity recognition** (NER) також відомий як entity identification або  entity extraction, метод спрямований на пошук і категоризацію певних сутностей в тексті, таких як імена або локації. Наприклад, NER визначає "Київ" як місцеположення, а "Марія" - як жіноче ім'я.[<sup>[10]</sup>](./state-of-the-art.html#висновки)
 
 ![SA](../media/7.png)
-<small>
-*[Named Entity Recognition: Concept, Tools and Tutorial](https://monkeylearn.com/blog/named-entity-recognition/)*
-</small>
+
+*[Pic.7. Named Entity Recognition: Concept, Tools and Tutorial](https://monkeylearn.com/blog/named-entity-recognition/)*
+
 
 
 - **Full Text Search** належить до методів пошуку текстового вмісту в документі або колекції документів, що містять текстовий вміст. Система Full Text Search перевіряє весь текстовий вміст документів, намагаючись знайти відповідність одному пошуковому запиту або декільком термінам, причому аналіз тексту є ключовим компонентом.[<sup>[11]</sup>](./state-of-the-art.html#висновки)
@@ -97,10 +97,12 @@ NLP використовує різні методології для розши
 
 - **Tensor Flow** - це потужна бібліотека з відкритим кодом для машинного навчання, розроблена компанією Google. В основному використовується для глибокого навчання, підтримує розширену класифікацію тексту, Узагальнення, позначку і завдання розпізнавання мови. Оскільки це дає вам можливість аналізувати дані у величезних масштабах, великі компанії вибирають TensorFlow для побудови своїх моделей.[<sup>[14]</sup>](./state-of-the-art.html#висновки)
 
+- **Data Sampling** - це техніка статистичного аналізу, яка використовується для відбору, обробки та аналізу репрезентативної підмножини точок даних для виявлення закономірностей і тенденцій у більшому наборі даних, що досліджується. Це дає змогу спеціалістам з аналізу даних, розробникам прогнозних моделей та іншим аналітикам даних працювати з невеликою, керованою кількістю даних, щоб швидше створювати та запускати аналітичні моделі, водночас одержуючи точні результати.[<sup>[21]</sup>](./state-of-the-art.html#висновки) 
+
 ![W2V](../media/8.png "Word2vec using Tensor Flow")
-<small>
-*[NLP with gensim (word2vec)](samyzaf.com/ML/nlp/nlp.html)*
-</small>
+
+*[Pic.8. NLP with gensim (word2vec)](samyzaf.com/ML/nlp/nlp.html)*
+
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
@@ -195,3 +197,5 @@ NLP використовує різні методології для розши
 19. [YouScan](https://youscan.io)
 
 20. [Brandwatch](https://www.brandwatch.com)
+
+21. [Data Sampling](https://www.techtarget.com/searchbusinessanalytics/definition/data-sampling) 
