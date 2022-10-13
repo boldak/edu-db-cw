@@ -1,9 +1,9 @@
 {
-  "name": "db_course_work",
+  "name": "dbuildery",
   "version": "2.1.0",
   "main": "index.js",
   "description": "Databases course work template",
-  "repository": "https://github.com/neliudochka/db_course_work",
+  "repository": "https://github.com/neliudochka/dbuildery",
   "author": "Liudmyla Gorbunova <gorbunova.milasha@gmail.com>",
   "license": "ECL 2.0",
   "scripts": {
