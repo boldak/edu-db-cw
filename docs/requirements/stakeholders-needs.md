@@ -31,11 +31,15 @@
 
 [FURPS](https://en.wikipedia.org/wiki/FURPS) - це абревіатура для [Functionality](https://en.wikipedia.org/wiki/Functional_requirement)(функціональності), [Usability](https://en.wikipedia.org/wiki/Usability)(практичності), [Reliability](https://en.wikipedia.org/wiki/Reliability_engineering)(надійності), [Performance](https://en.wikipedia.org/wiki/Computer_performance)(продуктивності) і [Supportability](https://en.wikipedia.org/wiki/Serviceability_(computer))(експлуатаційної придатності) програмного забезпечення комп’ютерних систем, але тепер використовується для класифікації багатьох пов’язаних систем і послуг (Zimmer 1989). Модель FURPS була вперше розроблена в Hewlett-Packard і широко використовувалася для класифікації функціональних і нефункціональних вимог систем з моменту її оприлюднення (Grady 1987)[[1]](https://www.linkedin.com/pulse/conjoining-furps-moscow-analyse-prioritise-jonathan-dyson?_l=en_US).
 
+[Випадний список](https://en.wikipedia.org/wiki/Drop-down_list) (англ. drop-down list) — елемент керування графічного інтерфейсу користувача, списку, який дозволяє користувачу вибрати одне значення зі списку. 
+
 ###  <a name ="references">Посилання</a>
 
 [FURPS](https://en.wikipedia.org/wiki/FURPS)
 
 1. [FURPS model](https://www.linkedin.com/pulse/conjoining-furps-moscow-analyse-prioritise-jonathan-dyson?_l=en_US)
+
+[Випадний список](https://en.wikipedia.org/wiki/Drop-down_list)
 
 [Функціональність](https://en.wikipedia.org/wiki/Functional_requirement)
 
