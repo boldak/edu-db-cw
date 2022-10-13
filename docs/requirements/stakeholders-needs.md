@@ -29,12 +29,23 @@
 
 ###  <a name ="mainDef">Основні визначення та скорочення </a>
 
-*[Розділ містить визначення всіх термінів та скорочень, необхідних для правильного
-тлумачення вимог. Можна зробити посилання на документ, в якому поданий аналіз предметної області.]*
+[FURPS](https://en.wikipedia.org/wiki/FURPS) - це абревіатура для [Functionality](https://en.wikipedia.org/wiki/Functional_requirement)(функціональності), [Usability](https://en.wikipedia.org/wiki/Usability)(практичності), [Reliability](https://en.wikipedia.org/wiki/Reliability_engineering)(надійності), [Performance](https://en.wikipedia.org/wiki/Computer_performance)(продуктивності) і [Supportability](https://en.wikipedia.org/wiki/Serviceability_(computer))(експлуатаційної придатності) програмного забезпечення комп’ютерних систем, але тепер використовується для класифікації багатьох пов’язаних систем і послуг (Zimmer 1989). Модель FURPS була вперше розроблена в Hewlett-Packard і широко використовувалася для класифікації функціональних і нефункціональних вимог систем з моменту її оприлюднення (Grady 1987)[[1]](https://www.linkedin.com/pulse/conjoining-furps-moscow-analyse-prioritise-jonathan-dyson?_l=en_US).
 
 ###  <a name ="references">Посилання</a>
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+[FURPS](https://en.wikipedia.org/wiki/FURPS)
+
+1. [FURPS model](https://www.linkedin.com/pulse/conjoining-furps-moscow-analyse-prioritise-jonathan-dyson?_l=en_US)
+
+[Функціональність](https://en.wikipedia.org/wiki/Functional_requirement)
+
+[Практичність](https://en.wikipedia.org/wiki/Usability)
+
+[Надійність](https://en.wikipedia.org/wiki/Reliability_engineering)
+
+[Продуктивність](https://en.wikipedia.org/wiki/Computer_performance)
+
+[Експлуатаційна підтримка](https://en.wikipedia.org/wiki/Serviceability_(computer))
 
 ###  <a name ="short">Короткий зміст</a>
 
