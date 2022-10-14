@@ -130,7 +130,7 @@ NLP використовує різні методології для розши
 - 🔴 - Не задовільняє критерій
 - ⚪️(🟢/🟡/🔴) - В процесі розробки(в дужках запланований результат)
 
-|Вимоги| Критерії                      | Semantrum | BRAND24 | Isentia | Meltwater | YouScan | Brandwatch | Our system |
+|Вимоги| Критерії                      | Semantrum | BRAND24 | Isentia | Meltwater | YouScan | Brandwatch | Media Blitz(Our system) |
 |:----:| :--------------: | :-------: | :----: |  :----:  | :-----: | :----: | :--------: | :--------: |
 | **Functionality (функциональні вимоги)** |
 |  | Особистий кабінет                 | 🟢       | 🟢         | 🟢     |  🟢       | 🟢     |  🟢      | ⚪️(🟢) |
