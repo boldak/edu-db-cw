@@ -198,12 +198,12 @@
   <tr>
    <th>Вимога</th>
    <th>Критерій</th>
+   <th>SUP<br>(наш)</th>
    <th>GH projects</th>
    <th>Trello</th>
    <th>Basecamp</th>
    <th>Asana</th> 
    <th>Backlog</th> 
-   <th>SUP<br>(наш)</th>
   </tr>
  </thead>
 <tbody>
@@ -233,7 +233,7 @@
    <td>🟩</td>
    <td>🟩</td>
    <td>🟩</td>
-   <td>🟥</td>
+   <td>🟩</td>
   </tr>
 <tr>
    <td>Можливість задати<br>дедлайни</td>
@@ -265,10 +265,10 @@
 <tr>
    <td> Доступність/Вартість</td>
    <td>🟩</td>
+   <td>🟩</td>
    <td>trial 14d(10$/m)</td>
    <td>trial 30d(99$/m)</td>
    <td>trial 30d(11$/m)</td>
-   <td>🟩</td>
    <td>🟩</td>
   </tr>
 <tr>
@@ -283,9 +283,9 @@
 </tr>
 <tr>
   <td>Багатомовність</td>
-  <td>🟥</td>
   <td>🟩</td>
   <td>🟥</td>
+  <td>🟩</td>
   <td>🟥</td>
   <td>🟥</td>
   <td>🟥</td>
@@ -302,12 +302,12 @@
 <tr>
   <td rowspan="3">Надійність</td>
   <td>Протокол<br>шифрування</td>
+  <td>?</td>
   <td>TLS</td>
   <td>TLS</td>
   <td>TLS</td>
   <td>TLS</td>
   <td>SSL</td>
-  <td>?</td>
 </tr>
 <tr>
   <td>Резервне копіювання</td>
@@ -344,7 +344,7 @@
   <td>🟩</td>
   <td>🟩</td>
   <td>🟩</td>
-  <td>🟥</td>
+  <td>🟩</td>
 </tr>
 <tr>
 <td rowspan="2">Підтримка</td>
