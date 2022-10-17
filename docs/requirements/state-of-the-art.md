@@ -349,12 +349,12 @@
 <tr>
 <td rowspan="2">Підтримка</td>
  <td>Цілодобова онлайн<br>підтримка</td>
-  <td>🟩</td>
-  <td>🟩</td>
-  <td>🟩</td>
-  <td>🟩</td>
-  <td>🟩</td>
   <td>🟥</td>
+  <td>🟩</td>
+  <td>🟩</td>
+  <td>🟩</td>
+  <td>🟩</td>
+  <td>🟩</td>
 </tr>
 <tr>
 <td>FAQ</td>
