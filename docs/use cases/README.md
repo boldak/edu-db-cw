@@ -20,19 +20,14 @@
     
     usecase "<b>RegUser</b>\nЗареєструватися" as RegUser
     usecase "<b>SignIn</b>\nУвійти в систему" as SignIn
-    usecase "<b>CreateProject</b>\nСтворити проєкт" as CreateProject
-    usecase "<b>DeleteProject</b>\nВидалити проєкт" as DeleteProject
-    usecase "<b>AddSection</b>\nДодати розділ" as AddSection
-    usecase "<b>DeleteSection</b>\nВидалити розділ" as DeleteSection
-    usecase "<b>AcceptTask</b>\nПрийняти завдання \nпорталу" as AcceptTask
-    usecase "<b>RefuseTask</b>\nВідмовитися від завдання \nпорталу" as RefuseTask
     usecase "<b>ChangeView</b>\nЗмінити спосіб \nвідображення проєкту \nпорталу" as ChangeView
-    usecase "<b>AddMember</b>\nДодати учасника" as AddMember
-    usecase "<b>DeleteMember</b>\nВидалити учасника \nпорталу" as DeleteMember
-    usecase "<b>CreateTask</b>\nСтворити завдання \nпорталу" as CreateTask
-    usecase "<b>EditTask</b>\nРедагувати завдання \nпорталу" as EditTask
-    usecase "<b>RemoveTask</b>\nВидалити завдання \nпорталу" as RemoveTask
-    usecase "<b>ChangeRights</b>\nРедагувати права \користувача" as ChangeRights
+    usecase "<b>CreateProject</b>\nСтворити проєкт" as CreateProject
+    
+    usecase "<b>ProjManage</b>\nРедагування проєкту" as ProjManage
+    usecase "<b>TaskManage</b>\nРедагування завдань" as TaskManage
+    usecase "<b>UserControl</b>\nКерування користувачами" as UserControl
+    usecase "<b>TaskStatus</b>\nЗміна статусу завдань" as TaskStatus
+    
     
     Developer -u-|> User
     Teamlead -u-|> User
@@ -42,17 +37,11 @@
     User -u-> SignIn
     User -u-> ChangeView
     User -u-> CreateProject
-    Teamlead -u-> DeleteProject
-    Teamlead -u-> CreateTask
-    Teamlead -u-> EditTask
-    Teamlead -u-> RemoveTask
-    Teamlead -u-> AddSection
-    Teamlead -u-> DeleteSection
-    Developer -u-> AcceptTask
-    Developer -u-> RefuseTask
-    Teamlead -r-> AddMember
-    Teamlead -l-> DeleteMember
-    Teamlead -u-> ChangeRights
+    Teamlead -u-> ProjManage
+    Teamlead -u-> TaskManage
+    Customer -u-> UserControl
+    Developer -u-> TaskStatus
+   
 @enduml
 
 ## Сценарії використання
