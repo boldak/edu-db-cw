@@ -5,7 +5,6 @@
 @startuml
 
     title
-        <font size=18 color=black>Аналітичний портал
         <font size=16 color=black>Діаграма прецедентів
     end title
 
