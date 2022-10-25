@@ -6,12 +6,7 @@
 
 ## Діаграма прецедентів
 
-
 @startuml
-
-    right header
-        <font size=24 color=black>Package: <b>UCD_1.1
-    end header
 
     title
         <font size=18 color=black>Аналітичний портал
@@ -23,22 +18,41 @@
     actor "Тімлід" as Teamlead
     actor "Замовник" as Customer
     
-    usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1
-    usecase "<b>UC_2</b>\nЗареєструватися" as UC_2
-    usecase "<b>UC_3</b>\nУвійти в систему" as UC_3
-    usecase "<b>UC_4</b>\nВикликати звіт" as UC_4
-    usecase "<b>UC_5</b>\nСтворити звіт" as UC_5
-    usecase "<b>UC_6</b>\nРедагувати звіт" as UC_6
-    usecase "<b>UC_7</b>\nВидалити звіт" as UC_7
-    usecase "<b>UC_8</b>\nРедагувати конфігурацію \nпорталу" as UC_8
-
-
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
-
+    usecase "<b>RegUser</b>\nЗареєструватися" as RegUser
+    usecase "<b>SignIn</b>\nУвійти в систему" as SignIn
+    usecase "<b>CreateProject</b>\nСтворити проєкт" as CreateProject
+    usecase "<b>DeleteProject</b>\nВидалити проєкт" as DeleteProject
+    usecase "<b>AddSection</b>\nДодати розділ" as AddSection
+    usecase "<b>DeleteSection</b>\nВидалити розділ" as DeleteSection
+    usecase "<b>AcceptTask</b>\nПрийняти завдання \nпорталу" as AcceptTask
+    usecase "<b>RefuseTask</b>\nВідмовитися від завдання \nпорталу" as RefuseTask
+    usecase "<b>ChangeView</b>\nЗмінити спосіб \nвідображення проєкту \nпорталу" as ChangeView
+    usecase "<b>AddMember</b>\nДодати учасника" as AddMember
+    usecase "<b>DeleteMember</b>\nВидалити учасника \nпорталу" as DeleteMember
+    usecase "<b>CreateTask</b>\nСтворити завдання \nпорталу" as CreateTask
+    usecase "<b>EditTask</b>\nРедагувати завдання \nпорталу" as EditTask
+    usecase "<b>RemoveTask</b>\nВидалити завдання \nпорталу" as RemoveTask
+    usecase "<b>ChangeRights</b>\nРедагувати права \користувача" as ChangeRights
+    
+    Developer -u-|> User
+    Teamlead -u-|> User
+    Customer -u-|> Teamlead
+    
+    User -u-> RegUser
+    User -u-> SignIn
+    User -u-> ChangeView
+    User -u-> CreateProject
+    Teamlead -u-> DeleteProject
+    Teamlead -u-> CreateTask
+    Teamlead -u-> EditTask
+    Teamlead -u-> RemoveTask
+    Teamlead -u-> AddSection
+    Teamlead -u-> DeleteSection
+    Developer -u-> AcceptTask
+    Developer -u-> RefuseTask
+    Teamlead -r-> AddMember
+    Teamlead -l-> DeleteMember
+    Teamlead -u-> ChangeRights
 @enduml
 
 ## Сценарії використання
