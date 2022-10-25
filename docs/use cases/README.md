@@ -44,6 +44,108 @@
    
 @enduml
 
+
+@startuml
+
+    
+    usecase "<b>UserControl</b>\nКерування користувачами" as UserControl #aaeeaa
+
+
+    actor "Замовник" as Customer #eeee99
+
+
+    usecase "<b>AddMember</b>\nДодати учасника" as AddMember
+    usecase "<b>DeleteMember</b>\nВидалити учасника " as DeleteMember
+    usecase "<b>ChangeRights</b>\nРедагувати права \nкористувача" as ChangeRights
+    
+    usecase "<b>UserList</b>\nПереглянути список \n користувачів" as UserList
+    usecase "<b>CheckRights</b>\nПеревірити права \nкористувача" as CheckRights
+    Customer -l-> UserControl
+    
+    
+    UserList .u.> UserControl: extends
+    AddMember .u.> UserList: extends
+    DeleteMember .u.> UserList: extends
+    ChangeRights .u.> UserList: extends
+    
+    AddMember .d.> CheckRights: includes
+    DeleteMember .d.> CheckRights: includes
+    ChangeRights .d.> CheckRights: includes
+    
+
+@enduml
+
+
+@startuml
+
+    usecase "<b>ProjManage</b>\nРедагування проєкту" as ProjManage #aaeeaa
+    usecase "<b>TaskManage</b>\nРедагування завдань" as TaskManage #aaeeaa
+    
+    actor "Тімлід" as Teamlead #eeee99
+    
+    Teamlead .l.-> ProjManage
+    Teamlead .r.-> TaskManage
+    
+    usecase "<b>CheckRights</b>\nПеревірити права \nкористувача" as CheckRights
+    
+    usecase "<b>DeleteProject</b>\nВидалити проєкт" as DeleteProject
+    usecase "<b>OpenBoard</b>\nВідкрити дошку \nз розділами \nта завданнями" as OpenBoard
+    usecase "<b>EditSection</b>\nРедагувати розділи" as EditSection
+    usecase "<b>AddSection</b>\nДодати розділ" as AddSection
+    usecase "<b>DeleteSection</b>\nВидалити розділ" as DeleteSection
+    
+    DeleteProject .u.> ProjManage: extends
+    OpenBoard .u.> ProjManage: extends
+    EditSection .u.> OpenBoard: extends
+    AddSection .u.> EditSection: extends
+    DeleteSection .u.> EditSection: extends
+    
+    
+    DeleteProject .d.> CheckRights: includes
+    AddSection .d.> CheckRights: includes
+    DeleteSection .d.> CheckRights: includes
+    
+    usecase "<b>TaskList</b>\nПереглянути список \n завдань" as TaskList
+    usecase "<b>CreateTask</b>\nСтворити завдання \nпорталу" as CreateTask
+    usecase "<b>RemoveTask</b>\nВидалити завдання \nпорталу" as RemoveTask
+    usecase "<b>EditTask</b>\nРедагувати завдання \nпорталу" as EditTask
+    
+    
+    TaskList .u.> TaskManage: extends
+    CreateTask .u.> TaskList: extends
+    RemoveTask .u.> TaskList: extends
+    EditTask .u.> TaskList: extends
+    
+    CreateTask .d.> CheckRights: includes
+    RemoveTask .d.> CheckRights: includes
+    EditTask .d.> CheckRights: includes
+@enduml
+
+
+@startuml
+
+    usecase "<b>TaskStatus</b>\nЗміна статусу завдань" as TaskStatus #aaeeaa
+    
+    actor "Розробник" as Developer #eeee99
+    
+    Developer .l.-> TaskStatus
+    
+    usecase "<b>CheckRights</b>\nПеревірити права \nкористувача" as CheckRights
+    
+    usecase "<b>TaskList</b>\nПереглянути список \n завдань" as TaskList
+    usecase "<b>AcceptTask</b>\nПрийняти завдання \nпорталу" as AcceptTask
+    usecase "<b>RefuseTask</b>\nВідмовитися від завдання" as RefuseTask
+    
+    
+    TaskList .u.> TaskStatus: extends
+    AcceptTask .u.> TaskList: extends
+    RefuseTask .u.> TaskList: extends
+    
+    AcceptTask .d.> CheckRights: includes
+    RefuseTask .d.> CheckRights: includes
+@enduml
+
+
 ## Сценарії використання
 
 
