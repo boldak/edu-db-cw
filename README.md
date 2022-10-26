@@ -1,67 +1,13 @@
+# Репозиторій для виконання курсової роботи з дисципліни "Бази даних"
 
-## Як використовувати
+## Тема: Система управління відкритими даними
 
-В цьому репозиторії знаходиться шаблон для виконання курсової роботи.
+### Виконали:
 
-Для виконання курсової роботи необхідно зробити ```fork``` цього репозіторію, склонувати вже власний репозіторій та розміщувати документацію у відповідних діректоріях ```./docs```.
+* Євгеній Семиволос (telegram: [e_semivolos](https://t.me/e_semivolos))
+* Володимир Андріященко (telegram: [lekoaaa](https://t.me/lekoaaa))
+* Михайло Ватажко (telegram: [mmishav](https://t.me/mmishav))
+* Андрій Щегель (telegram: [SolarUlt](https://t.me/SolarUlt))
+* Дмитро Сенчило (telegram: [senchylo](https://t.me/senchylo))
 
-В цьому файлі необхідно вказати назву проекту. Коротку загальну характеристику
-проекту, контактні дані виконавця, посилання на репо співвиконавців(за необхідністю).
-
-
-Шаблон публікування курсової роботи підготовлено з використанням [VuePress](https://vuepress.vuejs.org/), та стартера 
-[FriendlyUser/vuepress-theme-cool-starter](https://github.com/FriendlyUser/vuepress-theme-cool-starter).
-
-Щоб опублікувати проект у Github Pages, налаштовуємо Github Pages (гілка ```gh-pages```), змінюємо файл ```./publish.sh```
-
-```sh
-
-#!/usr/bin/env sh
-
-# abort on errors
-set -e
-
-# build
-npm run docs:build
-
-# navigate into the build output directory
-cd docs/.vuepress/dist
-
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
-
-git init
-git add -A
-git commit -m 'deploy'
-
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:boldak/<USERNAME>.github.io.git master
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/<USERNAME>/dis-edu.git master:gh-pages
-
-cd -
-
-```
-
-Потім запускаємо
-
-```bash
-    npm run publish
-```
-
-Для відлагодження документації в локальному режимі запускаємо
-
-```bash
-    npm run docs:dev
-```
-
-Доступ до локально опублікованої версії [http://localhost:3030](http://localhost:3030)
-
-
-## Додаткова інформація
-
-- [Теми проєктів](./guidelines/themes.md)
-- [Методичні вказівки](./guidelines/guidelines.md)
-
-***Happy learning! Happy coding!*** 
+**[Посилання на проект](https://eugenesemivolos.github.io/open-data-management-system/)**
