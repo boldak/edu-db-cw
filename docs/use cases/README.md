@@ -294,6 +294,7 @@
 
 @enduml
 
+</center>
 
 **AcceptTask**
 
@@ -303,7 +304,9 @@
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
     padding: 1em;"
 >
+
 @startuml
+
     left header
         <font color=000 size=18><b>Package:</b> AD_1.0
         
@@ -354,6 +357,7 @@
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
     padding: 1em;"
 >
+
 @startuml
 
     left header
