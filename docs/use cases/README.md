@@ -388,119 +388,6 @@
 
 </center>
 
-### **AcceptTask**
-
-<br>
-
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
-
-@startuml
-
-    right header        
-        <font color=000 size=18><b>ID:</b> AcceptTask
-
-        <font color=000 size=16><b>Назва:</b> Прийняти завдання
-        <font color=000 size=16><b>Учасники:</b> Розробник, система
-        <font color=000 size=16><b>Передумови:</b>
-        <font color=000 size=16> 1. Не зайняті завдання існують
-        <font color=000 size=16> 2. Користувач авторизований
-        <font color=000 size=16>3. Користувач є розробником
-        <font color=000 size=16><b>Результат:</b> Завдання закріплено за розробником
-        <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> <i>AcceptTask_EX_NoTask</i> - Інший розробник встиг швидше прийняти завдання
-
-        <font color=000 size=18><b>Основний сценарій:</b>
-        
-    end header
-    |Розробник|
-        start
-        : Натискає кнопку "Tasks";
-        
-    |Система|
-        : Відкриває вікно роботи із завданнями;
-        
-    |Розробник|
-        : Обирає вільне завдання і натискає на кнопку "Accept";
-        
-    |Система|
-        : Закріплює завдання за розробником;
-        
-    |Система|
-        : Видаляє потрібне завдання із списку вільних завдань;
-        note right #ffaaaa
-        <b> Можливо
-        <b> AcceptTask_EX_NoTask
-        end note
-
-@enduml
-
-</center>
-
-### **RefuseTask**
-
-<br>
-
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
-
-@startuml
-
-    right header
-        <font color=000 size=18><b>ID:</b> RefuseTask
-
-        <font color=000 size=16><b>Назва:</b> Відмовитися від завдання
-        <font color=000 size=16><b>Учасники:</b> Розробник, система
-        <font color=000 size=16><b>Передумови:</b>
-        <font color=000 size=16> 1. Є завдання, закріплені за користувачем
-        <font color=000 size=16> 2. Користувач авторизований
-        <font color=000 size=16>3. Користувач є розробником
-        <font color=000 size=16><b>Результат:</b> Завдання відкріплено від розробника
-        <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> <i>RefuseTask_EX_DeadConnection</i> - Повідомлення про те, що завдання було успішно відкріплено від розробника, не доходить до розробника
-
-        <font color=000 size=18><b>Основний сценарій:</b>
-
-    end header
-
-    |Розробник|
-        start
-        : Натискає кнопку "Tasks";
-
-    |Система|
-        : Відкриває вікно роботи із завданнями;
-
-    |Розробник|
-        : Обирає закріплене за собою завдання і натискає на кнопку "Refuse";
-
-    |Система|
-        : Відкріпляє завдання від розробника;
-
-    |Система|
-        : Переносить завдання до списку вільних завдань;
-
-    |Система|
-        : Повідомляє розробника про те, що завдання було успішно відкріплено від розробника;
-
-    |Розробник|
-        : Отримує інформацію про те, що завдання було успішно відкріплено від розробника;
-        note right #ffaaaa
-        <b> Можливо
-        <b> RefuseTask_EX_DeadConnection
-        end note
-
-@enduml
-
-</center>
-
 ### **CreateProject**
 
 <br>
@@ -598,8 +485,8 @@
         <font color=000 size=16><b>Результат:</b> Видалений проєкт
         <font color=000 size=16><b>Виключні ситуації:</b>
         <font color=000 size=16> <i>DeleteProject_EX_WrongDelete</i> - Система видаляє проєкт не повністю
-        <font color=000 size=16> <i>DeleteProject_EX_NotAllowed</i> - Користувач не є менеджером/замовником проєкту
-        <font color=000 size=16> <i>DeleteProject_EX_DeadConnection</i> Повідомлення про успішне видалення проєкту не доходить до менеджероа/замовника
+        <font color=000 size=16> <i>DeleteProject_EX_NotAllowed</i> - Користувач не є замовником проєкту
+        <font color=000 size=16> <i>DeleteProject_EX_DeadConnection</i> Повідомлення про успішне видалення проєкту не доходить до замовника
 
         <font color=000 size=18><b>Основний сценарій:</b>
     end header
@@ -1002,6 +889,119 @@ padding: 1em;"
     : Перестає зображати завдання,\n яке вже видалила;
     stop;
     
+@enduml
+
+</center>
+
+### **AcceptTask**
+
+<br>
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    right header        
+        <font color=000 size=18><b>ID:</b> AcceptTask
+
+        <font color=000 size=16><b>Назва:</b> Прийняти завдання
+        <font color=000 size=16><b>Учасники:</b> Розробник, система
+        <font color=000 size=16><b>Передумови:</b>
+        <font color=000 size=16> 1. Не зайняті завдання існують
+        <font color=000 size=16> 2. Користувач авторизований
+        <font color=000 size=16>3. Користувач є розробником
+        <font color=000 size=16><b>Результат:</b> Завдання закріплено за розробником
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> <i>AcceptTask_EX_NoTask</i> - Інший розробник встиг швидше прийняти завдання
+
+        <font color=000 size=18><b>Основний сценарій:</b>
+        
+    end header
+    |Розробник|
+        start
+        : Натискає кнопку "Tasks";
+        
+    |Система|
+        : Відкриває вікно роботи із завданнями;
+        
+    |Розробник|
+        : Обирає вільне завдання і натискає на кнопку "Accept";
+        
+    |Система|
+        : Закріплює завдання за розробником;
+        
+    |Система|
+        : Видаляє потрібне завдання із списку вільних завдань;
+        note right #ffaaaa
+        <b> Можливо
+        <b> AcceptTask_EX_NoTask
+        end note
+
+@enduml
+
+</center>
+
+### **RefuseTask**
+
+<br>
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    right header
+        <font color=000 size=18><b>ID:</b> RefuseTask
+
+        <font color=000 size=16><b>Назва:</b> Відмовитися від завдання
+        <font color=000 size=16><b>Учасники:</b> Розробник, система
+        <font color=000 size=16><b>Передумови:</b>
+        <font color=000 size=16> 1. Є завдання, закріплені за користувачем
+        <font color=000 size=16> 2. Користувач авторизований
+        <font color=000 size=16>3. Користувач є розробником
+        <font color=000 size=16><b>Результат:</b> Завдання відкріплено від розробника
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> <i>RefuseTask_EX_DeadConnection</i> - Повідомлення про те, що завдання було успішно відкріплено від розробника, не доходить до розробника
+
+        <font color=000 size=18><b>Основний сценарій:</b>
+
+    end header
+
+    |Розробник|
+        start
+        : Натискає кнопку "Tasks";
+
+    |Система|
+        : Відкриває вікно роботи із завданнями;
+
+    |Розробник|
+        : Обирає закріплене за собою завдання і натискає на кнопку "Refuse";
+
+    |Система|
+        : Відкріпляє завдання від розробника;
+
+    |Система|
+        : Переносить завдання до списку вільних завдань;
+
+    |Система|
+        : Повідомляє розробника про те, що завдання було успішно відкріплено від розробника;
+
+    |Розробник|
+        : Отримує інформацію про те, що завдання було успішно відкріплено від розробника;
+        note right #ffaaaa
+        <b> Можливо
+        <b> RefuseTask_EX_DeadConnection
+        end note
+
 @enduml
 
 </center>
