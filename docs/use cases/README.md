@@ -874,3 +874,293 @@
 @enduml
 
 </center>
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+    >
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> AD_1.0
+        
+        <font color=000 size=16><b>ID:</b> SignIn
+        <font color=000 size=16><b>Назва:</b> Авторизувати клієнта у системі
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Передумови:</b> Користувач зареєстрований у системі
+        <font color=000 size=16><b>Результат:</b> Користувач увійшов до системи
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> SignIn_EX_NoAccount Клієнт не зареєстрований у системі
+        <font color=000 size=16> SignIn_EX_WrongPassword Клієнт ввів неправильний пароль
+        
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+    
+    |Користувач|
+    start
+    : Натискає кнопку "Вхід";
+    
+    |Система|
+    : Відкриває вікно авторизації;
+    
+    |Користувач|
+    : Вводить адресу електронної пошти;
+    note right #ffaaaa
+    <b> Можливо
+    <b> SignIn_EX_NoAccount
+    end note
+        
+    |Користувач|
+    : Вводить пароль;
+    note right #ffaaaa
+    <b> Можливо
+    <b> SignIn_EX_WrongPassword
+    end note
+    
+    |Користувач|
+    : Натискає кнопку "Увійти";
+    
+    |Система|
+    : Надає доступ користувачеві\n до облікового запису;
+    
+    |Користувач|
+    : Отримує доступ до облікового запису;
+    stop;
+    
+@enduml
+
+    </center>
+
+    <center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+    >
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> AD_1.0
+        
+        <font color=000 size=16><b>ID:</b> CreateTask
+        <font color=000 size=16><b>Назва:</b> Створити завдання
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Передумови:</b>
+        <font color=000 size=16> Користувач увійшов у систему
+        <font color=000 size=16> Роль тімліда призначена користувачеві
+        <font color=000 size=16><b>Результат:</b> Система додає нове завдання у відповідний розділ
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> CreateTask_EX_Canceled Користувач скасував створення завдання
+        <font color=000 size=16> CreateTask_EX_WrongName Користувач задав невалідну назву для завдання
+        <font color=000 size=16> CreateTask_EX_MaxReached Користувач намагається створити нове завдання, коли розділ завдань досяг максимальної кількості завдань (255)
+        
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+
+    |Користувач|
+    start
+    : Натискає кнопку "Створити завдання"\n у розділі завдань;
+    note right #ffaaaa
+    <b> Можливо
+    <b> CreateTask_EX_MaxReached
+    end note
+    
+    |Система|
+    : Просить користувача ввести назву\n нового завдання у полі вводу;
+    
+    |Користувач|
+    : Вводить назву нового завдання;
+    note right #ffaaaa
+    <b> Можливо
+    <b> CreateTask_EX_Canceled
+    end note
+    
+    |Система|
+    : Просить користувача ввести опис\n нового завдання у полі вводу;
+        
+    |Користувач|
+    : Вводить опис нового завдання;
+    note right #ffaaaa
+    <b> Можливо
+    <b> CreateTask_EX_Canceled
+    end note    
+        
+    |Користувач|
+    : Натискає кнопку "Підтвердити"\n у розділі завдань;
+    note right #ffaaaa
+    <b> Можливо
+    <b> CreateTask_EX_WrongName
+    end note
+    
+    |Система|
+    : Створює завдання з назвою, що ввів\n користувач, у розділі завдань;
+    
+    |Система|
+    : Сповіщає про успішне створення\n нового завдання;
+    
+    |Користувач|
+    : Отримує сповіщення про успішне\n створення нового завдання;
+    
+    |Система|
+    : Відображає нове завдання з назвою, що\n ввів користувач, у блоці розділу завдань;
+    stop;
+
+@enduml
+
+    </center>
+
+    <center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+    >
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> AD_1.0
+        
+        <font color=000 size=16><b>ID:</b> EditTask
+        <font color=000 size=16><b>Назва:</b> Редагувати завдання
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Передумови:</b>
+
+        <font color=000 size=16> Користувач увійшов у систему
+        <font color=000 size=16> Роль тімліда призначена користувачеві
+        
+        <font color=000 size=16><b>Результат:</b> Система редагує завдання відповідно до правок, які вніс користувач
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> EditTask_EX_NoChanges Користувач нічого не змінив у даних завдання
+        <font color=000 size=16> EditTask_EX_Canceled Користувач скасував редагування завдання
+        <font color=000 size=16> EditTask_EX_WrongName Користувач задав невалідну назву для завдання
+        <font color=000 size=16> EditTask_EX_NoPermission Користувач не має прав, необхідних для редагування завдання
+        
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+    
+    |Користувач|
+    start
+    : Відкриває розділ з завданнями;
+    
+    |Користувач|
+    : Натискає правою клавішею миші на\n завдання, що хоче відредагувати;
+    
+    |Користувач|
+    : Обирає з випадаючого списку пункт "Редагувати";
+    
+    |Система|
+    : Перевіряє права користувача;
+    note right #ffaaaa
+    <b> Можливо
+    <b> EditTask_EX_NoPermission
+    end note
+        
+    |Система|
+    : Відкриває форму для редагування завдання;
+        
+    |Користувач|
+    : Вводить нові дані;
+    note right #ffaaaa
+    <b> Можливо
+    <b> EditTask_EX_Canceled
+    end note
+    
+    |Користувач|
+    : Натискає кнопку "Підтвердити";
+    note right #ffaaaa
+    <b> Можливо
+    <b> EditTask_EX_WrongName
+    <b> EditTask_EX_NoChanges
+    end note
+    
+    |Система|
+    : Редагує завдання відповідно до нових\n даних, які ввів користувач;
+    
+    |Система|
+    : Сповіщає про успішне редагування завдання;
+    
+    |Користувач|
+    : Отримує сповіщення про успішне редагування завдання;
+    
+    |Система|
+    : Відображає завдання з новими даними, які ввів\n користувач, у блоці розділу завдань;
+    stop;
+    
+@enduml
+
+    </center>
+
+    <center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+    >
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> AD_1.0
+        
+        <font color=000 size=16><b>ID:</b> RemoveTask
+        <font color=000 size=16><b>Назва:</b> Видалити завдання
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Передумови:</b>
+
+        <font color=000 size=16> Користувач увійшов у систему
+        <font color=000 size=16> Роль тімліда призначена користувачеві
+        
+        <font color=000 size=16><b>Результат:</b> Система видаляє завдання
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> RemoveTask_EX_Canceled Користувач скасував видалення завдання
+        <font color=000 size=16> RemoveTask_EX_NoRights Користувач не має прав тімліда
+
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+    
+    |Користувач|
+    start
+    : Натискає кнопку "Видалити завдання";
+    
+    |Система|
+    : Перевіряє права користувача;
+    note right #ffaaaa
+    <b> Можливо
+    <b> RemoveTask_EX_NoRights
+    end note
+    
+    |Система|
+    : Просить користувача підтвердити\n видалення завдання;
+    note right #ffaaaa
+    <b> Можливо
+    <b> RemoveTask_EX_Canceled
+    end note
+    
+    |Користувач|
+    : Натискає кнопку "Підтвердити";
+    
+    |Система|
+    : Видаляє завдання;
+    
+    |Система|
+    : Сповіщає про успішне видалення\n завдання;
+    
+    |Користувач|
+    : Отримує сповіщення про успішне\n видалення завдання;
+    
+    |Система|
+    : Перестає зображати завдання,\n яке вже видалила;
+    stop;
+    
+@enduml
+
+    </center>
