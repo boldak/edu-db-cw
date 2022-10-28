@@ -271,18 +271,18 @@
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> RegUser
+    right header        
+        <font color=000 size=18><b>ID:</b> RegUser
+
         <font color=000 size=16><b>Назва:</b> Зареєструвати користувача у системі
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
         <font color=000 size=16><b>Передумови:</b> Клієнт не є зареєстрованим у системі
         <font color=000 size=16><b>Результат:</b> Клієнт зареєстрований у системі
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> RegUser_EX_AccountExist* Клієнт вже зареєстрований у системі
-        <font color=000 size=16> RegUser_EX_CAPTCHA* Клієнт є роботом
+        <font color=000 size=16><i>RegUser_EX_AccountExist</i> - Клієнт вже зареєстрований у системі
+        <font color=000 size=16><i>RegUser_EX_CAPTCHA</i> - Клієнт є роботом
         
-        <font color=000 size=16><b>Основний сценарій:</b>
-        
+        <font color=000 size=18><b>Основний сценарій:</b>
     end header
 
     |Користувач|
@@ -339,18 +339,18 @@
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> SignIn
+    right header        
+        <font color=000 size=18><b>ID:</b> SignIn
+
         <font color=000 size=16><b>Назва:</b> Авторизувати клієнта у системі
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
         <font color=000 size=16><b>Передумови:</b> Користувач зареєстрований у системі
         <font color=000 size=16><b>Результат:</b> Користувач увійшов до системи
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> SignIn_EX_NoAccount Клієнт не зареєстрований у системі
+        <font color=000 size=16> <i>SignIn_EX_NoAccount</i> - Клієнт не зареєстрований у системі
         <font color=000 size=16> SignIn_EX_WrongPassword Клієнт ввів неправильний пароль
         
-        <font color=000 size=16><b>Основний сценарій:</b>
-        
+        <font color=000 size=18><b>Основний сценарій:</b>
     end header
     
     |Користувач|
@@ -401,20 +401,20 @@
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> AcceptTask
+    right header        
+        <font color=000 size=18><b>ID:</b> AcceptTask
+
         <font color=000 size=16><b>Назва:</b> Прийняти завдання
         <font color=000 size=16><b>Учасники:</b> Розробник, система
         <font color=000 size=16><b>Передумови:</b>
         <font color=000 size=16> 1. Не зайняті завдання існують
         <font color=000 size=16> 2. Користувач авторизований
         <font color=000 size=16>3. Користувач є розробником
-        
-
         <font color=000 size=16><b>Результат:</b> Завдання закріплено за розробником
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> AcceptTask_EX_NoTask* Інший розробник встиг швидше прийняти завдання
-        <font color=000 size=16><b>Основний сценарій:</b>
+        <font color=000 size=16> <i>AcceptTask_EX_NoTask</i> - Інший розробник встиг швидше прийняти завдання
+
+        <font color=000 size=18><b>Основний сценарій:</b>
         
     end header
     |Розробник|
@@ -454,21 +454,20 @@
 
 @startuml
 
-    left header
-        <font color=000 size=16><b>ID:</b> RefuseTask
+    right header
+        <font color=000 size=18><b>ID:</b> RefuseTask
+
         <font color=000 size=16><b>Назва:</b> Відмовитися від завдання
         <font color=000 size=16><b>Учасники:</b> Розробник, система
         <font color=000 size=16><b>Передумови:</b>
-
         <font color=000 size=16> 1. Є завдання, закріплені за користувачем
         <font color=000 size=16> 2. Користувач авторизований
         <font color=000 size=16>3. Користувач є розробником
-
         <font color=000 size=16><b>Результат:</b> Завдання відкріплено від розробника
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> RefuseTask_EX_DeadConnection* Повідомлення про те, що завдання було успішно відкріплено від розробника, не доходить до розробника
+        <font color=000 size=16> <i>RefuseTask_EX_DeadConnection</i> - Повідомлення про те, що завдання було успішно відкріплено від розробника, не доходить до розробника
 
-        <font color=000 size=16><b>Основний сценарій:</b>
+        <font color=000 size=18><b>Основний сценарій:</b>
 
     end header
 
@@ -515,20 +514,20 @@
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> CreateProject
+    right header        
+        <font color=000 size=18><b>ID:</b> CreateProject
+
         <font color=000 size=16><b>Назва:</b> Створити проєкт
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
         <font color=000 size=16><b>Передумови:</b> 
-        <font color=000 size=16><b> Проєкт не є створений 
-        <font color=000 size=16><b> Користувач зареєстрований або авторизований у системі
+        <font color=000 size=16>1. Проєкт не є створений 
+        <font color=000 size=16>2. Користувач зареєстрований або авторизований у системі
         <font color=000 size=16><b>Результат:</b> Новий проєкт
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> *CreateProject_EX_WrongInfo* Користувач ввів некоректну інформацію у проєкті
-        <font color=000 size=16> *CreateProject_EX_DeadConnection* Повідомлення про успішне створення проєкту не доходить до користувача
+        <font color=000 size=16> <i>CreateProject_EX_WrongInfo</i> - Користувач ввів некоректну інформацію у проєкті
+        <font color=000 size=16> <i>CreateProject_EX_DeadConnection</i> Повідомлення про успішне створення проєкту не доходить до користувача
         
-        <font color=000 size=16><b>Основний сценарій:</b>
-        
+        <font color=000 size=18><b>Основний сценарій:</b>
     end header
 
     |Користувач|
@@ -590,20 +589,19 @@
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> DeleteProject
+    right header        
+        <font color=000 size=18><b>ID:</b> DeleteProject
+
         <font color=000 size=16><b>Назва:</b> Видалити проєкт
-        <font color=000 size=16><b>Учасники:</b> Менеджер/Замовник проєкту, система
-        <font color=000 size=16><b>Передумови:</b> 
-        <font color=000 size=16><b> Проєкт існує
+        <font color=000 size=16><b>Учасники:</b> Замовник проєкту, система
+        <font color=000 size=16><b>Передумови:</b> Проєкт існує
         <font color=000 size=16><b>Результат:</b> Видалений проєкт
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> *DeleteProject_EX_WrongDelete* Система видаляє проєкт не повністю
-        <font color=000 size=16> *DeleteProject_EX_NotAllowed* Користувач не є менеджером/замовником проєкту
-        <font color=000 size=16> *DeleteProject_EX_DeadConnection* Повідомлення про успішне видалення проєкту не доходить до менеджероа/замовника
+        <font color=000 size=16> <i>DeleteProject_EX_WrongDelete</i> - Система видаляє проєкт не повністю
+        <font color=000 size=16> <i>DeleteProject_EX_NotAllowed</i> - Користувач не є менеджером/замовником проєкту
+        <font color=000 size=16> <i>DeleteProject_EX_DeadConnection</i> Повідомлення про успішне видалення проєкту не доходить до менеджероа/замовника
 
-        <font color=000 size=16><b>Основний сценарій:</b>
-        
+        <font color=000 size=18><b>Основний сценарій:</b>
     end header
 
     |Користувач|
@@ -633,8 +631,8 @@
     |Система|
         : Повідомляє користувача про успішне видалення проєкту;
         
-    |Менеджер та замовник|
-        : Отримують інформацію про успішне видалення проєкту;
+    |Замовник|
+        : Отримує інформацію про успішне видалення проєкту;
                 note right #ffaaaa
         <b> Можливо
         <b> DeleteProject_EX_DeadConnection
