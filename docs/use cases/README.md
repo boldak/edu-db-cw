@@ -271,9 +271,7 @@
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> AD_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> RegUser
         <font color=000 size=16><b>Назва:</b> Зареєструвати користувача у системі
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -341,9 +339,7 @@
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> AD_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> SignIn
         <font color=000 size=16><b>Назва:</b> Авторизувати клієнта у системі
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -405,9 +401,7 @@
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> AD_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> AcceptTask
         <font color=000 size=16><b>Назва:</b> Прийняти завдання
         <font color=000 size=16><b>Учасники:</b> Розробник, система
@@ -461,8 +455,6 @@
 @startuml
 
     left header
-        <font color=000 size=18><b>Package:</b> AD_1.0
-
         <font color=000 size=16><b>ID:</b> RefuseTask
         <font color=000 size=16><b>Назва:</b> Відмовитися від завдання
         <font color=000 size=16><b>Учасники:</b> Розробник, система
@@ -510,6 +502,10 @@
 
 </center>
 
+### **CreateProject**
+
+<br>
+
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -519,9 +515,7 @@
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> CRPR_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> CreateProject
         <font color=000 size=16><b>Назва:</b> Створити проєкт
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -583,6 +577,10 @@
 
 </center>
 
+### **DeleteProject**
+
+<br>
+
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -592,9 +590,7 @@
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> DRPR_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> DeleteProject
         <font color=000 size=16><b>Назва:</b> Видалити проєкт
         <font color=000 size=16><b>Учасники:</b> Менеджер/Замовник проєкту, система
@@ -648,6 +644,10 @@
 
 </center>
 
+### **AddSection**
+
+<br>
+
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -657,9 +657,7 @@
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> ADSE_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> AddSection
         <font color=000 size=16><b>Назва:</b> Додати новий розділ для завдань
         <font color=000 size=16><b>Учасники:</b> Тімлід, система
@@ -714,6 +712,10 @@
 
 </center>
 
+### **DeleteSection**
+
+<br>
+
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -723,9 +725,7 @@
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> DESE_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> DeleteSection
         <font color=000 size=16><b>Назва:</b> Видалити обраний розділ для завдань
         <font color=000 size=16><b>Учасники:</b> Тімлід, система
@@ -772,6 +772,10 @@
 
 </center>
 
+### **CreateTask**
+
+<br>
+
 <center style="
 border-radius:4px;
 border: 1px solid #cfd7e6;
@@ -781,9 +785,7 @@ padding: 1em;"
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> AD_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> CreateTask
         <font color=000 size=16><b>Назва:</b> Створити завдання
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -852,6 +854,10 @@ padding: 1em;"
 
 </center>
 
+### **EditTask**
+
+<br>
+
 <center style="
 border-radius:4px;
 border: 1px solid #cfd7e6;
@@ -861,9 +867,7 @@ padding: 1em;"
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> AD_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> EditTask
         <font color=000 size=16><b>Назва:</b> Редагувати завдання
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -935,6 +939,10 @@ padding: 1em;"
 
 </center>
 
+### **RemoveTask**
+
+<br>
+
 <center style="
 border-radius:4px;
 border: 1px solid #cfd7e6;
@@ -944,9 +952,7 @@ padding: 1em;"
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> AD_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> RemoveTask
         <font color=000 size=16><b>Назва:</b> Видалити завдання
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -1002,6 +1008,10 @@ padding: 1em;"
 
 </center>
 
+### **AddMember**
+
+<br>
+
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -1011,9 +1021,7 @@ padding: 1em;"
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> AD_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> AddMember
         <font color=000 size=16><b>Назва:</b> Додати розробника до проєкту
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -1086,6 +1094,10 @@ padding: 1em;"
 
 </center>
 
+### **ChangeRights**
+
+<br>
+
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -1095,9 +1107,7 @@ padding: 1em;"
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> AD_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> ChangeRights
         <font color=000 size=16><b>Назва:</b> Змінити права користувача
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -1167,6 +1177,10 @@ padding: 1em;"
 
 </center>
 
+### **DeleteMember**
+
+<br>
+
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -1176,9 +1190,7 @@ padding: 1em;"
 
 @startuml
 
-    left header
-        <font color=000 size=18><b>Package:</b> AD_1.0
-        
+    left header        
         <font color=000 size=16><b>ID:</b> DeleteMember
         <font color=000 size=16><b>Назва:</b> Видалити розробника з проєкту
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
