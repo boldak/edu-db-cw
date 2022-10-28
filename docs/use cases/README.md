@@ -1016,19 +1016,21 @@ padding: 1em;"
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> AddMember
+    right header        
+        <font color=000 size=18><b>ID:</b> AddMember
+
         <font color=000 size=16><b>Назва:</b> Додати розробника до проєкту
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
-        <font color=000 size=16><b>Передумови:</b> Користувач увійшов в систему 
-        <font color=000 size=16> Користувач є тімлідом/замовником
+        <font color=000 size=16><b>Передумови:</b> 
+        <font color=000 size=16>1. Користувач увійшов в систему 
+        <font color=000 size=16> 2. Користувач є тімлідом/замовником
         <font color=000 size=16><b>Результат:</b> Користувач є учасником проєкту
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> AddMember_EX_NoRights Користувач не має прав тімліда/замовника
-        <font color=000 size=16> AddMember_EX_InvalidData Користувач ввів неправильні дані
-        <font color=000 size=16> AddMember_EX_DoNotExist Користувач не зареєстрований в системі
+        <font color=000 size=16><i>AddMember_EX_NoRights</i> - Користувач не має прав тімліда/замовника
+        <font color=000 size=16><i>AddMember_EX_InvalidData</i> - Користувач ввів неправильні дані
+        <font color=000 size=16><i>AddMember_EX_DoNotExist</i> - Користувач не зареєстрований в системі
         
-        <font color=000 size=16><b>Основний сценарій:</b>
+        <font color=000 size=18><b>Основний сценарій:</b>
         
     end header
 
@@ -1102,19 +1104,21 @@ padding: 1em;"
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> ChangeRights
+    right header        
+        <font color=000 size=18><b>ID:</b> ChangeRights
+
         <font color=000 size=16><b>Назва:</b> Змінити права користувача
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
-        <font color=000 size=16><b>Передумови:</b> Користувач увійшов в систему
-        <font color=000 size=16> Користувач є замовником
-        <font color=000 size=16> Користувач є тімлідом
+        <font color=000 size=16><b>Передумови:</b> 
+        <font color=000 size=16> 1. Користувач увійшов в систему
+        <font color=000 size=16> 2. Користувач є замовником
+        <font color=000 size=16> 3. Користувач є тімлідом
         <font color=000 size=16><b>Результат:</b> Користувач отримує статус
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> ChangeRights_EX_NoRights Користувач не має прав тімліда
-        <font color=000 size=16> ChangeRights_EX_SameStatus* Обраний користувач вже має такий статус
+        <font color=000 size=16> <i>ChangeRights_EX_NoRights</i> - Користувач не має прав тімліда
+        <font color=000 size=16> <i>ChangeRights_EX_SameStatus</i> - Обраний користувач вже має такий статус
         
-        <font color=000 size=16><b>Основний сценарій:</b>
+        <font color=000 size=18><b>Основний сценарій:</b>
         
     end header
     
@@ -1185,19 +1189,21 @@ padding: 1em;"
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> DeleteMember
+    right header        
+        <font color=000 size=18><b>ID:</b> DeleteMember
+
         <font color=000 size=16><b>Назва:</b> Видалити розробника з проєкту
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
-        <font color=000 size=16><b>Передумови:</b> Розробник є учасником проєкту
-        <font color=000 size=16> Користувач увійшов в систему 
-        <font color=000 size=16> Користувач є тімлідом
+        <font color=000 size=16><b>Передумови:</b> 
+        <font color=000 size=16> 1. Розробник є учасником проєкту
+        <font color=000 size=16> 2. Користувач увійшов в систему 
+        <font color=000 size=16> 3. Користувач є тімлідом
         <font color=000 size=16><b>Результат:</b> Розробник не є учасником проєкту
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> DeleteMember_EX_NoRights Користувач не має прав тімліда
-        <font color=000 size=16> DeleteMember_EX_Canceled Користувач скасував видалення
+        <font color=000 size=16><i>DeleteMember_EX_NoRights</i> - Користувач не має прав тімліда
+        <font color=000 size=16><i>DeleteMember_EX_Canceled</i> - Користувач скасував видалення
         
-        <font color=000 size=16><b>Основний сценарій:</b>
+        <font color=000 size=18><b>Основний сценарій:</b>
         
     end header
 
