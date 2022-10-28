@@ -21,7 +21,7 @@
 
 **FAQ**[[2]](#link3) - список поширених запитаннь та відповіді на них.
 
-Інші визначення можна подивитись в ["Аналіз предметної області"](https://github.com/EugeneSemivolos/open-data-management-system/master/docs/requirements/state-of-the-art.md#основні-визначення)
+Інші визначення можна подивитись в ["Аналіз предметної області"](https://github.com/EugeneSemivolos/open-data-management-system/blob/master/docs/requirements/state-of-the-art.md#основні-визначення)
 
 ### Посилання
 <a name="link1"></a>
