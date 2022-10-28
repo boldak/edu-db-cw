@@ -6,6 +6,13 @@
 
 ## Діаграма прецедентів
 
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
 @startuml
 
     actor "Користувач" as User
@@ -40,9 +47,18 @@
 
 @enduml
 
+</center>
+
 Мал.1 Основні можливості, що система надає користувачам
 
 ---
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 @startuml
 
@@ -72,9 +88,18 @@
 
 @enduml
 
+</center>
+
 Мал.2 Основні можливості, що надає система замовникові
 
 ---
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 @startuml
 
@@ -105,9 +130,18 @@
     
 @enduml
 
+</center>
+
 Мал.3.1 Основні можливості, що надає система тімліду. Частина 1
 
 ---
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 @startuml
 
@@ -150,9 +184,18 @@
 
 @enduml
 
+</center>
+
 Мал.3.2 Основні можливості щодо, що надає система тімліду. Частина 2
 
 ---
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 @startuml
 
@@ -179,12 +222,20 @@
     TaskStatus .l.> CheckRights: includes
 @enduml
 
+</center>
+
 Мал.4 Основні можливості, що надає система замовникові
 
 ---
 
 ## Сценарії використання
 
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 @startuml
 
@@ -206,44 +257,625 @@
 
     |Користувач|
         start
-        : Натискає на кнопку "Реєстрація";
+        :Натискає на кнопку "Реєстрація";
         
     |Система|
-        : Виводить форму для реєстрації;
+        :Виводить форму для реєстрації;
         
     |Користувач|
-        : Вводить адресу електронної пошти;
+        :Вводить адресу електронної пошти;
         
     |Система|
-        : Перевіряє користувача на робота;
+        :Перевіряє користувача на робота;
         
     |Користувач|
-        : Проходить тест на робота;
+        :Проходить тест на робота;
         note right #ffaaaa
         <b> Можливо
         <b> RegUser_EX_CAPTCHA
         end note
         
     |Система|
-        : Система створює 
+        :Створює 
         новий обліковий запис;
         note right #ffaaaa
         <b> Можливо
         <b> RegUser_EX_AccountExist
         end note
         
-        : Система надсилає
+        :Надсилає
         користувачу підтвердження 
         успішної реєстрації;
         
     |Користувач|
-        : Користувач отримує 
+        :Користувач отримує 
         підтвердження успішної реєстрації;
         stop;
 
 @enduml
 
-    <center style="
+
+**AcceptTask**
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+@startuml
+    left header
+        <font color=000 size=18><b>Package:</b> AD_1.0
+        
+        <font color=000 size=16><b>ID:</b> AcceptTask
+        <font color=000 size=16><b>Назва:</b> Прийняти завдання
+        <font color=000 size=16><b>Учасники:</b> Розробник, система
+        <font color=000 size=16><b>Передумови:</b>
+        <font color=000 size=16> 1. Не зайняті завдання існують
+        <font color=000 size=16> 2. Користувач авторизований
+        <font color=000 size=16>3. Користувач є розробником
+        
+
+        <font color=000 size=16><b>Результат:</b> Завдання закріплено за розробником
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> AcceptTask_EX_NoTask* Інший розробник встиг швидше прийняти завдання
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+    |Розробник|
+        start
+        : Натискає кнопку "Tasks";
+        
+    |Система|
+        : Відкриває вікно роботи із завданнями;
+        
+    |Розробник|
+        : Обирає вільне завдання і натискає на кнопку "Accept";
+        
+    |Система|
+        : Закріплює завдання за розробником;
+        
+    |Система|
+        : Видаляє потрібне завдання із списку вільних завдань;
+        note right #ffaaaa
+        <b> Можливо
+        <b> AcceptTask_EX_NoTask
+        end note
+
+@enduml
+
+</center>
+
+**RefuseTask**
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> AD_1.0
+
+        <font color=000 size=16><b>ID:</b> RefuseTask
+        <font color=000 size=16><b>Назва:</b> Відмовитися від завдання
+        <font color=000 size=16><b>Учасники:</b> Розробник, система
+        <font color=000 size=16><b>Передумови:</b>
+
+        <font color=000 size=16> 1. Є завдання, закріплені за користувачем
+        <font color=000 size=16> 2. Користувач авторизований
+        <font color=000 size=16>3. Користувач є розробником
+
+        <font color=000 size=16><b>Результат:</b> Завдання відкріплено від розробника
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> RefuseTask_EX_DeadConnection* Повідомлення про те, що завдання було успішно відкріплено від розробника, не доходить до розробника
+
+        <font color=000 size=16><b>Основний сценарій:</b>
+
+    end header
+
+    |Розробник|
+        start
+        : Натискає кнопку "Tasks";
+
+    |Система|
+        : Відкриває вікно роботи із завданнями;
+
+    |Розробник|
+        : Обирає закріплене за собою завдання і натискає на кнопку "Refuse";
+
+    |Система|
+        : Відкріпляє завдання від розробника;
+
+    |Система|
+        : Переносить завдання до списку вільних завдань;
+
+    |Система|
+        : Повідомляє розробника про те, що завдання було успішно відкріплено від розробника;
+
+    |Розробник|
+        : Отримує інформацію про те, що завдання було успішно відкріплено від розробника;
+        note right #ffaaaa
+        <b> Можливо
+        <b> RefuseTask_EX_DeadConnection
+        end note
+
+@enduml
+
+</center>
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> CRPR_1.0
+        
+        <font color=000 size=16><b>ID:</b> CreateProject
+        <font color=000 size=16><b>Назва:</b> Створити проєкт
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Передумови:</b> 
+        <font color=000 size=16><b> Проєкт не є створений 
+        <font color=000 size=16><b> Користувач зареєстрований або авторизований у системі
+        <font color=000 size=16><b>Результат:</b> Новий проєкт
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> *CreateProject_EX_WrongInfo* Користувач ввів некоректну інформацію у проєкті
+        <font color=000 size=16> *CreateProject_EX_DeadConnection* Повідомлення про успішне створення проєкту не доходить до користувача
+        
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+
+    |Користувач|
+        start
+        : Настискає кнопку "Create New Project";
+        
+    |Система|
+        : Відкриває вікно створення проєкту;
+        
+    |Користувач|
+        : Заповнює інформацію проекту;
+
+    |Користувач|
+        : Настискає кнопку "Finish the project description and create it";
+        
+    |Система|
+        : Перевіряє коректність введених данних;
+        note right #ffaaaa
+        <b> Можливо
+        <b> CreateProject_EX_WrongInfo
+        end note
+
+    |Система|
+        : Створює проєкт;
+        
+    |Система|
+        : Присуджує користувачеві статус замовник;
+
+    |Система|
+        : Повідомляє користувачу про успішне створення проєкту;
+
+    |Користувач|
+        : Отримує інформацію про успішне створення проєкту;
+        note right #ffaaaa
+        <b> Можливо
+        <b> CreateProject_EX_DeadConnection
+        end note
+
+    |Система|
+        : Закриває вікно створення проєкту;
+
+    |Система|
+        : Відкриває новостворений проєкт;
+
+@enduml
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> DRPR_1.0
+        
+        <font color=000 size=16><b>ID:</b> DeleteProject
+        <font color=000 size=16><b>Назва:</b> Видалити проєкт
+        <font color=000 size=16><b>Учасники:</b> Менеджер/Замовник проєкту, система
+        <font color=000 size=16><b>Передумови:</b> 
+        <font color=000 size=16><b> Проєкт існує
+        <font color=000 size=16><b>Результат:</b> Видалений проєкт
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> *DeleteProject_EX_WrongDelete* Система видаляє проєкт не повністю
+        <font color=000 size=16> *DeleteProject_EX_NotAllowed* Користувач не є менеджером/замовником проєкту
+        <font color=000 size=16> *DeleteProject_EX_DeadConnection* Повідомлення про успішне видалення проєкту не доходить до менеджероа/замовника
+
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+
+    |Користувач|
+        start
+        : Настискає кнопку "Delete Project";
+        
+    |Система|
+        : Перевіряє права користувача;
+        note right #ffaaaa
+        <b> Можливо
+        <b> DeleteProject_EX_WrongDelete
+        end note
+
+    |Система|
+        : Відкриває вікно, для підтвердження рішення;
+
+    |Користувач|
+        : Натискає кнопку "Yes";
+        
+    |Система|
+        : Видаляє проєкт;
+        note right #ffaaaa
+        <b> Можливо
+        <b> DeleteProject_EX_WrongDelete
+        end note
+
+    |Система|
+        : Повідомляє користувача про успішне видалення проєкту;
+        
+    |Менеджер та замовник|
+        : Отримують інформацію про успішне видалення проєкту;
+                note right #ffaaaa
+        <b> Можливо
+        <b> DeleteProject_EX_DeadConnection
+        end note
+
+@enduml
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> ADSE_1.0
+        
+        <font color=000 size=16><b>ID:</b> AddSection
+        <font color=000 size=16><b>Назва:</b> Додати новий розділ для завдань
+        <font color=000 size=16><b>Учасники:</b> Тімлід, система
+        <font color=000 size=16><b>Передумови:</b> 
+        <font color=000 size=16><b> Користувач увійшов у систему
+        <font color=000 size=16><b> Користувачу призначена роль тімліда у обраному проєкті
+        <font color=000 size=16><b>Результат:</b> Система додає новий розділ для завдань (як-от "Вхідні завдання", "На перевірці", "У роботі")
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> *AddSection_EX_MaxReached* Користувач намагається додати новий розділ, коли проєкт досяг максимальної кількості розділів (10)
+        <font color=000 size=16> *AddSection_EX_WrongName* Користувач задав невалідну назву розділу
+        <font color=000 size=16> *AddSection_EX_Canceled* Користувач скасував створення нового розділу
+
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+
+    |Користувач|
+        start
+        : Натискає кнопку "Додати новий розділ" у блоці завдань;
+        note right #ffaaaa
+        <b> Можливо
+        <b> AddSection_EX_MaxReached
+        end note
+
+    |Система|
+        : Просить користувача ввести назву нового розділу у полі вводу;
+
+    |Користувач|
+        : Вводить назву нового розділу;
+        note right #ffaaaa
+        <b> Можливо
+        <b> AddSection_EX_Canceled
+        end note
+
+    |Користувач|
+        : натискає на кнопку "Підтвердити";
+        note right #ffaaaa
+        <b> Можливо
+        <b> AddSection_EX_WrongName
+        end note
+
+    |Система|
+        : Сповіщає про успішне створення нового розділу;
+
+    |Користувач|
+        : Отримує сповіщення про успішне створення нового розділу;  
+
+    |Система|
+        : Відображає новий розділ з введеною користувачем назвою у блоці завдань;  
+
+@enduml
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> DESE_1.0
+        
+        <font color=000 size=16><b>ID:</b> DeleteSection
+        <font color=000 size=16><b>Назва:</b> Видалити обраний розділ для завдань
+        <font color=000 size=16><b>Учасники:</b> Тімлід, система
+        <font color=000 size=16><b>Передумови:</b> 
+        <font color=000 size=16><b> Користувач увійшов у систему
+        <font color=000 size=16><b> Роль тімліда призначена користувачеві
+        <font color=000 size=16><b>Результат:</b> Система видаляє один з розділів для завдань разом із усіма завданнями у ньому
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> *DeleteSection_EX_OnlySection* Користувач намагається видалити єдиний існуючий розділ
+        <font color=000 size=16> *DeleteSection_EX_Canceled* Користувач скасував видалення розділу
+
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+
+    |Користувач|
+        start
+        : Натискає кнопку "Видалити" біля назви обраного розділу;
+        note right #ffaaaa
+        <b> Можливо
+        <b> DeleteSection_EX_OnlySection
+        end note
+
+    |Система|
+        : Відображає діалогове вікно з попередженням про наслідки дії;
+
+    |Користувач|
+        : Підтверджує видалення;
+        note right #ffaaaa
+        <b> Можливо
+        <b> DeleteSection_EX_Canceled
+        end note
+
+    |Система|
+        : Сповіщає про успішне видалення обраного розділу разом із усіма завданнями у ньому;
+
+    |Користувач|
+        : Отримує сповіщення про успішне видалення обраного розділу;  
+
+    |Система|
+        : Більше не відображає видалений розділ у блоці завдань;  
+
+@enduml
+
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> AD_1.0
+        
+        <font color=000 size=16><b>ID:</b> AddMember
+        <font color=000 size=16><b>Назва:</b> Додати розробника до проєкту
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Передумови:</b> Користувач увійшов в систему 
+        <font color=000 size=16> Користувач є тімлідом/замовником
+        <font color=000 size=16><b>Результат:</b> Користувач є учасником проєкту
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> AddMember_EX_NoRights Користувач не має прав тімліда/замовника
+        <font color=000 size=16> AddMember_EX_InvalidData Користувач ввів неправильні дані
+        <font color=000 size=16> AddMember_EX_DoNotExist Користувач не зареєстрований в системі
+        
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+
+    |Користувач|
+        start;
+        :Натискає на обраний проєкт;
+
+    |Система|
+        :Відкриває вікно проєкту;
+
+    |Користувач|
+        :Натискає на кнопку "Додати учасника";
+        
+    |Система|
+        :Перевіряє права користувача;
+        note right #ffaaaa
+        <b> Можливо
+        <b> AddMember_EX_NoRights
+        end note
+
+        :Відкриває користувачеві вікно для додання учасника;
+
+    |Користувач|
+        :Заповнює інформацію;
+        note right #ffaaaa
+        <b> Можливо
+        <b> AddMember_EX_InvalidData
+        end note
+
+    |Система|
+        :Перевіряє наявність розробника в системі;
+        note right #ffaaaa
+        <b> Можливо
+        <b> AddMember_EX_DoNotExist
+        end note
+
+    |Користувач|
+        :Натискає кнопку "Підтвердити";
+
+    |Система|
+        :Надсилає сповіщення користувачу про призначення до проєкту;
+
+    |Користувач|
+        :Отримує сповіщення про призначення до проєкту;
+
+    |Система|
+        :Надсилає сповіщення про успішне призначення розробника;
+
+    |Користувач|
+        :Отримує сповіщення про успішне призначення розробника;
+
+    |Система|
+        :Закриває вікно додання учасника;
+        :Відображає розробника у списку учасників проєкту;
+        stop;
+
+@enduml
+
+</center>
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> AD_1.0
+        
+        <font color=000 size=16><b>ID:</b> DeleteMember
+        <font color=000 size=16><b>Назва:</b> Видалити розробника з проєкту
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Передумови:</b> Розробник є учасником проєкту
+        <font color=000 size=16> Користувач увійшов в систему 
+        <font color=000 size=16> Користувач є тімлідом
+        <font color=000 size=16><b>Результат:</b> Розробник не є учасником проєкту
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> DeleteMember_EX_NoRights Користувач не має прав тімліда
+        <font color=000 size=16> DeleteMember_EX_Canceled Користувач скасував видалення
+        
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+
+    |Користувач|
+        start;    
+        :Натискає на обраний проєкт;
+
+    |Система|
+        :Відкриває вікно проєкту;
+
+    |Користувач|
+        :Натискає на список учасників проєкту;
+
+    |Система|
+        :Відкриває список учасників проєкту;
+
+    |Користувач|
+        :Натискає на розробника правою клавішою миші і 
+        з випадаючого списка обирає пункт "Видалити учасника";
+
+    |Система|
+        :Перевіряє права користувача;
+        note right #ffaaaa
+        <b> Можливо
+        <b> DeleteMember_EX_NoRights
+        end note
+
+        :Надсилає діалогове вікно з метою підтвердити рішення;
+
+    |Користувач|
+        :натискає на кнопку "Підтвердити";
+        note right #ffaaaa
+        <b> Можливо
+        <b> DeleteMember_EX_Canceled
+        end note
+
+    |Система|
+        :Надсилає сповіщення про успішне видалення учасника проєкту;
+
+    |Користувач|
+        :Отримує сповіщення про успішне видалення учасника проєкту;
+
+    |Система|
+        :Не відображає користувача у списку учасників проєкту;
+
+    |Користувач|
+        :Не має доступу до проєкту;
+        stop;
+
+@enduml
+
+</center>
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    left header
+        <font color=000 size=18><b>Package:</b> AD_1.0
+        
+        <font color=000 size=16><b>ID:</b> ChangeRights
+        <font color=000 size=16><b>Назва:</b> Змінити права користувача
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Передумови:</b> Користувач увійшов в систему
+        <font color=000 size=16> Користувач є замовником
+        <font color=000 size=16> Користувач є тімлідом
+        <font color=000 size=16><b>Результат:</b> Користувач отримує статус
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> ChangeRights_EX_NoRights Користувач не має прав тімліда
+        <font color=000 size=16> ChangeRights_EX_SameStatus* Обраний користувач вже має такий статус
+        
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+    
+    |Користувач|
+        start;
+        :Натискає на обраний проєкт;
+
+    |Система|
+        :Відкриває вікно проєкту;
+
+    |Користувач|
+        :Натискає на список учасників проєкту;
+
+    |Система|
+        :Відкриває список учасників проєкту;
+
+    |Користувач|
+        :Натискає на обраного користувача правою клавішою миші
+        і з випадаючого списка обирає пункт "Змінити права учасника";
+
+    |Система|
+        :Перевіряє права користувача;
+        note right #ffaaaa
+        <b> Можливо
+        <b> ChangeRights_EX_NoRights
+        end note
+
+        :Надсилає діалогове вікно з варіантами нового статусу для 
+        обраного користувача: замовник, тімлід, розробник;
+
+    |Користувач|
+        :Обирає новий статус для обраного користувача;
+        note right #ffaaaa
+        <b> Можливо
+        <b> ChangeRights_EX_SameStatus
+        end note
+    
+    |Система|
+        :Надсилає сповіщення про успішну зміну статусу 
+        обраного користувача;
+
+    |Користувач|
+        :Отримує сповіщення про успішну зміну статусу 
+        обраного користувача;
+
+    |Система|    
+        :Надсилає обраному користувачеві повідомлення
+        про його новий статус;
+
+    |Система|
+        :Відображає користувача з новим статусом 
+        у списку учасників проєкту;
+        stop;
+@enduml
+
+</center>
+
+<center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
