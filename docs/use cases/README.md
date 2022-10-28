@@ -280,12 +280,6 @@ left header
 
 end header
 
-<style>
-    note {
-        BackgroundColor #FF6138
-    }
-</style>
-
 
 |#FF4F00|Адміністратор|
 start
@@ -315,12 +309,6 @@ left header
 <font color=000 size=16><b>ОСНОВНИЙ СЦЕНАРІЙ:</b>
 
 end header
-
-<style>
-    note {
-        BackgroundColor #FF6138
-    }
-</style>
 
 
 |#FF4F00|Користувач|
@@ -387,12 +375,6 @@ left header
 
 end header
 
-<style>
-    note {
-        BackgroundColor #FF6138
-    }
-</style>
-
 |#FF4F00|Адміністратор|
 start
 :Адміністратор обирає редактора;
@@ -422,12 +404,6 @@ left header
 
 end header
 
-<style>
-    note {
-        BackgroundColor #FF6138
-    }
-</style>
-
 
 |#FF4F00|Адміністратор|
 start
@@ -442,12 +418,6 @@ end note
 :Отримує доступ на видалення файлу;
 stop
 @enduml
-
-<style>
-    note {
-        BackgroundColor #FF6138
-    }
-</style>
 
 left header
 <font color=000 size=18><b>ID:</b> ADM.ADMT_TXT_ANNOTATION_CHNG
@@ -476,11 +446,6 @@ start
 :Отримує результат;
 stop
 
-<style>
-    note {
-        BackgroundColor #FF6138
-    }
-</style>
 
 left header
 <font color=000 size=18><b>ID:</b> ADM.VIEW_HISTORY
@@ -503,11 +468,6 @@ start
 :Отримує доступ до історії змін;
 stop
 
-<style>
-    note {
-        BackgroundColor #FF6138
-    }
-</style>
 
 left header
 <font color=000 size=18><b>ID:</b> ADM.VIEW_BRANCH
@@ -532,11 +492,6 @@ start
 stop
 
 @startuml
-<style>
-    note {
-        BackgroundColor #FF6138
-    }
-</style>
 
 left header
 <font color=000 size=18><b>ID:</b> ADM.ADMT_TXT_ANNOTATION_FINAL
