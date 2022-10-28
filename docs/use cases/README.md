@@ -546,7 +546,7 @@
         <font color=000 size=18><b>ID:</b> AddSection
 
         <font color=000 size=16><b>Назва:</b> Додати новий розділ для завдань
-        <font color=000 size=16><b>Учасники:</b> Тімлід, система
+        <font color=000 size=16><b>Учасники:</b> Тімлід, Система
         <font color=000 size=16><b>Передумови:</b> 
         <font color=000 size=16> 1. Користувач увійшов у систему
         <font color=000 size=16> 2. Користувачу призначена роль тімліда у обраному проєкті
@@ -559,7 +559,7 @@
         <font color=000 size=18><b>Основний сценарій:</b>
     end header
 
-    |Користувач|
+    |Тімлід|
         start
         : Натискає кнопку "Додати новий розділ" у блоці завдань;
         note right #ffaaaa
@@ -570,14 +570,14 @@
     |Система|
         : Просить користувача ввести назву нового розділу у полі вводу;
 
-    |Користувач|
+    |Тімлід|
         : Вводить назву нового розділу;
         note right #ffaaaa
         <b> Можливо
         <b> AddSection_EX_Canceled
         end note
 
-    |Користувач|
+    |Тімлід|
         : Натискає на кнопку "Підтвердити";
         note right #ffaaaa
         <b> Можливо
@@ -587,7 +587,7 @@
     |Система|
         : Сповіщає користувача про успішне створення нового розділу;
 
-    |Користувач|
+    |Тімлід|
         : Отримує сповіщення про успішне створення нового розділу;  
 
     |Система|
@@ -610,23 +610,24 @@
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> DeleteSection
+    right header        
+        <font color=000 size=18><b>ID:</b> DeleteSection
+
         <font color=000 size=16><b>Назва:</b> Видалити обраний розділ для завдань
-        <font color=000 size=16><b>Учасники:</b> Тімлід, система
+        <font color=000 size=16><b>Учасники:</b> Тімлід, Система
         <font color=000 size=16><b>Передумови:</b> 
-        <font color=000 size=16><b> Користувач увійшов у систему
-        <font color=000 size=16><b> Роль тімліда призначена користувачеві
+        <font color=000 size=16>1. Користувач увійшов у систему
+        <font color=000 size=16>2. Роль тімліда призначена користувачеві
         <font color=000 size=16><b>Результат:</b> Система видаляє один з розділів для завдань разом із усіма завданнями у ньому
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> *DeleteSection_EX_OnlySection* Користувач намагається видалити єдиний існуючий розділ
-        <font color=000 size=16> *DeleteSection_EX_Canceled* Користувач скасував видалення розділу
+        <font color=000 size=16> <i>DeleteSection_EX_OnlySection</i> - Користувач намагається видалити єдиний існуючий розділ
+        <font color=000 size=16><i>DeleteSection_EX_Canceled</i> - Користувач скасував видалення розділу
 
-        <font color=000 size=16><b>Основний сценарій:</b>
+        <font color=000 size=18><b>Основний сценарій:</b>
         
     end header
 
-    |Користувач|
+    |Тімлід|
         start
         : Натискає кнопку "Видалити" біля назви обраного розділу;
         note right #ffaaaa
@@ -637,7 +638,7 @@
     |Система|
         : Відображає діалогове вікно з попередженням про наслідки дії;
 
-    |Користувач|
+    |Тімлід|
         : Підтверджує видалення;
         note right #ffaaaa
         <b> Можливо
@@ -645,9 +646,9 @@
         end note
 
     |Система|
-        : Сповіщає про успішне видалення обраного розділу разом із усіма завданнями у ньому;
+        : Сповіщає користувача про успішне видалення обраного розділу разом із усіма завданнями у ньому;
 
-    |Користувач|
+    |Тімлід|
         : Отримує сповіщення про успішне видалення обраного розділу;  
 
     |Система|
@@ -670,21 +671,21 @@ padding: 1em;"
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> CreateTask
+    right header        
+        <font color=000 size=18><b>ID:</b> CreateTask
+
         <font color=000 size=16><b>Назва:</b> Створити завдання
-        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Учасники:</b> Тімлід, Система
         <font color=000 size=16><b>Передумови:</b>
-        <font color=000 size=16> Користувач увійшов у систему
-        <font color=000 size=16> Роль тімліда призначена користувачеві
+        <font color=000 size=16>1. Користувач увійшов у систему
+        <font color=000 size=16>2. Роль тімліда призначена користувачеві
         <font color=000 size=16><b>Результат:</b> Система додає нове завдання у відповідний розділ
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> CreateTask_EX_Canceled Користувач скасував створення завдання
-        <font color=000 size=16> CreateTask_EX_WrongName Користувач задав невалідну назву для завдання
-        <font color=000 size=16> CreateTask_EX_MaxReached Користувач намагається створити нове завдання, коли розділ завдань досяг максимальної кількості завдань (255)
+        <font color=000 size=16><i>CreateTask_EX_Canceled</i> - Користувач скасував створення завдання
+        <font color=000 size=16><i>CreateTask_EX_WrongName</i> - Користувач задав невалідну назву для завдання
+        <font color=000 size=16><i>CreateTask_EX_MaxReached</i> - Користувач намагається створити нове завдання, коли розділ завдань досяг максимальної кількості завдань (255)
         
-        <font color=000 size=16><b>Основний сценарій:</b>
-        
+        <font color=000 size=18><b>Основний сценарій:</b>
     end header
 
     |Користувач|
@@ -752,24 +753,22 @@ padding: 1em;"
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> EditTask
+    right header        
+        <font color=000 size=18><b>ID:</b> EditTask
+
         <font color=000 size=16><b>Назва:</b> Редагувати завдання
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
         <font color=000 size=16><b>Передумови:</b>
-
-        <font color=000 size=16> Користувач увійшов у систему
-        <font color=000 size=16> Роль тімліда призначена користувачеві
-        
+        <font color=000 size=16> 1. Користувач увійшов у систему
+        <font color=000 size=16> 2. Роль тімліда призначена користувачеві
         <font color=000 size=16><b>Результат:</b> Система редагує завдання відповідно до правок, які вніс користувач
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> EditTask_EX_NoChanges Користувач нічого не змінив у даних завдання
-        <font color=000 size=16> EditTask_EX_Canceled Користувач скасував редагування завдання
-        <font color=000 size=16> EditTask_EX_WrongName Користувач задав невалідну назву для завдання
-        <font color=000 size=16> EditTask_EX_NoPermission Користувач не має прав, необхідних для редагування завдання
+        <font color=000 size=16><i>EditTask_EX_NoChanges</i> - Користувач нічого не змінив у даних завдання
+        <font color=000 size=16><i>EditTask_EX_Canceled</i> - Користувач скасував редагування завдання
+        <font color=000 size=16><i>EditTask_EX_WrongName</i> - Користувач задав невалідну назву для завдання
+        <font color=000 size=16><i>EditTask_EX_NoPermission</i> - Користувач не має прав, необхідних для редагування завдання
         
-        <font color=000 size=16><b>Основний сценарій:</b>
-        
+        <font color=000 size=18><b>Основний сценарій:</b>
     end header
     
     |Користувач|
@@ -837,22 +836,20 @@ padding: 1em;"
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> RemoveTask
+    right header        
+        <font color=000 size=18><b>ID:</b> RemoveTask
+
         <font color=000 size=16><b>Назва:</b> Видалити завдання
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
         <font color=000 size=16><b>Передумови:</b>
-
-        <font color=000 size=16> Користувач увійшов у систему
-        <font color=000 size=16> Роль тімліда призначена користувачеві
-        
+        <font color=000 size=16>1. Користувач увійшов у систему
+        <font color=000 size=16>2. Роль тімліда призначена користувачеві
         <font color=000 size=16><b>Результат:</b> Система видаляє завдання
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> RemoveTask_EX_Canceled Користувач скасував видалення завдання
-        <font color=000 size=16> RemoveTask_EX_NoRights Користувач не має прав тімліда
+        <font color=000 size=16><i>RemoveTask_EX_Canceled</i> - Користувач скасував видалення завдання
+        <font color=000 size=16><i>RemoveTask_EX_NoRights</i> - Користувач не має прав тімліда
 
-        <font color=000 size=16><b>Основний сценарій:</b>
-        
+        <font color=000 size=18><b>Основний сценарій:</b>
     end header
     
     |Користувач|
