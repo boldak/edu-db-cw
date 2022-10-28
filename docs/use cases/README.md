@@ -348,7 +348,7 @@
         <font color=000 size=16><b>Результат:</b> Користувач увійшов до системи
         <font color=000 size=16><b>Виключні ситуації:</b>
         <font color=000 size=16> <i>SignIn_EX_NoAccount</i> - Клієнт не зареєстрований у системі
-        <font color=000 size=16> SignIn_EX_WrongPassword Клієнт ввів неправильний пароль
+        <font color=000 size=16> <i>SignIn_EX_WrongPassword</i> - Клієнт ввів неправильний пароль
         
         <font color=000 size=18><b>Основний сценарій:</b>
     end header
@@ -412,7 +412,7 @@
         <font color=000 size=16><b>Результат:</b> Новий проєкт
         <font color=000 size=16><b>Виключні ситуації:</b>
         <font color=000 size=16> <i>CreateProject_EX_WrongInfo</i> - Користувач ввів некоректну інформацію у проєкті
-        <font color=000 size=16> <i>CreateProject_EX_DeadConnection</i> Повідомлення про успішне створення проєкту не доходить до користувача
+        <font color=000 size=16> <i>CreateProject_EX_DeadConnection</i> - Повідомлення про успішне створення проєкту не доходить до користувача
         
         <font color=000 size=18><b>Основний сценарій:</b>
     end header
@@ -444,7 +444,7 @@
         : Присуджує користувачеві статус замовник;
 
     |Система|
-        : Повідомляє користувачу про успішне створення проєкту;
+        : Повідомляє користувача про успішне створення проєкту;
 
     |Користувач|
         : Отримує інформацію про успішне створення проєкту;
@@ -480,13 +480,13 @@
         <font color=000 size=18><b>ID:</b> DeleteProject
 
         <font color=000 size=16><b>Назва:</b> Видалити проєкт
-        <font color=000 size=16><b>Учасники:</b> Замовник проєкту, система
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
         <font color=000 size=16><b>Передумови:</b> Проєкт існує
         <font color=000 size=16><b>Результат:</b> Видалений проєкт
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> <i>DeleteProject_EX_WrongDelete</i> - Система видаляє проєкт не повністю
-        <font color=000 size=16> <i>DeleteProject_EX_NotAllowed</i> - Користувач не є замовником проєкту
-        <font color=000 size=16> <i>DeleteProject_EX_DeadConnection</i> Повідомлення про успішне видалення проєкту не доходить до замовника
+         <font color=000 size=16> <i>DeleteProject_EX_NotAllowed</i> - Користувач не є замовником проєкту
+        <font color=000 size=16><i>DeleteProject_EX_WrongDelete</i> - Система видаляє проєкт не повністю
+        <font color=000 size=16><i>DeleteProject_EX_DeadConnection</i> - Повідомлення про успішне видалення проєкту не доходить до користувача
 
         <font color=000 size=18><b>Основний сценарій:</b>
     end header
@@ -499,7 +499,7 @@
         : Перевіряє права користувача;
         note right #ffaaaa
         <b> Можливо
-        <b> DeleteProject_EX_WrongDelete
+        <b> DeleteProject_EX_NotAllowed
         end note
 
     |Система|
@@ -518,12 +518,12 @@
     |Система|
         : Повідомляє користувача про успішне видалення проєкту;
         
-    |Замовник|
+    |Користувач|
         : Отримує інформацію про успішне видалення проєкту;
                 note right #ffaaaa
-        <b> Можливо
-        <b> DeleteProject_EX_DeadConnection
-        end note
+                <b> Можливо
+                <b> DeleteProject_EX_DeadConnection
+                end note
 
 @enduml
 
@@ -542,21 +542,21 @@
 
 @startuml
 
-    left header        
-        <font color=000 size=16><b>ID:</b> AddSection
+    right header        
+        <font color=000 size=18><b>ID:</b> AddSection
+
         <font color=000 size=16><b>Назва:</b> Додати новий розділ для завдань
         <font color=000 size=16><b>Учасники:</b> Тімлід, система
         <font color=000 size=16><b>Передумови:</b> 
-        <font color=000 size=16><b> Користувач увійшов у систему
-        <font color=000 size=16><b> Користувачу призначена роль тімліда у обраному проєкті
+        <font color=000 size=16> 1. Користувач увійшов у систему
+        <font color=000 size=16> 2. Користувачу призначена роль тімліда у обраному проєкті
         <font color=000 size=16><b>Результат:</b> Система додає новий розділ для завдань (як-от "Вхідні завдання", "На перевірці", "У роботі")
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> *AddSection_EX_MaxReached* Користувач намагається додати новий розділ, коли проєкт досяг максимальної кількості розділів (10)
-        <font color=000 size=16> *AddSection_EX_WrongName* Користувач задав невалідну назву розділу
-        <font color=000 size=16> *AddSection_EX_Canceled* Користувач скасував створення нового розділу
+        <font color=000 size=16><i>AddSection_EX_MaxReached</i> - Користувач намагається додати новий розділ, коли проєкт досяг максимальної кількості розділів (10)
+        <font color=000 size=16><i>AddSection_EX_WrongName</i> - Користувач задав невалідну назву розділу
+        <font color=000 size=16><i>AddSection_EX_Canceled</i> - Користувач скасував створення нового розділу
 
-        <font color=000 size=16><b>Основний сценарій:</b>
-        
+        <font color=000 size=18><b>Основний сценарій:</b>
     end header
 
     |Користувач|
@@ -578,14 +578,14 @@
         end note
 
     |Користувач|
-        : натискає на кнопку "Підтвердити";
+        : Натискає на кнопку "Підтвердити";
         note right #ffaaaa
         <b> Можливо
         <b> AddSection_EX_WrongName
         end note
 
     |Система|
-        : Сповіщає про успішне створення нового розділу;
+        : Сповіщає користувача про успішне створення нового розділу;
 
     |Користувач|
         : Отримує сповіщення про успішне створення нового розділу;  
