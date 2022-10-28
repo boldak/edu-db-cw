@@ -10,7 +10,6 @@
 
 В markdown-файлі використовується опис діаграми
 
-```md
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -56,4 +55,3 @@ S7 -left.> User:Користувач\nпереглядає дані
 @enduml
 
 </center>
-
