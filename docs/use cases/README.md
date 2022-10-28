@@ -6,11 +6,11 @@
 
 ## Діаграма прецедентів
 
-<br>
+<br />
 
 ###  **Загальна схема**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -59,11 +59,11 @@
 
 ---
 
-<br>
+<br />
 
 ###  **Замовник**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -106,11 +106,11 @@
 
 ---
 
-<br>
+<br />
 
 ### **Тімлід**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -154,7 +154,7 @@
 
 ---
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -210,11 +210,11 @@
 
 ---
 
-<br>
+<br />
 
 ### **Розробник**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -254,13 +254,13 @@
 
 ---
 
-<br>
+<br />
 
 ## Сценарії використання
 
 ### **RegUser**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -328,7 +328,7 @@
 
 ### **SignIn**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -390,7 +390,7 @@
 
 ### **CreateProject**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -465,7 +465,7 @@
 
 ### **DeleteProject**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -531,7 +531,7 @@
 
 ### **AddSection**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -599,7 +599,7 @@
 
 ### **DeleteSection**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -660,7 +660,7 @@
 
 ### **CreateTask**
 
-<br>
+<br />
 
 <center style="
 border-radius:4px;
@@ -742,7 +742,7 @@ padding: 1em;"
 
 ### **EditTask**
 
-<br>
+<br />
 
 <center style="
 border-radius:4px;
@@ -825,7 +825,7 @@ padding: 1em;"
 
 ### **RemoveTask**
 
-<br>
+<br />
 
 <center style="
 border-radius:4px;
@@ -892,7 +892,7 @@ padding: 1em;"
 
 ### **AcceptTask**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -945,7 +945,7 @@ padding: 1em;"
 
 ### **RefuseTask**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -1005,7 +1005,7 @@ padding: 1em;"
 
 ### **AddMember**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -1093,7 +1093,7 @@ padding: 1em;"
 
 ### **ChangeRights**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
@@ -1178,7 +1178,7 @@ padding: 1em;"
 
 ### **DeleteMember**
 
-<br>
+<br />
 
 <center style="
     border-radius:4px;
