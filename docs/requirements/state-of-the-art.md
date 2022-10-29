@@ -274,3 +274,4 @@ DataBank — це інструмент аналізу та візуалізац�
 - [aws.amazon.com](https://aws.amazon.com/what-is/api/)
 - [elartu.tntu.edu.ua](http://elartu.tntu.edu.ua/bitstream/lib/27287/2/IMST_2018_Bilkevych_D_A-Rozrobka_krosplatformenoho_94.pdf)
 - [portswigger.net](https://portswigger.net/web-security/csrf/tokens)
+- [wikipedia.org¹²](https://uk.wikipedia.org/wiki/%D0%86%D1%94%D1%80%D0%B0%D1%80%D1%85%D1%96%D1%87%D0%BD%D0%B0_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
