@@ -17,9 +17,10 @@
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;">
+    padding: 1em;"
+>
 
-    @startuml
+@startuml
 
     title
         <font size=18 color=black>DC_1.1 Знайти дані з використанням фільтру.
@@ -54,7 +55,7 @@
     S6 -down-> S7
     S7 -left.> User:Користувач\nпереглядає дані
 
-    @enduml
+@enduml
 
 </center>
 
@@ -64,9 +65,10 @@
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;">
+    padding: 1em;"
+>
 
-    @startuml
+@startuml
 
     title
         <font size=18 color=black>DC_1.2 Переглянути дані у вигляді графіку.
@@ -96,7 +98,7 @@
     S5 -up-> S6
     S6 -left.> User
 
-    @enduml
+@enduml
 
 </center>
 
@@ -106,9 +108,10 @@
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;">
+    padding: 1em;"
+>
 
-    @startuml
+@startuml
 
     title
         <font size=18 color=black>DC_1.3 Переглянути дані у вигляді таблиці.
@@ -138,7 +141,7 @@
     S5 -up-> S6
     S6 -left.> User
 
-    @enduml
+@enduml
 
 </center>
 
@@ -148,9 +151,10 @@
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;">
+    padding: 1em;"
+>
 
-    @startuml
+@startuml
 
     title
         <font size=18 color=black>DC_1.4 Зберегти дані у форматі xls.
@@ -176,7 +180,7 @@
     S5 -down-> S6
     S6 -left.> User: Користувач завантажує файл формату xls
 
-    @enduml
+@enduml
 
 </center>
 
@@ -186,9 +190,10 @@
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;">
+    padding: 1em;"
+>
 
-    @startuml
+@startuml
 
     title
         <font size=18 color=black>DC_1.5 Запропонувати дані для публікації.
@@ -223,7 +228,7 @@
     S6 -down-> S7
     S7 -left.> User: Користувач відправлена форму з файлам(и) даних
 
-    @enduml
+@enduml
 
 </center>
 
@@ -233,9 +238,10 @@
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;">
+    padding: 1em;"
+>
 
-    @startuml
+@startuml
     
     title
         <font size=18 color=black>DP_2.1 Створити набір даних
@@ -266,6 +272,6 @@
     S6 -down-> S7
     S7 -left.> Admin: Адміністратор створює набір даних
 
-    @enduml
+@enduml
 
 </center>
