@@ -275,3 +275,52 @@
 @enduml
 
 </center>
+
+## DP_3.1
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+    
+    title
+        <font size=18 color=black>DP_3.1 Редагувати набір даних
+
+        <font size=16 color=black>Діаграма прецедентів
+    end title
+
+    skinparam actorStyle awesome
+
+    actor "Аналітик" as Analyst #a2d0eb
+
+    usecase "<b>UC_1.1</b>\nАналітик натискає кпопку "Набори даних""" as S1 #9be8b0
+    usecase "<b>UC_1.2</b>\nСистема відображає список створених наборів даних" as S2 #f2f2d5
+    usecase "<b>UC_1.3</b>\nАналітик обирає потрібний набір даних" as S3 #f2f2d5
+    usecase "<b>UC_1.4</b>\nАналітик натискає кнопку "Редагувати набір даних"" as S4 #f2f2d5
+    usecase "<b>UC_1.5</b>\nСистема відкриває сторінку зі звітом по цьому набору даних" as S5 #f2f2d5
+    usecase "<b>UC_1.6</b>\nАналітик змінює потрібну інформацію" as S6 #f2f2d5
+    usecase "<b>UC_1.7</b>\nАналітик натискає кнопку “Відправити звіт”" as S7 #f2f2d5
+    usecase "<b>UC_1.8</b>\nСистема застосовує зроблені зміни та відправляє звіт Адміністратору" as S8 #f2f2d5
+    usecase "<b>UC_1.9</b>\nАналітик отримує повідомлення про успішне редагування набору даних" as S9 #f2f2d5
+
+    note "Система видає помилку в разі введеня некоректної інформації\n (назва набору даних, ім'я, прізвище та контакти (e-mail)\n автора набору даних, короткий опис вмісту набору даних,\n категорія (тег), ключові слова)" as EX1 #d9c8e3
+
+    Analyst -up-|> S1
+    S1 -up-> S2
+    S2 -right-> S3
+    S3 -right-> S4
+    S4 -right-> S5
+    S5 -right-> S6
+    S6 -down-> S7
+    S7 -down-> S8
+    S8 -left-> S9
+    S8 -down-> EX1
+    S9 -left.> Analyst: Аналітик успішно застосовує зміни в наборі даних
+
+@enduml
+
+</center>
