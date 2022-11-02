@@ -276,6 +276,94 @@
 
 </center>
 
+## DP_2.2
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    title
+        <font size=18 color=black>DC_1.2 Переглянути дані у вигляді графіку.
+        <font size=16 color=black>Діаграма прецедентів
+    end title
+
+    skinparam actorStyle awesome
+    
+    actor "Адміністратор" as User #a2d0eb
+
+    usecase "<b>UC_1.1.1</b>\nАдміністратор відкриває сторінку набору даних" as S1 #9be8b0
+    usecase "<b>UC_1.1.2</b>\nАдміністратор натискає кнопку \n"Додати файл до набору даних"" as S2 #9be8b0
+    usecase "<b>UC_1.2</b>\nСистема направляє видавнику даних форму\nдля вибору файла, що додається" as S3 #f2f2d5
+    usecase "<b>UC_1.3.1</b>\nАдміністратор обирає файл для додавання" as S4 #f2f2d5
+    usecase "<b>UC_1.3.2</b>\nАдміністратор натискає кнопку "Обрати"" as S5 #f2f2d5
+    usecase "<b>UC_1.4</b>\nСистема додає обраний файл до набору даних\n(DP_EX1_2.2, DP_EX2_2.2)" as S6 #f2f2d5
+    usecase "<b>UC_1.5</b>\nСистема напраляє видавнику даних\nповідомлення"Операція успішна"" as S7 #f2f2d5
+
+    note "<b>EX1:</b> Обраний файл має унікальне ім’я,\nщо не належить набору даних\n<b>EX2:</b>Файл має формат, який підтримується (CSV)" as EX1 #d9c8e3
+
+    User -down-> S1
+    User -down-> S2
+    S1 -down-> S3
+    S2 -down-> S3
+    S3 -right-> S4
+    S3 -right.> S5
+    S4 -up-> S6
+    S5-up-> S6
+    S6 -right.> EX1
+    S6 -up-> S7
+    S7 -left.|> User : Повідомлення
+
+@enduml
+
+</center>
+
+## DP_2.3
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    title
+        <font size=18 color=black>DC_1.2 Переглянути дані у вигляді графіку.
+        <font size=16 color=black>Діаграма прецедентів
+    end title
+
+    skinparam actorStyle awesome
+    
+    actor "Адміністратор" as User #a2d0eb
+
+    usecase "<b>UC_1.1.1</b>\nАдміністратор відкриває сторінку набору даних." as S1 #9be8b0
+    usecase "<b>UC_1.1.2</b>\nАдміністратор відкриває файл з набору даних" as S2 #9be8b0
+    usecase "<b>UC_1.2</b>\nАдміністратор натискає кнопку "Видалити файл"" as S3 #f2f2d5
+    usecase "<b>UC_1.3.1</b>\nСистема напраляє видавнику даних форму\n"Підтвердіть видалення файлу"" as S4 #f2f2d5
+    usecase "<b>UC_1.3.2</b>\nАдміністратор натискає кнопку "Підтвердити"" as S5 #f2f2d5
+    usecase "<b>UC_1.4</b>\nСистема видаляє обраний файл" as S6 #f2f2d5
+    usecase "<b>UC_1.5</b>\nСистема напраляє видавнику даних повідомлення\n"Операція успішна"" as S7 #f2f2d5
+
+    User -down-> S1
+    User -down-> S2
+    S1 -down-> S3
+    S2 -down-> S3
+    S3 -right-> S4
+    S4 -right-> S5
+    S5-up-> S6
+    S6 -up-> S7
+    S7 -left.|> User : Повідомлення
+    
+@enduml
+
+</center>
+
 ## DP_3.1
 
 <center style="
