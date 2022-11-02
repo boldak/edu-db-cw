@@ -412,3 +412,93 @@
 @enduml
 
 </center>
+
+## DC_3.2
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    title
+        <font size=18 color=black>DC_3.2 Затвердити запропоновані Користувачем дані    
+    end title
+
+    skinparam actorStyle awesome
+
+    actor "Аналітик" as User #a2d0eb
+
+    usecase "<b>UC_1.1</b>\nАналітик натискає кнопку "Передивитися форми користувачів"" as S1 #9be8b0
+    usecase "<b>UC_1.2</b>\nСистема відкриває сторінку з відправленими формами" as S2 #f2f2d5
+    usecase "<b>UC_1.3</b>\nАналітик обирає форму" as S3 #9be8b0
+    usecase "<b>UC_1.4</b>\nСистема відкриває форму" as S4 #f2f2d5
+    usecase "<b>UC_1.5</b>\nАналітик перевіряє дані, файли, джерела." as S5 #9be8b0
+    usecase "<b>UC_1.6</b>\nАналітик натискає кнопку "Відправити звіт"" as S6 #9be8b0
+    usecase "<b>UC_1.7</b>\nСистема відкриває сторінку зі звітом по цій формі" as S7 #f2f2d5
+    usecase "<b>UC_1.8</b>\nАналітик заповнює та відправляє звіт" as S8 #9be8b0
+    usecase "<b>UC_1.9</b>\nСистема зберігає звіт. (DС_EX1_3.2) (DС_EX2_3.2) (DС_EX3_3.2)" as S9 #f2f2d5
+    usecase "<b>UC_1.10</b>\nАналітик отримує повідомлення про успішну відправку форми" as S10 #9be8b0
+    usecase "<b>UC_1.11</b>\nАналітик натискає кнопку "Відправити звіт"" as S11 #9be8b0
+
+    User -up-|> S1
+    S1 -up-> S2
+    S2 -up-> S3
+    S3 -right-> S4
+    S4 -right-> S5
+    S5 -right-> S6
+    S6 -right-> S7
+    S7 -down-> S8
+    S8 -down-> S9
+    S9 -down-> S10
+    S10 -left-> S11
+    S11 -left.> User: Система повертає Аналітика на сторінку перегляду відправлених форм
+
+@enduml
+
+</center>
+
+## DC_3.3
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+    title
+        <font size=18 color=black>DC_3.3 Скасувати запропоновані Користувачем дані    
+    end title
+
+    skinparam actorStyle awesome
+
+    actor "Аналітик" as User #a2d0eb
+
+    usecase "<b>UC_1.1</b>\nАналітик натискає кнопку "Передивитися форми користувачів"" as S1 #9be8b0
+    usecase "<b>UC_1.2</b>\nСистема відкриває сторінку з відправленими формами" as S2 #f2f2d5
+    usecase "<b>UC_1.3</b>\nАналітик обирає форму" as S3 #9be8b0
+    usecase "<b>UC_1.4</b>\nСистема відкриває форму" as S4 #f2f2d5
+    usecase "<b>UC_1.5</b>\nАналітик перевіряє дані, файли, джерела." as S5 #9be8b0
+    usecase "<b>UC_1.6</b>\nАналітик натискає кнопку "Відхилити звіт"" as S6 #9be8b0
+    usecase "<b>UC_1.7</b>\nСистема знищує дані про цю форму" as S7 #f2f2d5
+    usecase "<b>UC_1.8</b>\nАналітик отримує повідомлення про успішне видалення форми" as S8 #9be8b0
+
+    User -up-|> S1
+    S1 -up-> S2
+    S2 -up-> S3
+    S3 -right-> S4
+    S4 -right-> S5
+    S5 -down-> S6
+    S6 -down-> S7
+    S7 -down-> S8
+    S8 -left.> User: Система повертає Аналітика на сторінку перегляду відправлених форм
+
+@enduml
+
+</center>
