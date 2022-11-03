@@ -104,34 +104,37 @@ ADM.HELP0 ...> ADM.HELP :extends
 
 **Діаграма прецедентів**
 
-## Реєстрація користувача
-
+***Реєстрація користувача***
+```
 **УЧАСНИКИ**: Користувач, Система
 **ПЕРЕДУМОВИ**: Користувач не має облікового запису у системі
 **РЕЗУЛЬТАТ**: Створено новий обліковий запис
 **ВИКЛЮЧНІ СИТУАЦІЇ**:
 EX.1 Введений користувачем логін чи пошта вже використані.
+```
 
 ![Scen1](http://www.plantuml.com/plantuml/png/jLJ1Ji904Btp5PjuD_4gnd3n7xnY13LHC51lFLWAwe7WfQc9yU8VLD9AHRV-mfi_ykskO4ngnH1xsPcNDs_UpYmq-bwpvrsSdTPytAEGI-GIo412J978jLzJ_2p7HjkgZAKmup52WHGvuR62Hg8aG4RgL689wfNbPCl0W9WpYXGFJRLtp2LKf6SIcG96YLnHxgx-YvjKOhnGJij48ckFOhJcZ37EhEg8jDHXHi5e4T4LRNqykcx8y8R4N_ZuXYuRG9l6ffxMNkLMebB7IFxeeNnJrVkXfuAfcuXDQ4Z9qD1fEYzjjiRQpDwHVjtUJaDNjrn_jIMAarMt9ZTCXnn_w2QKKC9CQVp3qkhbCjQIPa6m-36a1f2O8r5uOZoJy1CaO-HaEbslfNedHyUUscYtc_mil7Emg_106y-SOCxEnHBUsz_SiachSsZB__SjcZe78L_fBVQzxhcxMuCE-HVp0G00)
 
-## Авторизація користувача
-
+***Авторизація користувача***
+```
 **УЧАСНИКИ**: Користувач, Система
 **ПЕРЕДУМОВИ**: Користувач зареєстрований у системі
 **РЕЗУЛЬТАТ**: Авторизація в системі
 **ВИКЛЮЧНІ СИТУАЦІЇ**:
 EX.1 Користувач надав некорректні дані
 EX.2 Користувач незареєстрований у системі
+```
 
 ![Scen2](http://www.plantuml.com/plantuml/png/fLEzJW914EvvYaciDT7ICuR6Tx3526gYOF3iA90psa5Co9aO6z_WN47nyEvUuPityijiC4eM6hVQ_UxxcPczhL_5ZMvyVN5Uw-49fVOnqniTQ0A7JEzxDU4oZkrs9SGIV213XPB7GeSw5ZlCTIHwQ_Glp8GKfmEl1WLwfwa-Hcjz2sIK44JE7NrpGYNTSqs4TYacg2YZDUQOycFnxr3I9ZJ-PAXlndT7ri0A2diE8qxmnLjXokoijmZvWmeLZlo-ZcZDyZEcf4GNCqlXLbHj91CGjUR8VC1O8l7B0jkTk2dTivFJM3PQhGQNmNj7-u9d9hnZJhb3-GCV76vj_pxisA7PFZQlS1UsTM25VaIE-EiciH8vjqKKbYrVcOv2uk2zQBBAiyAKPEgGBJc7VAZmj_W6ZXl-dqsi8MidvTUSOUiVHEVILrFdcFXwlW40)
 
-## Запит на пошук та аналіз медіа-контенту
-
+***Запит на пошук та аналіз медіа-контенту***
+```
 **УЧАСНИКИ**: Користувач, Система
 **ПЕРЕДУМОВИ**: Користувач авторизований у системі
 **РЕЗУЛЬТАТ**: Вивід результату повного аналізу шуканого медіа-контенту
 **ВИКЛЮЧНІ СИТУАЦІЇ**:
 EX.1 Інформація за запитом не знайдена
 EX.2 Користувач некоректно ввів пошуковий запит
+```
 
 ![Scen3](http://www.plantuml.com/plantuml/png/fLH1JW914BppYacyc-XHZE7Y7xnY13LHCBZUze1Wr8EHc11CZ1T_GCWY8yZoXUeVMTCPGSAuOdOlz5HtLtKFjLkwZCgDwEhyh13Z1QaqOULQMjB607svYmk6ZzPej6D2LGOZz353okDK7gLhz331K0EvP-5OsaPwJDze_oVxRgKdpyLCtYb_MWx4c15vnuHIp9GkFpSICbjCbDilOQMbkH_qlv37U8DoOkZWsAijerx7JxywXnlTCsj8gOayCD_y5Z9827NMNRTMZogcSNfy4fcDQhNCH-7Tmps3LwHuvxgMskaStZ_OtD93fNQaxHbU-AS3EFPyIXlOBj__Fo1TWfaZOmFjnkGqh-G82Li-ACb5LcsHGtLDluoSWZIbGt5d79BtYFx5pn9V3gj561WyePl35TlBhWYEkp3lqhZUilwkAA0HC-5te1WW3zortWdpNjFHBWGPPF1dVjxg5qKN54hSbT_2Bm00)
