@@ -11,98 +11,35 @@
 actor "User" as User 
 actor "Admin" as Admin
 
-usecase "USR.REG\nРеєстрація" as USR.REG 
-usecase "USR.LOG\nАвторизація" as USR.LOG 
-usecase "USR.QRY_CR\nСтворення\n запиту" as USR.QRY_CR 
-usecase "USR.QRY_ED\nКерування\n запитом" as USR.QRY_ED 
-usecase "USR.QRY_EXP\nЕкспорт\n результатів" as USR.QRY_EXP 
-usecase "USR.HELP\nДопомога\n адміністратора" as USR.HELP
+usecase "REG_USER\nРеєстрація" as REG_USER 
+usecase "LOG_USER\nАвторизація" as LOG_USER 
+usecase "SRCH_ANLZ\nСтворення\n запиту на аналіз" as SRCH_ANLZ 
+usecase "SRCH_EDIT\nРедагування\n запиту" as SRCH_EDIT 
+usecase "SRCH_QRNTN\nДодання джерела\n у карантин" as SRCH_QRNTN 
+usecase "SRCH_ADD\nДодання нового\n джерела" as SRCH_ADD
 
-User -l-> USR.REG 
-User -u-> USR.LOG 
-User -u-> USR.QRY_CR 
-User -u-> USR.QRY_ED 
-User -u-> USR.QRY_EXP 
-User -r-> USR.HELP
+User -l-> REG_USER 
+User -u-> LOG_USER 
+User -u-> SRCH_ANLZ 
+User -d-> SRCH_QRNTN
+User -u-> SRCH_EDIT  
+User -r-> SRCH_ADD
 
-usecase "ADM.QRY_SRC\nКерування\n джерелами" as ADM.QRY_SRC 
-usecase "ADM.USR_RIGHTS\nКерування правами\n користувача" as ADM.USR_RIGHTS 
-usecase "ADM.HELP\nДопомога\n адміністратора" as ADM.HELP
-usecase "ADM.ANSWER\nВідповіль на запити\nкористувачів" as ADM.ANSWER
+usecase "ADM_USR\nКерування\n користувачем" as ADM_USR 
+usecase "ADM_HELP\nДопомога\n користувачу" as ADM_HELP 
+usecase "SYS_ERR\nДоповідь про\n неполадки у системі" as SYS_ERR
 
-Admin -d-> ADM.QRY_SRC 
-Admin -d-> ADM.USR_RIGHTS 
-Admin -d-> ADM.HELP
-Admin -d-> ADM.ANSWER
+Admin -d-> ADM_USR 
+Admin -d-> ADM_HELP 
+Admin -d-> SYS_ERR
 
 Admin -u-|> User
+SRCH_QRNTN -r-> Admin
+SRCH_ADD -d-> Admin
 
 @enduml
 
-## Схема для користувача
-
-@startuml
-
-actor "User" as User
-
-usecase "USR.REG\nРеєстрація" as USR.REG
-usecase "USR.LOG\nАвторизація" as USR.LOG
-usecase "USR.QRY_CR\nСтворення\n запиту" as USR.QRY_CR
-usecase "USR.QRY_ED\nКерування\n запитом" as USR.QRY_ED
-usecase "USR.QRY_EXP\nЕкспорт\n результатів" as USR.QRY_EXP
-usecase "USR.HELP\nДопомога\n адміністратора" as USR.HELP
-
-User -d-> USR.REG
-User -d-> USR.LOG
-User -u-> USR.QRY_CR
-User -u-> USR.QRY_ED
-User -d-> USR.QRY_EXP
-User -d-> USR.HELP
-
-usecase "USR.QRY_CR1\nКастомізація\n за власними\n параметрами" as USR.QRY_CR1
-usecase "USR.QRY_CR2\nЗа сталим\n шаблоном" as USR.QRY_CR2
-usecase "USR.QRY_ED1\nРедегування\n параметрів\n запиту" as USR.QRY_ED1
-usecase "USR.QRY_ED2\nОновлення\n результатів\n запиту" as USR.QRY_ED2
-usecase "USR.QRY_ED3\nВидалення\n запиту" as USR.QRY_ED3
-
-USR.QRY_CR1 ...> USR.QRY_CR :extends
-USR.QRY_CR2 ...> USR.QRY_CR :extends
-USR.QRY_ED1 ...> USR.QRY_ED :extends
-USR.QRY_ED2 ...> USR.QRY_ED :extends
-USR.QRY_ED3 ...> USR.QRY_ED :extends
-@enduml
-
-## Схема для адміністратора
-
-@startuml
-
-actor "Admin" as Admin
-
-usecase "ADM.QRY_SRC\nКерування\n джерелами" as ADM.QRY_SRC
-usecase "ADM.USR_RIGHTS\nКерування правами\n користувача" as ADM.USR_RIGHTS
-usecase "ADM.HELP\nДопомога\n адміністратора" as ADM.HELP
-
-Admin -u-> ADM.QRY_SRC
-Admin -d-> ADM.USR_RIGHTS
-Admin -d-> ADM.HELP
-
-usecase "ADM.QRY_SRC1\nВидалити\n джерела" as ADM.QRY_SRC1
-usecase "ADM.QRY_SRC2\nРозширити\n об'єм\n джерел" as ADM.QRY_SRC2
-usecase "ADM.USR_RIGHTS1\nСхвалити\n запит по\n допомогу" as ADM.USR_RIGHTS1
-usecase "ADM.USR_RIGHTS0\nВідхилити\n запит по\n допомогу" as ADM.USR_RIGHTS0
-usecase "ADM.HELP1\nРозширити\n права" as ADM.HELP1
-usecase "ADM.HELP0\nОбмежити\n права" as ADM.HELP0
-
-ADM.QRY_SRC1 ...> ADM.QRY_SRC :extends
-ADM.QRY_SRC2 ...> ADM.QRY_SRC :extends
-ADM.USR_RIGHTS1 ...> ADM.USR_RIGHTS :extends
-ADM.USR_RIGHTS0 ...> ADM.USR_RIGHTS :extends
-ADM.HELP1 ...> ADM.HELP :extends
-ADM.HELP0 ...> ADM.HELP :extends
-
-@enduml
-
-**Діаграма прецедентів**
+**Діаграми прецедентів**
 
 **Створення нового облікового запису**
 ```
