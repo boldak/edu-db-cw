@@ -28,7 +28,6 @@
     entity Project
     entity Project.name
     entity Project.description
-    entity Project.member
 
     entity Section
     entity Section.name
@@ -36,7 +35,6 @@
     entity Task
     entity Task.name
     entity Task.description
-    entity Task.member
 
     Account.login --* Account
     Account.email --* Account
