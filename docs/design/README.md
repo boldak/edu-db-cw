@@ -42,7 +42,6 @@
     Customer --> Role  
     Developer --> Role 
     Teamlead  --> Role 
-    UnRegisteredUser  --> Role
 
     Role --o  Project.member
     
