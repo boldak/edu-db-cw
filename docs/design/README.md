@@ -49,7 +49,7 @@
     Section "1,*" -- "1,1" Project
     
     Section.name --* Section
-    Task "1,*"  -- "1,1" Section
+    Task "0,*"  -- "1,1" Section
     
     Task.name --* Task
     Task.description --* Task
