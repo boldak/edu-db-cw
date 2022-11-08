@@ -16,6 +16,7 @@
     entity Account.email
     entity Account.password
 
+    entity User
     entity Customer
     entity Developer
     entity Teamlead
@@ -34,24 +35,28 @@
     entity Task.description
 
     Account.login --* Account
-    Account.email --* Account
-    Account.password --* Account
+    Account.email --*  Account
+    Account.password --*  Account
+    Role  --o  Account
 
-    Customer --o Status
-    Developer --o Status
-    Teamlead --o Status
+    Customer --> Role  
+    Developer --> Role 
+    Teamlead  --> Role 
+    UnRegisteredUser  --> Role
 
-    Status --o Account
-
-    Project.name --* Project
-    Project.description --* Project
-    Project.member --* Project
-
+    Role --o  Project.member
+    
+    Project.name --*  Project
+    Project.description --*  Project
+    Project.member "1,*" -- "0,*" Project
+    Section "1,*" -- "1,1" Project
+    
     Section.name --* Section
-
+    Task "1,*"  -- "1,1" Section
+    
     Task.name --* Task
     Task.description --* Task
-    Task.member --* Task
+    Task.member "1,*" -- "1,1" Task
 
 @enduml
 
