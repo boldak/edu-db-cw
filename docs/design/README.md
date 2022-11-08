@@ -48,7 +48,7 @@
     Project.name --*  Project
     Project.description --*  Project
     Project.member "1,*" -- "0,*" Project
-    Section "1,*" -- "1,1" Project
+    Section "0,*" -- "1,1" Project
     
     Section.name --* Section
     Task "1,*"  -- "1,1" Section
