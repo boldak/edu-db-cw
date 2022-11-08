@@ -16,12 +16,9 @@
     entity Account.email
     entity Account.password
 
-    entity User
     entity Customer
     entity Developer
     entity Teamlead
-
-    entity Status
 
     entity Project
     entity Project.name
