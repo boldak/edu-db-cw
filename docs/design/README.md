@@ -33,6 +33,10 @@
     entity Task
     entity Task.name
     entity Task.description
+    
+    entity Attachment
+    entity Attachment.name
+    entity Attachment.link
 
     Account.login --* Account
     Account.email --*  Account
@@ -56,6 +60,10 @@
     Task.name --* Task
     Task.description --* Task
     Task.member "1,*" -- "1,1" Task
+    
+    Attachment "0,*" -- "1,1" Task
+    Attachment.name --* Attachment
+    Attachment.link --* Attachment
 
 @enduml
 
