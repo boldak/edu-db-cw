@@ -11,10 +11,14 @@
 
 @startuml
 
-    entity Account
-    entity Account.login
-    entity Account.email
-    entity Account.password
+    entity User
+    entity User.login
+    entity User.email
+    entity User.password
+
+    User.login --* User
+    User.email --* User
+    User.password --* User
 
     object Customer #FFFFFF
     object TeamLead #FFFFFF
@@ -38,12 +42,8 @@
     entity Attachment
     entity Attachment.name
     entity Attachment.link
-
-    Account.login --* Account
-    Account.email --*  Account
-    Account.password --*  Account
-    Role  --o  Account
-
+    
+    Role --o User
     Role --o  Project.member
     
     Project.name --*  Project
