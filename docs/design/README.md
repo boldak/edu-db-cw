@@ -16,6 +16,10 @@
     entity User.email
     entity User.password
 
+    entity Project
+    entity Project.name
+    entity Project.description
+
     User.login --* User
     User.email --* User
     User.password --* User
@@ -24,16 +28,15 @@
     object TeamLead #FFFFFF
     object Developer #FFFFFF
 
-    Customer ..> Role : instanceOf
-    TeamLead ..> Role : instanceOf
-    Developer ..> Role : instanceOf
-    
-    entity Project
-    entity Project.name
-    entity Project.description
+    entity Access
+
+    Customer ..> Access : instanceOf
+    TeamLead ..> Access : instanceOf
+    Developer ..> Access : instanceOf
 
     entity Section
     entity Section.name
+    Section.name --* Section
 
     entity Task
     entity Task.name
@@ -43,22 +46,21 @@
     entity Attachment.name
     entity Attachment.link
     
-    Role --o User
-    Role --o  Project.member
-    
+    entity Member
+    Member "0,*" --> "1,1" Project
+    Member "0,*" --> "1,1" User
+    Member "0,*" --> "1,1" Access
+
     Project.name --*  Project
     Project.description --*  Project
-    Project.member "1,*" -- "0,*" Project
-    Section "0,*" -- "1,1" Project
-    
-    Section.name --* Section
-    Task "0,*"  -- "1,1" Section
-    
+    Section "0,*" <-- "1,1" Project
+
+    Task "0,*" <-- "1,1" Section
     Task.name --* Task
     Task.description --* Task
-    Task.member "1,*" -- "1,1" Task
+    Task "0,*" --> "0,1" User : executor
     
-    Attachment "0,*" -- "1,1" Task
+    Attachment "0,*" <-- "1,1" Task
     Attachment.name --* Attachment
     Attachment.link --* Attachment
 
