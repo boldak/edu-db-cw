@@ -16,10 +16,14 @@
     entity Account.email
     entity Account.password
 
-    entity Customer
-    entity Developer
-    entity Teamlead
+    object Customer #FFFFFF
+    object TeamLead #FFFFFF
+    object Developer #FFFFFF
 
+    Customer ..> Role : instanceOf
+    TeamLead ..> Role : instanceOf
+    Developer ..> Role : instanceOf
+    
     entity Project
     entity Project.name
     entity Project.description
@@ -39,10 +43,6 @@
     Account.email --*  Account
     Account.password --*  Account
     Role  --o  Account
-
-    Customer --> Role  
-    Developer --> Role 
-    Teamlead  --> Role 
 
     Role --o  Project.member
     
