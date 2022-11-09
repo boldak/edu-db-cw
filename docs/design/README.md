@@ -114,8 +114,18 @@
     }
 
     entity Role {
-
     }
+
+    Member "0,*" --> "1,1" Project
+    Member "0,*" --> "1,1" Role
+    Member "0,*" --> "1,1" User
+
+    Task "0,*" --> "0,1" Member : executor
+
+    Project "1,1" --> "0,*" Section
+    Section "1,1" --> "0,*" Task
+    Task "1,1" --> "0,*" Attachment
+
 
 @enduml
 
