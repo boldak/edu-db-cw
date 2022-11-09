@@ -32,7 +32,7 @@
 
     entity User
     
-    entity Access
+    entity Role
 
     entity User.login #ffffff
     entity User.password #ffffff
@@ -48,9 +48,9 @@
     object TeamLead #FFFFFF
     object Developer #FFFFFF
 
-    Customer ..> Access : instanceOf
-    TeamLead ..> Access : instanceOf
-    Developer ..> Access : instanceOf
+    Customer ..> Role : instanceOf
+    TeamLead ..> Role : instanceOf
+    Developer ..> Role : instanceOf
 
     Project.name --u-*  Project
     Project.description --u-*  Project
@@ -66,7 +66,7 @@
     Attachment.name --* Attachment
     Attachment.link --* Attachment
 
-    Member "0,*" --> "1,1" Access
+    Member "0,*" --> "1,1" Role
     Member "0,*" --> "1,1" Project
 
 @enduml
