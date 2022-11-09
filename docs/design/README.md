@@ -17,7 +17,6 @@
 
     entity Section
     entity Section.name #ffffff
-    Section.name --l-* Section
 
     entity Task
     entity Task.name #ffffff
@@ -31,22 +30,15 @@
     entity Member
 
     entity User
-    
-    entity Role
-
     entity User.login #ffffff
     entity User.password #ffffff
     entity User.email #ffffff
 
-    Member "0,*" --> "1,1" User
-    
-    User.login --u-* User
-    User.password --u-* User
-    User.email --u-* User
+    entity Role
 
-    object Customer #FFFFFF
-    object TeamLead #FFFFFF
-    object Developer #FFFFFF
+    object Customer #ffffff
+    object TeamLead #ffffff
+    object Developer #ffffff
 
     Customer ..> Role : instanceOf
     TeamLead ..> Role : instanceOf
@@ -55,6 +47,8 @@
     Project.name --u-*  Project
     Project.description --u-*  Project
     Section "0,*" <-- "1,1" Project
+
+    Section.name --l-* Section
 
     Task "0,*" <--- "1,1" Section
     Task.name --* Task
@@ -65,6 +59,12 @@
     Attachment "0,*" <-- "1,1" Task
     Attachment.name --* Attachment
     Attachment.link --* Attachment
+
+    Member "0,*" --> "1,1" User
+    
+    User.login --u-* User
+    User.password --u-* User
+    User.email --u-* User
 
     Member "0,*" --> "1,1" Role
     Member "0,*" --> "1,1" Project
