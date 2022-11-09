@@ -17,7 +17,7 @@
 
     entity Section
     entity Section.name #ffffff
-    Section.name --* Section
+    Section.name --l-* Section
 
     entity Task
     entity Task.name #ffffff
@@ -36,11 +36,13 @@
 
     entity User.login #ffffff
     entity User.password #ffffff
+    entity User.email #ffffff
 
     Member "0,*" --> "1,1" User
     
-    User.login --* User
-    User.password --* User
+    User.login --u-* User
+    User.password --u-* User
+    User.email --u-* User
 
     object Customer #FFFFFF
     object TeamLead #FFFFFF
@@ -50,11 +52,11 @@
     TeamLead ..> Access : instanceOf
     Developer ..> Access : instanceOf
 
-    Project.name --*  Project
-    Project.description --*  Project
+    Project.name --u-*  Project
+    Project.description --u-*  Project
     Section "0,*" <-- "1,1" Project
 
-    Task "0,*" <-- "1,1" Section
+    Task "0,*" <--- "1,1" Section
     Task.name --* Task
     Task.description --* Task
     Task.deadline --* Task
