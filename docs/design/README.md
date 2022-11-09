@@ -84,47 +84,61 @@
 
 @startuml
 
-    entity Project <<ENTITY>> {
-      name: TEXT
-      description: TEXT
+    namespace UserProfileManagement {
+        entity User <<ENTITY>> {
+            login: TEXT
+            email: TEXT
+            password: TEXT
+        }
     }
 
-    entity User <<ENTITY>> {
-        login: TEXT
-        email: TEXT
-        password: TEXT
+    namespace ProjectManagement {
+        entity Project <<ENTITY>> {
+            name: TEXT
+            description: TEXT
+        }
+
+        entity Section <<ENTITY>> {
+            name: TEXT
+        }
+        
+        entity Task <<ENTITY>> {
+            name: TEXT
+            description: TEXT
+            deadline: DATE
+        }
+        
+        entity Attachment <<ENTITY>> {
+            name: TEXT
+            link: TEXT
+        }
     }
 
-    entity Member <<ENTITY>> { 
+    namespace AccessPolicy {
+        entity Member <<ENTITY>> { 
+        }
+
+        entity Role <<ENTITY>> #ffff00 {
+        }
+
+        object Customer #ffffff
+        object TeamLead #ffffff
+        object Developer #ffffff
     }
 
-    entity Section <<ENTITY>> {
-        name: TEXT
-    }
-    
-    entity Task <<ENTITY>> {
-        name: TEXT
-        description: TEXT
-        deadline: DATE
-    }
-    
-    entity Attachment <<ENTITY>> {
-        name: TEXT
-        link: TEXT
-    }
-
-    entity Role {
-    }
-
-    Member "0,*" --> "1,1" Project
-    Member "0,*" --> "1,1" Role
-    Member "0,*" --> "1,1" User
+    Member "0,*" ---> "1,1" Project
+    Member "0,*" --u-> "1,1" Role
+    Member "0,*" ---r-> "1,1" User
 
     Task "0,*" --> "0,1" Member : executor
 
-    Project "1,1" --> "0,*" Section
-    Section "1,1" --> "0,*" Task
+    Project "1,1" ---l-> "0,*" Section
+    Section "1,1" ---> "0,*" Task
     Task "1,1" --> "0,*" Attachment
+
+    Customer ..> Role : instanceOf
+    TeamLead ..> Role : instanceOf
+    Developer ..> Role : instanceOf
 
 
 @enduml
