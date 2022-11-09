@@ -96,7 +96,6 @@
     }
 
     entity Member <<ENTITY>> { 
-        role: TEXT
     }
 
     entity Section <<ENTITY>> {
@@ -112,6 +111,10 @@
     entity Attachment <<ENTITY>> {
         name: TEXT
         link: TEXT
+    }
+
+    entity Role {
+
     }
 
 @enduml
