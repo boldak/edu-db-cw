@@ -11,45 +11,44 @@
 
 @startuml
 
-    entity User
-    entity User.login
-    entity User.email
-    entity User.password
-
     entity Project
-    entity Project.name
-    entity Project.description
+    entity Project.name #ffffff
+    entity Project.description #ffffff
 
+    entity Section
+    entity Section.name #ffffff
+    Section.name --* Section
+
+    entity Task
+    entity Task.name #ffffff
+    entity Task.description #ffffff
+    entity Task.deadline #ffffff
+
+    entity Attachment
+    entity Attachment.name #ffffff
+    entity Attachment.link #ffffff
+
+    entity Member
+
+    entity User
+    
+    entity Access
+
+    entity User.login #ffffff
+    entity User.password #ffffff
+
+    Member "0,*" --> "1,1" User
+    
     User.login --* User
-    User.email --* User
     User.password --* User
 
     object Customer #FFFFFF
     object TeamLead #FFFFFF
     object Developer #FFFFFF
 
-    entity Access
-
     Customer ..> Access : instanceOf
     TeamLead ..> Access : instanceOf
     Developer ..> Access : instanceOf
-
-    entity Section
-    entity Section.name
-    Section.name --* Section
-
-    entity Task
-    entity Task.name
-    entity Task.description
-    
-    entity Attachment
-    entity Attachment.name
-    entity Attachment.link
-    
-    entity Member
-    Member "0,*" --> "1,1" Project
-    Member "0,*" --> "1,1" User
-    Member "0,*" --> "1,1" Access
 
     Project.name --*  Project
     Project.description --*  Project
@@ -58,11 +57,15 @@
     Task "0,*" <-- "1,1" Section
     Task.name --* Task
     Task.description --* Task
-    Task "0,*" --> "0,1" User : executor
+    Task.deadline --* Task
+    Task "0,*" --> "0,1" Member : executor
     
     Attachment "0,*" <-- "1,1" Task
     Attachment.name --* Attachment
     Attachment.link --* Attachment
+
+    Member "0,*" --> "1,1" Access
+    Member "0,*" --> "1,1" Project
 
 @enduml
 
