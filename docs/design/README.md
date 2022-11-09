@@ -30,6 +30,10 @@
     entity Task
     entity Task.name
     entity Task.description
+    
+    entity Attachment
+    entity Attachment.name
+    entity Attachment.link
 
     Account.login --* Account
     Account.email --*  Account
@@ -39,14 +43,13 @@
     Customer --> Role  
     Developer --> Role 
     Teamlead  --> Role 
-    UnRegisteredUser  --> Role
 
     Role --o  Project.member
     
     Project.name --*  Project
     Project.description --*  Project
     Project.member "1,*" -- "0,*" Project
-    Section "1,*" -- "1,1" Project
+    Section "0,*" -- "1,1" Project
     
     Section.name --* Section
     Task "0,*"  -- "1,1" Section
@@ -54,6 +57,10 @@
     Task.name --* Task
     Task.description --* Task
     Task.member "1,*" -- "1,1" Task
+    
+    Attachment "0,*" -- "1,1" Task
+    Attachment.name --* Attachment
+    Attachment.link --* Attachment
 
 @enduml
 
