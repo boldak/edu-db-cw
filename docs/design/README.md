@@ -100,17 +100,20 @@ namespace ProjectManagement {
 
     entity Section <<ENTITY>> {
         name: TEXT
+        index: NUMBER
     }
     
     entity Task <<ENTITY>> {
         name: TEXT
         description: TEXT
         deadline: DATE
+        index: NUMBER
     }
     
     entity Attachment <<ENTITY>> {
         name: TEXT
-        link: TEXT
+        path: TEXT
+        fileType: TEXT
     }
 }
 
@@ -130,10 +133,10 @@ Member "0,*" ---> "1,1" Project
 Member "0,*" --u-> "1,1" Role
 Member "0,*" ---r-> "1,1" User
 
-Task "0,*" --> "0,1" Member : executor
+Task "0,*" --> "0,*" Member : executor
 
-Project "1,1" <---l- "0,*" Section
-Section "1,1" <--- "0,*" Task
+Section "0,*" -u-> "1,1" Project
+Section "1,1" <-- "0,*" Task
 Task "1,1" <-- "0,*" Attachment
 
 Customer ..> Role : instanceOf
@@ -142,5 +145,37 @@ Developer ..> Role : instanceOf
 @enduml
 
 </center>
+
+## Опис ER-моделі:
+
+User  
+Member  
+### <a name="role">Role</a>
+
+### <a name="project">Project</a>
+
+### <a name="section">Section </a> (Розділ)
+
+### <a name ="task">Task</a> (Завдання)
+використовується для роботи з завданнями.  
+має поля:
++ name: TEXT. Містить текст з назвою завдання.  
++ description: TEXT. Містить текст з описом завдання.  
++ deadline: DATE. Містить дату, до якої завдання має бути виконано.  
++ index: NUMBER. Містить номер, що показує на якій позиції у Section (Розділі) завдання розміщенно.  
+
+Завдання може мати від 0 до * [вкладень](#attachment).  
+Якщо завдання знаходиться у [розділі](#section) "Вільні завдання", то відповідно не має виконавця (Executor). Щойно у Task з'являється щонайменше 1 виконавець (Executor), завдання видаляється з [розділу](#section) "Вільні завдання".  
+Залежно від [ролі](#role) користувача у проєкті, користувач може виконувати різні дії з завданнями. Подробніше тут
+
+### <a name ="attachment">Attachment</a> (Вкладення)
+використовується для вкладення до [завдання](#task) додаткових файлів різних типів (txt, png, mp4 і тд).  
+має поля:
+- name: TEXT. Містить текст з назвою вкладення.  
+- path: TEXT. Містить шлях, за яким можна знайти вкладення.  
+- fileType: TEXT. Містить розширенння вкладеного файлу.  
+
+Щоб прикріпити вкладення до [завдання](#task), воно має бути завантаженим на сервер.  
+
 
 ## Реляційна схема
