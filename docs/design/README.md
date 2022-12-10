@@ -100,17 +100,20 @@ namespace ProjectManagement {
 
     entity Section <<ENTITY>> {
         name: TEXT
+        index: NUMBER
     }
     
     entity Task <<ENTITY>> {
         name: TEXT
         description: TEXT
         deadline: DATE
+        index: NUMBER
     }
     
     entity Attachment <<ENTITY>> {
         name: TEXT
-        link: TEXT
+        path: TEXT
+        fileType: TEXT
     }
 }
 
@@ -130,10 +133,10 @@ Member "0,*" ---> "1,1" Project
 Member "0,*" --u-> "1,1" Role
 Member "0,*" ---r-> "1,1" User
 
-Task "0,*" --> "0,1" Member : executor
+Task "0,*" --> "0,*" Member : executor
 
-Project "1,1" <---l- "0,*" Section
-Section "1,1" <--- "0,*" Task
+Section "0,*" -u-> "1,1" Project
+Section "1,1" <-- "0,*" Task
 Task "1,1" <-- "0,*" Attachment
 
 Customer ..> Role : instanceOf
