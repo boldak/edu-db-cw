@@ -54,7 +54,7 @@
     Task.name --* Task
     Task.description --* Task
     Task.deadline --* Task
-    Task "0,*" --> "0,1" Member : executor
+    Task "0,*" --> "0,*" Member : executor
     
     Attachment "0,*" <-- "1,1" Task
     Attachment.name --* Attachment
