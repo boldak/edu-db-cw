@@ -27,6 +27,8 @@
     entity Attachment.name #ffffff
     entity Attachment.link #ffffff
 
+    entity Executor
+
     entity Member
 
     entity User
@@ -35,18 +37,19 @@
     entity User.email #ffffff
 
     entity Role
+    entity Role.slug #ffffff
 
-    object Customer #ffffff
-    object TeamLead #ffffff
-    object Developer #ffffff
-
-    Customer ..> Role : instanceOf
-    TeamLead ..> Role : instanceOf
-    Developer ..> Role : instanceOf
+    entity Grant
+    entity Grant.slug #ffffff
 
     Project.name --u-*  Project
     Project.description --u-*  Project
-    Section "0,*" <-- "1,1" Project
+    Section "0,*" <--- "1,1" Project
+
+    Role.slug --* Role
+
+    Grant.slug --* Grant
+    Role "0,*" --> "1,*" Grant
 
     Section.name --l-* Section
 
@@ -54,7 +57,8 @@
     Task.name --* Task
     Task.description --* Task
     Task.deadline --* Task
-    Task "0,*" --> "0,*" Member : executor
+    Task "1,1" <-- "0,*" Executor
+    Executor "0,*" --> "1,1" Member 
     
     Attachment "0,*" <-- "1,1" Task
     Attachment.name --* Attachment
@@ -62,11 +66,11 @@
 
     Member "0,*" --> "1,1" User
     
-    User.login --u-* User
-    User.password --u-* User
-    User.email --u-* User
+    User.login --d-* User
+    User.password --d-* User
+    User.email --d-* User
 
-    Member "0,*" --> "1,1" Role
+    Member "0,*" ----> "1,1" Role
     Member "0,*" --> "1,1" Project
 
 @enduml
@@ -115,33 +119,38 @@ namespace ProjectManagement {
         path: TEXT
         fileType: TEXT
     }
+
+    entity Executor <<ENTITY>> {
+
+    }
 }
 
 namespace AccessPolicy {
     entity Member <<ENTITY>> { 
     }
 
-    entity Role <<ENTITY>> #ffff00 {
+    entity Role <<ENTITY>> {
+        slug: TEXT
     }
 
-    object Customer #ffffff
-    object TeamLead #ffffff
-    object Developer #ffffff
+    entity Grant <<ENTITY>> {
+        slug: TEXT
+    }
 }
 
 Member "0,*" ---> "1,1" Project
 Member "0,*" --u-> "1,1" Role
 Member "0,*" ---r-> "1,1" User
 
-Task "0,*" --> "0,*" Member : executor
+Task "1,1" <-u-- "0,*" Executor
+Executor "0,*" --> "1,1" Member
 
 Section "0,*" -u-> "1,1" Project
 Section "1,1" <-- "0,*" Task
 Task "1,1" <-- "0,*" Attachment
 
-Customer ..> Role : instanceOf
-TeamLead ..> Role : instanceOf
-Developer ..> Role : instanceOf
+Role "0,*" --> "1,*" Grant
+
 @enduml
 
 </center>
