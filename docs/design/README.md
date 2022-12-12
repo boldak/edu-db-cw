@@ -8,7 +8,6 @@
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
     padding: 1em;"
 >
-
 @startuml
 
     entity Project
@@ -25,7 +24,8 @@
 
     entity Attachment
     entity Attachment.name #ffffff
-    entity Attachment.link #ffffff
+    entity Attachment.path #ffffff
+    entity Attachment.fileType #ffffff
 
     entity Executor
 
@@ -62,7 +62,8 @@
     
     Attachment "0,*" <-- "1,1" Task
     Attachment.name --* Attachment
-    Attachment.link --* Attachment
+    Attachment.path --* Attachment
+    Attachment.fileType --* Attachment
 
     Member "0,*" --> "1,1" User
     
