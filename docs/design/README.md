@@ -27,6 +27,8 @@
     entity Attachment.name #ffffff
     entity Attachment.link #ffffff
 
+    entity Executor
+
     entity Member
 
     entity User
@@ -35,18 +37,19 @@
     entity User.email #ffffff
 
     entity Role
+    entity Role.slug #ffffff
 
-    object Customer #ffffff
-    object TeamLead #ffffff
-    object Developer #ffffff
-
-    Customer ..> Role : instanceOf
-    TeamLead ..> Role : instanceOf
-    Developer ..> Role : instanceOf
+    entity Grant
+    entity Grant.slug #ffffff
 
     Project.name --u-*  Project
     Project.description --u-*  Project
-    Section "0,*" <-- "1,1" Project
+    Section "0,*" <--- "1,1" Project
+
+    Role.slug --* Role
+
+    Grant.slug --* Grant
+    Role "0,*" --> "1,*" Grant
 
     Section.name --l-* Section
 
@@ -54,7 +57,8 @@
     Task.name --* Task
     Task.description --* Task
     Task.deadline --* Task
-    Task "0,*" --> "0,1" Member : executor
+    Task "1,1" <-- "0,*" Executor
+    Executor "0,*" --> "1,1" Member 
     
     Attachment "0,*" <-- "1,1" Task
     Attachment.name --* Attachment
@@ -62,11 +66,11 @@
 
     Member "0,*" --> "1,1" User
     
-    User.login --u-* User
-    User.password --u-* User
-    User.email --u-* User
+    User.login --d-* User
+    User.password --d-* User
+    User.email --d-* User
 
-    Member "0,*" --> "1,1" Role
+    Member "0,*" ----> "1,1" Role
     Member "0,*" --> "1,1" Project
 
 @enduml
@@ -115,48 +119,92 @@ namespace ProjectManagement {
         path: TEXT
         fileType: TEXT
     }
+
+    entity Executor <<ENTITY>> {
+
+    }
 }
 
 namespace AccessPolicy {
     entity Member <<ENTITY>> { 
     }
 
-    entity Role <<ENTITY>> #ffff00 {
+    entity Role <<ENTITY>> {
+        slug: TEXT
     }
 
-    object Customer #ffffff
-    object TeamLead #ffffff
-    object Developer #ffffff
+    entity Grant <<ENTITY>> {
+        slug: TEXT
+    }
 }
 
 Member "0,*" ---> "1,1" Project
 Member "0,*" --u-> "1,1" Role
 Member "0,*" ---r-> "1,1" User
 
-Task "0,*" --> "0,*" Member : executor
+Task "1,1" <-u-- "0,*" Executor
+Executor "0,*" --> "1,1" Member
 
 Section "0,*" -u-> "1,1" Project
 Section "1,1" <-- "0,*" Task
 Task "1,1" <-- "0,*" Attachment
 
-Customer ..> Role : instanceOf
-TeamLead ..> Role : instanceOf
-Developer ..> Role : instanceOf
+Role "0,*" --> "1,*" Grant
+
 @enduml
 
 </center>
 
 ## Опис ER-моделі:
 
-User  
-Member  
-### <a name="role">Role</a>
+<a name="user"></a>
 
-### <a name="project">Project</a>
+### User
 
-### <a name="section">Section </a> (Розділ)
+<a name="member"></a> 
 
-### <a name ="task">Task</a> (Завдання)
+### Member (Учасник)
+
+Використовується як посередник; визначає те, які [права](#role) певний [користувач](#user) має у доступі до певного [проєкту](#project).
+
+Немає жодних полів.
+
+Екземпляр учасника відповідає одному [проєкту](#project), одному [користувачу](#user) й одній [ролі](#role).
+
+<a name="role"></a>
+
+### Role
+
+<a name="grant"></a>
+
+### Grant (Право)
+
+Визначає єдине право використання проєкту.
+Має поля:
+
+- slug: TEXT. Містить унікальний рядок ідентифікатор, зрозумілий людині, з описом права у форматі snake_case.
+
+Початково у базу даних будуть занесені такі права:
+
+*тут буде список у форматі "rule_name" - що право дозволяє робити*
+
+<a name="project"></a>
+
+### Project
+
+<a name="section"></a>
+
+### Section (Розділ)
+
+Використовується для зручного сортування завдань.
+має поля:
+- name: TEXT. Містить текст з назвою розділу.
+
+Розділ може мати від 0 до * [завдань](#task).
+
+<a name ="task"></a>
+
+### Task (Завдання)
 використовується для роботи з завданнями.  
 має поля:
 + name: TEXT. Містить текст з назвою завдання.  
@@ -166,9 +214,11 @@ Member
 
 Завдання може мати від 0 до * [вкладень](#attachment).  
 Якщо завдання знаходиться у [розділі](#section) "Вільні завдання", то відповідно не має виконавця (Executor). Щойно у Task з'являється щонайменше 1 виконавець (Executor), завдання видаляється з [розділу](#section) "Вільні завдання".  
-Залежно від [ролі](#role) користувача у проєкті, користувач може виконувати різні дії з завданнями. Подробніше тут
+Залежно від [ролі](#role) користувача у проєкті, користувач може виконувати різні дії з завданнями. Детальніше тут
 
-### <a name ="attachment">Attachment</a> (Вкладення)
+<a name ="attachment"></a>
+
+### Attachment (Вкладення)
 використовується для вкладення до [завдання](#task) додаткових файлів різних типів (txt, png, mp4 і тд).  
 має поля:
 - name: TEXT. Містить текст з назвою вкладення.  
@@ -176,6 +226,5 @@ Member
 - fileType: TEXT. Містить розширенння вкладеного файлу.  
 
 Щоб прикріпити вкладення до [завдання](#task), воно має бути завантаженим на сервер.  
-
 
 ## Реляційна схема
