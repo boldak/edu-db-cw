@@ -55,4 +55,391 @@ Admin --> UC_9
 
 @enduml
 
+## Сценарії використання
+### Сценарій створення облікового запису
+<table>
+ <tr>
+   <th>ID:</th>
+   <td>CreateAccount</td>
+ </tr>
+
+ <tr>
+  <th>НАЗВА:</th>
+  <td>Створити обліковий запис</td>
+ </tr>
+
+ <tr>
+  <th>УЧАСНИКИ:</th>
+  <td>Користувач, Система</td>
+ </tr>
+
+ <tr>
+  <th>ПЕРЕДУМОВИ:</th>
+  <td>Користувач не зареєстрований в системі</td>
+ </tr>
+
+ <tr>
+  <th>РЕЗУЛЬТАТ:</th>
+  <td>Новий обліковий запис</td>
+ </tr>
+ 
+ <tr>
+  <th rowspan="2">ВИКЛЮЧНІ СИТУАЦІЇ:</th>
+  <td> CreateAccount_EX_AccountExists  Існує обліковий запис</td>
+ </tr>
+
+ <tr>
+   <td> CreateAccount_EX_EmptyInputFields  Пусті поля вводу</td>
+ </tr>
+ </table>
+
+@startuml
+
+|Користувач|
+
+    start
+    
+    :починає взаємодію;
+
+    :натискає на кнопку 
+    "Зареєструватися";
+
+    :вводить реєстраційні дані;
+
+    :натискає на кнопку 
+    "Зареєструватися";
+    note left #ffaaaa
+    <b> Можлива
+    <b> CreateAccount_EX_EmptyInputFields
+    end note
+    
+|Система|
+
+    :перевіряє наявність 
+    облікового запису користувача;
+    note right #ffaaaa
+    <b> Можлива
+    <b> CreateAccount_EX_AccountExists
+    end note
+
+    :створює новий обліковий запис;
+    
+|Користувач|
+
+    :закінчує взаємодію;
+
+    stop;
+    
+@enduml
+   
+### Сценарій авторизування користувача
+
+ <table>
+ <tr>
+   <th>ID:</th>
+   <td>UserAuthorization</td>
+ </tr>
+
+ <tr>
+  <th>НАЗВА:</th>
+  <td>Авторизувати користувача</td>
+ </tr>
+
+ <tr>
+  <th>УЧАСНИКИ:</th>
+  <td>Користувач, Система</td>
+ </tr>
+
+ <tr>
+  <th>ПЕРЕДУМОВИ:</th>
+  <td>Користувач зареєстрований в системі</td>
+ </tr>
+
+ <tr>
+  <th>РЕЗУЛЬТАТ:</th>
+  <td>Вхід у систему</td>
+ </tr>
+
+ <tr>
+  <th rowspan="3">ВИКЛЮЧНІ СИТУАЦІЇ:</th>
+  <td> UserAuthorization_EX_IncorrectData  Невірно введені дані</td>
+ </tr>
+ 
+ <tr>
+   <td> UserAuthorization_EX_NotRegistered  Не зареєстрований</td>
+ </tr>
+
+ <tr>
+   <td> UserAuthorization_EX_EmptyInputFields  Пусті поля вводу</td>
+ </tr>
+</table>
+
+@startuml
+
+|Користувач|
+
+    start
+    
+    :починає взаємодію;
+
+    :натискає на кнопку "Увійти";
+
+    :вводить авторизаційні дані;
+
+    :натискає на кнопку "Увійти";
+    note left #ffaaaa
+    <b> Можлива
+    <b> UserAuthorization_EX_EmptyInputFields
+    end note
+    
+|Система|
+
+    :перевіряє наявність 
+    облікового запису користувача;
+    note right #ffaaaa
+    <b> Можлива
+    <b> UserAuthorization_EX_NotRegistered
+    end note
+
+    :перевіряє авторизаційні дані;
+    note right #ffaaaa
+    <b> Можлива
+    <b> UserAuthorization_EX_IncorrectData
+    end note
+
+    :надає доступ користувачу 
+    до облікового запису;
+    
+|Користувач|
+
+    :закінчує взаємодію;
+
+    stop;
+    
+@enduml
+        
+### Сценарій пошуку наборів даних
+
+<table>
+ <tr>
+   <th>ID:</th>
+   <td>SearchDataset</td>
+ </tr>
+
+ <tr>
+  <th>НАЗВА:</th>
+  <td>Знайти набір даних</td>
+ </tr>
+
+ <tr>
+  <th>УЧАСНИКИ:</th>
+  <td>Користувач, Система</td>
+ </tr>
+
+ <tr>
+  <th>ПЕРЕДУМОВИ:</th>
+  <td>Користувач авторизований в системі</td>
+ </tr>
+
+ <tr>
+  <th>РЕЗУЛЬТАТ:</th>
+  <td>Шуканий набір даних</td>
+ </tr>
+
+ <tr>
+  <th>ВИКЛЮЧНІ СИТУАЦІЇ:</th>
+  <td> SearchDataset_EX_DatasetDoesntExist  Шуканого набору даних не існує</td>
+ </tr>
+</table>
+
+@startuml
+
+|Користувач|
+
+    start
+    
+    :починає взаємодію;
+
+    :вводить в пошукове поле запит;
+
+    :обирає потрібні фільтри;
+
+    :натискає на кнопку "Пошук";
+    
+|Система|
+
+    :відображає список 
+    шуканих даних;
+    note right #ffaaaa
+    <b> Можлива
+    <b> SearchDataset_EX_DatasetDoesntExist
+    end note
+
+|Користувач|
+
+    :натискає на потрібний 
+    набір даних;
+
+|Система|
+
+    :відкриває шукані дані;
+
+|Користувач|
+
+    :закінчує взаємодію;
+
+    stop;
+    
+@enduml
+        
+### Сценарій віртуалізації наборів даних
+
+<table>
+ <tr>
+   <th>ID:</th>
+   <td>VisualizationDataset</td>
+ </tr>
+
+ <tr>
+  <th>НАЗВА:</th>
+  <td>Візуалізувати набір даних таблицею, графіком</td>
+ </tr>
+
+ <tr>
+  <th>УЧАСНИКИ:</th>
+  <td>Користувач, Система</td>
+ </tr>
+
+ <tr>
+  <th>ПЕРЕДУМОВИ:</th>
+  <td>Користувач авторизований в системі, набір даних є в системі</td>
+ </tr>
+
+ <tr>
+  <th>РЕЗУЛЬТАТ:</th>
+  <td>Графік чи таблиця даних</td>
+ </tr>
+
+ <tr>
+  <th>ВИКЛЮЧНІ СИТУАЦІЇ:</th>
+  <td> VisualizationDataset_EX_VisualizationImpossible  Візуалізація неможлива</td>
+ </tr>
+</table>
+
+@startuml
+
+|Користувач|
+
+    start
+    
+    :починає взаємодію;
+
+    :натискає на кнопку 
+    "Візуалізація даних";
+
+|Система|
+
+    :відображає список можливих 
+    форматів даних (таблиця, графік);
+
+|Користувач|
+
+    :обирає потрібний формат;
+
+|Система|
+
+    :надає потрібний графік
+    чи таблицю даних;
+    note right #ffaaaa
+    <b> Можлива
+    <b> VisualizationDataset_EX_VisualizationImpossible
+    end note
+
+|Користувач|
+
+    :закінчує взаємодію;
+
+    stop;
+    
+@enduml
+        
+### Сценарій завантаження файлів
+
+<table>
+ <tr>
+   <th>ID:</th>
+   <td>DownloadFile</td>
+ </tr>
+
+ <tr>
+  <th>НАЗВА:</th>
+  <td>Завантажити файл набору даних</td>
+ </tr>
+
+ <tr>
+  <th>УЧАСНИКИ:</th>
+  <td>Користувач, Система</td>
+ </tr>
+
+ <tr>
+  <th>ПЕРЕДУМОВИ:</th>
+  <td>Користувач авторизований в системі</td>
+ </tr>
+
+ <tr>
+  <th>РЕЗУЛЬТАТ:</th>
+  <td>Завантажений файл набору даних</td>
+ </tr>
+
+ <tr>
+  <th rowspan="2">ВИКЛЮЧНІ СИТУАЦІЇ:</th>
+  <td> DownloadFIle_EX_CancelSaveFile  Користувач відмінив збереження файлу</td>
+ </tr>
+
+ <tr>
+   <td> DownloadFIle_EX_NotEnoughMemory  Недостатньо вільної пам'яті</td>
+ </tr>
+ </table>
+ 
+ @startuml
+ 
+|Користувач|
+
+    start
+    
+    :починає взаємодію;
+
+    :натискає на кнопку 
+    "Зберегти файл";
+
+|Система|
+
+    :запитує підтвердження 
+    на збереження файлу;
+
+|Користувач|
+
+    :підтверджує збереження;
+    note left #ffaaaa
+    <b> Можлива
+    <b> DownloadFIle_EX_CancelSaveFile
+    end note
+
+
+|Система|
+
+    :завантажує файл;
+    note right #ffaaaa
+    <b> Можлива
+    <b> DownloadFIle_EX_NotEnoughMemory
+    end note
+
+|Користувач|
+
+    :закінчує взаємодію;
+
+    stop;
+    
+@enduml
+
 </center>
