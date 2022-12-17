@@ -1,45 +1,49 @@
 # Діаграми прецедентів
 
-## Загальна схема
+### Загальна схема
 
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
 >
 
 @startuml
 
-actor "Користувач" as User
+actor "Загальний користувач" as GeneralUser
+actor "Зареєстрований користувач" as AuthUser
 actor "Редактор" as Editor
 actor "Адміністратор" as Admin
 
-usecase "Зареєструватись" as UC_1
-usecase "Авторизуватись" as UC_2
-usecase "Управління файлами\nданих" as UC_3 #2cf25a
-usecase "Запит отримати права\nредактора" as UC_4
-usecase "Пожертвувати кошти" as UC_5
-usecase "Запит відредагувати \nдані" as UC_6
-usecase "Управління системними \nданими" as UC_7 #2cf25a
-usecase "Управління редакторами \nсистеми" as UC_8 #2cf25a
-usecase "Затвердити зміни \nданих" as UC_9
+usecase "Зареєструватись" as UserReg
+usecase "Авторизуватись" as UserAuth
+usecase "Взаємодія з даними \nсистеми" as DataInteract #2cf25a
+usecase "Запит отримати права\nредактора" as ReqEditRights
+usecase "Пожертвувати кошти" as Donate
+usecase "Запит на редагування \nданих" as ReqEditData
+usecase "Управління даними \nсистеми" as MngData #2cf25a
+usecase "Управління редакторами \nсистеми" as MngEditors #2cf25a
+usecase "Затвердити зміни \nданих редактора" as ApproveChanges
 
-User -l-> UC_1
-User -r-> UC_2
-User -u-> UC_4
-User -u-> UC_3
-User -u-> UC_5
+GeneralUser -u-> UserReg
+GeneralUser -u-> UserAuth
+GeneralUser -u-> Donate
 
-note bottom of UC_4 #yellow
+AuthUser -u-|> GeneralUser
+
+AuthUser -l-> ReqEditRights
+AuthUser -r-> DataInteract
+
+note top of ReqEditRights #yellow
 
         Тільки користувач може 
         здійснити такий запит
 
     end note
 
-Editor -u-|> User
-Editor -l-> UC_6
+Editor -u-|> AuthUser
+Editor -l-> ReqEditData
 
 note right of Editor #yellow
     
@@ -49,13 +53,131 @@ note right of Editor #yellow
     end note
 
 Admin -u-|> Editor
-Admin -l-> UC_7
-Admin -r-> UC_8
-Admin --> UC_9
+Admin -l-> MngData
+Admin -r-> MngEditors
+Admin --> ApproveChanges
 
 @enduml
 
+</div>
+
+### Схема загального користувача
+
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
+>
+
+@startuml
+
+"Загальний користувач" as actor
+usecase "Зареєструватись" as UserAuth
+usecase "Авторизуватись" as UserReg
+usecase "Пожертвувати кошти" as Donate
+
+actor -d-> UserAuth
+actor -d-> UserReg
+actor -d-> Donate
+
+@enduml
+
+</div>
+
+### Схема зареєстрованого користувача
+
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
+>
+
+@startuml
+
+"Зареєстрований користувач" as actor
+
+usecase "Взаємодія з даними \nсистеми" as DataInteract #palegreen
+usecase "Запит отримати права\nредактора" as ReqEditRights
+
+usecase "Знайти набір даних" as SearchData
+usecase "Візуалізувати дані(таблиця, тощо)" as VisualData
+usecase "Завантажити файл даних" as DownloadData
+
+actor -u-> DataInteract
+actor -d-> ReqEditRights
+
+SearchData .d.> DataInteract :extends
+VisualData .d.> DataInteract :extends
+DownloadData .d.> DataInteract :extends
+
+
+@enduml
+
+</div>
+
+### Схема редактора
+
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
+>
+
+@startuml
+
+"Редактор" as actor
+
+usecase "Запит на редагування \nданих" as ReqEditData
+
+actor -d-> ReqEditData
+
+@enduml
+
+</div>
+
+### Схема адміністратора
+
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
+>
+
+@startuml
+
+"Адміністратор" as actor
+
+usecase "Управління даними\nсистеми" as MngData #2cf25a
+usecase "Управління редакторами\nсистеми" as MngEditors #2cf25a
+usecase "Затвердити зміни\nданих редактора" as ApproveChanges
+
+usecase "Завантажити дані" as UploadData
+usecase "Видалити дані" as RemoveData
+
+usecase "Затвердити кандидатуру\nредактора" as GrantEdPermit
+usecase "Зняти права\nредактора з користувача" as RemoveEdPermit
+
+
+actor -u-> MngData
+actor -l-> ApproveChanges
+actor -d-> MngEditors
+
+UploadData .d.> MngData :extends
+RemoveData .d.> MngData :extends
+
+GrantEdPermit .u.> MngEditors :extends
+RemoveEdPermit .u.> MngEditors :extends
+
+@enduml
+
+</div>
+
 ## Сценарії використання
+
 ### Сценарій створення облікового запису
 <table>
  <tr>
@@ -108,7 +230,7 @@ Admin --> UC_9
 
     :натискає на кнопку 
     "Зареєструватися";
-    note left #ffaaaa
+    note #ffaaaa
     <b> Можлива
     <b> CreateAccount_EX_EmptyInputFields
     end note
@@ -131,7 +253,7 @@ Admin --> UC_9
     stop;
     
 @enduml
-   
+
 ### Сценарій авторизування користувача
 
  <table>
@@ -441,5 +563,3 @@ Admin --> UC_9
     stop;
     
 @enduml
-
-</center>

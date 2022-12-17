@@ -48,7 +48,7 @@
     * [ApprovalDatasetChanges](#характеристика-ділових-процесів:~:text=ID%3A-,ApprovalDatasetChanges) (Затвердити зміни в наборі даних)
     * [GrantEditorPermission](#характеристика-ділових-процесів:~:text=ID%3A-,GrantEditorPermission) (Затвердити кандидатуру редактора)
     * [RemoveEditorPermission](#характеристика-ділових-процесів:~:text=ID%3A-,RemoveEditorPermission) (Зняти права редактора з користувача)
-    * [EditDataset](#характеристика-ділових-процесів:~:text=ID%3A-,EditDataset) (Редагувати набір даних)
+    * [RequestEditDataset](#характеристика-ділових-процесів:~:text=ID%3A-,RequestEditDataset) (Створити запит на редагування набору даних)
 * [Короткий огляд продукту](#короткии-огляд-продукту)
 * [Функціональність](#функціональність)
 * [Практичність](#практичність)
@@ -889,12 +889,12 @@
 <table>
  <tr>
    <th>ID:</th>
-   <td>EditDataset</td>
+   <td>RequestEditDataset</td>
  </tr>
 
  <tr>
   <th>НАЗВА:</th>
-  <td>Редагувати набір даних</td>
+  <td>Створити запит на редагування набору даних</td>
  </tr>
 
  <tr>
@@ -914,7 +914,7 @@
 
  <tr>
   <th>ВИКЛЮЧНІ СИТУАЦІЇ:</th>
-  <td>EditDataset_EX_DatasetCancelled  Редактор скасував зміни</td>
+  <td>RequestEditDataset_EX_DatasetCancelled  Редактор скасував зміни</td>
  </tr>
 
  <tr>
