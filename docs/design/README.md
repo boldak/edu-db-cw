@@ -190,5 +190,5 @@ Message "1, 1" -- "0, *" Metadata
 ## Relational Schema
 
 <p align="center">
-  <img src="./pictures/rel model.png" width="600" title="ER-diagram">
+  <img src="./picture/rel model.png" width="600" title="ER-diagram">
 </p>
