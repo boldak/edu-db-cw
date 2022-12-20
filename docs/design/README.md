@@ -187,5 +187,8 @@ ScraperInstance "1, 1" - "1, 1" ScraperInstance
 Message "1, 1" -- "0, *" Metadata
 @enduml
 
-- реляційна схема
+## Relational Schema
 
+<p align="center">
+  <img src="./pictures/rel model.png" width="600" title="ER-diagram">
+</p>
