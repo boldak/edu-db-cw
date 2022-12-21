@@ -29,8 +29,6 @@ entity User.email #ffffff
 entity User.login #ffffff
 entity User.password #ffffff
 
-entity Access
-
 entity Role
 entity Role.name #ffffff
 entity Role.description #ffffff
@@ -93,11 +91,10 @@ User.password --* User
 User.id --* User
 
 
-Query "0,*" -d- "0,*" Access
 Query "0,*" -r- "1,1" Source
 Query "0,*" -- "1,1" Result
-User "1,1" -u- "0,*" Access
-Role "1,1" -l- "0,*" Access
+User "1,1" -u- "0,*" Query
+Role "1,1" -l- "0,*" Query
 Source "1, 1" -- "0, *" ScraperType
 ScraperType "1, 1" -- "0, *" ScraperInstance
 ScraperInstance "1, 1" -- "0, *" Message
@@ -106,7 +103,7 @@ Message "1, 1" -- "0, *" Metadata
 
 @enduml
 
-- ER-model
+## ER-model
 
 @startuml
   entity User  {
@@ -120,10 +117,6 @@ Message "1, 1" -- "0, *" Metadata
   entity Role  {
     name: Text
     description: Text
-  }
-  
-  entity Access  {
-  
   }
   
   entity Query  {
@@ -175,11 +168,10 @@ Message "1, 1" -- "0, *" Metadata
     endPoint: uri-reference
   }
   
-Query "0," -d- "0," Access
 Query "0,*" -r- "1,1" Source
 Query "0,*" -- "1,1" Result
-User "1,1" -u- "0," Access 
-Role "1,1" -l- "0," Access
+User "1,1" -u- "0," Query 
+Role "1,1" -l- "0," Query
 Source "1, 1" -- "0, *" ScraperType
 ScraperType "1, 1" -- "0, *" ScraperInstance
 ScraperInstance "1, 1" -- "0, *" Message
@@ -187,5 +179,8 @@ ScraperInstance "1, 1" - "1, 1" ScraperInstance
 Message "1, 1" -- "0, *" Metadata
 @enduml
 
-- реляційна схема
+## Relational Schema
 
+<p align="center">
+  <img src="./picture/eer2.png" width="600" title="ER-diagram">
+</p>
