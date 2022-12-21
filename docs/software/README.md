@@ -2,6 +2,7 @@
 
 В рамках проекту розробляється: 
 - SQL-скрипт для створення на початкового наповнення бази даних
+```
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
@@ -208,6 +209,7 @@ INSERT INTO `mydb`.`source` (`id`, `url`, `api_key`) VALUES (DEFAULT, 'https://k
 INSERT INTO `mydb`.`source` (`id`, `url`, `api_key`) VALUES (DEFAULT, 'https://mono.ua', 'AZdsdEwerwweWQEQWEQds');
 
 COMMIT;
+```
 
 - RESTfull сервіс для управління даними
 
