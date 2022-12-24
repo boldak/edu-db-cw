@@ -116,9 +116,9 @@
   }
 
   Question "1, 1"<-u- "0, *" Option
-  Answer "1, 1" <-u- "0, *" Question
-  Quiz "0, *" -u-> "1, 1" Question
-  Answer "1, 1" <-u- "0, *" User
+  Answer "0, *" <-u- "1, 1" Question
+  Quiz "1, 1" -u-> "0, *" Question
+  Answer "0, *" <-u- "1, 1" User
  
   
   Answer "1, 1" <-u- "0, *" SelectedOption
