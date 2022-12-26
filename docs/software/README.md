@@ -1,9 +1,6 @@
 # Реалізація інформаційного та програмного забезпечення
 
-В рамках проекту розробляється: 
 ## SQL-скрипт для створення на початкового наповнення бази даних
-```
-
 ```
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
