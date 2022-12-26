@@ -1,5 +1,6 @@
 # Реалізація інформаційного та програмного забезпечення
 
+В рамках проекту розробляється: 
 ## SQL-скрипт для створення на початкового наповнення бази даних
 ```
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
@@ -84,6 +85,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`result` (
   `name` VARCHAR(255) NULL,
   `description` VARCHAR(255) NULL,
   `query_id` INT NOT NULL,
+  `message_id` INT NOT NULL,
   PRIMARY KEY (`id`, `query_id`, `message_id`),
   INDEX `fk_result_query_idx` (`query_id` ASC) VISIBLE,
   INDEX `fk_result_message1_idx` (`message_id` ASC) VISIBLE,
