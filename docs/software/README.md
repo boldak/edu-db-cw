@@ -4,7 +4,6 @@
 ## SQL-скрипт для створення на початкового наповнення бази даних
 
 ```sql
-
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
@@ -87,18 +86,11 @@ CREATE TABLE IF NOT EXISTS `mydb`.`result` (
   `name` VARCHAR(255) NULL,
   `description` VARCHAR(255) NULL,
   `query_id` INT NOT NULL,
-  `message_id` INT NOT NULL,
-  PRIMARY KEY (`id`, `query_id`, `message_id`),
+  PRIMARY KEY (`id`, `query_id`),
   INDEX `fk_result_query_idx` (`query_id` ASC) VISIBLE,
-  INDEX `fk_result_message1_idx` (`message_id` ASC) VISIBLE,
   CONSTRAINT `fk_result_query`
     FOREIGN KEY (`query_id`)
     REFERENCES `mydb`.`query` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-    CONSTRAINT `fk_result_message1`
-    FOREIGN KEY (`message_id`)
-    REFERENCES `mydb`.`message` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -152,11 +144,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`message` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `data` TEXT NULL,
   `scraperInstance_id` INT NOT NULL,
-  PRIMARY KEY (`id`, `scraperInstance_id`),
+  `result_id` INT NOT NULL,
+  PRIMARY KEY (`id`, `scraperInstance_id`, `result_id`),
+  INDEX `fk_message_result_idx` (`result_id` ASC) VISIBLE,
   INDEX `fk_message_scraperInstance1_idx` (`scraperInstance_id` ASC) VISIBLE,
   CONSTRAINT `fk_message_scraperInstance1`
     FOREIGN KEY (`scraperInstance_id`)
     REFERENCES `mydb`.`scraperInstance` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+    CONSTRAINT `fk_message_result`
+    FOREIGN KEY (`result_id`)
+    REFERENCES `mydb`.`result` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
