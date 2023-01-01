@@ -19,12 +19,10 @@ actor "Адміністратор" as Admin
 usecase "Зареєструватись" as UserReg
 usecase "Авторизуватись" as UserAuth
 usecase "Взаємодія з даними \nсистеми" as DataInteract #2cf25a
-usecase "Запит отримати права\nредактора" as ReqEditRights
 usecase "Пожертвувати кошти" as Donate
-usecase "Запит на редагування \nданих" as ReqEditData
+usecase "Редагування \nданих" as EditData
 usecase "Управління даними \nсистеми" as MngData #2cf25a
 usecase "Управління редакторами \nсистеми" as MngEditors #2cf25a
-usecase "Затвердити зміни \nданих редактора" as ApproveChanges
 
 GeneralUser -u-> UserReg
 GeneralUser -u-> UserAuth
@@ -32,30 +30,14 @@ GeneralUser -u-> Donate
 
 AuthUser -u-|> GeneralUser
 
-AuthUser -l-> ReqEditRights
 AuthUser -r-> DataInteract
 
-note top of ReqEditRights #yellow
-
-        Тільки користувач може 
-        здійснити такий запит
-
-    end note
-
 Editor -u-|> AuthUser
-Editor -l-> ReqEditData
-
-note right of Editor #yellow
-    
-        Тільки редактор може 
-        здійснити такий запит
-
-    end note
+Editor -l-> EditData
 
 Admin -u-|> Editor
 Admin -l-> MngData
 Admin -r-> MngEditors
-Admin --> ApproveChanges
 
 @enduml
 
@@ -99,14 +81,12 @@ actor -d-> Donate
 "Зареєстрований користувач" as actor
 
 usecase "Взаємодія з даними \nсистеми" as DataInteract #palegreen
-usecase "Запит отримати права\nредактора" as ReqEditRights
 
 usecase "Знайти набір даних" as SearchData
 usecase "Візуалізувати дані(таблиця, тощо)" as VisualData
 usecase "Завантажити файл даних" as DownloadData
 
 actor -u-> DataInteract
-actor -d-> ReqEditRights
 
 SearchData .d.> DataInteract :extends
 VisualData .d.> DataInteract :extends
@@ -130,9 +110,9 @@ DownloadData .d.> DataInteract :extends
 
 "Редактор" as actor
 
-usecase "Запит на редагування \nданих" as ReqEditData
+usecase "Редагування \nданих" as EditData
 
-actor -d-> ReqEditData
+actor -d-> EditData
 
 @enduml
 
@@ -153,7 +133,6 @@ actor -d-> ReqEditData
 
 usecase "Управління даними\nсистеми" as MngData #2cf25a
 usecase "Управління редакторами\nсистеми" as MngEditors #2cf25a
-usecase "Затвердити зміни\nданих редактора" as ApproveChanges
 
 usecase "Завантажити дані" as UploadData
 usecase "Видалити дані" as RemoveData
@@ -163,7 +142,6 @@ usecase "Зняти права\nредактора з користувача" as
 
 
 actor -u-> MngData
-actor -l-> ApproveChanges
 actor -d-> MngEditors
 
 UploadData .d.> MngData :extends
@@ -564,94 +542,6 @@ RemoveEdPermit .u.> MngEditors :extends
     
 @enduml
 
-### Сценарій створення запиту на отримання прав редактора
-<table>
-<tr>
-   <th>ID:</th>
-   <td>RequestEditorsRights</td>
- </tr>
-<tr>
-  <th>НАЗВА:</th>
-  <td>Створити запит на отримання прав редактора</td>
- </tr>
-
- <tr>
-  <th>УЧАСНИКИ:</th>
-  <td>Користувач, Система</td>
- </tr>
-
- <tr>
-  <th>ПЕРЕДУМОВИ:</th>
-  <td>Користувач авторизований в системі, користувач не має прав редактора</td>
- </tr>
-
- <tr>
-  <th>РЕЗУЛЬТАТ:</th>
-  <td>Запит на отримання прав редактора</td>
- </tr>
-
- <tr>
-  <th rowspan="2">ВИКЛЮЧНІ СИТУАЦІЇ:</th>
-  <td> RequestEditorsRights_EX_CancelRequest  Користувач відмінив запит</td>
- </tr>
-
- <tr>
-   <td> RequestEditorsRights_EX_HAsAlreadyBeenSent  Запит вже був відправлений</td>
- </tr>
-</table>
-
-@startuml
-
-|Користувач|
-
-    start
-    
-    :починає взаємодію;
-
-    :натискає на кнопку 
-    "Стати редактором";
-
-|Система|
-
-    :відкриває форму 
-    для заповнення запиту;
-
-|Користувач|
-
-    :заповнює анкету;
-    :натискає на кнопку 
-    "Відправити запит";
-
-
-|Система|
-
-    :запитує підтвердження
-    на відправку анкети;
-|Користувач|
-
-    :підтверджує відправку;
-    note left #ffaaaa
-    <b> Можлива
-    <b> RequestEditorsRights_EX_CancelRequest
-    end note
-
-|Система|
-
-    :відправляє запит;
-    note right #ffaaaa
-    <b> Можлива
-    <b> RequestEditorsRights_EX_HAsAlreadyBeenSent
-    end note
-    :завантажує файл;
-
-|Користувач|
-
-    :закінчує взаємодію;
-
-    stop;
-
-@enduml
-
 ### Сценарій пожертвування коштів на покращення роботи застосунку
 
 
@@ -888,171 +778,6 @@ RemoveEdPermit .u.> MngEditors :extends
 
 @enduml
 
-### Сценарій затвердження змін в наборі даних
-
-<table>
- <tr>
-   <th>ID:</th>
-   <td>ApprovalDatasetChanges</td>
- </tr>
-
- <tr>
-  <th>НАЗВА:</th>
-  <td>Затвердити зміни в наборі даних</td>
- </tr>
-
- <tr>
-  <th>УЧАСНИКИ:</th>
-  <td>Адміністратор, Система</td>
- </tr>
-
- <tr>
-  <th>ПЕРЕДУМОВИ:</th>
-  <td>Адміністратор авторизований у системі</td>
- </tr>
-
- <tr>
-  <th>РЕЗУЛЬТАТ:</th>
-  <td>Затверджені зміни в наборі даних</td>
- </tr>
-
- <tr>
-  <th>ВИКЛЮЧНІ СИТУАЦІЇ:</th>
-  <td>ApprovalDatasetChanges_EX_DatasetCancelled  Адміністратор відхилив зміни в наборі даних</td>
- </tr>
-</table>
-
-@startuml
-
-|Адміністратор|
-
-    start
-    
-    :починає взаємодію;
-
-    :натискає на кнопку "Список редакторів";
-
-|Система|
-
-    :відображує список редакторів;
-
-|Адміністратор|
-
-    :натискає на потрібного редактора;
-
-|Система|
-
-    :відображує історію змін редактора;
-
-|Адміністратор|
-
-    :натискає на кнопку "Запит на зміни";
-
-|Система|
-
-    :відображує внесені зміни редактором;
-
-
-|Адміністратор|
-
-    :переглядає зміни;
-    :натискає на кнопку "Затвердити";
-
-|Система|
-
-    :запитує підтвердження 
-         на зміну даних;
-
-|Адміністратор|
-
-    :підтверджує зміни;
-
-    note left #ffaaaa
-    <b> Можлива
-    <b> ApprovalDatasetChanges_EX_DatasetCancelled
-    end note
-
-
-|Система|
-
-    :змінює дані;
-
-|Адміністратор|
-
-    :закінчує взаємодію;
-
-@enduml
-
-### Сценарій затвердження кандидатури редактора
-
-<table>
- <tr>
-   <th>ID:</th>
-   <td>GrantEditorPermission</td>
- </tr>
-
- <tr>
-  <th>НАЗВА:</th>
-  <td>Затвердити кандидатуру редактора</td>
- </tr>
-
- <tr>
-  <th>УЧАСНИКИ:</th>
-  <td>Адміністратор, Система</td>
- </tr>
-
- <tr>
-  <th>ПЕРЕДУМОВИ:</th>
-  <td>Адміністратор авторизований у системі</td>
- </tr>
-
- <tr>
-  <th>РЕЗУЛЬТАТ:</th>
-  <td>Видано або відхилено право редактора</td>
- </tr>
-
- <tr>
-  <th>ВИКЛЮЧНІ СИТУАЦІЇ:</th>
-  <td>GrantEditorPermission_EX_PermissionRejected Відхилений запит на права редактора</td>
- </tr>
-</table>
-
-@startuml
-
-|Адміністратор|
-
-    start
-    
-    :починає взаємодію;
-
-    :натискає на кнопку 
-    "Запит на редагування";
-
-|Система|
-
-    :відображує інформаційний лист відправника;
-
-|Адміністратор|
-
-    :читає зміст;
-    :затверджує отримання прав редактора;
-
-    note left #ffaaaa
-    <b> Можлива
-    <b> GrantEditorPermission_EX_PermissionRejected
-    end note
-
-
-|Система|
-
-    :видає права редактора користувачеві;
-
-|Адміністратор|
-
-    :закінчує взаємодію;
-
-@enduml
-
 ### Сценарій зняття прав редактора
 
 <table>
@@ -1137,17 +862,17 @@ RemoveEdPermit .u.> MngEditors :extends
 
 @enduml
 
-### Сценарій створення запиту на редагування даних
+### Сценарій редагування даних
 
 <table>
  <tr>
    <th>ID:</th>
-   <td>RequestEditDataset</td>
+   <td>EditDataset</td>
  </tr>
 
  <tr>
   <th>НАЗВА:</th>
-  <td>Створити запит на редагування набору даних</td>
+  <td>Редагування набору даних</td>
  </tr>
 
  <tr>
@@ -1167,7 +892,7 @@ RemoveEdPermit .u.> MngEditors :extends
 
  <tr>
   <th>ВИКЛЮЧНІ СИТУАЦІЇ:</th>
-  <td>RequestEditDataset_EX_DatasetCancelled  Редактор скасував зміни</td>
+  <td>EditDataset_EX_DatasetCancelled  Редактор скасував зміни</td>
  </tr>
 </table>
 
@@ -1209,7 +934,9 @@ RemoveEdPermit .u.> MngEditors :extends
 
 |Система|
 
-    :відправляє запит на перевірку;
+    :редагує дані;
+
+    :показує редаговані дані;
 
 |Редактор|
 
