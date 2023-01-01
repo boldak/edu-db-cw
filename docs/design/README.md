@@ -39,7 +39,6 @@ entity Visualisation.type #ffffff
 
 entity Role
 entity Role.name #ffffff
-entity Role.description #ffffff
 object RegisteredUser #ffffff
 object Editor #ffffff
 object Admin #ffffff
@@ -47,6 +46,7 @@ object Admin #ffffff
 entity Grant
 
 entity Permission
+entity Permission.name #ffffff
 object Read #ffffff
 object Edit #ffffff
 object Download #ffffff
@@ -67,6 +67,7 @@ Admin ..> Role : instanceOf
 
 Grant "0,*" -u- "0,1"  Role
 Permission "0,1" -u- "0,*"  Grant
+Permission.name -l-* Permission
 Read .u.> Permission : instanceOf
 Edit .u.> Permission : instanceOf
 Download .u.> Permission : instanceOf
@@ -109,7 +110,6 @@ Edits.EditDate -d-* Edits
 Edits.status -u-* Edits
 
 Role.name -u-* Role
-Role.description -u-* Role
 
 Donate.type -l-* Donate
 @enduml 
