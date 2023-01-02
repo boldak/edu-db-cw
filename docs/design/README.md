@@ -19,26 +19,23 @@ entity DataFile.id #ffffff
 entity DataFile.name #ffffff 
 entity DataFile.description #ffffff 
 entity DataFile.file_csv #ffffff 
-entity DataFile.uploadDate #ffffff  
+entity DataFile.uploadDate #ffffff
+entity DataFile.hasGraph #ffffff
 
-entity Edits
-entity Edits.id #ffffff
-entity Edits.editorUsername #ffffff
-entity Edits.oldFile_csv #ffffff
-entity Edits.newFile_csv #ffffff
-entity Edits.EditDate #ffffff
-entity Edits.status #ffffff
+entity EditForm
+entity EditForm.id #ffffff
+entity EditForm.editorUsername #ffffff
+entity EditForm.oldFile_csv #ffffff
+entity EditForm.newFile_csv #ffffff
+entity EditForm.editDate #ffffff
 
 entity Category
 entity Category.id #ffffff 
 entity Category.name #ffffff 
-entity Category.hex_code #ffffff
-
-entity Visualisation
-entity Visualisation.type #ffffff
 
 entity Role
 entity Role.name #ffffff
+entity Role.id #ffffff
 object RegisteredUser #ffffff
 object Editor #ffffff
 object Admin #ffffff
@@ -46,6 +43,7 @@ object Admin #ffffff
 entity Grant
 
 entity Permission
+entity Permission.id #ffffff
 entity Permission.name #ffffff
 object Read #ffffff
 object Edit #ffffff
@@ -68,6 +66,7 @@ Admin ..> Role : instanceOf
 Grant "0,*" -u- "0,1"  Role
 Permission "0,1" -u- "0,*"  Grant
 Permission.name -l-* Permission
+Permission.id -r-* Permission
 Read .u.> Permission : instanceOf
 Edit .u.> Permission : instanceOf
 Download .u.> Permission : instanceOf
@@ -75,13 +74,12 @@ Upload .u.> Permission : instanceOf
 Delete .u.> Permission : instanceOf
 ManageEditors .u.> Permission : instanceOf
 
-User "1,1" -d- "0,*" Access
+User "1,1" ---d- "0,*" Access
 
-Access "0,*" ---d-- "1,1" DataFile
+Access "0,*" -d-- "1,1" DataFile
 
-Edits "0,*" -u- "1,1" DataFile
-Category "1,1" -u- "0,*" DataFile
-Visualisation "1,1" -u- "0,*" DataFile
+EditForm "0,*" --u- "1,1" DataFile
+Category "1,1" --u- "0,*" DataFile
 
 
 User.id -d-* User 
@@ -92,24 +90,22 @@ User.Avatar -d-* User
  
 DataFile.id -d-* DataFile
 DataFile.name -d-* DataFile
-DataFile.description -d-* DataFile
+DataFile.description -r-* DataFile
 DataFile.file_csv -d-* DataFile
 DataFile.uploadDate -d-* DataFile
+DataFile.hasGraph -d-* DataFile
 
 Category.id -u-* Category
 Category.name -u-* Category
-Category.hex_code -u-* Category
 
-Visualisation.type -u-* Visualisation
-
-Edits.id -r-* Edits
-Edits.editorUsername -d-* Edits
-Edits.oldFile_csv -u-* Edits
-Edits.newFile_csv -u-* Edits
-Edits.EditDate -d-* Edits
-Edits.status -u-* Edits
+EditForm.id -r-* EditForm
+EditForm.editorUsername -l-* EditForm
+EditForm.oldFile_csv -u-* EditForm
+EditForm.newFile_csv -u-* EditForm
+EditForm.editDate -u-* EditForm
 
 Role.name -u-* Role
+Role.id -r-* Role
 
 Donate.type -l-* Donate
 @enduml 
@@ -135,6 +131,7 @@ namespace AccessPolicy {
 entity Access
 
 entity Role <<ENTITY>> {
+    id: INT
     name: TEXT
 }
 object RegisteredUser #ffffff
@@ -145,6 +142,7 @@ entity Grant
 
 entity Permission <<ENTITY>> {
     name: TEXT
+    id: INT
 }
 object Read #ffffff
 object Edit #ffffff
@@ -166,26 +164,21 @@ entity DataFile <<ENTITY>> {
     name: TEXT 
     description: TEXT 
     file_csv: TEXT
-    uploadDate: DATE  
+    uploadDate: DATE
+    hasGraph: BOOL  
 }
 
 entity Category <<ENTITY>> {
     id: INT
     name: TEXT
-    hex_code: TEXT
 }
 
-entity Edits <<ENTITY>> {
+entity EditForm <<ENTITY>> {
     id: INT
     editorUsername: TEXT
     oldFile_csv: TEXT
     newFile_csv: TEXT
-    EditDate: DATE
-    status: INT
-}
-
-entity Visualisation <<ENTITY>> {
-    type: TEXT
+    editDate: DATE
 }
 
 }
@@ -211,9 +204,8 @@ User "1,1" ---d- "0,*" Access
 
 Access "0,*" -d- "1,1" DataFile
 
-Edits "0,*" -u- "1,1" DataFile
+EditForm "0,*" -u- "1,1" DataFile
 Category "1,1" -u- "0,*" DataFile
-Visualisation "1,1" -u- "0,*" DataFile
 
 @enduml 
 
