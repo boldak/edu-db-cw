@@ -8,7 +8,7 @@ const sql = {
   createUser: `INSERT INTO USER(ID, USERNAME, EMAIL, PASSWORD, AVATAR, DONATE_ID, ROLE_ID) VALUES (:id, :username, :email, :password, :avatar, :donate_id, :role_id)`,
   readUserByID: `SELECT * FROM USER WHERE ID= :id`,
   readAllUser: `SELECT * FROM USER`,
-  updateUserByID: `UPDATE USER SET USERNAME= :username, EMAIL= :email, PASSWORD= :password, AVATAR= :avatar, DONATE_ID= donate_id, ROLE_ID= :role_id`,
+  updateUserByID: `UPDATE USER SET USERNAME= :username, EMAIL= :email, PASSWORD= :password, AVATAR= :avatar, DONATE_ID= donate_id, ROLE_ID= :role_id WHERE ID= :id`,
   deleteUserByID: `DELETE FROM USER WHERE ID= :id`,
 };
 
