@@ -3,14 +3,13 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © [2022] [Євгеній Семиволос]"
 ---
 
 
-**Виконав(-ла):** 
+**Виконав:** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
-
+*студент 2-го курсу, групи ІМ-11*<span padding-right:5em></span> **Євгеній Семиволос (telegram: [e_semivolos](https://t.me/e_semivolos))**
 
 **Керівник**
 
