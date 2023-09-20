@@ -15,7 +15,7 @@ module.exports = {
     }]
   ],
   port: 3030,
-  base: '/Media-content-analysis-system_DB',
+  base: '/Media-content-analysis-system_DB/',
   theme: 'cool',
   // dest: 'dist',
   head: [
