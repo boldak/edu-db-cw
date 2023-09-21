@@ -15,7 +15,7 @@ module.exports = {
     }]
   ],
   port: 3030,
-  base: '/docs/',
+  base: '/database-coursework/',
   theme: 'cool',
   // dest: 'dist',
   head: [
@@ -76,7 +76,7 @@ module.exports = {
 
     lastUpdated: 'Останнє оновлення', // string | boolean
       // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'https://github.com/boldak/edu-db-cw',
+    repo: 'https://github.com/kol-oss/database-coursework',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     repoLabel: 'Github',
@@ -95,7 +95,7 @@ module.exports = {
     // editLinkText: 'Ви можете покращити цю сторінку'
 
   },
-  title: 'Назва проєкту',
+  title: '4. Система управління проектами',
   description: 'Курсова робота з дисципліни "Бази даних"',
   configureWebpack: {
     resolve: {
