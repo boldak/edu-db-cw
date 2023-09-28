@@ -96,7 +96,7 @@
     <tr>
         <td><b>Вимоги</b></td>
         <td><b>Критерії</b></td>
-        <td><b>Versys</b></td>
+        <td><b>Versys (наш проєкт)</b></td>
         <td><b>Github Projects</b></td>
         <td><b>Notion</b></td>
         <td><b>Trello</b></td>
@@ -110,7 +110,7 @@
     <tr>
         <td rowspan="6"><b>Functional</b> (функціональність)</td>
         <td>Наявність API</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -123,7 +123,7 @@
     </tr>
     <tr>
         <td>Кросплатформеність</td>
-        <td></td>
+        <td>🟡</td>
         <td>🟡</td>
         <td>🟡</td>
         <td>🟢</td>
@@ -136,7 +136,7 @@
     </tr>
     <tr>
         <td>Контроль та розподіл ресурсів</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -149,7 +149,7 @@
     </tr>
         <tr>
         <td>Система сповіщень</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -162,7 +162,7 @@
     </tr>
         <tr>
         <td>Наявність Scrum/Kanban дошок</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -175,7 +175,7 @@
     </tr>
         <tr>
         <td>Можливість інтеграції third-party сервісів</td>
-        <td></td>
+        <td>🟡</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -189,7 +189,7 @@
     <tr>
         <td rowspan="5"><b>Usability</b> (зручність)</td>
         <td>Інтуїтивний та зручний інтерфейс</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -202,7 +202,7 @@
     </tr>
     <tr>
         <td>Можливість працювати офлайн</td>
-        <td></td>
+        <td>🟡</td>
         <td>🔴</td>
         <td>🟡</td>
         <td>🟢</td>
@@ -215,7 +215,7 @@
     </tr>
     <tr>
         <td>Кастомізація інтерфейсу</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -228,7 +228,7 @@
     </tr>
     <tr>
         <td>Підтримка декількох мов</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟡</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -241,7 +241,7 @@
     </tr>
     <tr>
         <td>Наявність готових темплейтів</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -255,7 +255,7 @@
     <tr>
         <td rowspan="4"><b>Reliability</b> (надійність)</td>
         <td>Багаторівнева автентифікація</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -268,7 +268,7 @@
     </tr>
     <tr>
         <td>Система доступу на основі ролей</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -281,7 +281,7 @@
     </tr>
     <tr>
         <td>Протокол шифрування</td>
-        <td></td>
+        <td>TLS</td>
         <td>TLS</td>
         <td>TLS</td>
         <td>TLS</td>
@@ -294,7 +294,7 @@
     </tr>
     <tr>
         <td>Високий рівень SLA (Service Level Agreement)</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -308,7 +308,7 @@
     <tr>
         <td rowspan="3"><b>Productivity</b> (продуктивність)</td>
         <td>Швидкість синхронізації змін, внесених в проєкт</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -321,7 +321,7 @@
     </tr>
     <tr>
         <td>Середня швидкість відповіді сервера</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -334,7 +334,7 @@
     </tr>
     <tr>
         <td>Стійкість до збоїв</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -348,7 +348,7 @@
     <tr>
         <td rowspan="3"><b>Support</b> (підтримка)</td>
         <td>Активна й відкрита спільнота (групи в соціальних мережах, тощо)</td>
-        <td></td>
+        <td>🟡</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -361,7 +361,7 @@
     </tr>
     <tr>
         <td>Документація та FAQ</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
@@ -374,7 +374,7 @@
     </tr>
     <tr>
         <td>Онлайн підтримка</td>
-        <td></td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
