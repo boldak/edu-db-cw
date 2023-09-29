@@ -254,7 +254,7 @@
     </tr>
         <tr>
         <td>Можливість інтеграції third-party сервісів</td>
-        <td>🟡</td>
+        <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
         <td>🟢</td>
