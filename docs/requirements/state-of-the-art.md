@@ -69,6 +69,8 @@
 
 ![Waterfall](https://training.qatestlab.com/wp-content/uploads/2021/09/Waterfall-model.jpg)
 
+Схема Waterfall [[1.1]](https://training.qatestlab.com/wp-content/uploads/2021/09/Waterfall-model.jpg)
+
 ### Incremental (інкрементна модель)
 
 Спочатку розробляється план дій та сегментується на невеликі завдання. Далі кожен блок розробляється за традиційною каскадною моделлю. Спочатку робиться «базовий» продукт з мінімальними, але важливими функціями. Поступово він доповнюється завдяки розробці інших компонентів, які називаються інкрементами. Процес зациклюється, доки не буде повністю зібраної єдиної системи.
@@ -76,6 +78,8 @@
 Інкрементна модель розробки програмного забезпечення підходить у тому випадку, якщо є чіткий план дій, але продукт потрібно запустити досить швидко, а зміни можна буде вносити потім. Як правило, кожен крок розробляється таким чином, щоб потім його не переробляти. Крім того, базовий функціонал вже працюватиме й приноситиме користь для бізнесу, а за необхідності завжди можна впровадити нові сформовані інструменти. [[2]](https://www.google.com/amp/s/www.geeksforgeeks.org/software-engineering-incremental-process-model/amp/)
 
 ![Incremental](https://training.qatestlab.com/wp-content/uploads/2021/09/incremental_model.jpg)
+
+Схема Incremental [[1.2]](https://training.qatestlab.com/wp-content/uploads/2021/09/incremental_model.jpg)
 
 ### Iterative (ітеративна модель)
 
@@ -85,6 +89,8 @@
 
 ![Iterative](https://s.dou.ua/storage-files/ite.jpg)
 
+Схема Iterative [[1.3]](https://s.dou.ua/storage-files/ite.jpg)
+
 ### Agile (гнучка методологія)
 
 Чудове рішення для створення продукту, який не до кінця сформований у своїй ідеї. Особливість полягає в тому, що замовник може одразу спостерігати за змінами у розробці та коригувати дії. Завдання розбиваються на короткі спринти, виконання яких займає від 1 до 4 тижнів. Також відбуваються регулярні обговорення, на яких визначаються цілі на кожен спринт.
@@ -92,6 +98,8 @@
 Цей метод фокусується на тому, як задовольнити користувачів, а не на документації та жорстких процедурах. Через те, що неможливо визначити точний час на реалізацію ідеї, не можна наперед визначити точну вартість. Але якщо проект розрахований на тривалий життєвий цикл, то повинен мати адаптивність до змін на ринку, для чого відмінно підходить цей метод. Він дозволяє підлаштовуватися під нові вимоги та постійно розвивати продукт. [[4]](https://www.wrike.com/project-management-guide/faq/what-is-agile-methodology-in-project-management/)
 
 ![Agile](https://training.qatestlab.com/wp-content/uploads/2021/09/Agile-model1.jpg)
+
+Схема Agile [1.4](https://training.qatestlab.com/wp-content/uploads/2021/09/Agile-model1.jpg)
 
 ### Spiral (спіральна модель)
 
@@ -101,6 +109,8 @@
 
 ![Spiral](https://training.qatestlab.com/wp-content/uploads/2021/09/Spiral-model.jpg)
 
+Схема Spiral [[1.5]](https://training.qatestlab.com/wp-content/uploads/2021/09/Spiral-model.jpg)
+
 ### V-Model (V-подібна модель)
 
 Робота йде по спіралі, на кожному витку якої здійснюється 4 основні дії: створення плану, аналіз ризиків, розробка та конструювання, оцінка результату та збирання відгуків. Якщо всі етапи успішно пройдені, то технологія переходить на новий виток. Сам перехід нагадує інкрементну модель, де кожен блок розробляється незалежно та приєднується до спочатку створеного базового функціонала.
@@ -108,6 +118,8 @@
 Особливість підходу полягає в тому, що більше часу йде на аналіз, розрахунки та оцінку наслідків, ніж безпосередньо на саму розробку. Спіральні моделі розробки підходять для великих проєктів, де припущення помилок призводить до великих втрат та негативних наслідків. Акцент робиться на оцінці ризиків та можливості зробити "крок назад", чи мінімізувати втрати у випадку можливого провалу ризикового проєкту. [[6]](https://qalight.ua/baza-znaniy/v-model-v-model/)
 
 ![V-Model](https://training.qatestlab.com/wp-content/uploads/2021/09/V-model-1.jpg)
+
+Схема V-Model [[1.6]](https://training.qatestlab.com/wp-content/uploads/2021/09/V-model-1.jpg)
 
 ### Scrum-методологія
 
@@ -117,6 +129,8 @@
 
 ![Scrum](https://training.qatestlab.com/wp-content/uploads/2021/09/Scrum1.jpg)
 
+Схема Scrum [[1.7]](https://training.qatestlab.com/wp-content/uploads/2021/09/Scrum1.jpg)
+
 ### RAD (швидка розробка додатків)
 
 За концепцією моделі, етапи створення додатка розподіляються  на кілька окремих блоків, з кожним із яких працює окрема команда розробників. Після цього невеликі робочі модулі компонуються до єдиної системи та утворюють прототип, який можна показати клієнту. Далі збираються відгуки та вносяться зміни.
@@ -124,6 +138,8 @@
 Такий підхід дає можливість швидко протестувати ідею, реалізувати правки буквально “на ходу” та вивести новий продукт на ринок протягом короткого часу. Проте така модель вимагає значних витрат на великий штат розробників, чітке розуміння кінцевого продукту та постійного контролю розробки продукту від клієнта. [[8]](https://studfile.net/preview/9024667/page:4/)
 
 ![RAD](https://nix-united.com/wp-content/uploads/2021/01/RAD_graphics_01.jpg)
+
+Схема RAD [[1.8]](https://nix-united.com/wp-content/uploads/2021/01/RAD_graphics_01.jpg)
 
 ### DevOps-методологія
 
@@ -133,6 +149,8 @@
 
 ![DevOps](https://devopedia.org/images/article/54/7602.1513404277.png)
 
+Схема DevOps [[1.9]](https://devopedia.org/images/article/54/7602.1513404277.png)
+
 ### Model-View-Controller (модель-представлення-контролер)
 
 Архітектурний шаблон, який розділяє програму на три основні логічні компоненти: модель, представлення та контролер. Кожен із цих компонентів розроблено для обробки конкретних аспектів розробки програми. Найбільш часто використовується для створення масштабованих і розширюваних проектів.
@@ -141,6 +159,8 @@
 
 ![MVC](https://www.freecodecamp.org/news/content/images/size/w1600/2021/04/MVC3.png)
 
+Схема MVC [[1.10]](https://www.freecodecamp.org/news/content/images/size/w1600/2021/04/MVC3.png)
+
 ### CI/CD (безперервна інтеграція/доставка)
 
 Поширена DevOps-практика, де CI (Continuous Integration) — це безперервна інтеграція, а CD (Continuous Delivery) — безперервна доставка. Цей набір методик дозволяє розробникам частіше і надійніше розгортати зміни в програмному забезпеченні. Часто буває необхідним для автоматизації рутинних задач, серед яких збірка та перетворення початкового коду на артефакт, відправка його на сервер, перевірка тестами тощо.
@@ -148,6 +168,8 @@
 Що більшим стає проєкт, тим частіше до коду вносяться зміни. Донесення користувачеві забирає чимало часу. Впровадження CI/CD заощаджує цей ресурс. Зазвичай використовується у великих проєктах і тих, що активно зростають. Підхід допомагає зменшити вартість, час та ризик доставки змін, дозволяючи додаткові поповнення додатків у виробництві. [[11]](https://highload.today/uk/blogs/shho-take-ci-cd-yak-vin-pratsyuye-ta-koli-znadobitsya-na-proyekti-lajfhaki-ta-bad-practices/)
 
 ![CI/CD](https://cms-cdn.katalon.com/large_banner_6_3cc61378b6.png)
+
+Схема CI/CD [[1.11]](https://cms-cdn.katalon.com/large_banner_6_3cc61378b6.png)
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
@@ -485,3 +507,4 @@
 9. [Що таке DevOps і навіщо він потрібен?](https://www.superprof.com.ua/blog/shcho-take-devops/)
 10. [MVC Framework - Introduction](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)
 11. [Що таке CI/CD, як він працює та коли знадобиться на проєкті. Лайфхаки та bad practices](https://highload.today/uk/blogs/shho-take-ci-cd-yak-vin-pratsyuye-ta-koli-znadobitsya-na-proyekti-lajfhaki-ta-bad-practices/)
+12. Зображення та схеми моделей [[1.1]](https://training.qatestlab.com/wp-content/uploads/2021/09/Waterfall-model.jpg), [[1.2]](https://training.qatestlab.com/wp-content/uploads/2021/09/incremental_model.jpg), [[1.3]](https://s.dou.ua/storage-files/ite.jpg), [1.4](https://training.qatestlab.com/wp-content/uploads/2021/09/Agile-model1.jpg), [[1.5]](https://training.qatestlab.com/wp-content/uploads/2021/09/Spiral-model.jpg), [[1.6]](https://training.qatestlab.com/wp-content/uploads/2021/09/V-model-1.jpg), [[1.7]](https://training.qatestlab.com/wp-content/uploads/2021/09/Scrum1.jpg), [[1.8]](https://nix-united.com/wp-content/uploads/2021/01/RAD_graphics_01.jpg), [[1.9]](https://devopedia.org/images/article/54/7602.1513404277.png), [[1.10]](https://www.freecodecamp.org/news/content/images/size/w1600/2021/04/MVC3.png), [[1.11]](https://cms-cdn.katalon.com/large_banner_6_3cc61378b6.png)
