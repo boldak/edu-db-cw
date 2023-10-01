@@ -64,7 +64,6 @@
 Інформація має бути достовірною протягом певного встановленого періоду часу, коли зроблені на її основі висновки або прийняті рішення є правильними. 
 
 
-
 [Джерело інформаційного матеріалу](https://uk.wikipedia.org/wiki/%D0%94%D0%B6%D0%B5%D1%80%D0%B5%D0%BB%D0%BE_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%96%D0%B0%D0%BB%D1%83), також вихідний матеріал — об'єкт або суб'єкт, який надає інформацію. Являє собою матеріал, з якого отримані інформація або ідеї.
 
 За послідовністю,є 3 типи джерел:
@@ -98,19 +97,24 @@
 
 ## Посилання
 
-0.[Контент](https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B5_%D0%BD%D0%B0%D0%BF%D0%BE%D0%B2%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D1%81%D0%B0%D0%B9%D1%82%D1%83)
+[Контент](https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B5_%D0%BD%D0%B0%D0%BF%D0%BE%D0%B2%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D1%81%D0%B0%D0%B9%D1%82%D1%83)
 
-1.[Медіаконтент](http://repository.hneu.edu.ua/bitstream/123456789/29180/1/%D0%9A%D0%BE%D1%80%D0%BE%D1%82%D0%BA%D0%BE%D0%B2%D0%B0_%D0%9A%D0%B0%D1%80i%D0%BD%D0%B0._%D0%A2%D0%B5%D0%B7%D0%B8.pdf)
-2.[ЗМІ](https://vue.gov.ua/%D0%97%D0%B0%D1%81%D0%BE%D0%B1%D0%B8_%D0%BC%D0%B0%D1%81%D0%BE%D0%B2%D0%BE%D1%97_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97_(%D0%97%D0%9C%D0%86))
+[Медіаконтент](http://repository.hneu.edu.ua/bitstream/123456789/29180/1/%D0%9A%D0%BE%D1%80%D0%BE%D1%82%D0%BA%D0%BE%D0%B2%D0%B0_%D0%9A%D0%B0%D1%80i%D0%BD%D0%B0._%D0%A2%D0%B5%D0%B7%D0%B8.pdf)
 
-3.[Соціальні медіа](https://uk.wikipedia.org/wiki/%D0%A1%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D1%96_%D0%BC%D0%B5%D0%B4%D1%96%D0%B0)
+[ЗМІ](https://vue.gov.ua/%D0%97%D0%B0%D1%81%D0%BE%D0%B1%D0%B8_%D0%BC%D0%B0%D1%81%D0%BE%D0%B2%D0%BE%D1%97_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97_(%D0%97%D0%9C%D0%86))
 
-4.[Веб 2.0](https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1_2.0)
+[Соціальні медіа](https://uk.wikipedia.org/wiki/%D0%A1%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D1%96_%D0%BC%D0%B5%D0%B4%D1%96%D0%B0)
 
-5.[Контент-аналіз](https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82-%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7)
-6.[Інтелектуальний аналіз тексту](https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7_%D1%82%D0%B5%D0%BA%D1%81%D1%82%D1%83)
-7.[Добування даних](https://uk.wikipedia.org/wiki/%D0%94%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
-8.[Штучний інтелект](https://uk.wikipedia.org/wiki/%D0%A8%D1%82%D1%83%D1%87%D0%BD%D0%B8%D0%B9_%D1%96%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82)
-%D0%BE%D0%B2%D0%B8)
-12.[Джерело інформаційного матеріалу](https://uk.wikipedia.org/wiki/%D0%94%D0%B6%D0%B5%D1%80%D0%B5%D0%BB%D0%BE_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%96%D0%B0%D0%BB%D1%83)
-13.[Третинне джерело інформації](https://uk.wikipedia.org/wiki/%D0%A2%D1%80%D0%B5%D1%82%D0%B8%D0%BD%D0%BD%D0%B5_%D0%B4%D0%B6%D0%B5%D1%80%D0%B5%D0%BB%D0%BE_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97)
+[Веб 2.0](https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1_2.0)
+
+[Контент-аналіз](https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82-%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7)
+
+[Інтелектуальний аналіз тексту](https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7_%D1%82%D0%B5%D0%BA%D1%81%D1%82%D1%83)
+
+[Добування даних](https://uk.wikipedia.org/wiki/%D0%94%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
+
+[Штучний інтелект](https://uk.wikipedia.org/wiki/%D0%A8%D1%82%D1%83%D1%87%D0%BD%D0%B8%D0%B9_%D1%96%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82)
+
+[Джерело інформаційного матеріалу](https://uk.wikipedia.org/wiki/%D0%94%D0%B6%D0%B5%D1%80%D0%B5%D0%BB%D0%BE_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%96%D0%B0%D0%BB%D1%83)
+
+[Третинне джерело інформації](https://uk.wikipedia.org/wiki/%D0%A2%D1%80%D0%B5%D1%82%D0%B8%D0%BD%D0%BD%D0%B5_%D0%B4%D0%B6%D0%B5%D1%80%D0%B5%D0%BB%D0%BE_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97)
