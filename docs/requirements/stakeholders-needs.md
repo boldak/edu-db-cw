@@ -204,7 +204,7 @@
 <table>
     <tr>
         <td><b>ID</b></td>
-        <td><code>Edit task</code></td>
+        <td><code>EditTask</code></td>
     </tr>
     <tr>
         <td><b>Назва:</b<</td>
