@@ -36,26 +36,797 @@
 та внутрішні фактори (робітники), дається загальна характеристика діяльності бізнес-акторів 
 та робітників, яка здійснюється за допомогою бізнесу.*
 
-*Дається опис бізнес-сценаріїв взаємодії бізнес-акторів, робітників і, можливо, інформаційної системи за допомогою наступної
-специфікації:*
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>SignUpAccount</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Створити обліковий запис</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
 
-   
-***ID:***
-    
-***НАЗВА:***
-    
-***УЧАСНИКИ:***
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>LogInToAccount</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Увійти в обліковий запис</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
 
-***ПЕРЕДУМОВИ:***
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>EditAccount</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Редагувати обліковий запис</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
 
-***РЕЗУЛЬТАТ:***
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeleteAccount</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Видалити обліковий запис</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
 
-***ВИКЛЮЧНІ СИТУАЦІЇ:***
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>CreateTask</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Створити задачу</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
 
-***ОСНОВНИЙ СЦЕНАРІЙ:***
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>EditTask</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Редагувати задачу</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
 
-*Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного 
-рівня деталізації (зазвичай, 5-6 сценаріїв).*
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>AssignExecutorToTask</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Призначити виконавця задачі</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeleteTask</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Видалити задачу</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>WriteToSupport</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Написати в службу підтримки</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>CreateProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Створити проєкт</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>EditProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Редагувати проєкт</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeletePoject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Видалити проєкт</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>AddUserToProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Додати користувача до проєкту</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>RemoveUserFromProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Видалити користувача з проєкту</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>CreateProjectFromTemplate</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Створити проєкт на базі шаблону</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>CreateProjectTemplate</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Створити шаблон проєкту</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeleteProjectTemplate</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Видалити шаблон проєкту</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>CreateBoard</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Створити дошку</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeleteBoard</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Видалити дошку</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>BlockProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Заблокувати проєкт</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>UnblockProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Розблокувати проєкт</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>BanUser</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Заблокувати користувача</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>UnbanUser</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Розблокувати користувача</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>EditSystemSettings</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b<</td>
+        <td>Редагувати налаштування системи</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Основний сценарій:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
 
 ## Короткий огляд продукту
 
