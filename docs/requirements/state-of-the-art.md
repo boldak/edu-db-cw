@@ -101,7 +101,7 @@
 
 **Виявлення аномалій та артефактів:** Виявлення аномалій, помилок або неправильних елементів у зображеннях та відео.
 
-![](https://www.researchgate.net/publication/263224835/figure/fig2/AS:669501238566917@1536632942609/The-dynamic-visual-analytics-process-combines-automatic-and-visual-analysis-methods.png)
+![](https://www.researchgate.net/publication/328232652/figure/fig1/AS:680817470734338@1539330942618/sual-Analytics-Process-Abstract-overview-of-different-stages-and-their-transitions.ppm)
 
 ### Визначення типу даних (структуровані, напівструктуровані, неструктуровані)
 
