@@ -194,3 +194,13 @@
 [Джерело інформаційного матеріалу](https://uk.wikipedia.org/wiki/%D0%94%D0%B6%D0%B5%D1%80%D0%B5%D0%BB%D0%BE_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%96%D0%B0%D0%BB%D1%83)
 
 [Третинне джерело інформації](https://uk.wikipedia.org/wiki/%D0%A2%D1%80%D0%B5%D1%82%D0%B8%D0%BD%D0%BD%D0%B5_%D0%B4%D0%B6%D0%B5%D1%80%D0%B5%D0%BB%D0%BE_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97)
+
+[Аналіз тексту](https://getthematic.com/insights/content/images/wordpress/2018/10/text-categorization.jpg)
+
+[Аналіз зображень иа відео](https://vismaster.eu/wp-content/uploads/2009/12/visual-analytics-process1.png)
+
+[Відміна структурованих від неструктурованихх даних](https://k21academy.com/wp-content/uploads/2020/10/structured-data-vs-unstructured-data.png)
+
+[Як працює NLP](https://www.shaip.com/wp-content/uploads/2022/10/How-NLP-Works-760px.jpg)
+
+[Система географічного аналізу](https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/GIS2.jpg)
