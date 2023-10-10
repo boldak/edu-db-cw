@@ -101,7 +101,7 @@
 
 **Виявлення аномалій та артефактів:** Виявлення аномалій, помилок або неправильних елементів у зображеннях та відео.
 
-![](https://vismaster.eu/wp-content/uploads/2009/12/visual-analytics-process1.png)
+![](https://www.researchgate.net/publication/263224835/figure/fig2/AS:669501238566917@1536632942609/The-dynamic-visual-analytics-process-combines-automatic-and-visual-analysis-methods.png)
 
 ### Визначення типу даних (структуровані, напівструктуровані, неструктуровані)
 
@@ -129,6 +129,7 @@
 
 **Аналіз часу та динаміки:** Виявлення та аналіз змін в медіа контенті з плином часу.
 
+![](https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/GIS2.jpg)
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
