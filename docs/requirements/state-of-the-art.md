@@ -197,7 +197,7 @@
 
 [Аналіз тексту](https://getthematic.com/insights/content/images/wordpress/2018/10/text-categorization.jpg)
 
-[Аналіз зображень иа відео](https://vismaster.eu/wp-content/uploads/2009/12/visual-analytics-process1.png)
+[Аналіз зображень та відео](https://vismaster.eu/wp-content/uploads/2009/12/visual-analytics-process1.png)
 
 [Відміна структурованих від неструктурованихх даних](https://k21academy.com/wp-content/uploads/2020/10/structured-data-vs-unstructured-data.png)
 
