@@ -101,7 +101,7 @@
 
 **Виявлення аномалій та артефактів:** Виявлення аномалій, помилок або неправильних елементів у зображеннях та відео.
 
-![](https://www.researchgate.net/publication/328232652/figure/fig1/AS:680817470734338@1539330942618/sual-Analytics-Process-Abstract-overview-of-different-stages-and-their-transitions.ppm)
+![](https://vismaster.eu/wp-content/uploads/2009/12/visual-analytics-process1.png)
 
 ### Визначення типу даних (структуровані, напівструктуровані, неструктуровані)
 
