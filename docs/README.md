@@ -3,7 +3,7 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [2023] [students KPI]"
+footer: "ECL 2.0 Licensed | Copyright © [2023] [Nikita Volkovskyi]"
 ---
 
 **Виконали:** 
