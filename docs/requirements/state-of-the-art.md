@@ -94,6 +94,7 @@
 **Обрізка та векторизація тексту:** Обрізка може включати видалення надмірних прогалин або символів. Векторизація перетворює текстові дані у числовий формат, наприклад, за допомогою методів "мішка слів" або TF-IDF.
 
 ![](https://getthematic.com/insights/content/images/wordpress/2018/10/text-categorization.jpg)
+
 Аналіз тексту [[1]](#link1)
 
 ### Аналіз зображень та відео:
@@ -103,6 +104,7 @@
 **Виявлення аномалій та артефактів:** Виявлення аномалій, помилок або неправильних елементів у зображеннях та відео.
 
 ![](https://vismaster.eu/wp-content/uploads/2009/12/visual-analytics-process1.png)
+
 Аналіз зображень та відео [[2]](#link2)
 
 ### Визначення типу даних (структуровані, напівструктуровані, неструктуровані)
@@ -114,6 +116,7 @@
 **Робота з неструктурованими даними:** Неструктуровані дані не мають попередньо визначеного формату і можуть включати тексти з соціальних мереж, огляди продуктів, аудіо- та відеофайли, зображення та інше. Обробка таких даних вимагає спеціальних методів і алгоритмів аналізу.
 
 ![](https://k21academy.com/wp-content/uploads/2020/10/structured-data-vs-unstructured-data.png)
+
 Різниця структурованих даних від неструктурованих [[3]](#link3)
 
 ### Використання методів обробки природної мови (NLP) 
@@ -125,6 +128,7 @@
 **Аналіз настроїв (Sentiment Analysis):** Цей метод визначає тон і настрій тексту, зазвичай вказуючи, чи є він позитивним, негативним або нейтральним.
 
 ![](https://www.shaip.com/wp-content/uploads/2022/10/How-NLP-Works-760px.jpg)
+
 Як працює NLP [[4]](#link4)
 
 ### Географічний аналіз та обробка метаданих:
@@ -134,6 +138,7 @@
 **Аналіз часу та динаміки:** Виявлення та аналіз змін в медіа контенті з плином часу.
 
 ![](https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/GIS2.jpg)
+
 Система географічного аналізу [[5]](#link5)
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
@@ -200,7 +205,7 @@
 
 [Третинне джерело інформації](https://uk.wikipedia.org/wiki/%D0%A2%D1%80%D0%B5%D1%82%D0%B8%D0%BD%D0%BD%D0%B5_%D0%B4%D0%B6%D0%B5%D1%80%D0%B5%D0%BB%D0%BE_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97)
 
-1. <a name="link1" href="https://getthematic.com/insights/content/images/wordpress/2018/10/text-categorization.jpg">Аналіз тесту</a>
+1. <a name="link1" href="https://getthematic.com/insights/content/images/wordpress/2018/10/text-categorization.jpg">Аналіз тексту</a>
 2. <a name="link2" href="https://vismaster.eu/wp-content/uploads/2009/12/visual-analytics-process1.png">Аналіз зображень та відео</a>
 3. <a name="link3" href="https://k21academy.com/wp-content/uploads/2020/10/structured-data-vs-unstructured-data.png">Різниця структурованих даних від неструктурованих</a>
 4. <a name="link4" href="https://www.shaip.com/wp-content/uploads/2022/10/How-NLP-Works-760px.jpg">Як працює NLP</a>
