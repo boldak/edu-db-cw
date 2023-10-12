@@ -22,7 +22,7 @@
 
 [FAQ,ЧаПи](https://uk.wikipedia.org/wiki/FAQ) - підбірка часто задаваних питань на певну тему та відповідей на них, яка створюється переважно для того, щоб не треба було постійно відповідати на одні й ті ж запитання
 
-*Інші визначення розміщені в документі **[Аналіз предметної області](https://github.com/VladiusVostokus/Media-content-analysis-system_DB/blob/Vladik/docs/requirements/state-of-the-art.md#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96-%D0%B2%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F)**
++Інші визначення розміщені в документі **[Аналіз предметної області](https://github.com/VladiusVostokus/Media-content-analysis-system_DB/blob/Vladik/docs/requirements/state-of-the-art.md#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96-%D0%B2%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F)**
 
 
 ### Посилання
