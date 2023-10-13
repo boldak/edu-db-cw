@@ -894,7 +894,7 @@
          - BanUser_NoMatchingUser_EXC - введені дані не відповідають жодному користувачеві</br>
          - BanUser_UserHasBeenRemoved_EXC - користувача видалено з системи</br>
          - BanUser_UserHasBeenBanned_EXC - користувача вже заблоковано</br>
-         - BanUser_CancelButton_EXC -адміністратор натиснув кнопку "Відміна"
+         - BanUser_CancelButton_EXC - адміністратор натиснув кнопку "Відміна"
         </td>
     </tr>
     <tr>
