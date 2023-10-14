@@ -54,13 +54,13 @@
 
 [5] [Інтерфейс користувача](https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81_%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%B2%D0%B0%D1%87%D0%B0)
 
-[6] [Плагін](https://gb.ru/blog/chto-takoe-plagin/)
+[6] [Плагін](https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%B3%D1%96%D0%BD)
 
-[7] [Утиліта](https://secretmag.ru/enciklopediya/chto-takoe-utilita-obyasnyaem-prostymi-slovami.htm)
+[7] [Утиліта](https://uk.wikipedia.org/wiki/%D0%A3%D1%82%D0%B8%D0%BB%D1%96%D1%82%D0%B0)
 
 [8] [Кешування даних](http://yoip.com.ua/keshuvannya-danih/)
 
-[9] [FURPS](https://dic.academic.ru/dic.nsf/ruwiki/1429685)
+[9] [FURPS](https://en.wikipedia.org/wiki/FURPS)
 
 ## Короткий зміст
 
