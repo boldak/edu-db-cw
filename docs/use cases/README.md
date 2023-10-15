@@ -1,16 +1,6 @@
 # Модель прецедентів
 
-В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
-
-*Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.*
-
-
-
-Вбудовування зображень діаграм здійснюється з використанням сервісу [plantuml.com](https://plantuml.com/). 
-
-В markdown-файлі використовується опис діаграми
-
-```md
+## Загальна схема
 
 <center style="
     border-radius:4px;
@@ -19,67 +9,11 @@
     padding: 1em;"
 >
 
-@startuml
-
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
-
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
-
-
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
-
-@enduml
-
-**Діаграма прецедентів**
+**Тут може бути ваша діаграма**
 
 </center>
-```
 
-яка буде відображена наступним чином
+## Звичайний користувач
 
 <center style="
     border-radius:4px;
@@ -88,62 +22,687 @@
     padding: 1em;"
 >
 
-@startuml
-
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
-
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
-
-
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
-
-@enduml
-
-**Діаграма прецедентів**
+**Тут може бути ваша діаграма**
 
 </center>
 
+## Менеджер
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+**Тут може бути ваша діаграма**
+
+</center>
+
+## Адміністратор
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+**Тут може бути ваша діаграма**
+
+</center>
+
+## Сценарії використання
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>SignUpAccount</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Створити обліковий запис</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>LogIntoAccount</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Увійти в обліковий запис</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>EditAccount</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Редагувати обліковий запис</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeleteAccount</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Видалити обліковий запис</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>CreateTask</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Створити задачу</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>EditTask</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Редагувати задачу</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>SetTaskDeadlineNotif</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Встановити отримку сповіщень про дедлайн задачі</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeleteTask</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Видалити задачу</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td> </td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>WriteToSupport</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Написати в службу підтримки</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>CreateProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Створити проєкт</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>EditProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Редагувати проєкт</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeletePoject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Видалити проєкт</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>AddUserToProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Додати користувача до проєкту</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>RemoveUserFromProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Видалити користувача з проєкту</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>ApplyTemplateToProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Застосувати шаблон до проєкту</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>CreateProjectTemplate</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Створити шаблон проєкту</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeleteProjectTemplate</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Видалити шаблон проєкту</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>CreateBoard</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Створити дошку</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeleteBoard</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Видалити дошку</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>BlockProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Заблокувати проєкт</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>UnblockProject</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Розблокувати проєкт</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>BanUser</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Заблокувати користувача</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>UnbanUser</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Розблокувати користувача</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>EditSystemSettings</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Редагувати налаштування системи</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td></td>
+    </tr>
+</table>
