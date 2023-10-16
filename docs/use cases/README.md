@@ -286,21 +286,55 @@ stop;
     </tr>
      <tr>
         <td><b>Учасники:</b></td>
-        <td></td>
+        <td>Користувач, система</td>
     </tr>
      <tr>
         <td><b>Передумови:</b></td>
-        <td></td>
+        <td>
+            - Користувач авторизований
+            <br>- Користувач є членом проєкту
+        </td>
     </tr>
      <tr>
         <td><b>Результат:</b></td>
-        <td></td>
+        <td>Сповіщення про дедлайн задачі</td>
     </tr>
      <tr>
         <td><b>Виключні ситуації:</b></td>
-        <td></td>
+        <td>
+            - SetTaskDeadlineNotif_NoEmail_EXC - користувач не вказав email адресу в налаштуваннях облікового запису
+            <br>- SetTaskDeadlineNotif_Restricted_EXC - користувач заборонив відправку йому сповіщень
+            <br>- SetTaskDeadlineNotif_NoSettings_EXC - користувач не встановив налаштування сповіщення
+            <br>- SetTaskDeadlineNotif_CancelButton_EXC - користувач натиснув кнопку "Відміна"
+        </td>
     </tr>
 </table>
+
+@startuml
+
+|Користувач|
+start;
+:Обирає проєкт і задачу та натискає\nна кнопку "Встановити сповіщення";
+
+|Система|
+:Відкриває форму із\nналаштуваннями сповіщення;
+
+|Користувач|
+:Змінює налаштування сповіщення:\nчас та частоту надсилання;
+:Натискає на кнопку "Підтвердити"
+<font color="red"><b> SetTaskDeadlineNotif_CancelButton_EXC;
+
+|Система|
+:Перевіряє наявність налаштувань сповіщення,
+email адреси та дозвіл надсилати сповіщення
+<font color="red"><b> SetTaskDeadlineNotif_NoSettings_EXC
+<font color="red"><b> SetTaskDeadlineNotif_NoEmail_EXC
+<font color="red"><b> SetTaskDeadlineNotif_Restricted_EXC;
+
+:Встановлює сповіщення про дедлайн задачі;
+
+stop;
+@enduml
 
 <table>
     <tr>
