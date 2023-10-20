@@ -22,7 +22,38 @@
     padding: 1em;"
 >
 
-**Тут може бути ваша діаграма**
+@startuml
+actor "Користувач" as User
+
+usecase "<b>AccountManage</b>\nКерувати обліковим записом" as AccountManage
+usecase "<b>TaskManage</b>\nКерувати задачами" as TaskManage
+usecase "<b>WriteToSupport</b>\nНаписати в підтримку" as WriteToSupport
+
+User -l-> AccountManage
+User -r-> TaskManage
+User -d-> WriteToSupport
+
+usecase "<b>SignUpAccount</b>\nСтворити обліковий запис" as SignUpAccount
+usecase "<b>LogIntoAccount</b>\nУвійти в обліковий запис" as LogIntoAccount
+usecase "<b>EditAccount</b>\nРедагувати обліковий запис" as EditAccount
+usecase "<b>DeleteAccount</b>\nВидалити обліковий запис" as DeleteAccount
+
+SignUpAccount ..d.> AccountManage :extends
+LogIntoAccount ..r.> AccountManage :extends
+EditAccount ..u.> AccountManage :extends
+DeleteAccount ..u.> AccountManage :extends
+
+usecase "<b>CreateTask</b>\nСтворити задачу" as CreateTask
+usecase "<b>EditTask</b>\nРедагувати задачу" as EditTask
+usecase "<b>SetTaskDeadlineNotifications</b>\nВстановити отримку сповіщень" as SetTaskDeadlineNotifications
+usecase "<b>DeleteTask</b>\nВидалити задачу" as DeleteTask
+
+CreateTask ..d.> TaskManage :extends
+EditTask ..l.> TaskManage :extends
+SetTaskDeadlineNotifications ..u.> TaskManage :extends
+DeleteTask ..u.> TaskManage :extends
+
+@enduml
 
 </center>
 
