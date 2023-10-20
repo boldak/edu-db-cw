@@ -35,7 +35,53 @@
     padding: 1em;"
 >
 
-**Тут може бути ваша діаграма**
+@startuml
+  actor "Менеджер" as Manager
+
+  usecase "<b>ProjectManage</b>\nКерувати проєктом" as ProjectManage
+  usecase "<b>CreateProject</b>\nСтворити проєкт" as CreateProject
+  usecase "<b>EditPoject</b>\nРедагувати проєкт" as EditPoject
+  usecase "<b>DeleteProject</b>\nВидаляти проєкт" as DeleteProject
+
+  usecase "<b>TeamManage</b>\nКерувати командою" as TeamManage
+  usecase "<b>AddUserToProject</b>\nДодати користувача\nдо проєкту" as AddUserToProject
+  usecase "<b>RemoveUserFromProject</b>\nВидалити користувача\nз проєкту" as RemoveUserFromProject
+
+  usecase "<b>BoardManage</b>\nКерувати дошкою" as BoardManage
+  usecase "<b>CreateBoard</b>\nСтворити дошку" as CreateBoard
+  usecase "<b>EditBoard</b>\nРедагувати дошку" as EditBoard
+  usecase "<b>DeleteBoard</b>\nВидаляти дошку" as DeleteBoard
+
+  usecase "<b>ProjectTemplateManage</b>\nКерувати шаблоном\nпроєкту" as ProjectTemplateManage
+  usecase "<b>CreateProjectTemplate</b>\nСтворити шаблон проєкту" as CreateProjectTemplate
+  usecase "<b>ApplyTemplateToProject</b>\nЗастосувати шаблон\nдо проєкту" as ApplyTemplateToProject
+  usecase "<b>DeleteProjectTemplate</b>\nВидалити шаблон проєкту" as DeleteProjectTemplate
+
+  usecase "<b>ProjectWorkflowMonitor</b>\nВідстежувати робочий\nпроцес проєкту" as ProjectWorkflowMonitor
+  usecase "<b>DevToolsManage</b>\nКерувати інструментами\nрозробника" as DevToolsManage
+
+  Manager -l-> ProjectManage
+  Manager -d-> TeamManage
+  Manager -u-> DevToolsManage
+  Manager -u-> ProjectWorkflowMonitor
+  Manager -r-> ProjectTemplateManage
+  Manager -d-> BoardManage
+
+  CreateProject ..u.> ProjectManage :extends
+  EditPoject .r.> ProjectManage :extends
+  DeleteProject ..d.> ProjectManage :extends
+
+  AddUserToProject ..u.> TeamManage :extends
+  RemoveUserFromProject ..u.> TeamManage :extends
+
+  CreateProjectTemplate ..d.> ProjectTemplateManage :extends
+  ApplyTemplateToProject ..u.> ProjectTemplateManage :extends
+  DeleteProjectTemplate .l.> ProjectTemplateManage :extends
+
+  CreateBoard ..u.> BoardManage :extends
+  EditBoard ..u.> BoardManage :extends
+  DeleteBoard ..u.> BoardManage :extends
+@enduml
 
 </center>
 
