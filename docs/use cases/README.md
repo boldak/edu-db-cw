@@ -572,21 +572,44 @@ stop;
     </tr>
      <tr>
         <td><b>Учасники:</b></td>
-        <td></td>
+        <td>Користувач, система</td>
     </tr>
      <tr>
         <td><b>Передумови:</b></td>
-        <td> </td>
+        <td>- Користувач авторизований<br>
+	    - Користувач є членом проєкту</td>
     </tr>
      <tr>
         <td><b>Результат:</b></td>
-        <td></td>
+        <td>Видалене завдання</td>
     </tr>
      <tr>
         <td><b>Виключні ситуації:</b></td>
-        <td></td>
+        <td>- DeleteTask_RejectedAcess_EXC - користувач не має дозволу для видалення цієї задачі<br>
+	    - DeleteTask_CancelButton_EXC - користувач натиснув кнопку "Відміна"</td>
     </tr>
 </table>
+
+@startuml
+
+|Користувач|
+start;
+:Обирає проєкт;
+:Обирає задачу і натискає\nна кнопку "Видалити задачу";
+
+|Система|
+:Відображає діалогове\nвікно для підтвердження\nоперації видалення\n<font color="red"><b>DeleteTask_CancelButton_EXC;
+
+|Користувач|
+:Натискає кнопку "Так";
+
+|Система|
+:Перевіряє права користувача\n<font color="red"><b> DeleteTask_RejectedAcess_EXC;
+:Видаляє завдання з проєкту;
+
+|Користувач|
+stop;
+@enduml
 
 <table>
     <tr>
@@ -1276,21 +1299,42 @@ stop;
     </tr>
      <tr>
         <td><b>Учасники:</b></td>
-        <td></td>
+        <td>Адміністратор, система</td>
     </tr>
      <tr>
         <td><b>Передумови:</b></td>
-        <td></td>
+        <td>-Користувач багаторазово неправильно вводить пароль<br>
+	    - Адміністратор виявив підозрілу активність користувача<br>
+	    -Користувач порушує умови використання системи</td>
     </tr>
      <tr>
         <td><b>Результат:</b></td>
-        <td></td>
+        <td>Заблокований користувач</td>
     </tr>
      <tr>
         <td><b>Виключні ситуації:</b></td>
-        <td></td>
+        <td>- BanUser_NoMatchingUser_EXC - введені дані не відповідають жодному користувачеві<br>
+	    - BanUser_UserHasBeenRemoved_EXC - користувача видалено з системи<br>
+	    - BanUser_UserHasBeenBanned_EXC - користувача вже заблоковано<br>
+	    - BanUser_CancelButton_EXC - адміністратор натиснув кнопку "Відміна"</td>
     </tr>
 </table>
+
+@startuml
+
+|Адміністратор|
+start;
+:Фіксує підозрілу\nактивність користувача;
+:Заповнює спеціальну форму\nдля блокування, вказуючи\nпричину та термін дії блокування;
+:Натискає кнопку "Підтвердити"\n<font color="red"><b>BanUser_CancelButton_EXC;
+
+|Система|
+:Перевіряє валідність введених\nадміністратором даних\n<font color="red"><b>BanUser_NoMatchingUser_EXC\n<font color="red"><b>BanUser_UserHasBeenRemoved_EXC\n<font color="red"><b>BanUser_UserHasBeenBanned_EXC;
+:Виконує блокування користувача\nі повідомляє його про це;
+
+|Адміністратор|
+stop;
+@enduml
 
 <table>
     <tr>
@@ -1303,21 +1347,40 @@ stop;
     </tr>
      <tr>
         <td><b>Учасники:</b></td>
-        <td></td>
+        <td>Адміністратор, система</td>
     </tr>
      <tr>
         <td><b>Передумови:</b></td>
-        <td></td>
+        <td>Користувач заблокований</td>
     </tr>
      <tr>
         <td><b>Результат:</b></td>
-        <td></td>
+        <td>Розблокований користувач</td>
     </tr>
      <tr>
         <td><b>Виключні ситуації:</b></td>
-        <td></td>
+        <td>- UnbanUser_NoMatchingUser_EXC - введені дані не відповідають жодному користувачеві<br>
+	    - UnbanUser_UserHasBeenRemoved_EXC - користувача видалено з системи<br>
+	    - UnbanUser_UserHasBeenUnbanned_EXC - користувача вже розблоковано<br>
+	- UnbanUser_CancelButton_EXC - користувач натиснув кнопку "Відміна"</td>
     </tr>
 </table>
+
+@startuml
+
+|Адміністратор|
+start;
+:Фіксує потрібного користувача;
+:Натискає на кнопку\n"Розблокувати користувача";
+:Натискає кнопку "Підтвердити"\n<font color="red"><b>UnbanUser_CancelButton_EXC;
+
+|Система|
+:Перевіряє валідність введених\nадміністратором даних\n<font color="red"><b>UnbanUser_NoMatchingUser_EXC\n<font color="red"><b>UnbanUser_UserHasBeenRemoved_EXC\n<font color="red"><b>UnbanUser_UserHasBeenUnbanned_EXC;
+:Виконує розблокування  користувача\nі повідомляє його про це;
+
+|Адміністратор|
+stop;
+@enduml
 
 <table>
     <tr>
