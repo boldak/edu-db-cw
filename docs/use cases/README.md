@@ -94,7 +94,28 @@
     padding: 1em;"
 >
 
-**Тут може бути ваша діаграма**
+@startuml
+  actor Administrator
+  
+  usecase "<b>BlockProject</b>\nЗаблокувати проєкт" as BlockProject
+  usecase "<b>UnblockProject</b>\nРозблокувати проєкт" as UnblockProject
+  usecase "<b>BanUser</b>\nЗаблокувати користувача" as BanUser
+  usecase "<b>UnbanUser</b>\nРозблокувати користувача" as UnbanUser
+  usecase "<b>EditSystemSettings</b>\nЗмінити системні налаштування" as EditSystemSettings
+  
+  usecase "<b>PermissionsManage</b>\nКерувати дозволами" as PermissionsManage
+  usecase "<b>SystemConfigManage</b>\nКерувати налаштуваннями системи" as SystemConfigManage
+
+  Administrator -d-> PermissionsManage
+  Administrator -d-> SystemConfigManage
+  
+  BlockProject ..u.> PermissionsManage :extends
+  UnblockProject .l.> PermissionsManage :extends
+  BanUser ..u.> PermissionsManage :extends
+  UnbanUser ..u.> PermissionsManage :extends
+  
+  EditSystemSettings ..u.> SystemConfigManage :extends
+@enduml
 
 </center>
 
