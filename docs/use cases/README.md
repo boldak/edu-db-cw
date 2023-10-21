@@ -9,7 +9,45 @@
     padding: 1em;"
 >
 
-**Тут може бути ваша діаграма**
+@startuml
+  actor "Користувач" as User
+  actor "Менеджер" as Manager
+  actor "Адміністратор" as Admin
+  
+  Manager --u-|> User
+  Admin -u-|> Manager
+  
+  usecase "<b>AccountManage</b>\nКерувати обліковим записом" as AccountManage
+  usecase "<b>TaskManage</b>\nКерувати задачами" as TaskManage
+  usecase "<b>WriteToSupport</b>\nНаписати в підтримку" as WriteToSupport
+  usecase "<b>ProjectManage</b>\nКерувати проєктом" as ProjectManage
+  usecase "<b>TeamManage</b>\nКерувати командою" as TeamManage
+  usecase "<b>BoardManage</b>\nКерувати дошкою" as BoardManage
+  usecase "<b>ProjectTemplateManage</b>\nКерувати шаблоном\nпроєкту" as ProjectTemplateManage
+  usecase "<b>ProjectWorkflowMonitor</b>\nВідстежувати робочий\nпроцес проєкту" as ProjectWorkflowMonitor
+  usecase "<b>DevToolsManage</b>\nКерувати інструментами\nрозробника" as DevToolsManage
+  usecase "<b>PermissionsManage</b>\nКерувати дозволами" as PermissionsManage
+  usecase "<b>SystemConfigManage</b>\nКерувати налаштуваннями\nсистеми" as SystemConfigManage
+  
+  User -u-> AccountManage
+  User -l-> TaskManage
+  User -r-> WriteToSupport
+  
+  Manager -r-> ProjectTemplateManage
+  Manager -l-> TeamManage
+  Manager -u-> DevToolsManage
+  Manager -u-> ProjectWorkflowMonitor
+  TaskManage -[hidden]-> DevToolsManage
+  WriteToSupport -[hidden]-> ProjectWorkflowMonitor
+  
+  Manager -d-> ProjectManage
+  Manager -d-> BoardManage
+  BoardManage -[hidden]-> SystemConfigManage
+  ProjectManage <-[hidden]- PermissionsManage
+  Admin -r-> PermissionsManage
+  Admin -l-> SystemConfigManage
+  
+@enduml
 
 </center>
 
@@ -126,7 +164,7 @@ DeleteTask ..u.> TaskManage :extends
 >
 
 @startuml
-  actor Administrator
+  actor "Адміністратор" as Administrator
   
   usecase "<b>BlockProject</b>\nЗаблокувати проєкт" as BlockProject
   usecase "<b>UnblockProject</b>\nРозблокувати проєкт" as UnblockProject
