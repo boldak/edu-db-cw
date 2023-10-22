@@ -1381,22 +1381,53 @@ stop;
     </tr>
      <tr>
         <td><b>Учасники:</b></td>
-        <td></td>
+        <td>Адміністратор, система</td>
     </tr>
      <tr>
         <td><b>Передумови:</b></td>
-        <td></td>
+        <td>
+        - Адміністратор авторизований<br/>
+        - Проєкт заблокований в системі</td>
     </tr>
      <tr>
         <td><b>Результат:</b></td>
-        <td></td>
+        <td>Розблокований проєкт</td>
     </tr>
      <tr>
         <td><b>Виключні ситуації:</b></td>
         <td>
+        - UnblockProject_ProjectHasBeenRemoved_EXC - проєкт видалено з системи<br/>
+        - UnblockProject_ProjectHasBeenUnblocked_EXC - проєкт вже розблоковано<br/>
+        - UnblockProject_CancelButton_EXC - адміністратор натиснув кнопку "Відміна"
         </td>
     </tr>
 </table>
+
+@startuml
+
+|Адміністратор|
+start;
+:Переходить у розділ \n"Заблоковані проєкти" \nта вибирає потрібний \nдля розблокування проєкт;
+:Натискає кнопку \n"Розблокувати проєкт";
+
+|Система|
+:Відкриває вікно підтвердження \nрозблокування проєкту;
+
+|Адміністратор|
+:Натискає кнопку "Підтвердити"
+<font color="red"><b> UnblockProject_CancelButton_EXC;
+
+|Система|
+:Перевіряє валідність 
+обраного адміністратором проєкту
+<font color="red"><b> UnblockProject_ProjectHasBeenRemoved_EXC
+<font color="red"><b> UnblockProject_ProjectHasBeenUnblocked_EXC;
+
+:Здійснює операцію розблокування й \nповідомляє менеджера цього проєкту \nта адміністратора про успішно \nрозблокований проєкт;
+
+|Адміністратор|
+stop;
+@enduml
 
 <table>
     <tr>
