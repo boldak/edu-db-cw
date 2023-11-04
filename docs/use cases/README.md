@@ -18,6 +18,7 @@
   Admin -u-|> Manager
   
   usecase "<b>AccountManage</b>\nКерувати обліковим записом" as AccountManage
+  usecase "<b>NotificationManage</b>\nКерувати сповіщеннями" as NotificationManage
   usecase "<b>TaskManage</b>\nКерувати задачами" as TaskManage
   usecase "<b>WriteToSupport</b>\nНаписати в підтримку" as WriteToSupport
   usecase "<b>ProjectManage</b>\nКерувати проєктом" as ProjectManage
@@ -30,6 +31,7 @@
   usecase "<b>SystemConfigManage</b>\nКерувати налаштуваннями\nсистеми" as SystemConfigManage
   
   User -u-> AccountManage
+  User -u-> NotificationManage
   User -l-> TaskManage
   User -r-> WriteToSupport
   
@@ -64,10 +66,12 @@
 actor "Користувач" as User
 
 usecase "<b>AccountManage</b>\nКерувати обліковим записом" as AccountManage
+usecase "<b>NotificationManage</b>\nКерувати сповіщеннями" as NotificationManage
 usecase "<b>TaskManage</b>\nКерувати задачами" as TaskManage
 usecase "<b>WriteToSupport</b>\nНаписати в підтримку" as WriteToSupport
 
 User -l-> AccountManage
+User -u-> NotificationManage
 User -r-> TaskManage
 User -d-> WriteToSupport
 
@@ -81,14 +85,18 @@ LogIntoAccount ..r.> AccountManage :extends
 EditAccount ..u.> AccountManage :extends
 DeleteAccount ..u.> AccountManage :extends
 
+usecase "<b>SetNotification</b>\nПідписатись на сповіщення" as SetNotification
+usecase "<b>DeleteNotification</b>\nСкасувати підписку на сповіщення" as DeleteNotification
+
+SetNotification ..d.> NotificationManage :extends
+DeleteNotification ..l.> NotificationManage :extends
+
 usecase "<b>CreateTask</b>\nСтворити задачу" as CreateTask
 usecase "<b>EditTask</b>\nРедагувати задачу" as EditTask
-usecase "<b>SetTaskDeadlineNotifications</b>\nВстановити отримку сповіщень" as SetTaskDeadlineNotifications
 usecase "<b>DeleteTask</b>\nВидалити задачу" as DeleteTask
 
-CreateTask ..d.> TaskManage :extends
+CreateTask ..u.> TaskManage :extends
 EditTask ..l.> TaskManage :extends
-SetTaskDeadlineNotifications ..u.> TaskManage :extends
 DeleteTask ..u.> TaskManage :extends
 
 @enduml
@@ -539,69 +547,6 @@ stop;
 <table>
     <tr>
         <td><b>ID</b></td>
-        <td><code>SetTaskDeadlineNotif</code></td>
-    </tr>
-    <tr>
-        <td><b>Назва:</b></td>
-        <td>Встановити отримку сповіщень про дедлайн задачі</td>
-    </tr>
-     <tr>
-        <td><b>Учасники:</b></td>
-        <td>Користувач, система</td>
-    </tr>
-     <tr>
-        <td><b>Передумови:</b></td>
-        <td>
-            - Користувач авторизований
-            <br>- Користувач є членом проєкту
-        </td>
-    </tr>
-     <tr>
-        <td><b>Результат:</b></td>
-        <td>Сповіщення про дедлайн задачі</td>
-    </tr>
-     <tr>
-        <td><b>Виключні ситуації:</b></td>
-        <td>
-            - SetTaskDeadlineNotif_NoEmail_EXC - користувач не вказав email адресу в налаштуваннях облікового запису
-            <br>- SetTaskDeadlineNotif_Restricted_EXC - користувач заборонив відправку йому сповіщень
-            <br>- SetTaskDeadlineNotif_NoSettings_EXC - користувач не встановив налаштування сповіщення
-            <br>- SetTaskDeadlineNotif_CancelButton_EXC - користувач натиснув кнопку "Відміна"
-        </td>
-    </tr>
-</table>
-
-@startuml
-
-|Користувач|
-start;
-:Обирає проєкт і задачу та натискає\nна кнопку "Встановити сповіщення";
-
-|Система|
-:Відкриває форму із\nналаштуваннями сповіщення;
-
-|Користувач|
-:Змінює налаштування сповіщення:\nчас та частоту надсилання;
-:Натискає на кнопку "Підтвердити"
-<font color="red"><b> SetTaskDeadlineNotif_CancelButton_EXC;
-
-|Система|
-:Перевіряє наявність налаштувань сповіщення,
-email адреси та дозвіл надсилати сповіщення
-<font color="red"><b> SetTaskDeadlineNotif_NoSettings_EXC
-<font color="red"><b> SetTaskDeadlineNotif_NoEmail_EXC
-<font color="red"><b> SetTaskDeadlineNotif_Restricted_EXC;
-
-:Встановлює сповіщення про дедлайн задачі;
-
-|Користувач|
-stop;
-
-@enduml
-
-<table>
-    <tr>
-        <td><b>ID</b></td>
         <td><code>DeleteTask</code></td>
     </tr>
     <tr>
@@ -649,6 +594,110 @@ start;
 |Система|
 :Перевіряє права користувача\n<font color="red"><b> DeleteTask_RejectedAcess_EXC;
 :Видаляє завдання з проєкту;
+
+|Користувач|
+stop;
+@enduml
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>SetNotification</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Підписатись на сповіщення</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td>Користувач, система</td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td>- Користувач є членом проєкту</td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td>Підписка на сповіщення</td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>
+            - SetNotification_NoEmail_EXC - користувач не вказав email адресу в налаштуваннях облікового запису
+            <br>- SetNotification_Restricted_EXC - користувач заборонив відправку йому сповіщень
+            <br>- SetNotification_NoSettings_EXC - користувач не встановив обов'язкові налаштування сповіщення
+            <br>- SetNotification_CancelButton_EXC - користувач натиснув кнопку "Відміна"
+        </td>
+    </tr>
+</table>
+
+@startuml
+
+|Користувач|
+start;
+:Переходить у свій обліковий запис та\nнатискає на кнопку "Встановити сповіщення";
+
+|Система|
+:Відкриває форму із\nналаштуваннями сповіщення;
+
+|Користувач|
+:Встановлює обов'язкові налаштування сповіщення:\nчас та частоту надсилання, прив'язку до \nзадач/проєктів/дошок/інших користувачів;
+:Натискає на кнопку "Підтвердити"
+<font color="red"><b> SetNotification_CancelButton_EXC;
+
+|Система|
+:Перевіряє наявність налаштувань сповіщення,
+email адреси та дозвіл надсилати сповіщення
+<font color="red"><b> SetNotification_NoSettings_EXC
+<font color="red"><b> SetNotification_NoEmail_EXC
+<font color="red"><b> SetNotification_Restricted_EXC;
+
+:Підписує користувача на отримання сповіщень;
+
+|Користувач|
+stop;
+@enduml
+
+<table>
+    <tr>
+        <td><b>ID</b></td>
+        <td><code>DeleteNotification</code></td>
+    </tr>
+    <tr>
+        <td><b>Назва:</b></td>
+        <td>Скасувати підписку на сповіщення</td>
+    </tr>
+     <tr>
+        <td><b>Учасники:</b></td>
+        <td>Користувач, система</td>
+    </tr>
+     <tr>
+        <td><b>Передумови:</b></td>
+        <td>- Користувач авторизований
+            <br>- Користувач має встановлене сповіщення
+        </td>
+    </tr>
+     <tr>
+        <td><b>Результат:</b></td>
+        <td>Скасована підписка на сповіщення</td>
+    </tr>
+     <tr>
+        <td><b>Виключні ситуації:</b></td>
+        <td>- DeleteNotification_CancelButton_EXC - користувач натиснув кнопку "Відміна"</td>
+    </tr>
+</table>
+
+@startuml
+
+|Користувач|
+start;
+:Переходить у свій обліковий запис та\nнатискає на кнопку "Видалити сповіщення";
+:Обирає необхідне сповіщення для видалення;
+:Натискає на кнопку "Підтвердити"
+<font color="red"><b> DeleteNotification_CancelButton_EXC;
+
+|Система|
+:Скасовує підписку користувача на отримання сповіщень;
 
 |Користувач|
 stop;
