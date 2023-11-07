@@ -1,3 +1,7 @@
+# Проєктування бази даних
+
+## Модель бізнес об'єктів
+
 @startuml
 
 entity Message #0096FF
@@ -121,3 +125,9 @@ Project.description -d-* Project
 Project.status -d-* Project
 
 @enduml
+
+## ER-модель
+
+## Реляційна схема
+
+
