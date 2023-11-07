@@ -94,11 +94,11 @@ entity Project.status
 Label "1,1"-d-"0,*" Tag
 Tag "0,*"-d-"1,1" Task
 Task "       1,1"-d-"0,*" Attachment
-Task "1,1"-r-"0,*    " Review
+Task "1,1"-r-"       0,*" Review
 Participiant "0,*"-u-"1,1" Review
 Review "0,*"-"   0,1" Review
 Task "0,*    "-l-"1,1" Project
-Task "       1,1 "-d-"0,*" Participiant
+Task "1,1 "-d-"0,*" Participiant
 ProjectTemplate -u-|> Project
 Member "0,*"-r-"1,1" Project
 Member "1,1"-r-"0,*" Participiant
