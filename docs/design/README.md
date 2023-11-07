@@ -28,7 +28,6 @@
   
   entity Member.user
   entity Member.role
-  entity Member.projects
   
   entity Role.id
   entity Role.name
@@ -65,13 +64,12 @@
   
   Member.user -d-* Member
   Member.role -d-* Member
-  Member.projects -d-* Member
   
-  Role.id -l-* Role
+  Role.id -r-* Role
   Role.name -l-* Role
   
   Grant.role -l-* Grant
-  Grant.permission -l-* Grant
+  Grant.permission -r-* Grant
   
   Permission.id -u-* Permission
   Permission.rule -u-* Permission
@@ -123,7 +121,7 @@
   Tag "0,*"-d-"1,1" Task
   Task "       1,1"-d-"0,*" Attachment
   Task "1,1"-r-"0,*    " Review
-  Participiant "0,*"-r-"1,1" Review
+  Participiant "0,*"-u-"1,1" Review
   Review "0,*"-"   0,1" Review
   Task "0,*    "-l-"1,1" Project
   Task "       1,1 "-d-"0,*" Participiant
@@ -137,8 +135,8 @@
   Tag.label -d-* Tag
   Tag.task -d-* Tag
   
-  Task.id -u-* Task
-  Task.deadline -u-* Task
+  Task.id -d-* Task
+  Task.deadline -d-* Task
   Task.title -d-* Task
   Task.description -d-* Task
   
