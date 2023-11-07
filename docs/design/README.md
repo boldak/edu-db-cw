@@ -26,33 +26,33 @@
   entity Participiant #FFC300
   entity Member #0096FF
   
-  entity Member.user_id
-  entity Member.role_id
-  entity Member.project_id
+  entity Member.user
+  entity Member.role
+  entity Member.projects
   
-  entity Role.id_serial
-  entity Role.name_vc
+  entity Role.id
+  entity Role.name
 
-  entity Grant.role_id
-  entity Grant.permission_id
+  entity Grant.role
+  entity Grant.permission
 
-  entity Permission.id_serial
+  entity Permission.id
   entity Permission.rule
   
-  entity Notification.user_id
-  entity Notification.message_id
+  entity Notification.user
+  entity Notification.message
   
   entity Message.scheduled
-  entity Message.id_serial
-  entity Message.content_vc
+  entity Message.id
+  entity Message.content
 
-  entity MessageTypes.id_serial
-  entity MessageTypes.template_vc
+  entity MessageTypes.id
+  entity MessageTypes.template
     
-  entity User.system_role
-  entity User.email_vc
-  entity User.login_vc
-  entity User.id_serial
+  entity User.system
+  entity User.email
+  entity User.login
+  entity User.id
 
   User -r- Member
   Member -d- Role
@@ -63,40 +63,40 @@
   Message -u-  Notification
   Message -d-  MessageTypes
   
-  Member.user_id -d-* Member
-  Member.role_id -d-* Member
-  Member.project_id -d-* Member
+  Member.user -d-* Member
+  Member.role -d-* Member
+  Member.projects -d-* Member
   
-  Role.id_serial -l-* Role
-  Role.name_vc -l-* Role
+  Role.id -l-* Role
+  Role.name -l-* Role
   
-  Grant.role_id -l-* Grant
-  Grant.permission_id -l-* Grant
+  Grant.role -l-* Grant
+  Grant.permission -l-* Grant
   
-  Permission.id_serial -u-* Permission
+  Permission.id -u-* Permission
   Permission.rule -u-* Permission
   
-  Notification.user_id -u-* Notification
-  Notification.message_id -u-* Notification
+  Notification.user -u-* Notification
+  Notification.message -u-* Notification
   
   Message.scheduled -u-* Message
-  Message.id_serial -u-* Message
-  Message.content_vc -u-* Message
+  Message.id -u-* Message
+  Message.content -u-* Message
   
-  MessageTypes.id_serial -u-* MessageTypes
-  MessageTypes.template_vc -u-* MessageTypes
+  MessageTypes.id -u-* MessageTypes
+  MessageTypes.template -u-* MessageTypes
   
-  User.system_role -d-* User
-  User.email_vc -d-* User
-  User.login_vc -d-* User
-  User.id_serial -d-* User
+  User.system -d-* User
+  User.email -d-* User
+  User.login -d-* User
+  User.id -d-* User
 
 
   entity Label.id
   entity Label.content
   
-  entity Tag.label_id
-  entity Tag.task_id
+  entity Tag.label
+  entity Tag.task
   
   entity Task.id
   entity Task.deadline
@@ -107,16 +107,16 @@
   entity Attachment.format
   
   entity Review.id
-  entity Review.task_id
-  entity Review.participiant_id
+  entity Review.task
+  entity Review.participiant
   entity Review.content
   
   entity Project.id
   entity Project.title
   entity Project.description
   
-  entity Participiant.member_id
-  entity Participiant.task_id
+  entity Participiant.member
+  entity Participiant.task
   entity Participiant.role
   
   Label -d- Tag
@@ -125,15 +125,15 @@
   Task -r- Review
   Task -l- Project
   Task -d- Participiant
-  ProjectTemplate -u- Project
+  ProjectTemplate -u-|> Project
   Member -r- Project
   Member -r- Participiant
   
   Label.id -d-* Label
   Label.content -d-* Label
 
-  Tag.label_id -d-* Tag
-  Tag.task_id -d-* Tag
+  Tag.label -d-* Tag
+  Tag.task -d-* Tag
   
   Task.id -u-* Task
   Task.deadline -u-* Task
@@ -144,16 +144,16 @@
   Attachment.format -u-* Attachment
   
   Review.id -u-* Review
-  Review.task_id -u-* Review
-  Review.participiant_id -u-* Review
+  Review.task -u-* Review
+  Review.participiant -u-* Review
   Review.content -u-* Review
   
   Project.id -d-* Project
   Project.title -d-* Project
   Project.description -d-* Project
   
-  Participiant.member_id -u-* Participiant
-  Participiant.task_id -u-* Participiant
+  Participiant.member -u-* Participiant
+  Participiant.task -u-* Participiant
   Participiant.role -u-* Participiant
   
 @enduml
