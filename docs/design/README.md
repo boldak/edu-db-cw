@@ -54,14 +54,14 @@
   entity User.login
   entity User.id
 
-  User -r- Member
-  Member -d- Role
-  Role -d- Grant
-  Grant -d- Permission
+  User "1,1"-r-"0,*" Member
+  Member "0,*    "-d-"1,1" Role
+  Role "1,1"-d-"     0,*"  Grant
+  Grant "0,*"-d-"       1,1" Permission
   
-  User -d- Notification
-  Message -u-  Notification
-  Message -d-  MessageTypes
+  User "1,1"-d-"0,*" Notification
+  Message "1,1   "-u- "0,*" Notification
+  Message "0,*"-d-"1,1"  MessageTypes
   
   Member.user -d-* Member
   Member.role -d-* Member
@@ -119,15 +119,17 @@
   entity Participiant.task
   entity Participiant.role
   
-  Label -d- Tag
-  Tag -d- Task
-  Task -d- Attachment
-  Task -r- Review
-  Task -l- Project
-  Task -d- Participiant
+  Label "1,1"-d-"0,*" Tag
+  Tag "0,*"-d-"1,1" Task
+  Task "       1,1"-d-"0,*" Attachment
+  Task "1,1"-r-"0,*    " Review
+  Participiant "0,*"-r-"1,1" Review
+  Review "0,*"-"   0,1" Review
+  Task "0,*    "-l-"1,1" Project
+  Task "       1,1 "-d-"0,*" Participiant
   ProjectTemplate -u-|> Project
-  Member -r- Project
-  Member -r- Participiant
+  Member "0,*"-r-"1,1" Project
+  Member "1,1"-r-"0,*" Participiant
   
   Label.id -d-* Label
   Label.content -d-* Label
