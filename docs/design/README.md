@@ -154,14 +154,10 @@ package NotificationManage {
         scheduledAt: timestamp
         createdAt: timestamp
     }
-
-    entity Message_types <<ENTITY>> {
-        id: int
-        template: text
-    }
 }
 
 entity Member <<ENTITY>> {
+    id: int
     createdAt: timestamp
     updatedAt: timestamp
 }
@@ -247,7 +243,6 @@ package ReviewManage {
 User "1,1" -l-- "0,*" Notification
 User "1,1" -r-- "0,*" Member
 Notification "0,*" -d-- "1,1" Message
-Message "0,*" -d-- "1,1" Message_types
 
 Member "0,*" -d-- "1,1" Role
 Member "1,1" -r-- "0,*" Participant
@@ -255,14 +250,14 @@ Role "1,1" -d-- "0,*"  Grant
 Grant "0,*" -d-- "1,1" Permission
 
 Project "1,1" -d-- "0,*" Member
-Project o-r- ProjectTemplate
+Project o-l- ProjectTemplate
 
-Task "0,*" -r-- "1,1" Member
+Task "0,*" -r-- "1,1" Project
 Task "1,1" -r-- "0,*" Attachment
 Task "1,1" -d-- "0,*" Tag
 Tag "0,*" -d-- "1,1" Label
 
-Review "0,*" -d-- "1,1" Task
+Review "0,*" -r-- "1,1" Task
 Review "1,1" -r-- "0,*" Participant
 
 @enduml
