@@ -5,21 +5,20 @@
 @startuml
 
 entity Message #0096FF
-entity MessageTypes #0096FF
 entity User #0096FF
-entity Notification #FFC300
+entity Notification #0096FF
 entity Role #0096FF
-entity Grant #FFC300
+entity Grant #0096FF
 entity Permission #0096FF
 
 entity Label #0096FF
-entity Tag #FFC300
+entity Tag #0096FF
 entity Task #0096FF
 entity Attachment #0096FF
 entity Review #0096FF
 entity Project #0096FF
 entity ProjectTemplate #0096FF
-entity Participiant #FFC300
+entity Participant #0096FF
 entity Member #0096FF
 
 entity Role.id
@@ -32,14 +31,14 @@ entity Message.scheduled_at
 entity Message.id
 entity Message.content
 
-entity MessageTypes.id
-entity MessageTypes.template
-
 entity User.id
 entity User.login
 entity User.email
 entity User.system_role
 entity User.password
+
+entity Member.id
+entity Participant.id
 
 User "1,1"-r-"0,*" Member
 Member "0,*    "-d-"1,1" Role
@@ -48,7 +47,6 @@ Grant "0,*"-d-"       1,1" Permission
 
 User "1,1"-d-"0,*" Notification
 Message "1,1   "-u- "0,*" Notification
-Message "0,*"-d-"1,1"  MessageTypes
 
 Role.id -r-* Role
 Role.name -l-* Role
@@ -60,14 +58,14 @@ Message.scheduled_at -u-* Message
 Message.id -u-* Message
 Message.content -u-* Message
 
-MessageTypes.id -u-* MessageTypes
-MessageTypes.template -u-* MessageTypes
-
 User.email -d-* User
 User.login -d-* User
 User.id -d-* User
 User.system_role -r-* User
 User.password -r-* User
+
+Member.id -d-* Member
+Participant.id -u-* Participant
 
 
 entity Label.id
@@ -95,13 +93,13 @@ Label "1,1"-d-"0,*" Tag
 Tag "0,*"-d-"1,1" Task
 Task "       1,1"-d-"0,*" Attachment
 Task "1,1"-r-"       0,*" Review
-Participiant "0,*"-u-"1,1" Review
+Participant "0,*"-u-"1,1" Review
 Review "0,*"-"   0,1" Review
 Task "0,*    "-l-"1,1" Project
-Task "1,1 "-d-"0,*" Participiant
+Task "1,1 "-d-"0,*" Participant
 ProjectTemplate -u-|> Project
 Member "0,*"-r-"1,1" Project
-Member "1,1"-r-"0,*" Participiant
+Member "1,1"-r-"0,*" Participant
 
 Label.id -d-* Label
 Label.content -d-* Label
@@ -182,6 +180,7 @@ ordinary_user .d.> Role: instanceOf
     }
 }
 entity Participant <<ENTITY>> {
+    id: int
     role: enum
     createdAt: timestamp
 }
@@ -245,7 +244,7 @@ User "1,1" -r-- "0,*" Member
 Notification "0,*" -d-- "1,1" Message
 
 Member "0,*" -d-- "1,1" Role
-Member "1,1" -r-- "0,*" Participant
+Member "1,1\n" -r-- "0,*" Participant
 Role "1,1" -d-- "0,*"  Grant
 Grant "0,*" -d-- "1,1" Permission
 
