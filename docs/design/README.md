@@ -190,6 +190,60 @@ entity Participant <<ENTITY>> {
     createdAt: timestamp
 }
 
+package ProgectManage {
+    entity Project <<ENTITY>> { 
+              id: int
+              title: text
+              status: enum
+              desctiption: text
+              logo: image
+              createdAt: timestamp
+              updatedAt: timestamp
+              startDate: timestamp
+              endDate: timestamp
+    }
+  
+    entity ProjectTemplate <<ENTITY>> {
+    }
+
+}
+
+package TaskManage {
+    entity Task <<ENTITY>> { 
+              id: int
+              title: text
+              status: text
+              desctiption: text
+              deadline: timestamp
+              createdAt: timestamp
+              updatedAt: timestamp
+    }
+
+    entity Tag <<ENTITY>> {
+    }
+
+    entity Label <<ENTITY>> {
+               id: int
+               content: text
+    }
+}
+
+entity Attachment <<ENTITY>> {
+                id: int
+                url: image
+                format: enum
+                createdAt: timestamp
+}
+
+package ReviewManage {
+    entity Review <<ENTITY>> { 
+              id: int
+              content: text
+              createdAt: timestamp
+              updatedAt: timestamp
+    }
+}
+
 User "1,1" -l-- "0,*" Notification
 User "1,1" -r-- "0,*" Member
 Notification "0,*" -d-- "1,1" Message
@@ -199,6 +253,17 @@ Member "0,*" -d-- "1,1" Role
 Member "1,1" -r-- "0,*" Participant
 Role "1,1" -d-- "0,*"  Grant
 Grant "0,*" -d-- "1,1" Permission
+
+Project "1,1" -d-- "0,*" Member
+Project o-r- ProjectTemplate
+
+Task "0,*" -r-- "1,1" Member
+Task "1,1" -r-- "0,*" Attachment
+Task "1,1" -d-- "0,*" Tag
+Tag "0,*" -d-- "1,1" Label
+
+Review "0,*" -d-- "1,1" Task
+Review "1,1" -r-- "0,*" Participant
 
 @enduml
 
