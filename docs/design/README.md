@@ -160,12 +160,12 @@ entity Participant <<ENTITY>> {
     createdAt: timestamp
 }
 
-package ProgectManage {
+package ProjectManage {
     entity Project <<ENTITY>> { 
               id: int
               title: text
               status: enum
-              desctiption: text
+              description: text
               logo: image
               createdAt: timestamp
               updatedAt: timestamp
@@ -183,7 +183,7 @@ package TaskManage {
               id: int
               title: text
               status: text
-              desctiption: text
+              description: text
               deadline: timestamp
               createdAt: timestamp
               updatedAt: timestamp
