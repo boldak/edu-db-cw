@@ -232,7 +232,7 @@ Task "1,1" -d-- "0,*" Tag
 Tag "0,*" -d-- "1,1" Label
 
 Review "0,*" -r-- "1,1" Task
-Review "1,1" -r-- "0,*" Participant
+Review "0,*" -r-- "1,1" Participant
 
 @enduml
 
