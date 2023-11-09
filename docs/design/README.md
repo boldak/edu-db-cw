@@ -263,3 +263,4 @@ Review "1,1" -r-- "0,*" Participant
 
 ## Реляційна схема
 
+![relational_scheme](./relational_scheme.png)
