@@ -112,8 +112,6 @@ package AccountManage {
               email: text
               avatar: image
               systemRole: enum
-              createdAt: timestamp
-              updatedAt: timestamp 
     }
 }
 
@@ -125,14 +123,11 @@ package NotificationManage {
         id: int
         content: text
         scheduledAt: timestamp
-        createdAt: timestamp
     }
 }
 
 entity Member <<ENTITY>> {
     id: int
-    createdAt: timestamp
-    updatedAt: timestamp
 }
 
 package PermissionManage {
@@ -150,14 +145,12 @@ ordinary_user .d.> Role: instanceOf
 
     entity Permission <<ENTITY>> {
         id: int
-        createdAt: timestamp
         rule: text
     }
 }
 entity Participant <<ENTITY>> {
     id: int
     role: enum
-    createdAt: timestamp
 }
 
 package ProjectManage {
@@ -167,8 +160,6 @@ package ProjectManage {
               status: enum
               description: text
               logo: image
-              createdAt: timestamp
-              updatedAt: timestamp
               startDate: timestamp
               endDate: timestamp
     }
@@ -185,8 +176,6 @@ package TaskManage {
               status: text
               description: text
               deadline: timestamp
-              createdAt: timestamp
-              updatedAt: timestamp
     }
 
     entity Tag <<ENTITY>> {
@@ -202,15 +191,12 @@ entity Attachment <<ENTITY>> {
                 id: int
                 url: image
                 format: enum
-                createdAt: timestamp
 }
 
 package ReviewManage {
     entity Review <<ENTITY>> { 
               id: int
               content: text
-              createdAt: timestamp
-              updatedAt: timestamp
     }
 }
 
