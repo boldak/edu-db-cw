@@ -21,24 +21,17 @@ entity ProjectTemplate #0096FF
 entity Participant #0096FF
 entity Member #0096FF
 
-entity Role.id
 entity Role.name
 
-entity Permission.id
 entity Permission.role
 
 entity Message.scheduled_at
-entity Message.id
 entity Message.content
 
-entity User.id
 entity User.login
 entity User.email
 entity User.system_role
 entity User.password
-
-entity Member.id
-entity Participant.id
 
 User "1,1"-r-"0,*" Member
 Member "0,*    "-d-"1,1" Role
@@ -48,43 +41,30 @@ Grant "0,*"-d-"       1,1" Permission
 User "1,1"-d-"0,*" Notification
 Message "1,1   "-u- "0,*" Notification
 
-Role.id -r-* Role
 Role.name -l-* Role
 
-Permission.id -u-* Permission
 Permission.role -u-* Permission
 
 Message.scheduled_at -u-* Message
-Message.id -u-* Message
 Message.content -u-* Message
 
 User.email -d-* User
 User.login -d-* User
-User.id -d-* User
 User.system_role -r-* User
-User.password -r-* User
+User.password -u-* User
 
-Member.id -d-* Member
-Participant.id -u-* Participant
-
-
-entity Label.id
 entity Label.content
 
-entity Task.id
 entity Task.deadline
 entity Task.title
 entity Task.description
 entity Task.status
 
-entity Attachment.id
 entity Attachment.url
 entity Attachment.format
 
-entity Review.id
 entity Review.content
 
-entity Project.id
 entity Project.title
 entity Project.description
 entity Project.status
@@ -93,7 +73,7 @@ Label "1,1"-d-"0,*" Tag
 Tag "0,*"-d-"1,1" Task
 Task "       1,1"-d-"0,*" Attachment
 Task "1,1"-r-"       0,*" Review
-Participant "0,*"-u-"1,1" Review
+Participant "1,1"-u-"0,*" Review
 Review "0,*"-"   0,1" Review
 Task "0,*    "-l-"1,1" Project
 Task "1,1 "-d-"0,*" Participant
@@ -101,23 +81,18 @@ ProjectTemplate -u-|> Project
 Member "0,*"-r-"1,1" Project
 Member "1,1"-r-"0,*" Participant
 
-Label.id -d-* Label
 Label.content -d-* Label
 
-Task.id -d-* Task
 Task.deadline -d-* Task
 Task.title -d-* Task
 Task.description -d-* Task
 Task.status -d-* Task
 
-Attachment.id -u-* Attachment
 Attachment.url -u-* Attachment
 Attachment.format -u-* Attachment
 
-Review.id -u-* Review
 Review.content -u-* Review
 
-Project.id -d-* Project
 Project.title -d-* Project
 Project.description -d-* Project
 Project.status -d-* Project
