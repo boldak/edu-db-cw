@@ -9,85 +9,49 @@
     
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
+    actor "Адміністратор" as Administrator
+    actor "Редактор" as Editor
+    actor "Користувач" as User
+    actor "Гість" as Guest
+
+
+    usecase "<b>Data Review</b>\nПеревірка даних, запропонованих\nредактором для публікації" as UC_8
+    usecase "<b>Block User</b>\nБлокування користувача" as UC_9
+    usecase "<b>Grant Edit Permission</b>\nНадання прав" as UC_10
+
+
+
+    usecase  "<b>Update Data</b>\nОновлення існуючих даних на сайті" as UC_3
+    usecase "<b>Delete Data</b>\nВидалення даних з сайту" as UC_4
+    usecase "<b>Upload Data</b>\nЗавантаження даних на сайт" as UC_6 
+
+
+
+    usecase "<b>User Delete</b>\nВидалення облікового запису користувача" as UC_1
+    usecase "<b>User Get Info</b>\nОтримання інформації про\nзгадки користувачем" as UC_2
+
+    usecase "<b>Sign Up</b>\nЗареєстувати обліковий запис" as LOG_IN
+    usecase "<b>Log In</b>\nУвійти в обліковий запис" as SIGN_IN
+
+
+    Administrator -d-> Editor
+    Editor -r-> User
+    User -u-> Guest
     
-    title
-        <font size=18 color=black>Діаграма прецедентів
-    end title
+    Administrator -l-> UC_8
+    Administrator -u-> UC_9
+    Administrator -u-> UC_10
     
-    actor "Адміністратор" as Administrator #aaaaaa
-    actor "Редактор" as Editor #ddddaa
-    actor "Користувач" as User #eeeeaa
-    actor "Гість" as Guest #eeeeee
+    Editor -d-> UC_3
+    Editor -d-> UC_4
+    Editor -l-> UC_6
     
-    package UCD_Admin {
-        usecase "<b>Data Review</b>\nПеревірка даних, запропонованих\nредактором для публікації" as UC_8 #aaaaaa
-        usecase "<b>Block User</b>\nБлокування користувача" as UC_9 #aaaaaa
-        usecase "<b>Grant Edit Permission</b>\nНадання прав" as UC_10 #aaaaaa
-    }
+    User -d-> UC_1
+    User -r-> UC_2
     
-    package UCD_Editor {
-        usecase  "<b>Update Data</b>\nОновлення існуючих даних на сайті" as UC_3 #ddddaa
-        usecase "<b>Delete Data</b>\nВидалення даних з сайту" as UC_4 #ddddaa
-        usecase "<b>Upload Data</b>\nЗавантаження даних на сайт" as UC_6 #ddddaa
-    }
-    
-    package UCD_User {
-        usecase "<b>User Delete</b>\nВидалення облікового запису користувача" as UC_1 #eeeeaa
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1.1 #eeeeaa
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4.0 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1.0
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2 
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1 
-    
-    package UCD_Guest {
-        usecase "<b>Sigh Up</b>\nзареєстувати обліковий запис" as LOG_IN #eeeeee
-        usecase "<b>Log In</b>\nувійти в обліковий запис" as SIGN_IN #eeeeee
-    }
-    
-    Administrator -> UC_8
-    Administrator -> UC_9
-    Administrator -> UC_10
-    
-    Administrator -down-> Editor
-    
-    Editor -> UC_3
-    Editor -> UC_4
-    Editor -> UC_6
-    
-    Editor -down-> User
-    
-    User -> UC_1
-    User -> UC_1.1
-    User -down-> Guest
-    UC_1.1.0 .u.> UC_1.1 :extends
-    UC_1.1.1 -u-|> UC_1.1.0
-    UC_1.1.2 -u-|> UC_1.1.0
-    UC_1.1.3 -u-|> UC_1.1.0
-    UC_1.1 ..> UC_1.2.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_4.0 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2 .u.> UC_1.1 :extends
-    
-    
-    Guest -> LOG_IN
-    Guest -> SIGN_IN
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
+    Guest -r-> LOG_IN
+    Guest -u-> SIGN_IN
+
 @enduml
 
 **Діаграма прецедентів**
