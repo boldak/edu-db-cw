@@ -93,7 +93,7 @@
     actor "Користувач" as User
 
     usecase "<b>User Delete</b>\nВидалення облікового\nзапису користувача" as UC_1
-    usecase "<b>User Get Info</b>Отримання інформації про\nзгадки" as UC_1.1 
+    usecase "<b>User Get Info</b>\nОтримання інформації про\nзгадки" as UC_1.1 
     
     User -d-> UC_1.1
     User -d-> UC_1
