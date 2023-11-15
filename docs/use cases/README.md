@@ -135,6 +135,7 @@
     border: 1px solid #cfd7e6;
     padding: 1em;"
 >
+    
 @startuml
 
     actor "Адміністратор" as Administrator
