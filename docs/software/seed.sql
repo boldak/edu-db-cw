@@ -1,16 +1,3 @@
-# Реалізація інформаційного та програмного забезпечення
-
-В рамках проекту розробляється:
-
-## SQL-скрипт для створення на початкового наповнення бази даних
-
-_structure.sql_
-```sql
-
-```
-
-_seed.sql_
-```sql
 BEGIN;
 
 INSERT INTO "users" ("login", "password", "phone", "email", "avatar", "system_role", "created_at", "updated_at")
@@ -176,12 +163,3 @@ Omnis dicta aestivus eius. Tremo cur calamitas vorago casus spargo carpo aufero 
 Verecundia eaque volubilis dignissimos deleniti amor chirographum cuius dolorum. Peior sit averto sophismata ante commemoro aspicio uterque dignissimos. Supplanto tabesco coniuratio cetera conservo corrumpo cura.', '2023-10-17T21:28:02.737Z', NULL);
 
 COMMIT;
-```
-
-_setup.sh_
-```shell
-
-```
-
-## RESTfull сервіс для управління даними
-
