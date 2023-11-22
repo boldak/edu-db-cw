@@ -14,7 +14,7 @@ _seed.sql_
 
 ```
 
-_setup.h_
+_setup.sh_
 ```shell
 
 ```
