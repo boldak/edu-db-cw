@@ -6,6 +6,51 @@
 
 _structure.sql_
 ```sql
+-- CreateIndex
+CREATE UNIQUE INDEX "users_login_key" ON "users"("login");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "users_email_key" ON "users"("email");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "users_phone_key" ON "users"("phone");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "notifications_user_id_message_id_key" ON "notifications"("user_id", "message_id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "projects_title_key" ON "projects"("title");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "roles_name_key" ON "roles"("name");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "permissions_rule_key" ON "permissions"("rule");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "grants_role_id_permission_id_key" ON "grants"("role_id", "permission_id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "members_user_id_project_id_key" ON "members"("user_id", "project_id");
+
+-- CreateIndex
+CREATE INDEX "tasks_project_id_idx" ON "tasks"("project_id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "participants_member_id_task_id_key" ON "participants"("member_id", "task_id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "labels_name_key" ON "labels"("name");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "tags_label_id_task_id_key" ON "tags"("label_id", "task_id");
+
+-- CreateIndex
+CREATE INDEX "attachments_task_id_idx" ON "attachments"("task_id");
+
+-- CreateIndex
+CREATE INDEX "reviews_task_id_idx" ON "reviews"("task_id");
+
 -- AddForeignKey
 ALTER TABLE "notifications" ADD CONSTRAINT "notifications_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "users"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
