@@ -15,11 +15,18 @@
   User *-d- User.email 
   User *-l- User.password
   
+  entity Access <<ENTITY>> #6f91c7
+  entity Access.id <<TEXT>>
+  
+  Access *-- Access.id
+  
   entity Role <<ENTITY>> #6f91c7
   entity Role.name <<TEXT>> #d7dbb4
   entity Role.description <<TEXT>> #d7dbb4
   
-  User "0,*"--"1,1" Role
+  User "0,*"--"1,1" Access
+  Access "1,1"--"0,*" Role
+  
   Role *-d- Role.description
   Role *-d- Role.name
   
@@ -29,7 +36,7 @@
   entity MentionReport.creationDate <<DATE>> #b9bd9d
   entity MentionReport.title <<TEXT>> #b9bd9d
   
-  User "0,*"-u-"1,1" MentionReport
+  User "1,1"-u-"0,*" MentionReport
   
   MentionReport *-u- MentionReport.id
   MentionReport *-u- MentionReport.description
@@ -43,7 +50,6 @@
   entity ResultData.source <<TEXT>> #dbce9e
   entity ResultData.body <<TEXT>> #dbce9e
   
-  User "1,1"-d-"0,*" ResultData
   MentionReport "1,1"--"0,*" ResultData
   
   ResultData *-r- ResultData.id 
@@ -66,6 +72,8 @@
   User "1,1"--"0,*" PubReview
   PubReview "0,*"--"1,1" PubRequest
   PubReview *-r- PubReview.status
+  
+  
   
 @enduml
 
