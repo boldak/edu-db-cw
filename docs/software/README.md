@@ -40,7 +40,6 @@ CREATE TABLE "tasks" (
     CONSTRAINT "tasks_pkey" PRIMARY KEY ("id")
 );
 
--- CreateTable
 CREATE TABLE "participants" (
     "id" SERIAL NOT NULL,
     "member_id" INTEGER NOT NULL,
@@ -49,6 +48,36 @@ CREATE TABLE "participants" (
     "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "participants_pkey" PRIMARY KEY ("id")
+
+CREATE TABLE "projects" (
+    "id" SERIAL NOT NULL,
+    "title" VARCHAR(50) NOT NULL,
+    "status" "project_status" NOT NULL DEFAULT 'inactive',
+    "start_date" TIMESTAMP NOT NULL,
+    "end_date" TIMESTAMP,
+    "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP,
+    "logo" VARCHAR(200),
+    "description" VARCHAR(4000),
+
+    CONSTRAINT "projects_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "roles" (
+    "id" SERIAL NOT NULL,
+    "name" VARCHAR(45) NOT NULL,
+
+    CONSTRAINT "roles_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "permissions" (
+    "id" SERIAL NOT NULL,
+    "rule" VARCHAR(45) NOT NULL,
+    "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "permissions_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex
