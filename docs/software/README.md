@@ -6,6 +6,14 @@
 
 _structure.sql_
 ```sql
+-- CreateEnum
+CREATE TYPE "user_system_role" AS ENUM ('user', 'admin');
+
+-- CreateEnum
+CREATE TYPE "project_status" AS ENUM ('active', 'inactive');
+
+-- CreateEnum
+CREATE TYPE "participant_role" AS ENUM ('author', 'assignee', 'reviewer', 'participant');
 
 -- CreateTable
 CREATE TABLE "grants" (
