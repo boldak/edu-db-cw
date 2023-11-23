@@ -16,6 +16,37 @@ CREATE TYPE "project_status" AS ENUM ('active', 'inactive');
 CREATE TYPE "participant_role" AS ENUM ('author', 'assignee', 'reviewer', 'participant');
 
 -- CreateTable
+CREATE TABLE "users" (
+    "id" SERIAL NOT NULL,
+    "login" VARCHAR(30) NOT NULL,
+    "password" VARCHAR(50) NOT NULL,
+    "email" VARCHAR(40),
+    "phone" VARCHAR(20),
+    "avatar" VARCHAR(200),
+    "system_role" "user_system_role" NOT NULL,
+    "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP,
+
+    CONSTRAINT "users_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "messages" (
+    "id" SERIAL NOT NULL,
+    "content" VARCHAR(240) NOT NULL,
+    "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "sheduled_at" TIMESTAMP NOT NULL,
+
+    CONSTRAINT "messages_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "notifications" (
+    "user_id" INTEGER NOT NULL,
+    "message_id" INTEGER NOT NULL
+);
+
+-- CreateTable
 CREATE TABLE "grants" (
     "role_id" INTEGER NOT NULL,
     "permission_id" INTEGER NOT NULL,
