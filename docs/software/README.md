@@ -6,6 +6,14 @@
 
 _structure.sql_
 ```sql
+-- CreateEnum
+CREATE TYPE "user_system_role" AS ENUM ('user', 'admin');
+
+-- CreateEnum
+CREATE TYPE "project_status" AS ENUM ('active', 'inactive');
+
+-- CreateEnum
+CREATE TYPE "participant_role" AS ENUM ('author', 'assignee', 'reviewer', 'participant');
 
 -- CreateTable
 CREATE TABLE "grants" (
@@ -345,7 +353,10 @@ COMMIT;
 
 _setup.sh_
 ```shell
-
+psql -f install.sql -U postgres
+psql -d versys -f ./structure.sql -U marcus
+psql -d versys -f ./seed.sql -U marcus
+psql -d versys -U marcus
 ```
 
 ## RESTfull сервіс для управління даними
