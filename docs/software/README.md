@@ -8,6 +8,47 @@ _structure.sql_
 ```sql
 
 -- CreateTable
+CREATE TABLE "grants" (
+    "role_id" INTEGER NOT NULL,
+    "permission_id" INTEGER NOT NULL,
+    "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+-- CreateTable
+CREATE TABLE "members" (
+    "id" SERIAL NOT NULL,
+    "user_id" INTEGER NOT NULL,
+    "project_id" INTEGER NOT NULL,
+    "role_id" INTEGER NOT NULL,
+    "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP,
+
+    CONSTRAINT "members_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "tasks" (
+    "id" SERIAL NOT NULL,
+    "title" VARCHAR(50) NOT NULL,
+    "status" VARCHAR(50) NOT NULL,
+    "project_id" INTEGER NOT NULL,
+    "description" VARCHAR(500),
+    "deadline" TIMESTAMP,
+    "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP,
+
+    CONSTRAINT "tasks_pkey" PRIMARY KEY ("id")
+);
+
+CREATE TABLE "participants" (
+    "id" SERIAL NOT NULL,
+    "member_id" INTEGER NOT NULL,
+    "task_id" INTEGER NOT NULL,
+    "role" "participant_role" NOT NULL,
+    "created_at" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "participants_pkey" PRIMARY KEY ("id")
+
 CREATE TABLE "projects" (
     "id" SERIAL NOT NULL,
     "title" VARCHAR(50) NOT NULL,
