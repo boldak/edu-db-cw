@@ -345,7 +345,10 @@ COMMIT;
 
 _setup.sh_
 ```shell
-
+psql -f install.sql -U postgres
+psql -d versys -f ./structure.sql -U marcus
+psql -d versys -f ./seed.sql -U marcus
+psql -d versys -U marcus
 ```
 
 ## RESTfull сервіс для управління даними
