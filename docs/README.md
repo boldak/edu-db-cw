@@ -3,18 +3,29 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © 2023 Скляр Антон"
 ---
 
 
-**Виконав(-ла):** 
+Виконали: 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студент 2-го курсу, групи ІО-23*<span padding-right:5em></span> Скляр Антон [Пошта: 80kap.i.toshka@gmail.com, [Телеграм](https://t.me/Antntipo)]
 
+*студент 2-го курсу, групи ІО-23*<span padding-right:5em></span> Мороз Даниїл [Пошта: imdanya946@gmail.com, [Телеграм](https://t.me/danya946)]
 
-**Керівник**
+*студентка 2-го курсу, групи ІО-23*<span padding-right:5em></span> Чепенюк Анастасія [Пошта: cepenukn@gmail.com, [Телеграм](https://t.me/nstchpnk)]
 
-*доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> **Андрій БОЛДАК** 
+*студентка 2-го курсу, групи ІО-23*<span padding-right:5em></span> Бадюлько Ірина [Пошта: badiulkoiryna@gmail.com, [Телеграм](https://t.me/aposijl)]
+
+*студент 2-го курсу, групи ІО-23*<span padding-right:5em></span> Бичкар Назар [Пошта: mezismezis@gmail.com, [Телеграм](https://t.me/jwnsn)]
+
+*студентка 2-го курсу, групи ІО-23*<span padding-right:5em></span> Козак Яна [Пошта: yanakozak170@gmail.com, [Телеграм](https://t.me/kozak_yana)]
+
+*студент 2-го курсу, групи ІО-23*<span padding-right:5em></span> Пацай Дмитро [Пошта: dbpacaj@gmail.com, [Телеграм](https://t.me/telegadimki)]
+
+Керівник
+
+*доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> Андрій БОЛДАК 
 
 [НТУУ "КИЇВСЬКИЙ ПОЛІТЕХНІЧНИЙ ІНСТИТУТ імені ІГОРЯ СІКОРСЬКОГО](https://kpi.ua/)
 
