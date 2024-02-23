@@ -15,14 +15,14 @@ module.exports = {
     }]
   ],
   port: 3030,
-  base: '/docs/',
+  base: '/pupsiki-bd/',
   theme: 'cool',
   // dest: 'dist',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
     ['link', {href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel :'stylesheet'}],
-    
+
   ],
   themeConfig: {
     // logo: './myAvatar.png',
@@ -38,7 +38,7 @@ module.exports = {
           '/requirements/state-of-the-art',
           '/requirements/stakeholders-needs',
         ]
-      
+
     },
 
     {
@@ -76,7 +76,7 @@ module.exports = {
 
     lastUpdated: 'Останнє оновлення', // string | boolean
       // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'https://github.com/boldak/edu-db-cw',
+    repo: 'https://github.com/io-23SklyarAnton/pupsiki-bd',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     repoLabel: 'Github',
@@ -95,7 +95,7 @@ module.exports = {
     // editLinkText: 'Ви можете покращити цю сторінку'
 
   },
-  title: 'Назва проєкту',
+  title: 'Система управління проектами',
   description: 'Курсова робота з дисципліни "Бази даних"',
   configureWebpack: {
     resolve: {
