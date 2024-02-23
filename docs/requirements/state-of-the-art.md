@@ -205,5 +205,10 @@ _[Розділ містить опис існуючих програм, інфо
 Враховуючи це, ми прийшли до висновку, що розробка власної системи для управління проєктами є доцільною. Під час розробки ми плануємо створити унікальний продукт, який включатиме не лише базові функції, але й додаткові можливості, відсутні в аналогічних програмах. Наша мета полягає в створенні інструменту, який забезпечить ефективне управління проєктами, враховуючи унікальні потреби та вимоги всіх користувачів.
 
 ## Посилання
-
-_[Розділ містить повний список всіх документів, про які згадується.]_
+1. [Система управління проєктами](https://pmb.com.ua/uk/slovar-terminov/sistema-upravleniya-proektom-project-management-system-instrument/)
+2. [Етапи життєвого циклу розробки ПЗ](https://icstudio.online/post/etapi-zhittyevogo-ciklu-rozrobki-pz)
+3. [Проєкт](https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%94%D0%BA%D1%82)
+4. [Елементи проєкту](https://uk.economy-pedia.com/11032545-project#menu-2)
+5. [Ключові методології розробки програмного забезпечення: робота команди зсередини](https://wezom.com.ua/ua/blog/metodologija-razrabotki-programmnogo-obespechenija)
+6. [Методологія розробки програмного забезпечення](https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F_%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8F)
+7. [Методології управління проєктами, або Що таке Waterfall, Agile та Scrum](https://devisu.ua/uk/stattia/metodologii-upravlinnya-proktami-abo-shcho-take-waterfall-agile-ta-scrum)
