@@ -22,9 +22,15 @@
 
 #### Web scraping
 
+[інформація про ↑]
+
 #### API
 
+[інформація про ↑]
+
 #### Database extraction
+
+[інформація про ↑]
 
 ### Зберігання даних
 
@@ -32,11 +38,19 @@ _База даних_ - це
 
 **NoSQL databases**:
 
+[інформація про ↑]
+
 **Relational databases (RDBMS)**:
+
+[інформація про ↑]
 
 **Гібридна база даних**:
 
+[інформація про ↑]
+
 **Cloud Storage Systems**:
+
+[інформація про ↑]
 
 ### Аналіз даних
 
@@ -64,13 +78,23 @@ _База даних_ - це
 
 ### [Gapminder](https://www.gapminder.org/)
 
+[інформація про ↑]
+
 ### [The World Bank DataBank](https://databank.worldbank.org/)
+
+[інформація про ↑]
 
 ### [EuroStat](https://ec.europa.eu/eurostat/web/main/data/database)
 
+[інформація про ↑]
+
 ### [Google Public Data Explorer](https://www.google.com/publicdata/directory)
 
+[інформація про ↑]
+
 ### [Dataverse](https://dataverse.org/)
+
+[інформація про ↑]
 
 Критерії:
 
