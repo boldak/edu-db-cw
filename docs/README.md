@@ -3,13 +3,22 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © [2023] [Nikita Volkovskyi]"
 ---
 
+**Виконали:** 
 
-**Виконав(-ла):** 
+*студент 2-го курсу, групи ІМ-24*<span padding-right:5em></span> **Волковський Микита nikitavolkovskyi@gmail.com, @HiImNikk**
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студентка 2-го курсу, групи ІМ-24*<span padding-right:5em></span> **Голубенко Анастасія golubenkoanastasya@gmail.com, @anasteishat**
+
+*студент 2-го курсу, групи ІМ-24*<span padding-right:5em></span> **Дідур Вадим vadimdidur20@gmail.com, @hirsukyosyp**
+
+*студентка 2-го курсу, групи ІМ-24*<span padding-right:5em></span> **Іванова Дар`я dasharikong@gmail.com, @MyOleg**
+
+*студент 2-го курсу, групи ІМ-24*<span padding-right:5em></span> **Коваленко Владислав kovalenkov222@gmail.com, @Vostokus**
+
+*студент 2-го курсу, групи ІМ-24*<span padding-right:5em></span> **Козак Богдан bkozak04@gmail.com, @bifynok**
 
 
 **Керівник**
