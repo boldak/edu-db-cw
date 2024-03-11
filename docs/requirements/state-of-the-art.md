@@ -198,15 +198,25 @@ ABAC як форма логічного контролю доступу стал
 
 ### [The World Bank DataBank](https://databank.worldbank.org/)
 
-[інформація про ↑]
+DataBank — це інструмент аналізу та візуалізації, який містить колекції даних часових рядів за різними темами. Ви можете створювати власні запити; створювати таблиці, діаграми та карти; і легко зберігати, вставляти та ділитися ними.
+
+## [World Development Indicators]
+
+Індикатори світового розвитку ([WDI](https://databank.worldbank.org/source/world-development-indicators)) — це основна колекція показників розвитку Світового банку, зібрана з офіційно визнаних міжнародних джерел. Він представляє найновіші та найточніші доступні дані про глобальний розвиток, а також національні, регіональні та глобальні оцінки. Примітка: незважаючи на те, що фінансування глобального розвитку (GDF) більше не вказано в назві бази даних WDI, усі дані про зовнішній борг і фінансові потоки продовжують включатися в WDI. Публікація GDF була перейменована на International Debt Statistic (IDS), і також має власну окрему базу даних.
 
 ### [EuroStat](https://ec.europa.eu/eurostat/web/main/data/database)
 
 [інформація про ↑]
 
 ### [Google Public Data Explorer](https://www.google.com/publicdata/directory)
+Google Public Data Explorer надає загальнодоступні дані та прогнози від низки міжнародних організацій і наукових установ, включаючи Світовий банк, ОЕСР, Євростат і Університет Денвера. Вони можуть відображатися у вигляді лінійних графіків, гістограм, діаграм поперечного перерізу або на картах. Продукт було запущено 8 березня 2010 року як експериментальний інструмент візуалізації в [Google Labs](https://en.wikipedia.org/wiki/Google_Labs).
 
-[інформація про ↑]
+У 2011 році Public Data Explorer став доступним для всіх. Мова публікації набору даних (DSPL) була створена для використання з платформою. Після імпорту даних набір даних можна візуалізувати, вставити на зовнішні веб-сайти та поділитися з іншими.
+
+У травні 2016 року додавання [Google Analytics Suite](https://marketingplatform.google.com/about/) увімкнуло імпорт публічних або індивідуальних наборів даних і надало користувачам інструменти візуалізації даних без використання коду.
+
+## SDMX conversion
+The [SDMX](https://en.wikipedia.org/wiki/SDMX) converter is an open source application that offers the ability to convert DSPL (Google's Dataset Publishing Language) messages to SDMX-ML, and vice versa. The output file of a DSPL dataset is a zip file containing data (in the form of CSV files) and metadata (as an XML file). Datasets in this format can be visualized in the Google Public Data Explorer.
 
 ### [Dataverse](https://dataverse.org/)
 
